@@ -1,6 +1,14 @@
-# The Spice Rack
+# Senior Design Project Idea
 
-A planning-phase project for a Senior Capstone at the University of Cincinnati. For more details on the University of Cincinnati class requirements, see the `UC Senior Design` folder of this repository.
+Members:
+
+1. Ben Hollar (hollarbl@mail.uc.edu), Computer Science
+2. Erin Graska (graskaen@mail.uc.edu), Computer Science
+3. Stephanie Tam (tamse@mail.uc.edu), Computer Science
+
+Faculty Advisor:
+
+1. Dr. Chia Han (han@ucmail.uc.edu)
 
 ## Basic Idea
 

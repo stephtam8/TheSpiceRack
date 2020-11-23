@@ -1,6 +1,7 @@
 #September 21st Meeting Notes
 
 *Meeting started at 5:30pm
+*All members were present
 
 *Need to create Design Diagrams
 *Decided on basic flow of the project

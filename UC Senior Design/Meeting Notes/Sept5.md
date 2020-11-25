@@ -3,6 +3,7 @@
 *Started at 12:30pm 
 
 *Purpose: Decide on project idea
+*All group members present
 
 *Proposed ideas
 **Want ot do something that has a purpose

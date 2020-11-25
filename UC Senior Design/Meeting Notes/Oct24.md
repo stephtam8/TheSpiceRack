@@ -1,4 +1,5 @@
 #October 24th meeting notes
+*All members were present
 
 *Started around 1pm
 

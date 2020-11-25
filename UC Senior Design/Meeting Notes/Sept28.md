@@ -1,6 +1,7 @@
 #September 28th
 
 *Started around 5:00pm
+*All members are present
 
 *There are 3 main portions of the project
 *Each member will be assigned a portion 

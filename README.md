@@ -1,6 +1,6 @@
 # The Spice Rack
 
-A planning-phase project for a Senior Capstone at the University of Cincinnati. For more details on the University of Cincinnati class requirements, see the `UC Senior Design` folder of this repository.
+A planning-phase project for a Senior Capstone at the University of Cincinnati. For more details on the University of Cincinnati class requirements, see the [UC Senior Design folder](https://github.com/benhollar/TheSpiceRack/tree/master/UC%20Senior%20Design) of this repository.
 
 ## Basic Idea
 

@@ -1,6 +1,11 @@
 # Project Specific Ignores ##############################################
 
+# macOS Files
 *.DS_Store
+
+# Content Recognition Output
+block_corrected/
+training_output/
 
 # Standard Python Ignores ##############################################
 

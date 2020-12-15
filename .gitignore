@@ -3,9 +3,12 @@
 # macOS Files
 *.DS_Store
 
+# Ben's Virtual Environments
+Code/Virtual Environments/
+
 # Content Recognition Output
-block_corrected/
-training_output/
+Code/Content Recognition/content_data/block_corrected
+Code/Content Recognition/training_output/
 
 # Standard Python Ignores ##############################################
 

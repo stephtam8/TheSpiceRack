@@ -1,25 +1,65 @@
 # The Spice Rack
 
-A planning-phase project for a Senior Capstone at the University of Cincinnati. For more details on the University of Cincinnati class requirements, see the [UC Senior Design folder](https://github.com/benhollar/TheSpiceRack/tree/master/UC%20Senior%20Design) of this repository.
+> **NOTICE:** This project is being actively developed as a Senior Capstone project by students at the University of
+> Cincinnati, advised by Dr. Chia Han. For more details on the University of Cincinnati class requirements, see the
+> [UC Senior Design folder](https://github.com/benhollar/TheSpiceRack/tree/master/UC%20Senior%20Design) of this
+> repository.
 
-## Basic Idea
-
-Finding, collecting, and cooking recipes can be a daunting task. There are numerous hurdles for people to effectively manage their recipes. In this project, we'd like to create an effective way of:
+Finding, collecting, and cooking recipes can be a daunting task. There are numerous hurdles for people to effectively
+manage their recipes. The Spice Rack aims to make the following effortless for users:
 
 1. Parsing a variety of sources of recipes (websites, handwritten recipes) into a common, easy-to-read format.
 2. Storing user recipes, including automatically imported recipes from the previously mentioned parser.
 3. Presenting an effective user-interface for navigating stored recipes
 
-## Potential Technologies
+## Getting Started
 
-For parsing recipes, we want to avoid instances in which we must have custom behavior for each input source. A general solution that works broadly is a key goal of this project. As such, we envision the parser will entail using some combination of the following:
+This project is, currently, divided in to two main sections:
 
-1. Machine learning
-2. Optical character recognition (for handwriting)
-3. Simple HTML parsing
+1. **Application**: A Django web-application, providing the app's user-interface and server logic.
+2. **Content Recogition**: A set of utilities leveraging the [dragnet](https://github.com/dragnet-org/dragnet) ML
+   library for developing a content extraction model tailored to retrieving recipes from websites.
+   [Training data](https://github.com/benhollar/TheSpiceRack/tree/master/Code/Content%20Recognition/content_data)
+   gathered by The Spice Rack contributors can also be found in this section.
 
-The rest of the intended project (storage and display of user recipes) will likely involve:
+Detailed instructions for getting set up with each section of the repository are enumerated below.
 
-1. A relational database
-2. REST API to retrieve DB info
-3. Web frontend
+### Application
+
+_The web-application is currently beginning development, and is not in a state for public usage. Installation and usage
+instructions will be provided in the future._
+
+### Content Recognition
+
+#### Requirements
+
+* Python 3 (developed using version 3.7.3)
+* The `Content Recognition/` directory of this repo cloned to your system
+
+To get started, ensure you have all required packages for this project installed. You can do so via the
+`requirements.txt` file provided under `Content Recognition/`.
+
+```bash
+pip install -r "Content Recognition/requirements.txt"
+```
+
+#### Usage
+
+As a simple test that everything is working correctly, consider training a model based on the data provided by The Spice
+Rack under `Content Recognition/content_data/`. The following snippet trains a model and returns a
+[dragnet](https://github.com/dragnet-org/dragnet) `Extractor`, which can then be used to extract recipe content from
+any web page.
+
+```python
+import train_model
+import requests
+
+# Train a default model using The Spice Rack data
+extractor = train_model.train_model()
+
+# See how the model performs on a given webpage
+url = 'https://www.some-recipe-website.com/recipe/some-really-good-recipe'
+request = requests.get(url)
+extracted_content = extractor.extract(request.content)
+print(extracted_content)
+```

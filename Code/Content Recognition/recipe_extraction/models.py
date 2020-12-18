@@ -11,12 +11,13 @@ from sklearn.neighbors import KNeighborsClassifier as _KNeighborsClassifier
 from sklearn.ensemble import ExtraTreesClassifier as _ExtraTreesClassifier
 from sklearn.svm import SVC as _SVC
 from sklearn.neural_network import MLPClassifier as _MLPClassifier
+from sklearn.externals import joblib as _joblib
 
 
 _DEFAULT_DRAGNET_FEATURES = ('kohlschuetter', 'weninger', 'readability')
 _DEFAULT_DATA_DIRECTORY = _os.path.join(
     _os.path.dirname(_os.path.dirname(__file__)),
-    'content_data/'
+    'content_data'
 )
 
 
@@ -80,3 +81,50 @@ def train(model: RecipeExtractionModel = RecipeExtractionModel.SVC,
         data_location,
     )
     return extractor
+
+
+def save(extractor: _Extractor,
+         output_path: str = None):
+    """
+    Save a pickled version of an Extractor
+
+    Parameters
+    ----------
+    extractor : dragnet.Extractor
+        The trained content extraction model
+    output_path : str
+        (Optional) The output location of the saved model. If omitted, a
+        timestamped file will be placed in '/training_output/` adjacent to the
+        default data directory.
+    """
+
+    import warnings
+    warnings.filterwarnings("ignore", category=DeprecationWarning)
+
+    if output_path is None:
+        from datetime import datetime as _date
+        output_path = _os.path.join(
+            _os.path.dirname(_DEFAULT_DATA_DIRECTORY),
+            'training_output',
+            _date.now().strftime("%Y%m%d%H%M%S") + '_' + 'model.gz'
+        )
+
+    _joblib.dump(extractor, output_path, compress=3)
+
+
+def load(pickled_model_path: str) -> _Extractor:
+    """
+    Load a pickled version of an Extractor
+
+    Parameters
+    ----------
+    pickled_model_path : str
+        The location of the saved model
+
+    Returns
+    -------
+    dragnet.Extractor
+        The trained content extraction model
+    """
+
+    return _joblib.load(pickled_model_path)

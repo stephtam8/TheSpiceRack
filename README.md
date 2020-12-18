@@ -53,11 +53,11 @@ Rack under `Content Recognition/content_data/`. The following snippet trains a m
 any web page.
 
 ```python
-import train_model
+import recipe_extraction
 import requests
 
 # Train a default model using The Spice Rack data
-extractor = train_model.train_model()
+extractor = recipe_extraction.models.train()
 
 # See how the model performs on a given webpage
 url = 'https://www.some-recipe-website.com/recipe/some-really-good-recipe'

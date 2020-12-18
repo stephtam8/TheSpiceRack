@@ -69,3 +69,12 @@ print(extracted_content)
 An ideal model is one with high precision; that is, it returns only exact recipe information, and avoids instances of
 returning content that is _not_ part of a recipe. Of course, it would be ideal to have both high recall _and_ precision,
 but one must usually be optimized for over the other.
+
+Once you're happy with a model, you might want to save it for reuse. To do so:
+
+```python
+recipe_extraction.models.save(extractor)
+
+# At some future point in time / different function, load the model
+extractor = recipe_extraction.models.load('path-to-saved-model.gz')
+```

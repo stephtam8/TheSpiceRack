@@ -65,3 +65,7 @@ request = requests.get(url)
 extracted_content = extractor.extract(request.content)
 print(extracted_content)
 ```
+
+An ideal model is one with high precision; that is, it returns only exact recipe information, and avoids instances of
+returning content that is _not_ part of a recipe. Of course, it would be ideal to have both high recall _and_ precision,
+but one must usually be optimized for over the other.

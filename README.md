@@ -33,7 +33,9 @@ instructions will be provided in the future._
 
 #### Requirements
 
-* Python 3 (developed using version 3.7.3)
+* Python 3
+  * Note: this project was developed using version 3.7.3, and versions 3.8.x and newer may require modified installation
+    steps (the `dragnet` library, which this work relies on, only apparently supports versions 3.7 and earlier)
 * The `Content Recognition/` directory of this repo cloned to your system
 
 To get started, ensure you have all required packages for this project installed. You can do so via the

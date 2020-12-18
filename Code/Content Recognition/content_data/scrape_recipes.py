@@ -33,19 +33,16 @@ def scrape_and_create_dragnet_structure(sources_path,
     outputdir : str
         The desired filepath for the output of this function. Defaults to a
         directory named 'scraped_data' in your working directory.
-    overwrite : Bool
+    overwrite : bool
         A flag determining if files that already exist should be replaced.
         Defaults `False` (do not overwrite)
     """
 
-    with open(sources_path) as json_file:
-        sources = _json.load(json_file)
+    sources = remove_duplicate_sources(sources_path, False)
     if outputdir is None:
         outputdir = _os.path.join(_os.getcwd(), 'scraped_data')
 
     for source in sources.keys():
-        # In Python 3.7 and up, this even maintains order (not that it strictly
-        # needs to, but it's nice)
         unique_sources = list(dict.fromkeys(sources[source]))
         for index, url in enumerate(unique_sources):
             base_name = str(source) + '-' + str(index + 1) + '.html'
@@ -64,3 +61,39 @@ def scrape_and_create_dragnet_structure(sources_path,
                 with open(filename, 'w') as _:
                     pass
 
+
+def remove_duplicate_sources(sources_path, overwrite=True):
+    """Remove duplicate entries in recipe sources JSON
+
+    Parameters
+    ----------
+    sources_path : str
+        The filepath of the recipe sources JSON
+    overwrite : bool
+        Overwrite the input sources JSON? Defaults true.
+
+    Returns
+    -------
+    sources : dict
+        The unique sources dictionary
+    """
+    
+    with open(sources_path) as json_file:
+        sources = _json.load(json_file)
+    for key in sources.keys():
+        # In Python 3.7 and up, this even maintains order (not that it strictly
+        # needs to, but it's nice)
+        sources[key] = list(dict.fromkeys(sources[key]))
+    if overwrite:
+        with open(sources_path, 'w') as json_file:
+            _json.dump(sources, json_file)
+    
+    return sources
+
+
+if __name__ == "__main__":
+    scrape_and_create_dragnet_structure(
+        '/Users/benhollar/Documents/College/Senior Design/TheSpiceRack/Code/Content Recognition/content_data/recipe_sources.json',
+        '/Users/benhollar/Documents/College/Senior Design/TheSpiceRack/Code/Content Recognition/content_data',
+        False
+    )

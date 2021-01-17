@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Edit Recipe</title>
 </head>
 <body>
-$END$
+    <form action="/recipe/save/{{recipe.id}}">
+        <label for="title">Title</label><br>
+        <input type="text" id="title" name="title" value="{{recipe.title}}"><br>
+        <label for="servings">Number of Servings</label><br>
+        <input type="number" id="servings" name="servings" value="{{recipe.servings}}"><br>
+        <label for="ingredients">Ingredients</label><br>
+        <input type="text" id="ingredients" name="ingredients" value="{{ingredients}}"><br>
+        <label for="steps">Steps</label><br>
+        <input type="text" id="steps" name="steps" value="{{recipe.steps}}"><br>
+        <input type="submit" value="Edit Recipe">
+    </form>
 </body>
 </html>

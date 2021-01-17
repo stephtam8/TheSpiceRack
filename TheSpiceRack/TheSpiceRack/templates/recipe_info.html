@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>{{recipe.title}}</title>
 </head>
 <body>
-$END$
+<h1>{{recipe.title}}</h1>
+<h3>{{recipe.servings}}</h3>
+<ul>
+    {% for ingredient in ingredients %}
+            <li>{{ingredient.amount}} {{ ingredient.name }}</li>
+    {% endfor %}
+</ul>
+<h3>{{recipe.steps}}</h3>
 </body>
+    <form action="/recipe/edit/{{recipe.id}}">
+        <input type="submit" value="Edit recipe" />
+    </form>
+    <form action="/recipe/delete/{{recipe.id}}">
+        <input type="submit" value="Delete recipe" />
+    </form>
 </html>

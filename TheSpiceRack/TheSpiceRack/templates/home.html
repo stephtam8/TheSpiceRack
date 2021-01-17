@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes</title>
+    <ul>
+        {% for recipe in recipes %}
+            <li><a href="/recipe/{{recipe.id}}/">{{ recipe.title }}</a></li>
+        {% endfor %}
+    </ul>
+</head>
+<body>
+    <form action="/recipe/add/">
+        <input type="submit" value="Add recipe" />
+    </form>
+</body>
+</html>

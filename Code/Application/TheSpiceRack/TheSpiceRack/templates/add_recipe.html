@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Recipe</title>
+
+
+    <script type="text/JavaScript">
+    function createNewIngredient() {
+        var div = document.getElementById('ingredient_input');
+        var inputs = div.getElementsByTagName("input");
+        var num = inputs.length/2;
+
+        //Create Label for Amount
+        var newAmountLabel = document.createElement("label");
+        newAmountLabel.for = "amount_"+num;
+        newAmountLabel.innerHTML = " Amount ";
+        document.getElementById('ingredient_input').appendChild(newAmountLabel);
+
+        //Create input for Amount
+	    var newAmount = document.createElement("input");
+	    newAmount.type = "number";
+	    newAmount.id = "amount_"+num;
+	    newAmount.name="amount_"+num;
+	    document.getElementById('ingredient_input').appendChild(newAmount);
+
+	    //Create Label for Measurements
+        var newMeasurementLabel = document.createElement("label");
+        newMeasurementLabel.for = "measurements_"+num;
+        newMeasurementLabel.innerHTML = " Measurement ";
+        document.getElementById('ingredient_input').appendChild(newMeasurementLabel);
+
+	    //Create select for Measurements
+	    var newMeasurements = document.createElement("select");
+        newMeasurements.id = "measurements_"+num;
+        newMeasurements.name = "measurements_"+num;
+        m = ["Tablespoon", "Teaspoon", "Ounces", "Cup", "Pint", "Quart", "Gallon", "Milliliter", "Liter", "Pound", "Gram", "Kiligram"]
+
+        for(var i = 0; i < m.length; i++) {
+            var opt = document.createElement('option');
+            opt.innerHTML = m[i];
+            opt.value = m[i];
+            newMeasurements.appendChild(opt);
+        }
+        document.getElementById('ingredient_input').appendChild(newMeasurements);
+
+	    //Create label for Name
+	    var newNameLabel = document.createElement("label");
+        newNameLabel.for = "name_"+num;
+        newNameLabel.innerHTML = " Name ";
+        document.getElementById('ingredient_input').appendChild(newNameLabel);
+
+	    //Create input for Name
+	    var newName = document.createElement("input");
+	    newName.type = "text";
+	    newName.id = "name_"+num;
+	    document.getElementById('ingredient_input').appendChild(newName);
+	    document.getElementById('ingredient_input').appendChild(document.createElement('br'));
+    }
+
+    function createNewStep() {
+        var div = document.getElementById('steps');
+        var inputs = div.getElementsByTagName("input");
+        var num = inputs.length+1;
+
+        var newStepLabel = document.createElement("label");
+        newStepLabel.for = "step_"+num
+        newStepLabel.innerHTML = "Step "+num+" "
+        div.appendChild(newStepLabel);
+
+        var newStepInput = document.createElement("input");
+        newStepInput.type = "text";
+        newStepInput.id = "step_"+num;
+        newStepInput.name = "step_"+num;
+        div.appendChild(newStepInput);
+        div.appendChild(document.createElement('br'));
+    }
+    </script>
+</head>
+<body>
+    <h2>Add Recipe</h2>
+    <form action="/recipe/submit">
+        <label for="title">Title</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="servings">Number of Servings</label><br>
+        <input type="number" id="servings" name="servings"><br>
+        <label>Ingredients</label><br>
+        <div id="ingredient_input">
+            <label for="amount_0"> Amount </label>
+            <input type="number" id="amount_0" name="amount_0">
+            <label for="measurement_0"> Measurement </label>
+            <select name="measurement_0" id="measurement_0">
+                <option value="Tablespoon">Tablespoon</option>
+                <option value="Teaspoon">Teaspoon</option>
+                <option value="Ounces">Ounces</option>
+                <option value="Cup">Cup</option>
+                <option value="Pint">Pint</option>
+                <option value="Quart">Quart</option>
+                <option value="Gallon">Gallon</option>
+                <option value="Milliliter">Milliliter</option>
+                <option value="Liter">Liter</option>
+                <option value="Pound">Pound</option>
+                <option value="Gram">Gram</option>
+                <option value="Kiligram">Kiligram</option>
+            </select>
+            <label for="name_0"> Name </label>
+            <input type="text" id="name_0" name="name_0"><br>
+        </div>
+        <button type="button" onclick="createNewIngredient()">Add Ingredient</button><br>
+        <label for="step_1">Preparation</label><br>
+        <div id="steps">
+            <label>Step 1</label>
+            <input type="text" id="step_1" name="step_1" ><br>
+            <label>Step 2</label>
+            <input type="text" id="step_2" name="step_2" ><br>
+            <label>Step 3</label>
+            <input type="text" id="step_3" name="step_3" ><br>
+        </div>
+        <button type="button" onclick="createNewStep()">Add Step</button><br>
+
+        <input type="submit" value="Add Recipe">
+    </form>
+
+</body>
+</html>

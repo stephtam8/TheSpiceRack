@@ -1,0 +1,2496 @@
+<!doctype html>  
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> <![endif]-->  
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> <![endif]-->  
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> <![endif]-->  
+<!--[if gt IE 8]><!--> <html lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> <!--<![endif]-->  
+
+<head> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+<meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"8f2cac8c19",applicationID:"108064120"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="https://s23209.pcdn.co/wp-content/themes/damndelicious2018/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://s23209.pcdn.co/wp-content/themes/damndelicious2018/favicon.ico" type="image/x-icon" /> 
+
+<link rel="alternate" type="application/rss+xml" title="Damn Delicious RSS2 Feed" href="https://damndelicious.net/feed/" />  
+
+
+
+<script>
+(function(w, d) {
+	w.adthrive = w.adthrive || {};
+	w.adthrive.cmd = w.adthrive.cmd || [];
+	w.adthrive.plugin = 'adthrive-ads-1.0.41';
+	w.adthrive.host = 'ads.adthrive.com';
+
+	var s = d.createElement('script');
+	s.async = true;
+	s.referrerpolicy='no-referrer-when-downgrade';
+	s.src = 'https://' + w.adthrive.host + '/sites/52e41fac28963d1e058a110e/ads.min.js?referrer=' + w.encodeURIComponent(w.location.href);
+	var n = d.getElementsByTagName('script')[0];
+	n.parentNode.insertBefore(s, n);
+})(window, document);
+</script>
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>//<![CDATA[
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+//]]>
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+	<!-- This site is optimized with the Yoast SEO plugin v15.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Instant Pot BBQ Pulled Pork - Damn Delicious</title>
+	<meta name="description" content="Instant Pot BBQ Pulled Pork - The easiest + BEST pulled pork ever! Serve with your favorite BBQ sauce. So smoky, so flavorful, so juicy, and SO SO GOOD." />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/" />
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Chungah @ Damn Delicious">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="1 minute">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//m9m6e2w5.stackpathcdn.com' />
+<link rel='dns-prefetch' href='//cdn.shareaholic.net' />
+<link rel='dns-prefetch' href='//www.shareaholic.net' />
+<link rel='dns-prefetch' href='//analytics.shareaholic.com' />
+<link rel='dns-prefetch' href='//recs.shareaholic.com' />
+<link rel='dns-prefetch' href='//go.shareaholic.com' />
+<link rel='dns-prefetch' href='//partner.shareaholic.com' />
+<link rel="alternate" type="application/rss+xml" title="Damn Delicious &raquo; Instant Pot BBQ Pulled Pork Comments Feed" href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/feed/" />
+<!-- Shareaholic - https://www.shareaholic.com -->
+<link rel='preload' href='//cdn.shareaholic.net/assets/pub/shareaholic.js' as='script'/>
+<script data-no-minify='1' data-cfasync='false'>
+_SHR_SETTINGS = {"endpoints":{"local_recs_url":"https:\/\/damndelicious.net\/wp-admin\/admin-ajax.php?action=shareaholic_permalink_related","ajax_url":"https:\/\/damndelicious.net\/wp-admin\/admin-ajax.php","share_counts_url":"https:\/\/damndelicious.net\/wp-admin\/admin-ajax.php?action=shareaholic_share_counts_api"},"site_id":"917dae0c6d3c4c7c2f861beb78f1b756","url_components":{"year":"2020","monthnum":"08","day":"08","hour":"21","minute":"00","second":"49","post_id":"31641","postname":"instant-pot-bbq-pulled-pork","category":"instant-pot-recipes"}};
+</script>
+<script data-no-minify='1' data-cfasync='false' src='//cdn.shareaholic.net/assets/pub/shareaholic.js' data-shr-siteid='917dae0c6d3c4c7c2f861beb78f1b756' async ></script>
+
+<!-- Shareaholic Content Tags -->
+<meta name='shareaholic:site_name' content='Damn Delicious' />
+<meta name='shareaholic:language' content='en-US' />
+<meta name='shareaholic:url' content='https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/' />
+<meta name='shareaholic:keywords' content='cat:entree, cat:instant pot, cat:summer, type:post' />
+<meta name='shareaholic:article_published_time' content='2020-08-08T21:00:49-07:00' />
+<meta name='shareaholic:article_modified_time' content='2020-08-19T15:38:27-07:00' />
+<meta name='shareaholic:shareable_page' content='true' />
+<meta name='shareaholic:article_author_name' content='Chungah @ Damn Delicious' />
+<meta name='shareaholic:site_id' content='917dae0c6d3c4c7c2f861beb78f1b756' />
+<meta name='shareaholic:wp_version' content='9.5.0' />
+<meta name='shareaholic:image' content='https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666-640x960.jpg' />
+<!-- Shareaholic Content Tags End -->
+
+<!-- Shareaholic Open Graph Tags -->
+<meta property='og:image' content='https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666.jpg' />
+<!-- Shareaholic Open Graph Tags End -->
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.13.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+    (window.gaDevIds=window.gaDevIds||[]).push("dZGIzZG");
+	var mi_version         = '7.13.2';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-43450335-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+
+	if ( 'undefined' === typeof gaOptout ) {
+		function gaOptout() {
+			__gaTrackerOptout();
+		}
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-43450335-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s23209.pcdn.co\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='dashicons-css'  href='https://s23209.pcdn.co/wp-includes/css/dashicons.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='thickbox-css'  href='https://s23209.pcdn.co/wp-includes/js/thickbox/thickbox.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-style-css'  href='//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='spectrum-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/spectrum.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='smart-review-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/pluginstyle.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://s23209.pcdn.co/wp-includes/css/dist/block-library/style.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-banner-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/simple-banner/simple-banner.css?ver=2.8.0' type='text/css' media='all' />
+<link rel='stylesheet' id='monsterinsights-popular-posts-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.13.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/font-awesome/css/all.css?ver=5.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsso-rar-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/wpsso-ratings-and-reviews/css/style.min.css?ver=2.11.1' type='text/css' media='all' />
+<style id='wpsso-rar-style-inline-css' type='text/css'>
+@font-face{font-family:"WpssoStar";font-weight:normal;font-style:normal;src:url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.eot?2.11.1");src:url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.eot?2.11.1#iefix") format("embedded-opentype"),
+url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.woff?2.11.1") format("woff"),
+url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.ttf?2.11.1") format("truetype"),
+url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.svg?2.11.1#star") format("svg")}.wpsso-rar .star-rating::before{color:#ddd}.wpsso-rar .star-rating span::before{color:#222}.wpsso-rar p.select-star a::before{color:#ddd}.wpsso-rar p.select-star a:hover~a::before{color:#ddd}.wpsso-rar p.select-star:hover a::before{color:#222}.wpsso-rar p.select-star.selected a.active::before{color:#222}.wpsso-rar p.select-star.selected a.active~a::before{color:#ddd}.wpsso-rar p.select-star.selected a:not(.active)::before{color:#222}
+</style>
+<link rel='stylesheet' id='custom-style-css'  href='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/style.css?ver=2.31' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-style-css'  href='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/responsive.css?ver=2.32' type='text/css' media='all' />
+<link rel='stylesheet' id='cmh-style-css'  href='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/mobile-header/mobile-header-style.css?ver=1.0.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/jsfiles/font-select.js?ver=5.5.2' id='font-select-js-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/jsfiles/spectrum.js?ver=5.5.2' id='spectrum-js-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/jsfiles/ready.js?ver=5.5.2' id='ready-js-js'></script>
+<script type='text/javascript' id='monsterinsights-frontend-script-js-extra'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/damndelicious.net","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.13.2' id='monsterinsights-frontend-script-js'></script>
+<script type='text/javascript' id='simple-banner-script-js-extra'>
+/* <![CDATA[ */
+var scriptParams = {"hide_simple_banner":"","simple_banner_position":"","header_margin":"","header_padding":"","simple_banner_text":"ORDERS PLACED AFTER 2\/13 WILL BE SHIPPED STARTING 2\/24","pro_version_enabled":"1","in_array":"","debug_mode":"","id":"31641","disabled_pages_array":["1","648","7265","31228","662","31221","1490","30147","23232","22435","26500","27985","27988","27732","657","16015","16598","25774","25533","1318"],"simple_banner_font_size":"","simple_banner_color":"#121212","simple_banner_text_color":"#ffffff","simple_banner_link_color":"","simple_banner_custom_css":"","simple_banner_scrolling_custom_css":"","simple_banner_text_custom_css":"","site_custom_css":"","keep_site_custom_css":"","site_custom_js":"","keep_site_custom_js":"","wp_body_open_enabled":"","wp_body_open":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/simple-banner/simple-banner.js?ver=2.8.0' id='simple-banner-script-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.11.6' id='gtm4wp-form-move-tracker-js'></script>
+<script type='text/javascript' id='wpsso-rar-script-js-extra'>
+/* <![CDATA[ */
+var wpsso_rar_script = {"i18n_required_rating_text":"Please select a rating before submitting.","i18n_required_review_text":"Please write a review before submitting.","review_rating_required":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/wpsso-ratings-and-reviews/js/script.min.js?ver=2.11.1' id='wpsso-rar-script-js'></script>
+<link rel="https://api.w.org/" href="https://damndelicious.net/wp-json/" /><link rel="alternate" type="application/json" href="https://damndelicious.net/wp-json/wp/v2/posts/31641" /><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s23209.pcdn.co/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.2" />
+<link rel="alternate" type="application/json+oembed" href="https://damndelicious.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdamndelicious.net%2F2020%2F08%2F08%2Finstant-pot-bbq-pulled-pork%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://damndelicious.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdamndelicious.net%2F2020%2F08%2F08%2Finstant-pot-bbq-pulled-pork%2F&#038;format=xml" />
+
+            <!-- TapInfluence -->
+            <script type="text/javascript">
+            ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+            p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+            };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+            n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//a.tapinfluence.com/tap.js","taptracker"));
+            taptracker('newTracker', 'cf', 'c.tapinfluence.com', {appId: '1333b1a2-64a9-11e2-9c98-22000af92f17'});
+            taptracker('crossDomainLinker', function(linkElement) {
+  				return true;
+			});
+            taptracker('trackPageView');
+            </script>
+            <!-- TapInfluence -->
+
+            <style type='text/css'>
+	.wp-nutrition-label { border: 1px solid #ccc; font-family: helvetica, arial, sans-serif; font-size: .9em; width: 22em; padding: 1em 1.25em 1em 1.25em; line-height: 1.4em; margin: 1em; }
+	.wp-nutrition-label hr { border:none; border-bottom: solid 8px #666; margin: 3px 0px; }
+	.wp-nutrition-label .heading { font-size: 2.6em; font-weight: 900; margin: 0; line-height: 1em; }
+	.wp-nutrition-label .indent { margin-left: 1em; }
+	.wp-nutrition-label .small { font-size: .8em; line-height: 1.2em; }
+	.wp-nutrition-label .item_row { border-top: solid 1px #ccc; padding: 3px 0; }
+	.wp-nutrition-label .amount-per { padding: 0 0 8px 0; }
+	.wp-nutrition-label .daily-value { padding: 0 0 8px 0; font-weight: bold; text-align: right; border-top: solid 4px #666; }
+	.wp-nutrition-label .f-left { float: left; }
+	.wp-nutrition-label .f-right { float: right; }
+	.wp-nutrition-label .noborder { border: none; }
+	
+	.cf:before,.cf:after { content: " "; display: table;}
+	.cf:after { clear: both; }
+	.cf { *zoom: 1; }  
+</style>
+<style type="text/css" media="screen">.simple-banner{background:#121212;}</style><style type="text/css" media="screen">.simple-banner .simple-banner-text{color:#ffffff;}</style><style type="text/css" media="screen">.simple-banner .simple-banner-text a{color:#f16521;}</style><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests;block-all-mixed-content" />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>//<![CDATA[
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["entree","instant-pot-recipes","summer"],"pagePostAuthor":"Chungah @ Damn Delicious"};
+	dataLayer.push( dataLayer_content );//]]>
+</script>
+<script data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T4LMV2F');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js""></script>
+
+<!-- social and search optimization by WPSSO Core v8.14.1 - https://wpsso.com/ -->
+<!-- wpsso meta tags begin -->
+<meta name="wpsso:mark:begin" content="wpsso meta tags begin"/>
+<!-- generator:1 --><meta name="generator" content="WPSSO Core 8.14.1/L*"/>
+<!-- generator:2 --><meta name="generator" content="WPSSO RAR 2.11.1/S"/>
+<!-- generator:3 --><meta name="generator" content="WPSSO JSON 4.10.0/L*"/>
+<!-- generator:4 --><meta name="generator" content="WPSSO UM 4.0.1/S"/>
+<link rel="shortlink" href="https://damndelicious.net/?p=31641"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Damn Delicious"/>
+<meta property="og:title" content="Instant Pot BBQ Pulled Pork - Damn Delicious"/>
+<meta property="og:description" content="Instant Pot BBQ Pulled Pork - The easiest + BEST pulled pork ever! Serve with your favorite BBQ sauce. So smoky, so flavorful, so juicy, and SO SO GOOD."/>
+<meta property="og:updated_time" content="2020-08-19T22:38:27+00:00"/>
+<!-- og:image:1 --><meta property="og:image" content="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666-600x315-cropped.jpg"/>
+<!-- og:image:1 --><meta property="og:image:width" content="600"/>
+<!-- og:image:1 --><meta property="og:image:height" content="315"/>
+<!-- article:author:1 --><meta property="article:author" content="https://www.facebook.com/damndeliciousblog"/>
+<meta property="article:published_time" content="2020-08-09T04:00:49+00:00"/>
+<meta name="twitter:domain" content="damndelicious.net"/>
+<meta name="twitter:title" content="Instant Pot BBQ Pulled Pork - Damn Delicious"/>
+<meta name="twitter:description" content="Instant Pot BBQ Pulled Pork - The easiest + BEST pulled pork ever! Serve with your favorite BBQ sauce. So smoky, so flavorful, so juicy, and SO SO GOOD."/>
+<meta name="twitter:creator" content="@damn_delicious"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666-600x900.jpg?p=31641"/>
+<meta name="twitter:label1" content="Written by"/>
+<meta name="twitter:data1" content="Chungah @ Damn Delicious"/>
+<meta name="twitter:label2" content="Est. reading time"/>
+<meta name="twitter:data2" content="1 minute"/>
+<meta name="author" content="Chungah @ Damn Delicious"/>
+<meta name="thumbnail" content="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666-600x315-cropped.jpg"/>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@id": "/2020/08/08/instant-pot-bbq-pulled-pork/#sso/blog.posting",
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/",
+            "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/",
+            "sameAs": [
+                "https://damndelicious.net/?p=31641"
+            ],
+            "name": "Instant Pot BBQ Pulled Pork - Damn Delicious",
+            "description": "Instant Pot BBQ Pulled Pork - The easiest + BEST pulled pork ever! Serve with your favorite BBQ sauce. So smoky, so flavorful, so juicy, and SO SO GOOD.",
+            "publisher": [
+                {
+                    "@id": "#sso/organization/site/org_logo_url"
+                }
+            ],
+            "headline": "Instant Pot BBQ Pulled Pork - Damn Delicious",
+            "copyrightYear": "2020",
+            "inLanguage": "en_US",
+            "dateCreated": "2020-08-09T04:00:49+00:00",
+            "datePublished": "2020-08-09T04:00:49+00:00",
+            "author": {
+                "@id": "/d2207a856a19cf578eb576be9d8c43d0#sso/person"
+            },
+            "thumbnailUrl": "https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666-600x315-cropped.jpg",
+            "commentCount": 38,
+            "comment": [
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-217525",
+                    "dateCreated": "2020-12-20T20:07:23-08:00",
+                    "description": "It was delicious. Question: Was I suppose to save the cooking liquid? I through it out and mixed meat with&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Pamela Koop"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-215224",
+                    "dateCreated": "2020-12-02T06:29:34-08:00",
+                    "description": "I've made several of your recipes and have never been disappointed. Love your style - simple but delicious. I didn't&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Elizabeth Gray"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-214267",
+                    "dateCreated": "2020-11-28T18:53:51-08:00",
+                    "description": "The best recipe for pulled pork! Delicious! I cooked it on the stove in a dutch oven pot.",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Rosa Scoddo-Sessa"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-213008",
+                    "dateCreated": "2020-11-15T22:06:38-08:00",
+                    "description": "Question...is the Kosher salt measure for the Morton salt or the other type? Thanks",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Kelly"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-212920",
+                    "dateCreated": "2020-11-14T22:25:20-08:00",
+                    "description": "Thank you very much for making me a cook! Your recipes are so easy and delicious. I have never really&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Alesha"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-210980",
+                    "dateCreated": "2020-10-22T16:00:16-07:00",
+                    "description": "can this be made in a slow cooker?",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "wendy"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-210868",
+                    "dateCreated": "2020-10-21T00:26:21-07:00",
+                    "description": "I am stockpiling a whole list of your recipes I need to try thanks to you!",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Melita J."
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-210379",
+                    "dateCreated": "2020-10-14T14:27:55-07:00",
+                    "description": "Hi Chungah, this looks amazing. I've never made this before. I see that you tossed pickles, green onions, and shredded&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Amy Muller"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-209238",
+                    "dateCreated": "2020-09-29T01:35:04-07:00",
+                    "description": "Absolute perfection! As good as my favorite BBQ place and so much cheaper and easier thanks to this recipe. It's&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Traci Roberts"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-209190",
+                    "dateCreated": "2020-09-28T12:31:44-07:00",
+                    "description": "easy to follow. just learning to use my instapot amd loved the food I made today.",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "dawn prince"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-208738",
+                    "dateCreated": "2020-09-21T22:25:11-07:00",
+                    "description": "This was OUTSTANDING! Best shredded pork I've made. I didn't even use BBQ sauce on some of it because the&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Danica"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-208361",
+                    "dateCreated": "2020-09-16T13:48:45-07:00",
+                    "description": "Great recipe! I have made it 2 times. Everyone I share it with love it.",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Darla"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-207467",
+                    "dateCreated": "2020-09-04T01:06:13-07:00",
+                    "description": "This is the best pulled pork recipe I've tried. So flavorful it didn't even need the BBQ sauce! It just&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Kim"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-207403",
+                    "dateCreated": "2020-09-02T20:44:57-07:00",
+                    "description": "pretty good. but not the best pulled pork in the world. I ate it in a sandwich and later in&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Arya"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-207350",
+                    "dateCreated": "2020-09-02T01:45:45-07:00",
+                    "description": "The BOMB DIGGY! FOR REAL! Thank you. I addes 1 up of freshly blended pineapple juice to the acv and&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "la ruka"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-207231",
+                    "dateCreated": "2020-09-01T06:15:30-07:00",
+                    "description": "Hi, new to instant Pot. So... At step 3, all is done in the Instant Pot or a separate pan&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Cip"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-208453",
+                            "dateCreated": "2020-09-17T19:22:20-07:00",
+                            "description": "You can just do step 3 in the instapot, save having to clean up another pot!",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Sheana"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-206577",
+                    "dateCreated": "2020-08-28T20:21:22-07:00",
+                    "description": "Question \u2014 if I only have 1 pound of pork, how much chicken stock should I use?\u00a0",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Mandy Omaha"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-205479",
+                    "dateCreated": "2020-08-17T13:48:39-07:00",
+                    "description": "Is it possible to also list the crock pot version on your recipes?? I'm sure I'm not the only one&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Bethany"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-206234",
+                            "dateCreated": "2020-08-25T14:55:09-07:00",
+                            "description": "Yes to this!! I want to make this so bad, but I only have a crock pot as well!",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Alyssa"
+                            },
+                            "comment": [
+                                {
+                                    "@context": "https://schema.org",
+                                    "@type": "Comment",
+                                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-208454",
+                                    "dateCreated": "2020-09-17T19:23:30-07:00",
+                                    "description": "I would just use the ingredients to this recipe and follow the instructions on a slow cooker recipe.",
+                                    "author": {
+                                        "@context": "https://schema.org",
+                                        "@type": "Person",
+                                        "name": "Sheana"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-205304",
+                    "dateCreated": "2020-08-16T17:35:05-07:00",
+                    "description": "Excellent!! Honestly, the best I've ever had. I used fresh pressed Fuji apple juice instead of chicken broth. The pork&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Anne Marie Thomas"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-205184",
+                    "dateCreated": "2020-08-16T06:46:19-07:00",
+                    "description": "These were so simple and so good! I made two batches for a gathering and they were all gone.",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Thomas Cathey"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204795",
+                    "dateCreated": "2020-08-12T20:21:36-07:00",
+                    "description": "This came out great for us. We used pork tenderloin instead of pork shoulder because it was what I had&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Austin"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204675",
+                    "dateCreated": "2020-08-12T00:17:15-07:00",
+                    "description": "Just made this recipe in the crockpot and it was delicious! I only did the dry rub on the pork&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Dana Foster"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204643",
+                    "dateCreated": "2020-08-11T16:26:14-07:00",
+                    "description": "This recipe looks delicious! Are their other types/cuts of meat that can be substituted if you don't want pork?",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Nai"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204660",
+                            "dateCreated": "2020-08-11T20:25:56-07:00",
+                            "description": "yes I'd love to know as well, pork is hard to come by where I live.\u00a0",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Amy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204620",
+                    "dateCreated": "2020-08-11T05:04:05-07:00",
+                    "description": "This was outstanding! I\u2019ve made pulled pork before but it usually gets its flavor from the bbq sauce. This one&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Natalie"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204571",
+                    "dateCreated": "2020-08-10T20:56:36-07:00",
+                    "description": "This was excellent! I agree about the choice of Stubb's too. I'd sure like a version of this recipe for&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Vivian"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204563",
+                    "dateCreated": "2020-08-10T19:51:01-07:00",
+                    "description": "Do you have a recipe for the slaw?",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Veronica"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-211256",
+                            "dateCreated": "2020-10-26T14:13:26-07:00",
+                            "description": "would love the slaw recipe too!",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Nicole"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204528",
+                    "dateCreated": "2020-08-10T12:36:32-07:00",
+                    "description": "This is our go to recipe and the family loves it! My family raves about it!",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Rewari"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204520",
+                    "dateCreated": "2020-08-10T11:11:29-07:00",
+                    "description": "Is there a recipe for the slaw? Thanks!!!",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "KK"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204489",
+                    "dateCreated": "2020-08-10T02:50:43-07:00",
+                    "description": "This sounds great. Question: ingredients list says 1/2 cayenne pepper. Is that supposed to be 1/2 tsp? Thanks! Can't wait&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "NINA LEONE"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204451",
+                    "dateCreated": "2020-08-09T20:24:28-07:00",
+                    "description": "This recipe sounds delightful! \u00a0Unfortunately, I don't have an Instant Pot but I do have a crockpot. \u00a0Do you have&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Kitty B"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204458",
+                            "dateCreated": "2020-08-09T20:46:47-07:00",
+                            "description": "Hi Kitty! We don't have an exact slow cooker version but we have these Slow Cooker Pork Carnitas that you&hellip;",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Jana @ Damn Delicious"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204448",
+                    "dateCreated": "2020-08-09T19:48:53-07:00",
+                    "description": "I haven\u2019t tried this yet. But I intend to very soon. This is the first recipe I\u2019ve seen that doesn\u2019t&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Sue D"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204399",
+                    "dateCreated": "2020-08-09T12:41:38-07:00",
+                    "description": "Just curious as to what the slaw is and if there is a recipe for that too. \u00a0",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Frank"
+                    }
+                }
+            ],
+            "articleBody": "The easiest + BEST pulled pork ever! Serve with your favorite BBQ sauce. So smoky, so flavorful, so juicy, and SO SO GOOD. Hello, summer. Please don&#039;t leave us just yet. I&#039;m not ready for the Chiberia snow. (FACTS ONLY - it snowed Halloween day in 2019.) No, but really, let&#039;s get back to the best part of summer days: Pool parties. COVID honeymoon boat trips. And now, BBQ pulled pork sandwiches. That&#039;s right. PULLED PORK SAMMIES. Smothered with your favorite BBQ sauce ever. The instant pot takes care of all the hard work and all the time, infusing all the flavors into the most tender, juicy shredded pork in less than 90 minutes. When ready, drizzle with desired BBQ sauce (we recommend Stubb&#039;s!) and serve with slaw, pickles and brioche buns. The pork also keeps VERY WELL so these can easily be prepared ahead of time for all the socially-distanced-get-togethers. Stay safe and stay cool, friends. And eat some pulled pork sammies immediately."
+        },
+        {
+            "@id": "#sso/organization/site/org_logo_url",
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://damndelicious.net",
+            "name": "Damn Delicious",
+            "description": "Simple ingredients. Elegant dishes.",
+            "image": [
+                {
+                    "@context": "https://schema.org",
+                    "@type": "ImageObject",
+                    "url": "https://s23209.pcdn.co/wp-content/themes/damndelicious2018/images/logo@2x.png",
+                    "width": 580,
+                    "height": 350
+                }
+            ],
+            "logo": {
+                "@context": "https://schema.org",
+                "@type": "ImageObject",
+                "url": "https://s23209.pcdn.co/wp-content/themes/damndelicious2018/images/logo@2x.png",
+                "width": 580,
+                "height": 350
+            }
+        },
+        {
+            "@id": "/d2207a856a19cf578eb576be9d8c43d0#sso/person",
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "url": "https://damndelicious.net",
+            "name": "Chungah @ Damn Delicious",
+            "description": "Chungah is the recipe developer and photographer of Damn Delicious, a blog that was founded in 2011. She thought she would become an epidemiologist, obtaining a sociology degree at UCLA and a Masters in Public Health at USC. But what began as a grad school hobby blog is now her full-time job. Originally from Queens and living most of her life in Los Angeles, she now resides in Chicago with her crazy corgi duo, Butters and Cartman. She loves donuts and binging on Grey's Anatomy reruns, and hopes to one day start her very own corgi rescue.",
+            "image": [
+                {
+                    "@context": "https://schema.org",
+                    "@type": "ImageObject",
+                    "url": "https://secure.gravatar.com/avatar/bccd093023d66cf4ba1a8be171cd08c1.jpg?d=mp&s=1200",
+                    "width": 1200,
+                    "height": 1200
+                }
+            ],
+            "sameAs": [
+                "https://www.facebook.com/damndeliciousblog",
+                "https://www.instagram.com/damn_delicious/",
+                "https://snapchat.com/add/chungahrhee",
+                "https://twitter.com/damn_delicious"
+            ]
+        }
+    ]
+}</script>
+<meta name="wpsso:mark:end" content="wpsso meta tags end"/>
+<!-- wpsso meta tags end -->
+<!-- added on 2020-12-21T20:28:11+00:00 in 0.049766 secs from https://damndelicious.net -->
+
+<link rel="icon" href="https://s23209.pcdn.co/wp-content/uploads/2020/09/cropped-Untitled1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://s23209.pcdn.co/wp-content/uploads/2020/09/cropped-Untitled1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://s23209.pcdn.co/wp-content/uploads/2020/09/cropped-Untitled1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://s23209.pcdn.co/wp-content/uploads/2020/09/cropped-Untitled1-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			/* B&C Email signup */
+
+.bc-signup {
+	color: #121212;
+	font-family: proximanova,Arial,Helvetica,Geneva,sans-serif;
+	font-weight: 700;
+	margin: 0 0 50px auto;
+	padding: 15px 0;
+}
+
+.bc-signup span {
+	background: url(https://s23209.pcdn.co/wp-content/uploads/2020/01/new-arrivals.jpg) no-repeat;
+	background-position: 0 -5px;
+	background-size: 100% auto;
+	display: inline-block;
+	height: 65px;
+	line-height: 65px;
+	text-indent: -9999px;
+	width: 200px;
+}
+
+.bc-signup .email-input {
+	width: calc(100% - 125px);
+}
+
+.bc-signup form p {
+	display: none;
+}
+
+#simple-banner {
+	display: none;
+}
+
+.page-id-31221 #simple-banner {
+	display: block !important;
+}
+
+.page-id-31221 .simple-banner-text {
+	font-family: proximanova,Arial,Helvetica,Geneva,sans-serif;
+	font-size: 1em;
+}
+
+@media only screen and (max-width: 425px) { 
+	.nav-links {
+		line-height: 3em;
+	}
+	.bc-signup {
+		text-align: center;
+	}
+	.bc-signup span {
+		background-position: 0 11px;
+		display: inline-block;
+		margin: 0 auto;
+		text-align: center;
+		width: 117px;
+	}
+	.bc-signup .email-submit {
+		float: none;
+	}
+	
+	.page-id-31221 #cmh {
+		padding-top: 80px;
+	}
+	
+}
+
+/* Preserve theme styling for comment forms */
+.wpsso-rar input[type="submit"] {
+	color: #fff !important;
+	font-size: 16px !important;
+	line-height: 1.2 !important;
+	background-color: #121212 !important;
+	font-family: "proximanova", Arial, Helvetica, Geneva, sans-serif !important;
+	font-weight: bold !important;
+	text-transform: uppercase !important;
+	letter-spacing: .15em !important;
+	cursor: pointer !important;
+	margin-top: 5px !important;
+	padding: 9px 16px !important;
+	-webkit-transition: all .2s ease-in-out !important;
+	-moz-transition: all .2s ease-in-out !important;
+	transition: all .2s ease-in-out !important;
+	border-style: none !important;
+	text-decoration: none !important;
+	width: auto !important;
+}
+
+.wpsso-rar input[type="submit"]:hover {
+	background-color: #afaeaf;
+}	
+
+a.dd-fullwidth-button {
+	background: #121212 !important;
+	border-bottom: none !important;
+	box-shadow: none !important;
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	font-family: proximanova,Arial,Helvetica,Geneva,sans-serif;
+	font-weight: 700;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+a.dd-fullwidth-button:hover {
+	background: #afaeaf !important;
+	color: #fff !important;
+}
+
+h1.archivetitle {
+	font-size: 20px !important;
+}
+
+h1.pagination-header {
+	margin-top: 20px;
+}
+
+/** WP Shopify - Floating Cart */
+
+.wpshopify [data-wps-is-client-component-wrapper][data-wps-client-component-type="cart"] {
+	display: none;
+}
+
+.wps-btn-cart.wps-cart-icon-fixed {
+	background: #121212 !important;
+}
+
+.wps-btn.wps-btn-secondary.wps-add-to-cart {
+    background: 
+    #121212 !important;
+    border-radius: 0;
+}		</style>
+		
+</head>
+
+<body class="post-template-default single single-post postid-31641 single-format-standard">
+
+	
+	<div id="cmh" class="layout-left text-dark">
+		
+		<div id="cmtb" style="background-color: rgba(255,255,255, 0.95);">
+			
+			<div id="cmfw">
+				<form method="get" class="search-form" action="https://damndelicious.net/">
+	<input type="text" class="search-input" name="s" id="s" value="" placeholder="search..." />
+	<button type="submit" class="btn btn-success search-submit">
+		<i class="fa fa-search"></i>
+	</button>
+</form>
+			</div>
+			
+			<a href="https://damndelicious.net/" id="custom-mobile-logo-link">
+				<img src="https://s23209.pcdn.co/wp-content/themes/damndelicious2018/mobile-header/logo-mobile.png" alt="Damn Delicious" />
+			</a>
+			
+			<div id="cmhb">
+				<div id="mt">
+					<span></span>
+				</div>
+			</div>
+			
+			<div id="cms">
+				<i class="far fa-search"></i>
+				<i class="fal fa-times"></i>
+			</div>
+			
+		</div>
+		
+		<div id="cmmc" style="background-color: rgba(255,255,255, 0.95);">
+				
+			<ul id="custom-mobile-menu" class="custom-mobile-menu"><li id="menu-item-655" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-655"><a href="https://damndelicious.net">Home</a></li>
+<li id="menu-item-16604" class="recipes menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16604"><a href="https://damndelicious.net/recipe-index/">Browse Recipes</a>
+<ul class="sub-menu">
+	<li id="menu-item-26772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26772"><a href="https://damndelicious.net/recipe-index/">Recipes by Category</a>
+	<ul class="sub-menu">
+		<li id="menu-item-16605" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16605"><a href="https://damndelicious.net/category/appetizer/">appetizer</a></li>
+		<li id="menu-item-16606" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16606"><a href="https://damndelicious.net/category/asian-inspired/">asian inspired</a></li>
+		<li id="menu-item-27078" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27078"><a href="https://damndelicious.net/category/breakfast/">breakfast</a></li>
+		<li id="menu-item-28977" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28977"><a href="https://damndelicious.net/category/freezer-friendly/">freezer friendly</a></li>
+		<li id="menu-item-28976" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-28976"><a href="https://damndelicious.net/category/instant-pot-recipes/">instant pot</a></li>
+		<li id="menu-item-26780" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26780"><a href="https://damndelicious.net/category/meal-prep/">meal prep</a></li>
+		<li id="menu-item-16613" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16613"><a href="https://damndelicious.net/category/entree/quick-easy/">quick &#038; easy</a></li>
+		<li id="menu-item-16616" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16616"><a href="https://damndelicious.net/category/side-dish/">side dish</a></li>
+		<li id="menu-item-16617" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16617"><a href="https://damndelicious.net/category/slow-cooker/">slow cooker</a></li>
+		<li id="menu-item-16618" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16618"><a href="https://damndelicious.net/category/soup/">soup</a></li>
+		<li id="menu-item-26774" class="bold menu-item menu-item-type-post_type menu-item-object-page menu-item-26774"><a href="https://damndelicious.net/recipe-index/">MORE&#8230;</a></li>
+	</ul>
+</li>
+	<li id="menu-item-27081" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-27081"><a href="https://damndelicious.net/recipe-index/">Recipes by Season</a>
+	<ul class="sub-menu">
+		<li id="menu-item-27082" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27082"><a href="https://damndelicious.net/category/christmas/">christmas</a></li>
+		<li id="menu-item-27083" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27083"><a href="https://damndelicious.net/category/fall/">fall</a></li>
+		<li id="menu-item-27084" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27084"><a href="https://damndelicious.net/category/game-day/">game day</a></li>
+		<li id="menu-item-27085" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-27085"><a href="https://damndelicious.net/category/summer/">summer</a></li>
+		<li id="menu-item-27086" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27086"><a href="https://damndelicious.net/category/thanksgiving/">thanksgiving</a></li>
+		<li id="menu-item-27087" class="bold menu-item menu-item-type-post_type menu-item-object-page menu-item-27087"><a href="https://damndelicious.net/recipe-index/">MORE</a></li>
+	</ul>
+</li>
+	<li id="menu-item-27080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27080"><a href="https://damndelicious.net/recipe-index/">Recipes by Ingredient</a></li>
+	<li id="menu-item-27079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27079"><a href="https://damndelicious.net/recipe-index/">View All Recipes »</a></li>
+</ul>
+</li>
+<li id="menu-item-30180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30180"><a href="#">Cookbook</a>
+<ul class="sub-menu">
+	<li id="menu-item-30159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30159"><a href="https://damndelicious.net/damn-delicious-100-super-easy-super-fast-recipes/">Damn Delicious</a></li>
+	<li id="menu-item-30158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30158"><a href="https://damndelicious.net/damn-delicious-meal-prep-115-easy-recipes-for-low-calorie-high-energy-living/">Damn Delicious Meal Prep</a></li>
+</ul>
+</li>
+<li id="menu-item-656" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-656"><a href="https://damndelicious.net/about-me/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-26771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26771"><a href="https://damndelicious.net/about-me/">About Chungah</a></li>
+	<li id="menu-item-29152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29152"><a href="https://damndelicious.net/team/">Meet the Team</a></li>
+	<li id="menu-item-1493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1493"><a href="https://damndelicious.net/contact-me/">Contact</a></li>
+	<li id="menu-item-659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-659"><a href="https://damndelicious.net/press/">Press</a></li>
+	<li id="menu-item-7270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7270"><a title="FAQ" href="https://damndelicious.net/about-me/faq/">FAQ</a></li>
+	<li id="menu-item-1322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1322"><a href="https://damndelicious.net/work/">Work With Me</a></li>
+</ul>
+</li>
+<li id="menu-item-31648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31648"><a href="https://damn-delicious-inc.myshopify.com/">Store</a></li>
+</ul>			
+							<div id="cmwa">
+					<div id="custom_html-3" class="widget_text widget-odd widget-last widget-first widget-1 social widget_custom_html"><h5>Follow Me!</h5><div class="textwidget custom-html-widget"><a href="/feed/" title="RSS" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="https://www.facebook.com/damndeliciousblog" title="Facebook" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="http://pinterest.com/damndelicious/" title="Pinterest" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-pinterest-p fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="http://instagram.com/damn_delicious" title="Instagram" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="https://twitter.com/damn_delicious" title="Twitter" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="https://www.youtube.com/c/damndeliciousblog" title="YouTube" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+	</span>
+</a></div></div>				</div>
+						
+		</div>
+		
+	</div>
+	
+
+<div id="page_wrap" class="container row">
+
+<div id="header" class="header">
+<div class="wrap">
+
+<div class="logo">
+	<a href="https://damndelicious.net"></a>
+</div>
+
+<nav id="top" class="top-nav">
+
+	<div class="social">
+		<a href="/feed/" title="RSS" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="https://www.facebook.com/damndeliciousblog" title="Facebook" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="http://pinterest.com/damndelicious/" title="Pinterest" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-pinterest-p fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="http://instagram.com/damn_delicious" title="Instagram" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="https://twitter.com/damn_delicious" title="Twitter" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="https://www.youtube.com/c/damndeliciousblog" title="YouTube" target="_blank" >
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+	</div>
+
+	<div class="header-search">
+		<form method="get" class="search-form" action="https://damndelicious.net/">
+		<input type="search" class="search-input" name="s" id="s" value="" placeholder="search" />
+		<button type="submit" class="btn btn-success search-submit">
+			<i class="fa fa-search"></i>
+		</button>
+		</form>
+	</div>
+
+	
+</nav>
+
+<nav id="main" class="main-nav">
+	<ul id="mainmenu" class="mainmenu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-655"><a href="https://damndelicious.net">Home</a></li>
+<li class="recipes menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16604"><a href="https://damndelicious.net/recipe-index/">Browse Recipes</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26772"><a href="https://damndelicious.net/recipe-index/">Recipes by Category</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16605"><a href="https://damndelicious.net/category/appetizer/">appetizer</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16606"><a href="https://damndelicious.net/category/asian-inspired/">asian inspired</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27078"><a href="https://damndelicious.net/category/breakfast/">breakfast</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28977"><a href="https://damndelicious.net/category/freezer-friendly/">freezer friendly</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-28976"><a href="https://damndelicious.net/category/instant-pot-recipes/">instant pot</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26780"><a href="https://damndelicious.net/category/meal-prep/">meal prep</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16613"><a href="https://damndelicious.net/category/entree/quick-easy/">quick &#038; easy</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16616"><a href="https://damndelicious.net/category/side-dish/">side dish</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16617"><a href="https://damndelicious.net/category/slow-cooker/">slow cooker</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16618"><a href="https://damndelicious.net/category/soup/">soup</a></li>
+		<li class="bold menu-item menu-item-type-post_type menu-item-object-page menu-item-26774"><a href="https://damndelicious.net/recipe-index/">MORE&#8230;</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-27081"><a href="https://damndelicious.net/recipe-index/">Recipes by Season</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27082"><a href="https://damndelicious.net/category/christmas/">christmas</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27083"><a href="https://damndelicious.net/category/fall/">fall</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27084"><a href="https://damndelicious.net/category/game-day/">game day</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-27085"><a href="https://damndelicious.net/category/summer/">summer</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27086"><a href="https://damndelicious.net/category/thanksgiving/">thanksgiving</a></li>
+		<li class="bold menu-item menu-item-type-post_type menu-item-object-page menu-item-27087"><a href="https://damndelicious.net/recipe-index/">MORE</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27080"><a href="https://damndelicious.net/recipe-index/">Recipes by Ingredient</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27079"><a href="https://damndelicious.net/recipe-index/">View All Recipes »</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30180"><a href="#">Cookbook</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30159"><a href="https://damndelicious.net/damn-delicious-100-super-easy-super-fast-recipes/">Damn Delicious</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30158"><a href="https://damndelicious.net/damn-delicious-meal-prep-115-easy-recipes-for-low-calorie-high-energy-living/">Damn Delicious Meal Prep</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-656"><a href="https://damndelicious.net/about-me/">About</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26771"><a href="https://damndelicious.net/about-me/">About Chungah</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29152"><a href="https://damndelicious.net/team/">Meet the Team</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1493"><a href="https://damndelicious.net/contact-me/">Contact</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-659"><a href="https://damndelicious.net/press/">Press</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7270"><a title="FAQ" href="https://damndelicious.net/about-me/faq/">FAQ</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1322"><a href="https://damndelicious.net/work/">Work With Me</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31648"><a href="https://damn-delicious-inc.myshopify.com/">Store</a></li>
+	</ul>
+</nav>
+
+<div class="clear"></div>
+</div>
+</div> <!--end .header-->
+
+
+<div id="custom_html-5" class="widget_text widget-odd widget-last widget-first widget-1 subscribe widget_custom_html"><div class="widget_text wrap subscribe-wrap"><h3 class="widget-title">Get the <em>Latest Recipes</em> Right in your Inbox:</h3><div class="textwidget custom-html-widget"><!-- Begin MailChimp Signup Form -->
+
+<form action="http://damndelicious.us5.list-manage.com/subscribe/post?u=e81eb9facd120894de0e61e0d&amp;id=ab2b965540" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate email-form" target="_blank" novalidate>
+
+<input type="email" value="" name="EMAIL" placeholder="email address" class="required email email-input" id="mce-EMAIL">
+
+<input type="submit" value="Sign Up &raquo;" name="SUBMIT" id="mc-embedded-submit" class="button email-submit">
+
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	
+</form>
+
+<!--End mc_embed_signup-->
+</div></div></div>
+
+<div class="wrapper">
+<div id="content" class="col span_10 clr span_content">
+
+<article class="post single-post-content">
+
+	<div class="post-meta post-date">
+		August 8, 2020	</div>
+	<h1 class="post-title">Instant Pot BBQ Pulled Pork</h1>
+	<div class="fork"></div>
+	<div class="post-meta">
+		<em>posted in</em> <a href="https://damndelicious.net/category/entree/" rel="category tag">entree</a>, <a href="https://damndelicious.net/category/instant-pot-recipes/" rel="category tag">instant pot</a>, <a href="https://damndelicious.net/category/summer/" rel="category tag">summer</a>		<span class="spacer">//</span>
+		<i class="fa fa-comment"></i><a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comments">38 <em>Comments &raquo;</em></a>			</div>
+
+	<div style='display:none;' class='shareaholic-canvas' data-app='share_buttons' data-title='Instant Pot BBQ Pulled Pork' data-link='https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/' data-app-id-name='post_above_content'></div><div style="display: none;">
+<p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-31642 size-full" src="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-Pork.jpg" alt="Instant Pot BBQ Pulled Pork - The easiest + BEST pulled pork ever! Serve with your favorite BBQ sauce. So smoky, so flavorful, so juicy, and SO SO GOOD." width="760" height="2273" data-wp-pid="31642" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-Pork.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-Pork-500x1495.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-Pork-514x1536.jpg 514w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-Pork-685x2048.jpg 685w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-Pork-640x1914.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-Pork-535x1600.jpg 535w" sizes="(max-width: 760px) 100vw, 760px" /></p>
+</div>
+<p style="text-align: center;"><em>The easiest + BEST pulled pork ever! Serve with your favorite BBQ sauce. So smoky, so flavorful, so juicy, and SO SO GOOD.</em></p>
+<p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-31644 size-full" src="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0659.jpg" alt="Instant Pot BBQ Pulled Pork - The easiest + BEST pulled pork ever! Serve with your favorite BBQ sauce. So smoky, so flavorful, so juicy, and SO SO GOOD." width="760" height="1140" data-wp-pid="31644" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0659.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0659-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0659-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0659-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0659-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0659-600x900.jpg 600w" sizes="(max-width: 760px) 100vw, 760px" /></p>
+<p>Hello, summer. Please don&#8217;t leave us just yet. I&#8217;m not ready for the Chiberia snow. (FACTS ONLY &#8211; it snowed Halloween day in 2019.)</p>
+<p>No, but really, let&#8217;s get back to the best part of summer days: <a href="https://www.instagram.com/p/CBolQTIhW5k/">Pool parties</a>. <a href="https://www.instagram.com/p/CDCSszEjTVx/">COVID honeymoon boat trips</a>. And now, BBQ pulled pork sandwiches.</p>
+<p>That&#8217;s right. <span style="text-decoration: underline;"><strong>PULLED PORK SAMMIES</strong></span>. Smothered with your favorite BBQ sauce ever.</p>
+<p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-31643 size-full" src="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0638.jpg" alt="Instant Pot BBQ Pulled Pork - The easiest + BEST pulled pork ever! Serve with your favorite BBQ sauce. So smoky, so flavorful, so juicy, and SO SO GOOD." width="760" height="1140" data-wp-pid="31643" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0638.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0638-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0638-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0638-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0638-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0638-600x900.jpg 600w" sizes="(max-width: 760px) 100vw, 760px" /></p>
+<p>The instant pot takes care of all the hard work and all the time, infusing all the flavors into the most tender, juicy shredded pork in less than 90 minutes.</p>
+<p>When ready, drizzle with desired BBQ sauce (we recommend Stubb&#8217;s!) and serve with slaw, pickles and brioche buns. The pork also keeps VERY WELL so these can easily be prepared ahead of time for all the socially-distanced-get-togethers.</p>
+<p>Stay safe and stay cool, friends. And eat some pulled pork sammies immediately.</p>
+<p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-31645 size-full" src="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666.jpg" alt="Instant Pot BBQ Pulled Pork - The easiest + BEST pulled pork ever! Serve with your favorite BBQ sauce. So smoky, so flavorful, so juicy, and SO SO GOOD." width="760" height="1140" data-wp-pid="31645" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666-600x900.jpg 600w" sizes="(max-width: 760px) 100vw, 760px" /></p>
+<div class="recipe" itemscope itemtype="http://schema.org/Recipe"><div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                        <meta itemprop="ratingValue" content="4.95"/>
+                        <meta itemprop="ratingCount" content="19"/>
+                        <meta itemprop="worstRating" content="1"/>
+                        <meta itemprop="bestRating" content="5"/>
+                        <meta itemprop="reviewCount" content="32"/>
+                        <meta itemprop="itemReviewed" content="Instant Pot BBQ Pulled Pork"/>
+                    </div><div class="recipe-title"><img itemprop="image" src="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666-360x360.jpg" class="photo nopin" nopin="nopin" /><h2 itemprop="name">Instant Pot BBQ Pulled Pork</h2><div class="post-meta time"><p><strong>Yield:</strong> <span itemprop="recipeYield">8 servings</span></p><p><strong>prep time:</strong> <span>20 minutes</span></p><p><strong>cook time:</strong> <span>1 hour</span></p><p><strong>total time:</strong> <span>1 hour 20 minutes</span></p></div><div class="summary" itemprop="description"><p>The easiest + BEST pulled pork ever! Serve with your favorite BBQ sauce. So smoky, so flavorful, so juicy, and SO SO GOOD.</p>
+</div></div>
+                    
+                    <div class="printbutton">
+                        <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/print/" title="Print Recipe" class="print"><i class="fa fa-print"></i> Print Recipe</a>
+                    </div><div class="recipe-content">
+                            <div class="recipe-cat" itemprop="recipeCategory" style="display: none;">instant pot</div>
+                            <div class="recipe-keywords" itemprop="keywords" style="display: none;">Instant Pot BBQ Pulled Pork</div><span itemprop="prepTime" content="PT20M" style="display: none;" >20 minutes</span><span itemprop="cookTime" content="PT1H" style="display: none;">1 hour</span><div class="recipe-author" itemprop="author" style="display: none;">Chungah Rhee</div>
+                            <div class="photo2"><img itemprop="image" src="https://s23209.pcdn.co/wp-content/uploads/2020/08/Instant-Pot-BBQ-Pulled-PorkIMG_0666-360x360.jpg" class="photo nopin" nopin="nopin" /></div>
+                            <div class="left"><h3 id="ingredients" >Ingredients:</h3> <div class="ingredients"><ul>
+<li itemprop="ingredients">3 tablespoons brown sugar</li>
+<li itemprop="ingredients">4 teaspoons kosher salt</li>
+<li itemprop="ingredients">1 tablespoons paprika</li>
+<li itemprop="ingredients">2 teaspoons chili powder</li>
+<li itemprop="ingredients">1 teaspoon dried oregano</li>
+<li itemprop="ingredients">1 teaspoon garlic powder</li>
+<li itemprop="ingredients">1 teaspoon ground mustard</li>
+<li itemprop="ingredients">1/2 teaspoon cayenne pepper</li>
+<li itemprop="ingredients">1/2 teaspoon ground cumin</li>
+<li itemprop="ingredients">1/2 teaspoon black pepper</li>
+<li itemprop="ingredients">1 (4-pound) boneless pork shoulder, excess fat trimmed and cut into 3-inch chunks</li>
+<li itemprop="ingredients">1 tablespoon canola oil</li>
+<li itemprop="ingredients">1 cup chicken stock</li>
+<li itemprop="ingredients">6 tablespoons apple cider vinegar, divided</li>
+<li itemprop="ingredients">1 (18-ounce) bottle favorite bbq sauce (we love <a href="https://www.stubbsbbq.com/en-us">Stubb&#8217;s</a>)</li>
+</ul>
+</div></div>
+                            <div class="right"><h3 id="directions">Directions:</h3> <div class="instructions" itemprop="recipeInstructions"><ol>
+<li>Set a <a href="https://amzn.to/2YgUv5b" target="_blank" rel="noopener">6-qt Instant Pot®</a> to the high saute setting.</li>
+<li>In a small bowl, combine brown sugar, salt, paprika, chili powder, oregano, garlic powder, mustard, cayenne pepper, cumin and pepper. Season pork with brown sugar mixture.</li>
+<li>Heat canola oil; working in two batches, add pork and cook until evenly browned, about 3-4 minutes.</li>
+<li>Stir in chicken stock and 4 tablespoons vinegar, scraping any browned bits from the bottom of the pot. Select manual setting; adjust pressure to high, and set time for 40 minutes. When finished cooking, quick-release pressure according to manufacturer’s directions.</li>
+<li>Remove pork shoulder from the Instant Pot® and shred the meat using two forks; stir in remaining 2 tablespoons vinegar and season with salt and pepper, to taste, if needed.</li>
+<li>Serve immediately with your favorite bbq sauce.</li>
+</ol>
+</div></div>
+                            <div class="clear"></div></div><div class="recipe-ps">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <h4>Did you Make This Recipe?</h4>
+                            <p>Tag <a href="http://instagram.com/damn_delicious" target="_blank">@damn_delicious</a> on Instagram and hashtag it <em>#damndelicious</em>.</p>
+                    </div></div>
+<div style='display:none;' class='shareaholic-canvas' data-app='share_buttons' data-title='Instant Pot BBQ Pulled Pork' data-link='https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/' data-app-id-name='post_below_content'></div>
+	
+	<div class="post-meta meta-bottom meta-centered">
+		<div class="post-cats">
+		<a href="https://damndelicious.net/category/entree/" rel="category tag">entree</a> <a href="https://damndelicious.net/category/instant-pot-recipes/" rel="category tag">instant pot</a> <a href="https://damndelicious.net/category/summer/" rel="category tag">summer</a>		</div>
+
+		<div><i class="fa fa-comment"></i><a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comments">38 <em>Comments</em></a>		<span class="spacer">//</span>
+		<a href="#respond">Leave a Comment &raquo;</a>
+		</div>
+	</div>
+
+</article> <!-- end .post -->
+
+
+<div class="fork"></div>
+
+<div class="post-nav">
+	<div class="nav-previous"><a href="https://damndelicious.net/2020/08/01/easy-grilled-vegetables/"><em>&laquo; Previous Post</em>Easy Grilled Vegetables</a></div>
+	<div class="nav-next"><a href="https://damndelicious.net/2020/08/17/one-pot-chicken-and-mushroom-orzo/"><em>Next Post &raquo;</i>
+	</em>One Pot Chicken and Mushroom Orzo</a></div>
+</div>
+
+
+
+<div class="inner-post">
+	<div id="custom_html-6" class="widget_text widget-odd widget-last widget-first widget-1 subscribe widget widget_custom_html"><h3 class="widget-title">Get the <em>Latest Recipes</em> Right in your Inbox:</h3><div class="textwidget custom-html-widget"><!-- Begin MailChimp Signup Form -->
+
+<form action="http://damndelicious.us5.list-manage.com/subscribe/post?u=e81eb9facd120894de0e61e0d&amp;id=ab2b965540" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate email-form" target="_blank" novalidate>
+
+<input type="email" value="" name="EMAIL" placeholder="email address" class="required email email-input" id="mce-EMAIL">
+
+<input type="submit" value="Sign Up &raquo;" name="SUBMIT" id="mc-embedded-submit" class="button email-submit">
+
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	
+</form>
+
+<!--End mc_embed_signup-->
+</div></div></div>
+
+
+
+
+<div id="comments" class="comments-area">
+
+		
+	
+		<div id="respond" class="comment-respond">
+		<span class="wpsso-rar title-reply">
+<span class="comment-toggle-review"><!-- form label: Leave a Review --><h3 id="review-title" class="comment-review-title">Leave a Review</h3></span><!-- .comment-toggle-review -->
+<span class="comment-toggle-comment" style="display:none;"><!-- form label: Leave a Reply --><h3 id="reply-title" class="comment-reply-title">Leave a Review <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2020/08/08/instant-pot-bbq-pulled-pork/#respond" style="display:none;">Cancel reply</a></small></h3></span><!-- .comment-toggle-comment --></span><!-- .wpsso-rar.title-reply -->
+<form action="https://damndelicious.net/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><span class="wpsso-rar comment-field">
+<p class="comment-form-rating">
+<!-- form label: Your Rating --><label for="rating">Your Rating <span class="required">*</span></label>
+<select name="rating" id="rating">
+	<option value="">Rating&hellip;</option>
+	<option value="5">Excellent</option>
+	<option value="4">Good</option>
+	<option value="3">Average</option>
+	<option value="2">Not Good</option>
+	<option value="1">Awful</option>
+</select></p><!-- .comment-form-rating -->
+<p class="comment-form-comment">
+<span class="comment-toggle-review"><!-- form label: Your Review --><label for="review">Your Review <span class="required">*</span></label></span><!-- .comment-toggle-review -->
+<span class="comment-toggle-comment" style="display:none;"><!-- form label: Comment --><label for="comment">Comment</label></span><!-- .comment-toggle-comment --> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p></span><!-- .wpsso-rar.comment-field -->
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><span class="wpsso-rar submit-button">
+<span class="comment-toggle-review"><!-- form label: Post Review --><input name="%1$s" type="submit" id="%2$s" class="%3$s" value="Post Review"/></span><!-- .comment-toggle-review -->
+<span class="comment-toggle-comment" style="display:none;"><!-- form label: Post Comment --><!-- wpsso-rar comment label attribute missing in 'comment_field' value -->
+<input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /></span><!-- .comment-toggle-comment --></span><!-- .wpsso-rar.submit-button -->
+ <input type='hidden' name='comment_post_ID' value='31641' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d2b384d7f6" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="182"/></p></form>	</div><!-- #respond -->
+		
+	<div class="fork" style="margin:35px 0 50px"></div>
+	
+			<h3 id="comments">
+			38 comments		</h2>
+
+		
+		<ol id="comment-list" class="comment-list">
+				    <li class="comment even thread-even depth-1" id="li-comment-217525">
+	        <div id="comment-217525" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/02a64e08bf4f65f86a5d6be873abea2a?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/02a64e08bf4f65f86a5d6be873abea2a?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Pamela Koop</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-217525">
+                <time pubdate datetime="2020-12-20T12:07:23-08:00">
+                December 20, 2020 @ 12:07 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-217525' data-commentid="217525" data-postid="31641" data-belowelement="comment-217525" data-respondelement="respond" data-replyto="Reply to Pamela Koop" aria-label='Reply to Pamela Koop'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->It was delicious.  Question: Was I suppose to save the cooking liquid?  I through it out and mixed meat with Stubbs.  I really loved the flavor of the liquid, so I thought if I skimmed it, it would have been a good addition.  Wondered what you thought.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-215224">
+	        <div id="comment-215224" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/3e124c16446c0dffefabbfd8f53edf7f?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/3e124c16446c0dffefabbfd8f53edf7f?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Elizabeth Gray</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-215224">
+                <time pubdate datetime="2020-12-01T22:29:34-08:00">
+                December 1, 2020 @ 10:29 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-215224' data-commentid="215224" data-postid="31641" data-belowelement="comment-215224" data-respondelement="respond" data-replyto="Reply to Elizabeth Gray" aria-label='Reply to Elizabeth Gray'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->I&#8217;ve made several of your recipes and have never been disappointed. Love your style &#8211; simple but delicious.  I didn&#8217;t realize how late it was so I have a butt in the fridge covered in seasoning until tomorrow afternoon late so 2 questions:. Will a butt cook the same as a shoulder and will it be alright to sit in seasoning for the next 18 hours or so?<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-214267">
+	        <div id="comment-214267" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/13b7b81039f5ab97d54233912a1ffd94?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/13b7b81039f5ab97d54233912a1ffd94?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Rosa Scoddo-Sessa</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-214267">
+                <time pubdate datetime="2020-11-28T10:53:51-08:00">
+                November 28, 2020 @ 10:53 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-214267' data-commentid="214267" data-postid="31641" data-belowelement="comment-214267" data-respondelement="respond" data-replyto="Reply to Rosa Scoddo-Sessa" aria-label='Reply to Rosa Scoddo-Sessa'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->The best recipe for pulled pork!  Delicious!  I cooked it on the stove in a dutch oven pot.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-213008">
+	        <div id="comment-213008" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/ea998b5e87e4301e867dc7770441033f?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/ea998b5e87e4301e867dc7770441033f?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Kelly</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-213008">
+                <time pubdate datetime="2020-11-15T14:06:38-08:00">
+                November 15, 2020 @ 2:06 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-213008' data-commentid="213008" data-postid="31641" data-belowelement="comment-213008" data-respondelement="respond" data-replyto="Reply to Kelly" aria-label='Reply to Kelly'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Question&#8230;is the Kosher salt measure for the Morton salt or the other type? Thanks<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-212920">
+	        <div id="comment-212920" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/8e65b1db0141a709d8803fa7721a838e?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/8e65b1db0141a709d8803fa7721a838e?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Alesha</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-212920">
+                <time pubdate datetime="2020-11-14T14:25:20-08:00">
+                November 14, 2020 @ 2:25 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-212920' data-commentid="212920" data-postid="31641" data-belowelement="comment-212920" data-respondelement="respond" data-replyto="Reply to Alesha" aria-label='Reply to Alesha'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Thank you very much for making me a cook! Your recipes are so easy and delicious. I have never really considered myself good at cooking but your recipes have made me love being in the kitchen.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-210980">
+	        <div id="comment-210980" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/7f79dd5e4a1e68d2b16edc3d4461a684?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/7f79dd5e4a1e68d2b16edc3d4461a684?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>wendy</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-210980">
+                <time pubdate datetime="2020-10-22T09:00:16-07:00">
+                October 22, 2020 @ 9:00 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-210980' data-commentid="210980" data-postid="31641" data-belowelement="comment-210980" data-respondelement="respond" data-replyto="Reply to wendy" aria-label='Reply to wendy'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->can this be made in a slow cooker?<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-210868">
+	        <div id="comment-210868" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/6190a64d3be27833f1f4a558329e87b9?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/6190a64d3be27833f1f4a558329e87b9?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong><a href='https://www.dynamitebbq.com/' rel='external nofollow ugc' class='url'>Melita J.</a></strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-210868">
+                <time pubdate datetime="2020-10-20T17:26:21-07:00">
+                October 20, 2020 @ 5:26 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-210868' data-commentid="210868" data-postid="31641" data-belowelement="comment-210868" data-respondelement="respond" data-replyto="Reply to Melita J." aria-label='Reply to Melita J.'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->I am stockpiling a whole list of your recipes I need to try thanks to you!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-210379">
+	        <div id="comment-210379" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/b52c3a1a7c3066a4106eeda9088b5511?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/b52c3a1a7c3066a4106eeda9088b5511?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Amy Muller</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-210379">
+                <time pubdate datetime="2020-10-14T07:27:55-07:00">
+                October 14, 2020 @ 7:27 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-210379' data-commentid="210379" data-postid="31641" data-belowelement="comment-210379" data-respondelement="respond" data-replyto="Reply to Amy Muller" aria-label='Reply to Amy Muller'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Hi Chungah, this looks amazing. I&#8217;ve never made this before. I see that you tossed pickles, green onions, and shredded cabbage and carrots. Am I missing anything? Thanks!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-209238">
+	        <div id="comment-209238" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/4fc99f8299df0b078da9728c113c7e35?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/4fc99f8299df0b078da9728c113c7e35?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Traci Roberts</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-209238">
+                <time pubdate datetime="2020-09-28T18:35:04-07:00">
+                September 28, 2020 @ 6:35 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-209238' data-commentid="209238" data-postid="31641" data-belowelement="comment-209238" data-respondelement="respond" data-replyto="Reply to Traci Roberts" aria-label='Reply to Traci Roberts'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Absolute perfection!  As good as my favorite BBQ place and so much cheaper and easier thanks to this recipe.   It&#8217;s my go-to and has never disappointed. Thank you for posting Instant Pot recipes!!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-209190">
+	        <div id="comment-209190" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/fc226199bcbb8d86772821dbf164f49d?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/fc226199bcbb8d86772821dbf164f49d?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>dawn prince</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-209190">
+                <time pubdate datetime="2020-09-28T05:31:44-07:00">
+                September 28, 2020 @ 5:31 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-209190' data-commentid="209190" data-postid="31641" data-belowelement="comment-209190" data-respondelement="respond" data-replyto="Reply to dawn prince" aria-label='Reply to dawn prince'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->easy to follow. just learning to use my instapot amd loved the food I made today.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-208738">
+	        <div id="comment-208738" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/4c213a805697480c423933b028a9f108?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/4c213a805697480c423933b028a9f108?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Danica</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-208738">
+                <time pubdate datetime="2020-09-21T15:25:11-07:00">
+                September 21, 2020 @ 3:25 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-208738' data-commentid="208738" data-postid="31641" data-belowelement="comment-208738" data-respondelement="respond" data-replyto="Reply to Danica" aria-label='Reply to Danica'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->This was OUTSTANDING!  Best shredded pork I&#8217;ve made.  I didn&#8217;t even use BBQ sauce on some of it because the flavor was so good with just the rub.  Will definitely be making it again.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-208361">
+	        <div id="comment-208361" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/303b96e9e8c1bfdad812805f4c44b80a?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/303b96e9e8c1bfdad812805f4c44b80a?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Darla</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-208361">
+                <time pubdate datetime="2020-09-16T06:48:45-07:00">
+                September 16, 2020 @ 6:48 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-208361' data-commentid="208361" data-postid="31641" data-belowelement="comment-208361" data-respondelement="respond" data-replyto="Reply to Darla" aria-label='Reply to Darla'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Great recipe! I have made it 2 times. Everyone I share it with love it.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-207467">
+	        <div id="comment-207467" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/6c94d06ca231ec98faac046a8d33d033?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/6c94d06ca231ec98faac046a8d33d033?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Kim</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-207467">
+                <time pubdate datetime="2020-09-03T18:06:13-07:00">
+                September 3, 2020 @ 6:06 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-207467' data-commentid="207467" data-postid="31641" data-belowelement="comment-207467" data-respondelement="respond" data-replyto="Reply to Kim" aria-label='Reply to Kim'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->This is the best pulled pork recipe I&#8217;ve tried. So flavorful it didn&#8217;t even need the BBQ sauce! It just fell right apart and was so moist. Thanks for the great recipe!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-207403">
+	        <div id="comment-207403" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/2423320c4a57fa0181dfa8f88455eecc?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/2423320c4a57fa0181dfa8f88455eecc?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Arya</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-207403">
+                <time pubdate datetime="2020-09-02T13:44:57-07:00">
+                September 2, 2020 @ 1:44 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-207403' data-commentid="207403" data-postid="31641" data-belowelement="comment-207403" data-respondelement="respond" data-replyto="Reply to Arya" aria-label='Reply to Arya'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 4 out of 5"><span style="width:80%;">Rated 4 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->pretty good. but not the best pulled pork in the world.<br />
+I  ate it in a sandwich and later in the week made nachos using cheddar cheese+black beans + pineapple + bbq pork<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-207350">
+	        <div id="comment-207350" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/38cf52b276ad52629020ec246224808b?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/38cf52b276ad52629020ec246224808b?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>la ruka</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-207350">
+                <time pubdate datetime="2020-09-01T18:45:45-07:00">
+                September 1, 2020 @ 6:45 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-207350' data-commentid="207350" data-postid="31641" data-belowelement="comment-207350" data-respondelement="respond" data-replyto="Reply to la ruka" aria-label='Reply to la ruka'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->The BOMB DIGGY! FOR REAL! Thank you.  I addes 1 up of freshly blended pineapple juice to the acv and chicken stock.  Next time i will use half the chicken stock.  My family from 2 to 43 ate it up.  We all agreed that it doesn&#8217;t need sauce but it is added bonus.<br />
+You have made a fan out of me!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-207231">
+	        <div id="comment-207231" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/ce72184e4d7545293102438f75262769?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/ce72184e4d7545293102438f75262769?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Cip</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-207231">
+                <time pubdate datetime="2020-08-31T23:15:30-07:00">
+                August 31, 2020 @ 11:15 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-207231' data-commentid="207231" data-postid="31641" data-belowelement="comment-207231" data-respondelement="respond" data-replyto="Reply to Cip" aria-label='Reply to Cip'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Hi, new to instant Pot. So&#8230;<br />
+At step 3, all is done in the Instant Pot or a separate pan and than transferred to IP?<br />
+Thank you<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment even depth-2" id="li-comment-208453">
+	        <div id="comment-208453" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/d950768bb325ddd14845e88192415304?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/d950768bb325ddd14845e88192415304?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Sheana</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-208453">
+                <time pubdate datetime="2020-09-17T12:22:20-07:00">
+                September 17, 2020 @ 12:22 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-208453' data-commentid="208453" data-postid="31641" data-belowelement="comment-208453" data-respondelement="respond" data-replyto="Reply to Sheana" aria-label='Reply to Sheana'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->You can just do step 3 in the instapot, save having to clean up another pot!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment odd alt thread-even depth-1" id="li-comment-206577">
+	        <div id="comment-206577" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/7e2157786883c74e0f3ff4b5667f96f9?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/7e2157786883c74e0f3ff4b5667f96f9?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Mandy Omaha</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-206577">
+                <time pubdate datetime="2020-08-28T13:21:22-07:00">
+                August 28, 2020 @ 1:21 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-206577' data-commentid="206577" data-postid="31641" data-belowelement="comment-206577" data-respondelement="respond" data-replyto="Reply to Mandy Omaha" aria-label='Reply to Mandy Omaha'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Question — if I only have 1 pound of pork, how much chicken stock should I use? <!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-205479">
+	        <div id="comment-205479" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/ef95a084fcdd2b13f94bbb993a106b3e?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/ef95a084fcdd2b13f94bbb993a106b3e?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Bethany</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-205479">
+                <time pubdate datetime="2020-08-17T06:48:39-07:00">
+                August 17, 2020 @ 6:48 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-205479' data-commentid="205479" data-postid="31641" data-belowelement="comment-205479" data-respondelement="respond" data-replyto="Reply to Bethany" aria-label='Reply to Bethany'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Is it possible to also list the crock pot version on your recipes??  I&#8217;m sure I&#8217;m not the only one that still likes using a crock pot.  There are so many recipes lately on this website that look so good and then I go to click on them and it says &#8220;Instant  Pot&#8221; so I have to pass on it.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment odd alt depth-2" id="li-comment-206234">
+	        <div id="comment-206234" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/e4d730956059814b0c888d220ad04a1d?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/e4d730956059814b0c888d220ad04a1d?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Alyssa</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-206234">
+                <time pubdate datetime="2020-08-25T07:55:09-07:00">
+                August 25, 2020 @ 7:55 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-206234' data-commentid="206234" data-postid="31641" data-belowelement="comment-206234" data-respondelement="respond" data-replyto="Reply to Alyssa" aria-label='Reply to Alyssa'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Yes to this!!  I want to make this so bad, but I only have a crock pot as well!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment even depth-3" id="li-comment-208454">
+	        <div id="comment-208454" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/d950768bb325ddd14845e88192415304?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/d950768bb325ddd14845e88192415304?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Sheana</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-208454">
+                <time pubdate datetime="2020-09-17T12:23:30-07:00">
+                September 17, 2020 @ 12:23 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-208454' data-commentid="208454" data-postid="31641" data-belowelement="comment-208454" data-respondelement="respond" data-replyto="Reply to Sheana" aria-label='Reply to Sheana'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->I would just use the ingredients to this recipe and follow the instructions on a slow cooker recipe.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment odd alt thread-even depth-1" id="li-comment-205304">
+	        <div id="comment-205304" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/9ce8143bc2ed269468425bf54418bcfb?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/9ce8143bc2ed269468425bf54418bcfb?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Anne Marie Thomas</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-205304">
+                <time pubdate datetime="2020-08-16T10:35:05-07:00">
+                August 16, 2020 @ 10:35 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-205304' data-commentid="205304" data-postid="31641" data-belowelement="comment-205304" data-respondelement="respond" data-replyto="Reply to Anne Marie Thomas" aria-label='Reply to Anne Marie Thomas'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Excellent!!  Honestly, the best I&#8217;ve ever had.  I used fresh pressed Fuji apple juice instead of chicken broth.    The pork fell apart and was absolutely perfect.   I used a barbecue sauce called Sweet Bay Barbecue by Schlotterbeck and Foss (S&amp;F)  sold at whole foods.  But, I also love it with Stubbs sweet heat.   Make this!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-205184">
+	        <div id="comment-205184" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/3d0ad528843b66354cfd0f2978cd3147?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/3d0ad528843b66354cfd0f2978cd3147?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong><a href='https://cookingfever-modapk.com' rel='external nofollow ugc' class='url'>Thomas Cathey</a></strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-205184">
+                <time pubdate datetime="2020-08-15T23:46:19-07:00">
+                August 15, 2020 @ 11:46 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-205184' data-commentid="205184" data-postid="31641" data-belowelement="comment-205184" data-respondelement="respond" data-replyto="Reply to Thomas Cathey" aria-label='Reply to Thomas Cathey'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->These were so simple and so good! I made two batches for a gathering and they were all gone.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-even depth-1" id="li-comment-204795">
+	        <div id="comment-204795" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/b038668f3738a7d7b3b84bbecc40a249?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/b038668f3738a7d7b3b84bbecc40a249?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Austin</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204795">
+                <time pubdate datetime="2020-08-12T13:21:36-07:00">
+                August 12, 2020 @ 1:21 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204795' data-commentid="204795" data-postid="31641" data-belowelement="comment-204795" data-respondelement="respond" data-replyto="Reply to Austin" aria-label='Reply to Austin'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->This came out great for us. We used pork tenderloin instead of pork shoulder because it was what I had on hand; the pulled pork came out quite well still. </p>
+<p>The base rub for the pork is excellent, and adding the barbecue sauce just before I serve (or reheat and serve since this makes great leftovers) is a great way to change the taste of the meal a bit, too.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-204675">
+	        <div id="comment-204675" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/589236f35d4f6a533dc3f155de464997?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/589236f35d4f6a533dc3f155de464997?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Dana Foster</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204675">
+                <time pubdate datetime="2020-08-11T17:17:15-07:00">
+                August 11, 2020 @ 5:17 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204675' data-commentid="204675" data-postid="31641" data-belowelement="comment-204675" data-respondelement="respond" data-replyto="Reply to Dana Foster" aria-label='Reply to Dana Foster'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Just made this recipe in the crockpot and it was delicious! I only did the dry rub on the pork shoulder. No vinegar or additional liquid. Cooked on low 8 hours and it turned out so tender. Cayenne does add a bit of a kick, which I love. Served it on potato rolls with cole slaw. Sooooo good&#8230;thanks for the great recipe!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-even depth-1" id="li-comment-204643">
+	        <div id="comment-204643" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/3d8413941801c4cd60ce23adf4c09a1f?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/3d8413941801c4cd60ce23adf4c09a1f?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Nai</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204643">
+                <time pubdate datetime="2020-08-11T09:26:14-07:00">
+                August 11, 2020 @ 9:26 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204643' data-commentid="204643" data-postid="31641" data-belowelement="comment-204643" data-respondelement="respond" data-replyto="Reply to Nai" aria-label='Reply to Nai'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->This recipe looks delicious! Are their other types/cuts of meat that can be substituted if you don&#8217;t want pork?<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment even depth-2" id="li-comment-204660">
+	        <div id="comment-204660" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/c5cd5757f09cd86ac67afda536a98e2e?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/c5cd5757f09cd86ac67afda536a98e2e?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Amy</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204660">
+                <time pubdate datetime="2020-08-11T13:25:56-07:00">
+                August 11, 2020 @ 1:25 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204660' data-commentid="204660" data-postid="31641" data-belowelement="comment-204660" data-respondelement="respond" data-replyto="Reply to Amy" aria-label='Reply to Amy'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->yes I&#8217;d love to know as well, pork is hard to come by where I live. <!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-204620">
+	        <div id="comment-204620" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/17e16d4c342864e5b4ef72b6566d480d?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/17e16d4c342864e5b4ef72b6566d480d?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Natalie</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204620">
+                <time pubdate datetime="2020-08-10T22:04:05-07:00">
+                August 10, 2020 @ 10:04 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204620' data-commentid="204620" data-postid="31641" data-belowelement="comment-204620" data-respondelement="respond" data-replyto="Reply to Natalie" aria-label='Reply to Natalie'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->This was outstanding! I’ve made pulled pork before but it usually gets its flavor from the bbq sauce. This one is excellent even without the sauce. It far exceeded my expectations!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-204571">
+	        <div id="comment-204571" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/ecd1aeb279c33cb6c1d6443f7852708e?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/ecd1aeb279c33cb6c1d6443f7852708e?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Vivian</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204571">
+                <time pubdate datetime="2020-08-10T13:56:36-07:00">
+                August 10, 2020 @ 1:56 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204571' data-commentid="204571" data-postid="31641" data-belowelement="comment-204571" data-respondelement="respond" data-replyto="Reply to Vivian" aria-label='Reply to Vivian'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->This was excellent! I agree about the choice of Stubb&#8217;s too. I&#8217;d sure like a version of this recipe for beef if you can manage it.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-204563">
+	        <div id="comment-204563" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/32a9e4e32f509f8de939b146e73ea51e?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/32a9e4e32f509f8de939b146e73ea51e?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Veronica</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204563">
+                <time pubdate datetime="2020-08-10T12:51:01-07:00">
+                August 10, 2020 @ 12:51 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204563' data-commentid="204563" data-postid="31641" data-belowelement="comment-204563" data-respondelement="respond" data-replyto="Reply to Veronica" aria-label='Reply to Veronica'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Do you have a recipe for the slaw?<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment even depth-2" id="li-comment-211256">
+	        <div id="comment-211256" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/84f34d1b9c7a234039a5d1af8121e920?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/84f34d1b9c7a234039a5d1af8121e920?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Nicole</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-211256">
+                <time pubdate datetime="2020-10-26T07:13:26-07:00">
+                October 26, 2020 @ 7:13 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-211256' data-commentid="211256" data-postid="31641" data-belowelement="comment-211256" data-respondelement="respond" data-replyto="Reply to Nicole" aria-label='Reply to Nicole'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->would love the slaw recipe too!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment odd alt thread-even depth-1" id="li-comment-204528">
+	        <div id="comment-204528" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/01ddb674c265cb0f12123afcfe6a5de4?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/01ddb674c265cb0f12123afcfe6a5de4?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Rewari</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204528">
+                <time pubdate datetime="2020-08-10T05:36:32-07:00">
+                August 10, 2020 @ 5:36 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204528' data-commentid="204528" data-postid="31641" data-belowelement="comment-204528" data-respondelement="respond" data-replyto="Reply to Rewari" aria-label='Reply to Rewari'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->This is our go to recipe and the family loves it! My family raves about it!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-204520">
+	        <div id="comment-204520" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/42389670d1e3a81d966da8fc3dc6af18?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/42389670d1e3a81d966da8fc3dc6af18?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>KK</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204520">
+                <time pubdate datetime="2020-08-10T04:11:29-07:00">
+                August 10, 2020 @ 4:11 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204520' data-commentid="204520" data-postid="31641" data-belowelement="comment-204520" data-respondelement="respond" data-replyto="Reply to KK" aria-label='Reply to KK'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Is there a recipe for the slaw?</p>
+<p>Thanks!!!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-even depth-1" id="li-comment-204489">
+	        <div id="comment-204489" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/e32232108f08782ac75c72ccefb35e06?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/e32232108f08782ac75c72ccefb35e06?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong><a href='http://www.NinaLeonePhotography.com' rel='external nofollow ugc' class='url'>NINA LEONE</a></strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204489">
+                <time pubdate datetime="2020-08-09T19:50:43-07:00">
+                August 9, 2020 @ 7:50 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204489' data-commentid="204489" data-postid="31641" data-belowelement="comment-204489" data-respondelement="respond" data-replyto="Reply to NINA LEONE" aria-label='Reply to NINA LEONE'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->This sounds great. Question: ingredients list says 1/2 cayenne pepper. Is that supposed to be 1/2 tsp? Thanks! Can&#8217;t wait to make this.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-204451">
+	        <div id="comment-204451" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/6df7dac96c6e8323347b917bac26a01c?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/6df7dac96c6e8323347b917bac26a01c?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Kitty B</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204451">
+                <time pubdate datetime="2020-08-09T13:24:28-07:00">
+                August 9, 2020 @ 1:24 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204451' data-commentid="204451" data-postid="31641" data-belowelement="comment-204451" data-respondelement="respond" data-replyto="Reply to Kitty B" aria-label='Reply to Kitty B'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->This recipe sounds delightful!  Unfortunately, I don&#8217;t have an Instant Pot but I do have a crockpot.  Do you have an recommended cooking times for the pork in a crockpot?  Thanks!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment byuser comment-author-jananawartschi odd alt depth-2" id="li-comment-204458">
+	        <div id="comment-204458" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/bbab11aae293adf062a1e2ec9ca6b429?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/bbab11aae293adf062a1e2ec9ca6b429?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong><a href='http://www.jananawartschi.com' rel='external nofollow ugc' class='url'>Jana @ Damn Delicious</a></strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204458">
+                <time pubdate datetime="2020-08-09T13:46:47-07:00">
+                August 9, 2020 @ 1:46 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204458' data-commentid="204458" data-postid="31641" data-belowelement="comment-204458" data-respondelement="respond" data-replyto="Reply to Jana @ Damn Delicious" aria-label='Reply to Jana @ Damn Delicious'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Hi Kitty! We don&#8217;t have an exact slow cooker version but we have these <a href="https://damndelicious.net/2014/10/10/slow-cooker-pork-carnitas/" rel="noopener noreferrer" target="_blank">Slow Cooker Pork Carnitas</a> that you can adapt from. </p>
+<p>As always, please use your best judgment when making substitutions and modifications. Hope that helps!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-204448">
+	        <div id="comment-204448" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/cebe2d3b4d1647bb576a309c7e71b34c?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/cebe2d3b4d1647bb576a309c7e71b34c?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Sue D</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204448">
+                <time pubdate datetime="2020-08-09T12:48:53-07:00">
+                August 9, 2020 @ 12:48 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204448' data-commentid="204448" data-postid="31641" data-belowelement="comment-204448" data-respondelement="respond" data-replyto="Reply to Sue D" aria-label='Reply to Sue D'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->I haven’t tried this yet. But I intend to very soon. This is the first recipe I’ve seen that doesn’t require cooking the pork in the bbq sauce. Can’t wait to try.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-204399">
+	        <div id="comment-204399" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/75bd289f76c96ca2b53211951f13dd69?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/75bd289f76c96ca2b53211951f13dd69?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Frank</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/08/08/instant-pot-bbq-pulled-pork/#comment-204399">
+                <time pubdate datetime="2020-08-09T05:41:38-07:00">
+                August 9, 2020 @ 5:41 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204399' data-commentid="204399" data-postid="31641" data-belowelement="comment-204399" data-respondelement="respond" data-replyto="Reply to Frank" aria-label='Reply to Frank'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Just curious as to what the slaw is and if there is a recipe for that too.  <!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+
+</div><!-- #comments -->
+
+</div> <!-- end #content -->
+
+<div class="sidebar jw-sidebar row span_6 clr span_sidebar">
+			
+	<div class="topsidebar">
+	<div id="simpleimage-2" class="widget-odd widget-first widget-1 about widget widget_simpleimage">
+	<p class="simple-image nopin">
+		<a href="/about-me/"><img width="500" height="680" src="https://s23209.pcdn.co/wp-content/uploads/2018/06/about.jpg" class="attachment-full size-full" alt="" loading="lazy" nopin="nopin" data-wp-pid="29472" /></a>	</p>
+
+
+<p>Come join me in my culinary adventures where we'll be using <strong>simple, fresh ingredients</strong> and transforming them into <em>sophisticated and elegant meals</em> for the <strong>everyday home cook</strong>.</p>
+
+	<p class="more">
+		<a href="/about-me/">More About Me »</a>	</p>
+</div><div id="text-26" class="widget-even widget-2 cookbook widget widget_text">			<div class="textwidget"><p><a href="https://damn-delicious-inc.myshopify.com/"><img class="alignnone src=" src="https://s23209.pcdn.co/wp-content/uploads/2020/01/corgi-shop.jpg" alt="Corgi Shop" /></a></p>
+<p class="links"><a href="https://damn-delicious-inc.myshopify.com/">SHOP NOW</a></p>
+</div>
+		</div><div id="text-24" class="widget-odd widget-3 cookbook widget widget_text">			<div class="textwidget"><p><a href="https://www.amazon.com/Damn-Delicious-Meal-Prep-Low-Calorie/dp/1538729423/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1544547332&amp;sr=1-1&amp;keywords=damn+delicious+meal+prep"><img loading="lazy" class="alignnone size-full wp-image-29471" src="https://s23209.pcdn.co/wp-content/uploads/2019/02/in-stores-now.jpg" alt="" width="600" height="486" /></a></p>
+<p>Get your copy today:</p>
+<p class="links"><a href="https://www.amazon.com/Damn-Delicious-Meal-Prep-Low-Calorie/dp/1538729423/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1544547332&amp;sr=1-1&amp;keywords=damn+delicious+meal+prep" target="_blank" rel="nofollow noopener noreferrer">Amazon</a> // <a href="https://www.barnesandnoble.com/w/damn-delicious-meal-prep-chungah-rhee/1129915469?ean=9781538729427" target="_blank" rel="nofollow noopener noreferrer">Barnes &amp; Noble </a> // <a href="https://www.indiebound.org/book/9781538729427" target="_blank" rel="nofollow noopener noreferrer">Indiebound </a></p>
+</div>
+		</div><div id="text-23" class="widget-even widget-4 cookbook widget widget_text">			<div class="textwidget"><p><a href="https://www.amazon.com/Damn-Delicious-Super-Easy-Recipes/dp/084874585X/"><img loading="lazy" class="alignnone size-full wp-image-29471" src="https://s23209.pcdn.co/wp-content/uploads/2018/06/cookbook@2x.jpg" alt="" width="600" height="486" /></a></p>
+<p>Get your copy today:</p>
+<p class="links"><a href="http://bit.ly/damndeliciousbook" target="_blank" rel="nofollow noopener noreferrer">Amazon</a> // <a href="http://bit.ly/1W9MFUV" target="_blank" rel="nofollow noopener noreferrer">Barnes &amp; Noble </a> // <a href="http://bit.ly/1WJmvH8" target="_blank" rel="nofollow noopener noreferrer">Indiebound </a></p>
+</div>
+		</div><div id="search-4" class="widget-odd widget-last widget-5 widget widget_search"><h3 class="widget-title">Search Recipes:</h3><form method="get" class="search-form" action="https://damndelicious.net/">
+	<input type="text" class="search-input" name="s" id="s" value="" placeholder="search..." />
+	<button type="submit" class="btn btn-success search-submit">
+		<i class="fa fa-search"></i>
+	</button>
+</form>
+</div>
+	</div>
+
+	<div class="midsidebar">
+		<div class="leftsidebar">
+		
+		
+		</div>
+		
+		<div class="rightsidebar">
+		
+		
+		</div>
+	</div>
+	
+	<div class="lowersidebar">
+	
+	
+	</div>
+	
+<div class="clear"></div>
+</div><!-- end #sidebar --><div class="clear"></div>
+</div> <!-- end #wrapper -->
+
+<div class="footer">
+				<div id="ll-custom-recent-posts-2" class="widget-odd widget-first widget-1 footer-widget recentposts">			<h3 class="widget-title">What&#8217;s Trending</h3>			<div class="recent">
+									<div class="item">
+						<a href="https://damndelicious.net/2020/01/25/homestyle-chicken-noodle-soup/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-600x900.jpg 600w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2.jpg 760w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="31324" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/12/10/quick-chicken-ramen-noodle-stir-fry/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="31195" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/09/24/skillet-lemon-dill-chicken-thighs/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="31016" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/08/31/make-ahead-breakfast-biscuit-sandwiches/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="30970" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/08/28/greek-chicken-kabobs/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="30961" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/05/05/carne-asada/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="30749" />																				</a>
+					</div>
+							</div>
+			</div>			<div id="text-25" class="widget-even widget-last widget-2 footer-widget widget_text"><h3 class="widget-title">Shoppable Recipes</h3>			<div class="textwidget"><p><!-- shoppable recipe --><br />
+<script language="javascript" type="text/javascript">
+var chicscript = document.createElement('script');
+chicscript.type = 'text/javascript';
+chicscript.src = '//mini.myxxrecipes.com/api/lp/launchpad.js';    
+window.adthrive = window.adthrive || {};
+window.adthrive.cmd = window.adthrive.cmd || [];
+if (Math.random() > 0.5) {
+document.head.appendChild(chicscript);
+window.adthrive.cmd.push(function() {
+			window.adthrive.siteAds.targeting.push( {key: 'at_custom_1', value: 'myxx_on'} );
+			});
+} else {
+window.adthrive.cmd.push(function() {
+			window.adthrive.siteAds.targeting.push( {key: 'at_custom_1', value: 'myxx_off'} );
+			});
+}
+</script></p>
+</div>
+		</div>
+	<div id="custom_html-5" class="widget_text widget-even widget-2 subscribe widget_custom_html"><div class="widget_text wrap subscribe-wrap"><h3 class="widget-title">Get the <em>Latest Recipes</em> Right in your Inbox:</h3><div class="textwidget custom-html-widget"><!-- Begin MailChimp Signup Form -->
+
+<form action="http://damndelicious.us5.list-manage.com/subscribe/post?u=e81eb9facd120894de0e61e0d&amp;id=ab2b965540" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate email-form" target="_blank" novalidate>
+
+<input type="email" value="" name="EMAIL" placeholder="email address" class="required email email-input" id="mce-EMAIL">
+
+<input type="submit" value="Sign Up &raquo;" name="SUBMIT" id="mc-embedded-submit" class="button email-submit">
+
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	
+</form>
+
+<!--End mc_embed_signup-->
+</div></div></div></div>
+
+<div class="sub-footer">
+<div class="wrap">
+	<ul id="menu-footer" class="footer-nav"><li id="menu-item-16603" class="top menu-item menu-item-type-custom menu-item-object-custom menu-item-16603"><a href="#">^ Top</a></li>
+<li id="menu-item-21166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-21166"><a href="https://damndelicious.net/">Home</a></li>
+<li id="menu-item-16592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16592"><a href="https://damndelicious.net/about-me/">About</a></li>
+<li id="menu-item-16602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16602"><a href="https://damndelicious.net/recipe-index/">Browse Recipes</a></li>
+<li id="menu-item-16594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16594"><a href="https://damndelicious.net/press/">Press</a></li>
+<li id="menu-item-27737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27737"><a href="https://damndelicious.net/team/">Team</a></li>
+<li id="menu-item-16595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16595"><a href="https://damndelicious.net/privacy-policy/">Privacy</a></li>
+<li id="menu-item-16593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16593"><a href="https://damndelicious.net/contact-me/">Contact</a></li>
+</ul>	
+	<div class="copyright">
+		&copy;2020<i class="icon"></i> Damn Delicious. Design by <a href="http://www.purrdesign.com" target="_blank" rel="nofollow">Purr</a>.
+	</div>
+	
+	<script type='text/javascript' id='thickbox-js-extra'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"https:\/\/damndelicious.net\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105' id='thickbox-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/shortcode.min.js?ver=5.5.2' id='shortcode-js'></script>
+<script type='text/javascript' src='https://damndelicious.net/wp-admin/js/media-upload.min.js?ver=5.5.2' id='media-upload-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/js/custom.js?ver=1.0.11' id='custom-js-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/js/pinterest.js?ver=1' id='pinterest-js-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/comment-reply.min.js?ver=5.5.2' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/mobile-header/mobile-header-scripts.js?ver=1.0.0' id='cmh-scripts-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/wp-embed.min.js?ver=5.5.2' id='wp-embed-js'></script>
+<script async="async" type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/akismet/_inc/form.js?ver=4.1.7' id='akismet-form-js'></script>
+	<!--13 queries. 0.198 seconds-->
+</div>
+</div>
+
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"8f2cac8c19","applicationID":"108064120","transactionName":"ZFdabERTCEFQAE0NWl0deVtCWwlcHhBQClJfVw==","queueTime":0,"applicationTime":201,"atts":"SBBZGgxJG08=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

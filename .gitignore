@@ -6,9 +6,10 @@
 # Ben's Virtual Environments
 Code/Virtual Environments/
 
-# Content Recognition Output
+# Content Recognition Output & Temp Files
 Code/Content Recognition/content_data/block_corrected
 Code/Content Recognition/training_output/
+Code/Content Recognition/content_data/todo
 
 # Standard Python Ignores ##############################################
 

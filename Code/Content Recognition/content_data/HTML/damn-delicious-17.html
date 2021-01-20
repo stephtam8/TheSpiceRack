@@ -1,0 +1,1733 @@
+<!doctype html>  
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> <![endif]-->  
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> <![endif]-->  
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> <![endif]-->  
+<!--[if gt IE 8]><!--> <html lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> <!--<![endif]-->  
+
+<head> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+<meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"8f2cac8c19",applicationID:"108064120"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="https://s23209.pcdn.co/wp-content/themes/damndelicious2018/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://s23209.pcdn.co/wp-content/themes/damndelicious2018/favicon.ico" type="image/x-icon" /> 
+
+<link rel="alternate" type="application/rss+xml" title="Damn Delicious RSS2 Feed" href="https://damndelicious.net/feed/" />  
+
+
+
+<script>
+(function(w, d) {
+	w.adthrive = w.adthrive || {};
+	w.adthrive.cmd = w.adthrive.cmd || [];
+	w.adthrive.plugin = 'adthrive-ads-1.0.41';
+	w.adthrive.host = 'ads.adthrive.com';
+
+	var s = d.createElement('script');
+	s.async = true;
+	s.referrerpolicy='no-referrer-when-downgrade';
+	s.src = 'https://' + w.adthrive.host + '/sites/52e41fac28963d1e058a110e/ads.min.js?referrer=' + w.encodeURIComponent(w.location.href);
+	var n = d.getElementsByTagName('script')[0];
+	n.parentNode.insertBefore(s, n);
+})(window, document);
+</script>
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>//<![CDATA[
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+//]]>
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+	<!-- This site is optimized with the Yoast SEO plugin v15.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Korean Chicken Bowls - Damn Delicious</title>
+	<meta name="description" content="Korean Chicken Bowls - Juicy, flavorful Korean chicken bowls made with the easiest marinade ever! Serve with your choice of grain/rice and desired toppings!" />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/" />
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Chungah @ Damn Delicious">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="1 minute">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//m9m6e2w5.stackpathcdn.com' />
+<link rel='dns-prefetch' href='//cdn.shareaholic.net' />
+<link rel='dns-prefetch' href='//www.shareaholic.net' />
+<link rel='dns-prefetch' href='//analytics.shareaholic.com' />
+<link rel='dns-prefetch' href='//recs.shareaholic.com' />
+<link rel='dns-prefetch' href='//go.shareaholic.com' />
+<link rel='dns-prefetch' href='//partner.shareaholic.com' />
+<link rel="alternate" type="application/rss+xml" title="Damn Delicious &raquo; Korean Chicken Bowls Comments Feed" href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/feed/" />
+<!-- Shareaholic - https://www.shareaholic.com -->
+<link rel='preload' href='//cdn.shareaholic.net/assets/pub/shareaholic.js' as='script'/>
+<script data-no-minify='1' data-cfasync='false'>
+_SHR_SETTINGS = {"endpoints":{"local_recs_url":"https:\/\/damndelicious.net\/wp-admin\/admin-ajax.php?action=shareaholic_permalink_related","ajax_url":"https:\/\/damndelicious.net\/wp-admin\/admin-ajax.php","share_counts_url":"https:\/\/damndelicious.net\/wp-admin\/admin-ajax.php?action=shareaholic_share_counts_api"},"site_id":"917dae0c6d3c4c7c2f861beb78f1b756","url_components":{"year":"2020","monthnum":"03","day":"09","hour":"21","minute":"00","second":"57","post_id":"31472","postname":"korean-chicken-bowls","category":"asian-inspired"}};
+</script>
+<script data-no-minify='1' data-cfasync='false' src='//cdn.shareaholic.net/assets/pub/shareaholic.js' data-shr-siteid='917dae0c6d3c4c7c2f861beb78f1b756' async ></script>
+
+<!-- Shareaholic Content Tags -->
+<meta name='shareaholic:site_name' content='Damn Delicious' />
+<meta name='shareaholic:language' content='en-US' />
+<meta name='shareaholic:url' content='https://damndelicious.net/2020/03/09/korean-chicken-bowls/' />
+<meta name='shareaholic:keywords' content='cat:asian inspired, cat:entree, type:post' />
+<meta name='shareaholic:article_published_time' content='2020-03-09T21:00:57-07:00' />
+<meta name='shareaholic:article_modified_time' content='2020-03-11T14:03:21-07:00' />
+<meta name='shareaholic:shareable_page' content='true' />
+<meta name='shareaholic:article_author_name' content='Chungah @ Damn Delicious' />
+<meta name='shareaholic:site_id' content='917dae0c6d3c4c7c2f861beb78f1b756' />
+<meta name='shareaholic:wp_version' content='9.5.0' />
+<meta name='shareaholic:image' content='https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829-640x960.jpg' />
+<!-- Shareaholic Content Tags End -->
+
+<!-- Shareaholic Open Graph Tags -->
+<meta property='og:image' content='https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829.jpg' />
+<!-- Shareaholic Open Graph Tags End -->
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.13.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+    (window.gaDevIds=window.gaDevIds||[]).push("dZGIzZG");
+	var mi_version         = '7.13.2';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-43450335-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+
+	if ( 'undefined' === typeof gaOptout ) {
+		function gaOptout() {
+			__gaTrackerOptout();
+		}
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-43450335-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s23209.pcdn.co\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='dashicons-css'  href='https://s23209.pcdn.co/wp-includes/css/dashicons.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='thickbox-css'  href='https://s23209.pcdn.co/wp-includes/js/thickbox/thickbox.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-style-css'  href='//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='spectrum-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/spectrum.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='smart-review-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/pluginstyle.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://s23209.pcdn.co/wp-includes/css/dist/block-library/style.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-banner-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/simple-banner/simple-banner.css?ver=2.8.0' type='text/css' media='all' />
+<link rel='stylesheet' id='monsterinsights-popular-posts-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.13.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/font-awesome/css/all.css?ver=5.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsso-rar-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/wpsso-ratings-and-reviews/css/style.min.css?ver=2.11.1' type='text/css' media='all' />
+<style id='wpsso-rar-style-inline-css' type='text/css'>
+@font-face{font-family:"WpssoStar";font-weight:normal;font-style:normal;src:url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.eot?2.11.1");src:url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.eot?2.11.1#iefix") format("embedded-opentype"),
+url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.woff?2.11.1") format("woff"),
+url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.ttf?2.11.1") format("truetype"),
+url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.svg?2.11.1#star") format("svg")}.wpsso-rar .star-rating::before{color:#ddd}.wpsso-rar .star-rating span::before{color:#222}.wpsso-rar p.select-star a::before{color:#ddd}.wpsso-rar p.select-star a:hover~a::before{color:#ddd}.wpsso-rar p.select-star:hover a::before{color:#222}.wpsso-rar p.select-star.selected a.active::before{color:#222}.wpsso-rar p.select-star.selected a.active~a::before{color:#ddd}.wpsso-rar p.select-star.selected a:not(.active)::before{color:#222}
+</style>
+<link rel='stylesheet' id='custom-style-css'  href='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/style.css?ver=2.31' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-style-css'  href='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/responsive.css?ver=2.32' type='text/css' media='all' />
+<link rel='stylesheet' id='cmh-style-css'  href='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/mobile-header/mobile-header-style.css?ver=1.0.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/jsfiles/font-select.js?ver=5.5.2' id='font-select-js-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/jsfiles/spectrum.js?ver=5.5.2' id='spectrum-js-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/jsfiles/ready.js?ver=5.5.2' id='ready-js-js'></script>
+<script type='text/javascript' id='monsterinsights-frontend-script-js-extra'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/damndelicious.net","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.13.2' id='monsterinsights-frontend-script-js'></script>
+<script type='text/javascript' id='simple-banner-script-js-extra'>
+/* <![CDATA[ */
+var scriptParams = {"hide_simple_banner":"","simple_banner_position":"","header_margin":"","header_padding":"","simple_banner_text":"ORDERS PLACED AFTER 2\/13 WILL BE SHIPPED STARTING 2\/24","pro_version_enabled":"1","in_array":"","debug_mode":"","id":"31472","disabled_pages_array":["1","648","7265","31228","662","31221","1490","30147","23232","22435","26500","27985","27988","27732","657","16015","16598","25774","25533","1318"],"simple_banner_font_size":"","simple_banner_color":"#121212","simple_banner_text_color":"#ffffff","simple_banner_link_color":"","simple_banner_custom_css":"","simple_banner_scrolling_custom_css":"","simple_banner_text_custom_css":"","site_custom_css":"","keep_site_custom_css":"","site_custom_js":"","keep_site_custom_js":"","wp_body_open_enabled":"","wp_body_open":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/simple-banner/simple-banner.js?ver=2.8.0' id='simple-banner-script-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.11.6' id='gtm4wp-form-move-tracker-js'></script>
+<script type='text/javascript' id='wpsso-rar-script-js-extra'>
+/* <![CDATA[ */
+var wpsso_rar_script = {"i18n_required_rating_text":"Please select a rating before submitting.","i18n_required_review_text":"Please write a review before submitting.","review_rating_required":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/wpsso-ratings-and-reviews/js/script.min.js?ver=2.11.1' id='wpsso-rar-script-js'></script>
+<link rel="https://api.w.org/" href="https://damndelicious.net/wp-json/" /><link rel="alternate" type="application/json" href="https://damndelicious.net/wp-json/wp/v2/posts/31472" /><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s23209.pcdn.co/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.2" />
+<link rel="alternate" type="application/json+oembed" href="https://damndelicious.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdamndelicious.net%2F2020%2F03%2F09%2Fkorean-chicken-bowls%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://damndelicious.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdamndelicious.net%2F2020%2F03%2F09%2Fkorean-chicken-bowls%2F&#038;format=xml" />
+
+            <!-- TapInfluence -->
+            <script type="text/javascript">
+            ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+            p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+            };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+            n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//a.tapinfluence.com/tap.js","taptracker"));
+            taptracker('newTracker', 'cf', 'c.tapinfluence.com', {appId: '1333b1a2-64a9-11e2-9c98-22000af92f17'});
+            taptracker('crossDomainLinker', function(linkElement) {
+  				return true;
+			});
+            taptracker('trackPageView');
+            </script>
+            <!-- TapInfluence -->
+
+            <style type='text/css'>
+	.wp-nutrition-label { border: 1px solid #ccc; font-family: helvetica, arial, sans-serif; font-size: .9em; width: 22em; padding: 1em 1.25em 1em 1.25em; line-height: 1.4em; margin: 1em; }
+	.wp-nutrition-label hr { border:none; border-bottom: solid 8px #666; margin: 3px 0px; }
+	.wp-nutrition-label .heading { font-size: 2.6em; font-weight: 900; margin: 0; line-height: 1em; }
+	.wp-nutrition-label .indent { margin-left: 1em; }
+	.wp-nutrition-label .small { font-size: .8em; line-height: 1.2em; }
+	.wp-nutrition-label .item_row { border-top: solid 1px #ccc; padding: 3px 0; }
+	.wp-nutrition-label .amount-per { padding: 0 0 8px 0; }
+	.wp-nutrition-label .daily-value { padding: 0 0 8px 0; font-weight: bold; text-align: right; border-top: solid 4px #666; }
+	.wp-nutrition-label .f-left { float: left; }
+	.wp-nutrition-label .f-right { float: right; }
+	.wp-nutrition-label .noborder { border: none; }
+	
+	.cf:before,.cf:after { content: " "; display: table;}
+	.cf:after { clear: both; }
+	.cf { *zoom: 1; }  
+</style>
+<style type="text/css" media="screen">.simple-banner{background:#121212;}</style><style type="text/css" media="screen">.simple-banner .simple-banner-text{color:#ffffff;}</style><style type="text/css" media="screen">.simple-banner .simple-banner-text a{color:#f16521;}</style><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests;block-all-mixed-content" />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>//<![CDATA[
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["asian-inspired","entree"],"pagePostAuthor":"Chungah @ Damn Delicious"};
+	dataLayer.push( dataLayer_content );//]]>
+</script>
+<script data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T4LMV2F');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js""></script>
+
+<!-- social and search optimization by WPSSO Core v8.14.1 - https://wpsso.com/ -->
+<!-- wpsso meta tags begin -->
+<meta name="wpsso:mark:begin" content="wpsso meta tags begin"/>
+<!-- generator:1 --><meta name="generator" content="WPSSO Core 8.14.1/L*"/>
+<!-- generator:2 --><meta name="generator" content="WPSSO RAR 2.11.1/S"/>
+<!-- generator:3 --><meta name="generator" content="WPSSO JSON 4.10.0/L*"/>
+<!-- generator:4 --><meta name="generator" content="WPSSO UM 4.0.1/S"/>
+<link rel="shortlink" href="https://damndelicious.net/?p=31472"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://damndelicious.net/2020/03/09/korean-chicken-bowls/"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Damn Delicious"/>
+<meta property="og:title" content="Korean Chicken Bowls - Damn Delicious"/>
+<meta property="og:description" content="Korean Chicken Bowls - Juicy, flavorful Korean chicken bowls made with the easiest marinade ever! Serve with your choice of grain/rice and desired toppings!"/>
+<meta property="og:updated_time" content="2020-03-11T21:03:21+00:00"/>
+<!-- og:image:1 --><meta property="og:image" content="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829-600x315-cropped.jpg"/>
+<!-- og:image:1 --><meta property="og:image:width" content="600"/>
+<!-- og:image:1 --><meta property="og:image:height" content="315"/>
+<!-- article:author:1 --><meta property="article:author" content="https://www.facebook.com/damndeliciousblog"/>
+<meta property="article:published_time" content="2020-03-10T04:00:57+00:00"/>
+<meta name="twitter:domain" content="damndelicious.net"/>
+<meta name="twitter:title" content="Korean Chicken Bowls - Damn Delicious"/>
+<meta name="twitter:description" content="Korean Chicken Bowls - Juicy, flavorful Korean chicken bowls made with the easiest marinade ever! Serve with your choice of grain/rice and desired toppings!"/>
+<meta name="twitter:creator" content="@damn_delicious"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829-600x900.jpg?p=31472"/>
+<meta name="twitter:label1" content="Written by"/>
+<meta name="twitter:data1" content="Chungah @ Damn Delicious"/>
+<meta name="twitter:label2" content="Est. reading time"/>
+<meta name="twitter:data2" content="1 minute"/>
+<meta name="author" content="Chungah @ Damn Delicious"/>
+<meta name="thumbnail" content="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829-600x315-cropped.jpg"/>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@id": "/2020/03/09/korean-chicken-bowls/#sso/blog.posting",
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/",
+            "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/",
+            "sameAs": [
+                "https://damndelicious.net/?p=31472"
+            ],
+            "name": "Korean Chicken Bowls - Damn Delicious",
+            "description": "Korean Chicken Bowls - Juicy, flavorful Korean chicken bowls made with the easiest marinade ever! Serve with your choice of grain/rice and desired toppings!",
+            "publisher": [
+                {
+                    "@id": "#sso/organization/site/org_logo_url"
+                }
+            ],
+            "headline": "Korean Chicken Bowls - Damn Delicious",
+            "copyrightYear": "2020",
+            "inLanguage": "en_US",
+            "dateCreated": "2020-03-10T04:00:57+00:00",
+            "datePublished": "2020-03-10T04:00:57+00:00",
+            "author": {
+                "@id": "/d2207a856a19cf578eb576be9d8c43d0#sso/person"
+            },
+            "thumbnailUrl": "https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829-600x315-cropped.jpg",
+            "commentCount": 16,
+            "comment": [
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-213185",
+                    "dateCreated": "2020-11-17T21:29:42-08:00",
+                    "description": "Absolutely obsessed. Adding to our regular rotation. Ive never attempted Korean before but just our usual supermarket had the kimchi&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Elisabeth"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-210618",
+                    "dateCreated": "2020-10-18T05:08:40-07:00",
+                    "description": "This chicken came out so damn...well...Delicious!",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Meow"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-202853",
+                    "dateCreated": "2020-07-23T06:21:48-07:00",
+                    "description": "So so good. Lots of protein and veg. I swapped the rice for quinoa and used a fuji apple instead&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Jessie"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-201603",
+                    "dateCreated": "2020-07-05T03:17:13-07:00",
+                    "description": "Hi, can you recommend a good gochujang brand? I love Korean food and am starting to make it at home.&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Kathy Anish"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-201495",
+                    "dateCreated": "2020-07-04T06:56:40-07:00",
+                    "description": "This is worth a try. I had to travel quite a bit to buy gochujang and kimchi but the results&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Lyn"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-198128",
+                    "dateCreated": "2020-06-12T01:25:23-07:00",
+                    "description": "Love the Korean twist on the classic grain bowl. I'm always looking for new healthy and creative recipes to try&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Jacob @ FlavorThyme"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-195528",
+                    "dateCreated": "2020-05-13T23:03:43-07:00",
+                    "description": "I can\u2019t wait to try this. It says to grate carrots but the photo does not look like grated carrots.&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Raeann Hatfield"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-202561",
+                            "dateCreated": "2020-07-19T15:09:18-07:00",
+                            "description": "A julienne peeler will grate carrots into that shape :)",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Shelley"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-191376",
+                    "dateCreated": "2020-04-04T13:56:09-07:00",
+                    "description": "I have never ever left a recipe review before but I HAD TO for this one. Favorite dish I've made&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "sissy"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-189604",
+                    "dateCreated": "2020-03-13T15:28:22-07:00",
+                    "description": "I happened to have all but one of these ingredients on hand and I made this yesterday for lunch.I didn\u2019t&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Linda Miritello"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-202441",
+                            "dateCreated": "2020-07-17T09:15:20-07:00",
+                            "description": "So delicious can\u2019t wait to make it again!\u00a0",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Sandy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-189556",
+                    "dateCreated": "2020-03-13T01:24:45-07:00",
+                    "description": "Loved the flavors in this whole dish. It's Winter here, so no grilling outside, but we used cast-iron skillet and&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Jenna Meggett"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-189515",
+                    "dateCreated": "2020-03-12T18:04:49-07:00",
+                    "description": "Just tried the Mexican Street Corn Bowls and they are fantastic! Going to try the Korean Bowls next. I love&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Barbara Hall"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-189493",
+                    "dateCreated": "2020-03-12T14:54:08-07:00",
+                    "description": "Made this last night for dinner. Used pork cutlets I stead of chicken thighs. Amazing! Simple to cook, and very&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "RS"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-189316",
+                    "dateCreated": "2020-03-11T03:52:16-07:00",
+                    "description": "sounds like a great Bowl, will have to make it, what kind of kimchi is used?",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Lucy"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-189294",
+                    "dateCreated": "2020-03-10T19:39:47-07:00",
+                    "description": "These chicken bowls look amazing! I need to try these asap! Paige",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Paige Cassandra Flamm"
+                    }
+                }
+            ],
+            "articleBody": "Juicy, flavorful Korean chicken bowls made with the easiest marinade ever! Serve with your choice of grain/rice and desired toppings! I love love love a good grain bowl. It has protein and tons of veggies, not to mention, it&#039;s perfectly hearty and filling. So I made another Korean bowl version (hello, I&#039;ll take any excuse to have caramelized kimchi!). Now this one has jasmine rice as the base (but you can use any grain of your choice - farro, quinoa, wild rice, brown rice) with my favorite Korean chicken marinade using boneless, skinless chicken thighs (chicken breasts can always be substituted). Marinate for at least 2 hours and throw right onto the grill to get that smoky, charred goodness. A cast iron grill pan will also do the trick. Serve with your choice of base and desired toppings - caramelized kimchi (my favorite!), shredded cabbage, carrots, avocado, cilantro and a soft-boiled egg (you can easily make this in the IP!). So, so good. And if you&#039;re having just one of those days, a bowl of rice and the Korean chicken will also be just as fantastic."
+        },
+        {
+            "@id": "#sso/organization/site/org_logo_url",
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://damndelicious.net",
+            "name": "Damn Delicious",
+            "description": "Simple ingredients. Elegant dishes.",
+            "image": [
+                {
+                    "@context": "https://schema.org",
+                    "@type": "ImageObject",
+                    "url": "https://s23209.pcdn.co/wp-content/themes/damndelicious2018/images/logo@2x.png",
+                    "width": 580,
+                    "height": 350
+                }
+            ],
+            "logo": {
+                "@context": "https://schema.org",
+                "@type": "ImageObject",
+                "url": "https://s23209.pcdn.co/wp-content/themes/damndelicious2018/images/logo@2x.png",
+                "width": 580,
+                "height": 350
+            }
+        },
+        {
+            "@id": "/d2207a856a19cf578eb576be9d8c43d0#sso/person",
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "url": "https://damndelicious.net",
+            "name": "Chungah @ Damn Delicious",
+            "description": "Chungah is the recipe developer and photographer of Damn Delicious, a blog that was founded in 2011. She thought she would become an epidemiologist, obtaining a sociology degree at UCLA and a Masters in Public Health at USC. But what began as a grad school hobby blog is now her full-time job. Originally from Queens and living most of her life in Los Angeles, she now resides in Chicago with her crazy corgi duo, Butters and Cartman. She loves donuts and binging on Grey's Anatomy reruns, and hopes to one day start her very own corgi rescue.",
+            "image": [
+                {
+                    "@context": "https://schema.org",
+                    "@type": "ImageObject",
+                    "url": "https://secure.gravatar.com/avatar/bccd093023d66cf4ba1a8be171cd08c1.jpg?d=mp&s=1200",
+                    "width": 1200,
+                    "height": 1200
+                }
+            ],
+            "sameAs": [
+                "https://www.facebook.com/damndeliciousblog",
+                "https://www.instagram.com/damn_delicious/",
+                "https://snapchat.com/add/chungahrhee",
+                "https://twitter.com/damn_delicious"
+            ]
+        }
+    ]
+}</script>
+<meta name="wpsso:mark:end" content="wpsso meta tags end"/>
+<!-- wpsso meta tags end -->
+<!-- added on 2020-12-21T23:44:21+00:00 in 0.056711 secs from https://damndelicious.net -->
+
+<link rel="icon" href="https://s23209.pcdn.co/wp-content/uploads/2020/09/cropped-Untitled1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://s23209.pcdn.co/wp-content/uploads/2020/09/cropped-Untitled1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://s23209.pcdn.co/wp-content/uploads/2020/09/cropped-Untitled1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://s23209.pcdn.co/wp-content/uploads/2020/09/cropped-Untitled1-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			/* B&C Email signup */
+
+.bc-signup {
+	color: #121212;
+	font-family: proximanova,Arial,Helvetica,Geneva,sans-serif;
+	font-weight: 700;
+	margin: 0 0 50px auto;
+	padding: 15px 0;
+}
+
+.bc-signup span {
+	background: url(https://s23209.pcdn.co/wp-content/uploads/2020/01/new-arrivals.jpg) no-repeat;
+	background-position: 0 -5px;
+	background-size: 100% auto;
+	display: inline-block;
+	height: 65px;
+	line-height: 65px;
+	text-indent: -9999px;
+	width: 200px;
+}
+
+.bc-signup .email-input {
+	width: calc(100% - 125px);
+}
+
+.bc-signup form p {
+	display: none;
+}
+
+#simple-banner {
+	display: none;
+}
+
+.page-id-31221 #simple-banner {
+	display: block !important;
+}
+
+.page-id-31221 .simple-banner-text {
+	font-family: proximanova,Arial,Helvetica,Geneva,sans-serif;
+	font-size: 1em;
+}
+
+@media only screen and (max-width: 425px) { 
+	.nav-links {
+		line-height: 3em;
+	}
+	.bc-signup {
+		text-align: center;
+	}
+	.bc-signup span {
+		background-position: 0 11px;
+		display: inline-block;
+		margin: 0 auto;
+		text-align: center;
+		width: 117px;
+	}
+	.bc-signup .email-submit {
+		float: none;
+	}
+	
+	.page-id-31221 #cmh {
+		padding-top: 80px;
+	}
+	
+}
+
+/* Preserve theme styling for comment forms */
+.wpsso-rar input[type="submit"] {
+	color: #fff !important;
+	font-size: 16px !important;
+	line-height: 1.2 !important;
+	background-color: #121212 !important;
+	font-family: "proximanova", Arial, Helvetica, Geneva, sans-serif !important;
+	font-weight: bold !important;
+	text-transform: uppercase !important;
+	letter-spacing: .15em !important;
+	cursor: pointer !important;
+	margin-top: 5px !important;
+	padding: 9px 16px !important;
+	-webkit-transition: all .2s ease-in-out !important;
+	-moz-transition: all .2s ease-in-out !important;
+	transition: all .2s ease-in-out !important;
+	border-style: none !important;
+	text-decoration: none !important;
+	width: auto !important;
+}
+
+.wpsso-rar input[type="submit"]:hover {
+	background-color: #afaeaf;
+}	
+
+a.dd-fullwidth-button {
+	background: #121212 !important;
+	border-bottom: none !important;
+	box-shadow: none !important;
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	font-family: proximanova,Arial,Helvetica,Geneva,sans-serif;
+	font-weight: 700;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+a.dd-fullwidth-button:hover {
+	background: #afaeaf !important;
+	color: #fff !important;
+}
+
+h1.archivetitle {
+	font-size: 20px !important;
+}
+
+h1.pagination-header {
+	margin-top: 20px;
+}
+
+/** WP Shopify - Floating Cart */
+
+.wpshopify [data-wps-is-client-component-wrapper][data-wps-client-component-type="cart"] {
+	display: none;
+}
+
+.wps-btn-cart.wps-cart-icon-fixed {
+	background: #121212 !important;
+}
+
+.wps-btn.wps-btn-secondary.wps-add-to-cart {
+    background: 
+    #121212 !important;
+    border-radius: 0;
+}		</style>
+		
+</head>
+
+<body class="post-template-default single single-post postid-31472 single-format-standard">
+
+	
+	<div id="cmh" class="layout-left text-dark">
+		
+		<div id="cmtb" style="background-color: rgba(255,255,255, 0.95);">
+			
+			<div id="cmfw">
+				<form method="get" class="search-form" action="https://damndelicious.net/">
+	<input type="text" class="search-input" name="s" id="s" value="" placeholder="search..." />
+	<button type="submit" class="btn btn-success search-submit">
+		<i class="fa fa-search"></i>
+	</button>
+</form>
+			</div>
+			
+			<a href="https://damndelicious.net/" id="custom-mobile-logo-link">
+				<img src="https://s23209.pcdn.co/wp-content/themes/damndelicious2018/mobile-header/logo-mobile.png" alt="Damn Delicious" />
+			</a>
+			
+			<div id="cmhb">
+				<div id="mt">
+					<span></span>
+				</div>
+			</div>
+			
+			<div id="cms">
+				<i class="far fa-search"></i>
+				<i class="fal fa-times"></i>
+			</div>
+			
+		</div>
+		
+		<div id="cmmc" style="background-color: rgba(255,255,255, 0.95);">
+				
+			<ul id="custom-mobile-menu" class="custom-mobile-menu"><li id="menu-item-655" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-655"><a href="https://damndelicious.net">Home</a></li>
+<li id="menu-item-16604" class="recipes menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16604"><a href="https://damndelicious.net/recipe-index/">Browse Recipes</a>
+<ul class="sub-menu">
+	<li id="menu-item-26772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26772"><a href="https://damndelicious.net/recipe-index/">Recipes by Category</a>
+	<ul class="sub-menu">
+		<li id="menu-item-16605" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16605"><a href="https://damndelicious.net/category/appetizer/">appetizer</a></li>
+		<li id="menu-item-16606" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-16606"><a href="https://damndelicious.net/category/asian-inspired/">asian inspired</a></li>
+		<li id="menu-item-27078" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27078"><a href="https://damndelicious.net/category/breakfast/">breakfast</a></li>
+		<li id="menu-item-28977" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28977"><a href="https://damndelicious.net/category/freezer-friendly/">freezer friendly</a></li>
+		<li id="menu-item-28976" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28976"><a href="https://damndelicious.net/category/instant-pot-recipes/">instant pot</a></li>
+		<li id="menu-item-26780" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26780"><a href="https://damndelicious.net/category/meal-prep/">meal prep</a></li>
+		<li id="menu-item-16613" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16613"><a href="https://damndelicious.net/category/entree/quick-easy/">quick &#038; easy</a></li>
+		<li id="menu-item-16616" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16616"><a href="https://damndelicious.net/category/side-dish/">side dish</a></li>
+		<li id="menu-item-16617" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16617"><a href="https://damndelicious.net/category/slow-cooker/">slow cooker</a></li>
+		<li id="menu-item-16618" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16618"><a href="https://damndelicious.net/category/soup/">soup</a></li>
+		<li id="menu-item-26774" class="bold menu-item menu-item-type-post_type menu-item-object-page menu-item-26774"><a href="https://damndelicious.net/recipe-index/">MORE&#8230;</a></li>
+	</ul>
+</li>
+	<li id="menu-item-27081" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-27081"><a href="https://damndelicious.net/recipe-index/">Recipes by Season</a>
+	<ul class="sub-menu">
+		<li id="menu-item-27082" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27082"><a href="https://damndelicious.net/category/christmas/">christmas</a></li>
+		<li id="menu-item-27083" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27083"><a href="https://damndelicious.net/category/fall/">fall</a></li>
+		<li id="menu-item-27084" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27084"><a href="https://damndelicious.net/category/game-day/">game day</a></li>
+		<li id="menu-item-27085" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27085"><a href="https://damndelicious.net/category/summer/">summer</a></li>
+		<li id="menu-item-27086" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27086"><a href="https://damndelicious.net/category/thanksgiving/">thanksgiving</a></li>
+		<li id="menu-item-27087" class="bold menu-item menu-item-type-post_type menu-item-object-page menu-item-27087"><a href="https://damndelicious.net/recipe-index/">MORE</a></li>
+	</ul>
+</li>
+	<li id="menu-item-27080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27080"><a href="https://damndelicious.net/recipe-index/">Recipes by Ingredient</a></li>
+	<li id="menu-item-27079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27079"><a href="https://damndelicious.net/recipe-index/">View All Recipes »</a></li>
+</ul>
+</li>
+<li id="menu-item-30180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30180"><a href="#">Cookbook</a>
+<ul class="sub-menu">
+	<li id="menu-item-30159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30159"><a href="https://damndelicious.net/damn-delicious-100-super-easy-super-fast-recipes/">Damn Delicious</a></li>
+	<li id="menu-item-30158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30158"><a href="https://damndelicious.net/damn-delicious-meal-prep-115-easy-recipes-for-low-calorie-high-energy-living/">Damn Delicious Meal Prep</a></li>
+</ul>
+</li>
+<li id="menu-item-656" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-656"><a href="https://damndelicious.net/about-me/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-26771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26771"><a href="https://damndelicious.net/about-me/">About Chungah</a></li>
+	<li id="menu-item-29152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29152"><a href="https://damndelicious.net/team/">Meet the Team</a></li>
+	<li id="menu-item-1493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1493"><a href="https://damndelicious.net/contact-me/">Contact</a></li>
+	<li id="menu-item-659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-659"><a href="https://damndelicious.net/press/">Press</a></li>
+	<li id="menu-item-7270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7270"><a title="FAQ" href="https://damndelicious.net/about-me/faq/">FAQ</a></li>
+	<li id="menu-item-1322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1322"><a href="https://damndelicious.net/work/">Work With Me</a></li>
+</ul>
+</li>
+<li id="menu-item-31648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31648"><a href="https://damn-delicious-inc.myshopify.com/">Store</a></li>
+</ul>			
+							<div id="cmwa">
+					<div id="custom_html-3" class="widget_text widget-odd widget-last widget-first widget-1 social widget_custom_html"><h5>Follow Me!</h5><div class="textwidget custom-html-widget"><a href="/feed/" title="RSS" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="https://www.facebook.com/damndeliciousblog" title="Facebook" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="http://pinterest.com/damndelicious/" title="Pinterest" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-pinterest-p fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="http://instagram.com/damn_delicious" title="Instagram" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="https://twitter.com/damn_delicious" title="Twitter" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="https://www.youtube.com/c/damndeliciousblog" title="YouTube" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+	</span>
+</a></div></div>				</div>
+						
+		</div>
+		
+	</div>
+	
+
+<div id="page_wrap" class="container row">
+
+<div id="header" class="header">
+<div class="wrap">
+
+<div class="logo">
+	<a href="https://damndelicious.net"></a>
+</div>
+
+<nav id="top" class="top-nav">
+
+	<div class="social">
+		<a href="/feed/" title="RSS" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="https://www.facebook.com/damndeliciousblog" title="Facebook" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="http://pinterest.com/damndelicious/" title="Pinterest" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-pinterest-p fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="http://instagram.com/damn_delicious" title="Instagram" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="https://twitter.com/damn_delicious" title="Twitter" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="https://www.youtube.com/c/damndeliciousblog" title="YouTube" target="_blank" >
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+	</div>
+
+	<div class="header-search">
+		<form method="get" class="search-form" action="https://damndelicious.net/">
+		<input type="search" class="search-input" name="s" id="s" value="" placeholder="search" />
+		<button type="submit" class="btn btn-success search-submit">
+			<i class="fa fa-search"></i>
+		</button>
+		</form>
+	</div>
+
+	
+</nav>
+
+<nav id="main" class="main-nav">
+	<ul id="mainmenu" class="mainmenu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-655"><a href="https://damndelicious.net">Home</a></li>
+<li class="recipes menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16604"><a href="https://damndelicious.net/recipe-index/">Browse Recipes</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26772"><a href="https://damndelicious.net/recipe-index/">Recipes by Category</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16605"><a href="https://damndelicious.net/category/appetizer/">appetizer</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-16606"><a href="https://damndelicious.net/category/asian-inspired/">asian inspired</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27078"><a href="https://damndelicious.net/category/breakfast/">breakfast</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28977"><a href="https://damndelicious.net/category/freezer-friendly/">freezer friendly</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28976"><a href="https://damndelicious.net/category/instant-pot-recipes/">instant pot</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26780"><a href="https://damndelicious.net/category/meal-prep/">meal prep</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16613"><a href="https://damndelicious.net/category/entree/quick-easy/">quick &#038; easy</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16616"><a href="https://damndelicious.net/category/side-dish/">side dish</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16617"><a href="https://damndelicious.net/category/slow-cooker/">slow cooker</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16618"><a href="https://damndelicious.net/category/soup/">soup</a></li>
+		<li class="bold menu-item menu-item-type-post_type menu-item-object-page menu-item-26774"><a href="https://damndelicious.net/recipe-index/">MORE&#8230;</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-27081"><a href="https://damndelicious.net/recipe-index/">Recipes by Season</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27082"><a href="https://damndelicious.net/category/christmas/">christmas</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27083"><a href="https://damndelicious.net/category/fall/">fall</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27084"><a href="https://damndelicious.net/category/game-day/">game day</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27085"><a href="https://damndelicious.net/category/summer/">summer</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27086"><a href="https://damndelicious.net/category/thanksgiving/">thanksgiving</a></li>
+		<li class="bold menu-item menu-item-type-post_type menu-item-object-page menu-item-27087"><a href="https://damndelicious.net/recipe-index/">MORE</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27080"><a href="https://damndelicious.net/recipe-index/">Recipes by Ingredient</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27079"><a href="https://damndelicious.net/recipe-index/">View All Recipes »</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30180"><a href="#">Cookbook</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30159"><a href="https://damndelicious.net/damn-delicious-100-super-easy-super-fast-recipes/">Damn Delicious</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30158"><a href="https://damndelicious.net/damn-delicious-meal-prep-115-easy-recipes-for-low-calorie-high-energy-living/">Damn Delicious Meal Prep</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-656"><a href="https://damndelicious.net/about-me/">About</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26771"><a href="https://damndelicious.net/about-me/">About Chungah</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29152"><a href="https://damndelicious.net/team/">Meet the Team</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1493"><a href="https://damndelicious.net/contact-me/">Contact</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-659"><a href="https://damndelicious.net/press/">Press</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7270"><a title="FAQ" href="https://damndelicious.net/about-me/faq/">FAQ</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1322"><a href="https://damndelicious.net/work/">Work With Me</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31648"><a href="https://damn-delicious-inc.myshopify.com/">Store</a></li>
+	</ul>
+</nav>
+
+<div class="clear"></div>
+</div>
+</div> <!--end .header-->
+
+
+<div id="custom_html-5" class="widget_text widget-odd widget-last widget-first widget-1 subscribe widget_custom_html"><div class="widget_text wrap subscribe-wrap"><h3 class="widget-title">Get the <em>Latest Recipes</em> Right in your Inbox:</h3><div class="textwidget custom-html-widget"><!-- Begin MailChimp Signup Form -->
+
+<form action="http://damndelicious.us5.list-manage.com/subscribe/post?u=e81eb9facd120894de0e61e0d&amp;id=ab2b965540" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate email-form" target="_blank" novalidate>
+
+<input type="email" value="" name="EMAIL" placeholder="email address" class="required email email-input" id="mce-EMAIL">
+
+<input type="submit" value="Sign Up &raquo;" name="SUBMIT" id="mc-embedded-submit" class="button email-submit">
+
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	
+</form>
+
+<!--End mc_embed_signup-->
+</div></div></div>
+
+<div class="wrapper">
+<div id="content" class="col span_10 clr span_content">
+
+<article class="post single-post-content">
+
+	<div class="post-meta post-date">
+		March 9, 2020	</div>
+	<h1 class="post-title">Korean Chicken Bowls</h1>
+	<div class="fork"></div>
+	<div class="post-meta">
+		<em>posted in</em> <a href="https://damndelicious.net/category/asian-inspired/" rel="category tag">asian inspired</a>, <a href="https://damndelicious.net/category/entree/" rel="category tag">entree</a>		<span class="spacer">//</span>
+		<i class="fa fa-comment"></i><a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comments">16 <em>Comments &raquo;</em></a>			</div>
+
+	<div style='display:none;' class='shareaholic-canvas' data-app='share_buttons' data-title='Korean Chicken Bowls' data-link='https://damndelicious.net/2020/03/09/korean-chicken-bowls/' data-app-id-name='post_above_content'></div><div style="display: none;">
+<p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-31476 size-full" src="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-Bowls.jpg" alt="Korean Chicken Bowls - Juicy, flavorful Korean chicken bowls made with the easiest marinade ever! Serve with your choice of grain/rice and desired toppings!" width="760" height="2273" data-wp-pid="31476" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-Bowls.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-Bowls-500x1495.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-Bowls-514x1536.jpg 514w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-Bowls-685x2048.jpg 685w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-Bowls-640x1914.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-Bowls-602x1800.jpg 602w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-Bowls-535x1600.jpg 535w" sizes="(max-width: 760px) 100vw, 760px" /></p>
+</div>
+<p style="text-align: center;"><em>Juicy, flavorful Korean chicken bowls made with the easiest marinade ever! Serve with your choice of grain/rice and desired toppings!</em></p>
+<p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-31474 size-full" src="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829.jpg" alt="Korean Chicken Bowls - Juicy, flavorful Korean chicken bowls made with the easiest marinade ever! Serve with your choice of grain/rice and desired toppings!" width="760" height="1140" data-wp-pid="31474" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829-600x900.jpg 600w" sizes="(max-width: 760px) 100vw, 760px" /></p>
+<p>I love love <em><strong>love</strong></em> a good grain bowl. It has protein and tons of veggies, not to mention, it&#8217;s perfectly hearty and filling.</p>
+<p>So I made another <a href="https://damndelicious.net/2019/07/13/korean-beef-power-bowls/">Korean bowl version</a> (hello, I&#8217;ll take any excuse to have caramelized kimchi!).</p>
+<p>Now this one has jasmine rice as the base (but you can use any grain of your choice &#8211; farro, quinoa, wild rice, brown rice) with my favorite Korean chicken marinade using boneless, skinless chicken thighs (chicken breasts can always be substituted).</p>
+<p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-31473 size-full" src="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0766.jpg" alt="Korean Chicken Bowls - Juicy, flavorful Korean chicken bowls made with the easiest marinade ever! Serve with your choice of grain/rice and desired toppings!" width="760" height="1140" data-wp-pid="31473" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0766.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0766-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0766-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0766-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0766-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0766-600x900.jpg 600w" sizes="(max-width: 760px) 100vw, 760px" /></p>
+<p>Marinate for at least 2 hours and throw right onto the grill to get that smoky, charred goodness. A cast iron grill pan will also do the trick.</p>
+<p>Serve with your choice of base and desired toppings &#8211; caramelized kimchi (my favorite!), shredded cabbage, carrots, avocado, cilantro and a soft-boiled egg (<a href="https://damndelicious.net/2018/06/22/instant-pot-perfect-hard-boiled-eggs/">you can easily make this in the IP</a>!).</p>
+<p>So, so good. And if you&#8217;re having just one of those days, a bowl of rice and the Korean chicken will also be just as fantastic.</p>
+<p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-31475 size-full" src="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0833.jpg" alt="Korean Chicken Bowls - Juicy, flavorful Korean chicken bowls made with the easiest marinade ever! Serve with your choice of grain/rice and desired toppings!" width="760" height="1140" data-wp-pid="31475" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0833.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0833-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0833-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0833-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0833-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0833-600x900.jpg 600w" sizes="(max-width: 760px) 100vw, 760px" /></p>
+<div class="recipe" itemscope itemtype="http://schema.org/Recipe"><div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                        <meta itemprop="ratingValue" content="5.00"/>
+                        <meta itemprop="ratingCount" content="11"/>
+                        <meta itemprop="worstRating" content="1"/>
+                        <meta itemprop="bestRating" content="5"/>
+                        <meta itemprop="reviewCount" content="14"/>
+                        <meta itemprop="itemReviewed" content="Korean Chicken Bowls"/>
+                    </div><div class="recipe-title"><img itemprop="image" src="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829-360x360.jpg" class="photo nopin" nopin="nopin" /><h2 itemprop="name">Korean Chicken Bowls</h2><div class="post-meta time"><p><strong>Yield:</strong> <span itemprop="recipeYield">4 servings</span></p><p><strong>prep time:</strong> <span>2 hours 25 minutes</span></p><p><strong>cook time:</strong> <span>25 minutes</span></p><p><strong>total time:</strong> <span>2 hours 50 minutes</span></p></div><div class="summary" itemprop="description"><p>Juicy, flavorful Korean chicken bowls made with the easiest marinade ever! Serve with your choice of grain/rice and desired toppings!</p>
+</div></div>
+                    
+                    <div class="printbutton">
+                        <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/print/" title="Print Recipe" class="print"><i class="fa fa-print"></i> Print Recipe</a>
+                    </div><div class="recipe-content">
+                            <div class="recipe-cat" itemprop="recipeCategory" style="display: none;">asian inspired</div>
+                            <div class="recipe-keywords" itemprop="keywords" style="display: none;">Korean Chicken Bowls</div><span itemprop="prepTime" content="PT2H25M" style="display: none;" >2 hours 25 minutes</span><span itemprop="cookTime" content="PT25M" style="display: none;">25 minutes</span><div class="recipe-author" itemprop="author" style="display: none;">Chungah Rhee</div>
+                            <div class="photo2"><img itemprop="image" src="https://s23209.pcdn.co/wp-content/uploads/2020/03/Korean-Chicken-BowlsIMG_0829-360x360.jpg" class="photo nopin" nopin="nopin" /></div>
+                            <div class="left"><h3 id="ingredients" >Ingredients:</h3> <div class="ingredients"><h4>For the chicken</h4>
+<ul>
+<li itemprop="ingredients">1/2 small pear, peeled and coarsely grated</li>
+<li itemprop="ingredients">1/4 cup reduced sodium soy sauce</li>
+<li itemprop="ingredients">3 tablespoons chopped fresh cilantro leaves</li>
+<li itemprop="ingredients">2 tablespoons gochujang (Korean red pepper paste)</li>
+<li itemprop="ingredients">2 tablespoons toasted sesame oil</li>
+<li itemprop="ingredients">1 tablespoon light brown sugar</li>
+<li itemprop="ingredients">1 tablespoon freshly grated ginger</li>
+<li itemprop="ingredients">3 cloves garlic, minced</li>
+<li itemprop="ingredients">1 1/2 pounds boneless, skinless chicken thighs</li>
+<li itemprop="ingredients">1 tablespoon canola oil</li>
+</ul>
+<h4>For the kimchi</h4>
+<ul>
+<li itemprop="ingredients">2 teaspoons sesame oil</li>
+<li itemprop="ingredients">1 cup chopped kimchi</li>
+<li itemprop="ingredients">1 teaspoon sugar</li>
+</ul>
+<h4>For the bowls</h4>
+<ul>
+<li itemprop="ingredients">1 cup jasmine rice</li>
+<li itemprop="ingredients">1 1/2 cups shredded purple cabbage</li>
+<li itemprop="ingredients">2 carrots, peeled and grated</li>
+<li itemprop="ingredients">1 avocado, halved, peeled, seeded and thinly sliced</li>
+<li itemprop="ingredients">1 cup pack fresh cilantro leaves</li>
+<li itemprop="ingredients">4 soft-boiled eggs</li>
+<li itemprop="ingredients">2 green onions, thinly sliced</li>
+<li itemprop="ingredients">1 teaspoon toasted sesame seeds</li>
+</ul>
+</div></div>
+                            <div class="right"><h3 id="directions">Directions:</h3> <div class="instructions" itemprop="recipeInstructions"><ol>
+<li><strong>FOR THE CHICKEN:</strong> In a medium bowl, combine pear, soy sauce, cilantro, gochujang, sesame oil, brown sugar, ginger and garlic. In a gallon size Ziploc bag, combine soy sauce mixture and chicken; marinate for at least 2 hours to overnight, turning the bag occasionally.</li>
+<li>Preheat grill to medium heat. Drain the chicken from the marinade; brush with canola oil. Add chicken to grill, and cook, turning occasionally, until chicken is completely cooked through, reaching an internal temperature of 165 degrees F, about 10 minutes.</li>
+<li><strong>FOR THE KIMCHI:</strong> Heat sesame oil in small skillet over medium high heat. Add kimchi and sugar, and cook, stirring constantly, until caramelized and heated through, about 3-5 minutes; set aside.</li>
+<li><strong>FOR THE BOWLS:</strong> Cook jasmine rice according to package instructions.</li>
+<li>Divide rice into bowls. Top with chicken, kimchi, cabbage, carrots, avocado, cilantro and eggs, garnished with green onions and sesame seeds, if desired.</li>
+</ol>
+</div></div>
+                            <div class="clear"></div><div class="notes"><h3 id="notes">Notes:</h3><p><em>Inspired by <a href="https://www.howsweeteats.com/2019/03/korean-chicken-with-coconut-rice/">How Sweet Eats</a></em></p>
+</div></div><div class="recipe-ps">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <h4>Did you Make This Recipe?</h4>
+                            <p>Tag <a href="http://instagram.com/damn_delicious" target="_blank">@damn_delicious</a> on Instagram and hashtag it <em>#damndelicious</em>.</p>
+                    </div></div>
+<div style='display:none;' class='shareaholic-canvas' data-app='share_buttons' data-title='Korean Chicken Bowls' data-link='https://damndelicious.net/2020/03/09/korean-chicken-bowls/' data-app-id-name='post_below_content'></div>
+	
+	<div class="post-meta meta-bottom meta-centered">
+		<div class="post-cats">
+		<a href="https://damndelicious.net/category/asian-inspired/" rel="category tag">asian inspired</a> <a href="https://damndelicious.net/category/entree/" rel="category tag">entree</a>		</div>
+
+		<div><i class="fa fa-comment"></i><a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comments">16 <em>Comments</em></a>		<span class="spacer">//</span>
+		<a href="#respond">Leave a Comment &raquo;</a>
+		</div>
+	</div>
+
+</article> <!-- end .post -->
+
+
+<div class="fork"></div>
+
+<div class="post-nav">
+	<div class="nav-previous"><a href="https://damndelicious.net/2020/03/03/creamy-chicken-piccata/"><em>&laquo; Previous Post</em>Creamy Chicken Piccata</a></div>
+	<div class="nav-next"><a href="https://damndelicious.net/2020/03/14/quick-tomato-sauce/"><em>Next Post &raquo;</i>
+	</em>Quick Tomato Sauce</a></div>
+</div>
+
+
+
+<div class="inner-post">
+	<div id="custom_html-6" class="widget_text widget-odd widget-last widget-first widget-1 subscribe widget widget_custom_html"><h3 class="widget-title">Get the <em>Latest Recipes</em> Right in your Inbox:</h3><div class="textwidget custom-html-widget"><!-- Begin MailChimp Signup Form -->
+
+<form action="http://damndelicious.us5.list-manage.com/subscribe/post?u=e81eb9facd120894de0e61e0d&amp;id=ab2b965540" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate email-form" target="_blank" novalidate>
+
+<input type="email" value="" name="EMAIL" placeholder="email address" class="required email email-input" id="mce-EMAIL">
+
+<input type="submit" value="Sign Up &raquo;" name="SUBMIT" id="mc-embedded-submit" class="button email-submit">
+
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	
+</form>
+
+<!--End mc_embed_signup-->
+</div></div></div>
+
+
+
+
+<div id="comments" class="comments-area">
+
+		
+	
+		<div id="respond" class="comment-respond">
+		<span class="wpsso-rar title-reply">
+<span class="comment-toggle-review"><!-- form label: Leave a Review --><h3 id="review-title" class="comment-review-title">Leave a Review</h3></span><!-- .comment-toggle-review -->
+<span class="comment-toggle-comment" style="display:none;"><!-- form label: Leave a Reply --><h3 id="reply-title" class="comment-reply-title">Leave a Review <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2020/03/09/korean-chicken-bowls/#respond" style="display:none;">Cancel reply</a></small></h3></span><!-- .comment-toggle-comment --></span><!-- .wpsso-rar.title-reply -->
+<form action="https://damndelicious.net/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><span class="wpsso-rar comment-field">
+<p class="comment-form-rating">
+<!-- form label: Your Rating --><label for="rating">Your Rating <span class="required">*</span></label>
+<select name="rating" id="rating">
+	<option value="">Rating&hellip;</option>
+	<option value="5">Excellent</option>
+	<option value="4">Good</option>
+	<option value="3">Average</option>
+	<option value="2">Not Good</option>
+	<option value="1">Awful</option>
+</select></p><!-- .comment-form-rating -->
+<p class="comment-form-comment">
+<span class="comment-toggle-review"><!-- form label: Your Review --><label for="review">Your Review <span class="required">*</span></label></span><!-- .comment-toggle-review -->
+<span class="comment-toggle-comment" style="display:none;"><!-- form label: Comment --><label for="comment">Comment</label></span><!-- .comment-toggle-comment --> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p></span><!-- .wpsso-rar.comment-field -->
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><span class="wpsso-rar submit-button">
+<span class="comment-toggle-review"><!-- form label: Post Review --><input name="%1$s" type="submit" id="%2$s" class="%3$s" value="Post Review"/></span><!-- .comment-toggle-review -->
+<span class="comment-toggle-comment" style="display:none;"><!-- form label: Post Comment --><!-- wpsso-rar comment label attribute missing in 'comment_field' value -->
+<input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /></span><!-- .comment-toggle-comment --></span><!-- .wpsso-rar.submit-button -->
+ <input type='hidden' name='comment_post_ID' value='31472' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="547d0dfd5c" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="115"/></p></form>	</div><!-- #respond -->
+		
+	<div class="fork" style="margin:35px 0 50px"></div>
+	
+			<h3 id="comments">
+			16 comments		</h2>
+
+		
+		<ol id="comment-list" class="comment-list">
+				    <li class="comment even thread-even depth-1" id="li-comment-213185">
+	        <div id="comment-213185" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/6570ebf8b97ca3a5e094d3c9db4a3d5d?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/6570ebf8b97ca3a5e094d3c9db4a3d5d?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Elisabeth</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-213185">
+                <time pubdate datetime="2020-11-17T13:29:42-08:00">
+                November 17, 2020 @ 1:29 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-213185' data-commentid="213185" data-postid="31472" data-belowelement="comment-213185" data-respondelement="respond" data-replyto="Reply to Elisabeth" aria-label='Reply to Elisabeth'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Absolutely obsessed. Adding to our regular rotation. Ive never attempted Korean before but just our usual supermarket had the kimchi and gochujang. I loved the flavors- it smelled and tasted exactly like the korean bbq we have tried in the past.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-210618">
+	        <div id="comment-210618" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/63719645fa828c8d1e6a37ce8f7ad3d1?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/63719645fa828c8d1e6a37ce8f7ad3d1?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Meow</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-210618">
+                <time pubdate datetime="2020-10-17T22:08:40-07:00">
+                October 17, 2020 @ 10:08 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-210618' data-commentid="210618" data-postid="31472" data-belowelement="comment-210618" data-respondelement="respond" data-replyto="Reply to Meow" aria-label='Reply to Meow'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->This chicken came out so damn&#8230;well&#8230;Delicious!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-202853">
+	        <div id="comment-202853" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/82e25135a9dff98cc8a76efc28b0a88c?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/82e25135a9dff98cc8a76efc28b0a88c?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Jessie</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-202853">
+                <time pubdate datetime="2020-07-22T23:21:48-07:00">
+                July 22, 2020 @ 11:21 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-202853' data-commentid="202853" data-postid="31472" data-belowelement="comment-202853" data-respondelement="respond" data-replyto="Reply to Jessie" aria-label='Reply to Jessie'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->So so good. Lots of protein and veg. I swapped the rice for quinoa and used a fuji apple instead of a pear in the marinade because that&#8217;s all I had on hand and it was still awesome. The chicken marinade was amazing and I can&#8217;t wait to try it with a pear next time. My husband loved it and so did I!!!! Will definitely make again soon!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-201603">
+	        <div id="comment-201603" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/ca4fc01d597a7b358f5ba997468624d3?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/ca4fc01d597a7b358f5ba997468624d3?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Kathy Anish</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-201603">
+                <time pubdate datetime="2020-07-04T20:17:13-07:00">
+                July 4, 2020 @ 8:17 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-201603' data-commentid="201603" data-postid="31472" data-belowelement="comment-201603" data-respondelement="respond" data-replyto="Reply to Kathy Anish" aria-label='Reply to Kathy Anish'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Hi, can you recommend a good gochujang brand? I love Korean food and am starting to make it at home. Thanks!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-201495">
+	        <div id="comment-201495" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/18ade3f997b5dabeb318cf3ace799009?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/18ade3f997b5dabeb318cf3ace799009?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Lyn</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-201495">
+                <time pubdate datetime="2020-07-03T23:56:40-07:00">
+                July 3, 2020 @ 11:56 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-201495' data-commentid="201495" data-postid="31472" data-belowelement="comment-201495" data-respondelement="respond" data-replyto="Reply to Lyn" aria-label='Reply to Lyn'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->This is worth a try. I had to travel quite a bit to buy gochujang and kimchi but the results was satisfying. My kids rate the chicken 5/5!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-198128">
+	        <div id="comment-198128" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/0948145e719cbab14823a6917f5ff531?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/0948145e719cbab14823a6917f5ff531?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong><a href='https://flavorthymerecipes.com' rel='external nofollow ugc' class='url'>Jacob @ FlavorThyme</a></strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-198128">
+                <time pubdate datetime="2020-06-11T18:25:23-07:00">
+                June 11, 2020 @ 6:25 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-198128' data-commentid="198128" data-postid="31472" data-belowelement="comment-198128" data-respondelement="respond" data-replyto="Reply to Jacob @ FlavorThyme" aria-label='Reply to Jacob @ FlavorThyme'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Love the Korean twist on the classic grain bowl. I&#8217;m always looking for new healthy and creative recipes to try out and this looks fantastic! Can&#8217;t wait to try it out!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-195528">
+	        <div id="comment-195528" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/c8a4ca5844a9825c3aa0d7d528e6ded1?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/c8a4ca5844a9825c3aa0d7d528e6ded1?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong><a href='http://Damndelicious.com' rel='external nofollow ugc' class='url'>Raeann Hatfield</a></strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-195528">
+                <time pubdate datetime="2020-05-13T16:03:43-07:00">
+                May 13, 2020 @ 4:03 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-195528' data-commentid="195528" data-postid="31472" data-belowelement="comment-195528" data-respondelement="respond" data-replyto="Reply to Raeann Hatfield" aria-label='Reply to Raeann Hatfield'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->I can’t wait to try this. It says to grate carrots but the photo does not look like grated carrots. What do you use to shape them that way?  Thank you!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment odd alt depth-2" id="li-comment-202561">
+	        <div id="comment-202561" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/e8481aeb4f59d11ca4dbc14e3e004c1d?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/e8481aeb4f59d11ca4dbc14e3e004c1d?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Shelley</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-202561">
+                <time pubdate datetime="2020-07-19T08:09:18-07:00">
+                July 19, 2020 @ 8:09 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-202561' data-commentid="202561" data-postid="31472" data-belowelement="comment-202561" data-respondelement="respond" data-replyto="Reply to Shelley" aria-label='Reply to Shelley'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->A julienne peeler will grate carrots into that shape 🙂<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-191376">
+	        <div id="comment-191376" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/229f019e3ca37718d3419275babbf10f?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/229f019e3ca37718d3419275babbf10f?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>sissy</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-191376">
+                <time pubdate datetime="2020-04-04T06:56:09-07:00">
+                April 4, 2020 @ 6:56 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-191376' data-commentid="191376" data-postid="31472" data-belowelement="comment-191376" data-respondelement="respond" data-replyto="Reply to sissy" aria-label='Reply to sissy'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->I have never ever left a recipe review before but I HAD TO for this one. Favorite dish I&#8217;ve made all year. Thank you! Definitely trying the Thai Basil bowls this week 🙂<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-even depth-1" id="li-comment-189604">
+	        <div id="comment-189604" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/5edf5f0acbd3174d5ea44732c1882411?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/5edf5f0acbd3174d5ea44732c1882411?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Linda Miritello</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-189604">
+                <time pubdate datetime="2020-03-13T08:28:22-07:00">
+                March 13, 2020 @ 8:28 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-189604' data-commentid="189604" data-postid="31472" data-belowelement="comment-189604" data-respondelement="respond" data-replyto="Reply to Linda Miritello" aria-label='Reply to Linda Miritello'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->I happened to have all but one of these ingredients on hand and I made this yesterday for lunch.I didn’t have a pear, so I used an apple. I figured the job of the pear was to add a little sweetness and for the pectin to tenderize the meat. An Apple will do the same thing in a marinade. This recipe was incredibly flavorful and the textures of crunchy/soft along with the bite of kimchi and the creaminess of avocado was spot on! Can’t wait to try the marinade on other proteins!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment even depth-2" id="li-comment-202441">
+	        <div id="comment-202441" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/53ca81bb1d3cebaf5363232516e62094?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/53ca81bb1d3cebaf5363232516e62094?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Sandy</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-202441">
+                <time pubdate datetime="2020-07-17T02:15:20-07:00">
+                July 17, 2020 @ 2:15 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-202441' data-commentid="202441" data-postid="31472" data-belowelement="comment-202441" data-respondelement="respond" data-replyto="Reply to Sandy" aria-label='Reply to Sandy'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->So delicious can’t wait to make it again! <!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-189556">
+	        <div id="comment-189556" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/437ae7f6f9d659828e1b1c8e8212d333?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/437ae7f6f9d659828e1b1c8e8212d333?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Jenna Meggett</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-189556">
+                <time pubdate datetime="2020-03-12T18:24:45-07:00">
+                March 12, 2020 @ 6:24 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-189556' data-commentid="189556" data-postid="31472" data-belowelement="comment-189556" data-respondelement="respond" data-replyto="Reply to Jenna Meggett" aria-label='Reply to Jenna Meggett'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Loved the flavors in this whole dish.  It&#8217;s Winter here, so no grilling outside, but we used cast-iron skillet and crisped up the marinated chicken thighs in the oven&#8230;perfection.  I hoped that I would love kimchi like my husband does (he craves it), but alas only could handle a little of it.  Added a fried egg over the rice rather than a hard-boiled, and sprinkled sriracha-miso sauce over the top.  OMG, loved it kimchi &amp; all!  Thankyou, Chungah.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-189515">
+	        <div id="comment-189515" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/25f26ce4f29cd9c9fcc660701f6ab565?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/25f26ce4f29cd9c9fcc660701f6ab565?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Barbara Hall</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-189515">
+                <time pubdate datetime="2020-03-12T11:04:49-07:00">
+                March 12, 2020 @ 11:04 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-189515' data-commentid="189515" data-postid="31472" data-belowelement="comment-189515" data-respondelement="respond" data-replyto="Reply to Barbara Hall" aria-label='Reply to Barbara Hall'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Just tried the Mexican Street Corn Bowls and they are fantastic! Going to try the Korean Bowls next. I love the way you twist recipes just a little to make a different but delicious meal. Thank you for the time and care you take with your recipes!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-189493">
+	        <div id="comment-189493" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/db5b59ca776028dedf69ad2fc8e259ba?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/db5b59ca776028dedf69ad2fc8e259ba?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>RS</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-189493">
+                <time pubdate datetime="2020-03-12T07:54:08-07:00">
+                March 12, 2020 @ 7:54 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-189493' data-commentid="189493" data-postid="31472" data-belowelement="comment-189493" data-respondelement="respond" data-replyto="Reply to RS" aria-label='Reply to RS'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Made this last night for dinner. Used pork cutlets I stead of chicken thighs. Amazing! Simple to cook, and very flavorful! Damn delicious never fails to impress!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-189316">
+	        <div id="comment-189316" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/4abb3fba07f8135b7914839791c63805?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/4abb3fba07f8135b7914839791c63805?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Lucy</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-189316">
+                <time pubdate datetime="2020-03-10T20:52:16-07:00">
+                March 10, 2020 @ 8:52 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-189316' data-commentid="189316" data-postid="31472" data-belowelement="comment-189316" data-respondelement="respond" data-replyto="Reply to Lucy" aria-label='Reply to Lucy'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->sounds like a great Bowl, will have to make it, what kind of kimchi is used?<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-189294">
+	        <div id="comment-189294" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/8ca220b5ce6eab32bfb239fccf1aa92e?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/8ca220b5ce6eab32bfb239fccf1aa92e?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Paige Cassandra Flamm</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/03/09/korean-chicken-bowls/#comment-189294">
+                <time pubdate datetime="2020-03-10T12:39:47-07:00">
+                March 10, 2020 @ 12:39 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-189294' data-commentid="189294" data-postid="31472" data-belowelement="comment-189294" data-respondelement="respond" data-replyto="Reply to Paige Cassandra Flamm" aria-label='Reply to Paige Cassandra Flamm'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->These chicken bowls look amazing! I need to try these asap!</p>
+<p>Paige<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+
+</div><!-- #comments -->
+
+</div> <!-- end #content -->
+
+<div class="sidebar jw-sidebar row span_6 clr span_sidebar">
+			
+	<div class="topsidebar">
+	<div id="simpleimage-2" class="widget-odd widget-first widget-1 about widget widget_simpleimage">
+	<p class="simple-image nopin">
+		<a href="/about-me/"><img width="500" height="680" src="https://s23209.pcdn.co/wp-content/uploads/2018/06/about.jpg" class="attachment-full size-full" alt="" loading="lazy" nopin="nopin" data-wp-pid="29472" /></a>	</p>
+
+
+<p>Come join me in my culinary adventures where we'll be using <strong>simple, fresh ingredients</strong> and transforming them into <em>sophisticated and elegant meals</em> for the <strong>everyday home cook</strong>.</p>
+
+	<p class="more">
+		<a href="/about-me/">More About Me »</a>	</p>
+</div><div id="text-26" class="widget-even widget-2 cookbook widget widget_text">			<div class="textwidget"><p><a href="https://damn-delicious-inc.myshopify.com/"><img class="alignnone src=" src="https://s23209.pcdn.co/wp-content/uploads/2020/01/corgi-shop.jpg" alt="Corgi Shop" /></a></p>
+<p class="links"><a href="https://damn-delicious-inc.myshopify.com/">SHOP NOW</a></p>
+</div>
+		</div><div id="text-24" class="widget-odd widget-3 cookbook widget widget_text">			<div class="textwidget"><p><a href="https://www.amazon.com/Damn-Delicious-Meal-Prep-Low-Calorie/dp/1538729423/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1544547332&amp;sr=1-1&amp;keywords=damn+delicious+meal+prep"><img loading="lazy" class="alignnone size-full wp-image-29471" src="https://s23209.pcdn.co/wp-content/uploads/2019/02/in-stores-now.jpg" alt="" width="600" height="486" /></a></p>
+<p>Get your copy today:</p>
+<p class="links"><a href="https://www.amazon.com/Damn-Delicious-Meal-Prep-Low-Calorie/dp/1538729423/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1544547332&amp;sr=1-1&amp;keywords=damn+delicious+meal+prep" target="_blank" rel="nofollow noopener noreferrer">Amazon</a> // <a href="https://www.barnesandnoble.com/w/damn-delicious-meal-prep-chungah-rhee/1129915469?ean=9781538729427" target="_blank" rel="nofollow noopener noreferrer">Barnes &amp; Noble </a> // <a href="https://www.indiebound.org/book/9781538729427" target="_blank" rel="nofollow noopener noreferrer">Indiebound </a></p>
+</div>
+		</div><div id="text-23" class="widget-even widget-4 cookbook widget widget_text">			<div class="textwidget"><p><a href="https://www.amazon.com/Damn-Delicious-Super-Easy-Recipes/dp/084874585X/"><img loading="lazy" class="alignnone size-full wp-image-29471" src="https://s23209.pcdn.co/wp-content/uploads/2018/06/cookbook@2x.jpg" alt="" width="600" height="486" /></a></p>
+<p>Get your copy today:</p>
+<p class="links"><a href="http://bit.ly/damndeliciousbook" target="_blank" rel="nofollow noopener noreferrer">Amazon</a> // <a href="http://bit.ly/1W9MFUV" target="_blank" rel="nofollow noopener noreferrer">Barnes &amp; Noble </a> // <a href="http://bit.ly/1WJmvH8" target="_blank" rel="nofollow noopener noreferrer">Indiebound </a></p>
+</div>
+		</div><div id="search-4" class="widget-odd widget-last widget-5 widget widget_search"><h3 class="widget-title">Search Recipes:</h3><form method="get" class="search-form" action="https://damndelicious.net/">
+	<input type="text" class="search-input" name="s" id="s" value="" placeholder="search..." />
+	<button type="submit" class="btn btn-success search-submit">
+		<i class="fa fa-search"></i>
+	</button>
+</form>
+</div>
+	</div>
+
+	<div class="midsidebar">
+		<div class="leftsidebar">
+		
+		
+		</div>
+		
+		<div class="rightsidebar">
+		
+		
+		</div>
+	</div>
+	
+	<div class="lowersidebar">
+	
+	
+	</div>
+	
+<div class="clear"></div>
+</div><!-- end #sidebar --><div class="clear"></div>
+</div> <!-- end #wrapper -->
+
+<div class="footer">
+				<div id="ll-custom-recent-posts-2" class="widget-odd widget-first widget-1 footer-widget recentposts">			<h3 class="widget-title">What&#8217;s Trending</h3>			<div class="recent">
+									<div class="item">
+						<a href="https://damndelicious.net/2020/01/25/homestyle-chicken-noodle-soup/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-600x900.jpg 600w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2.jpg 760w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="31324" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/12/10/quick-chicken-ramen-noodle-stir-fry/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="31195" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/09/24/skillet-lemon-dill-chicken-thighs/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="31016" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/08/31/make-ahead-breakfast-biscuit-sandwiches/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="30970" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/08/28/greek-chicken-kabobs/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="30961" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/05/05/carne-asada/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="30749" />																				</a>
+					</div>
+							</div>
+			</div>			<div id="text-25" class="widget-even widget-last widget-2 footer-widget widget_text"><h3 class="widget-title">Shoppable Recipes</h3>			<div class="textwidget"><p><!-- shoppable recipe --><br />
+<script language="javascript" type="text/javascript">
+var chicscript = document.createElement('script');
+chicscript.type = 'text/javascript';
+chicscript.src = '//mini.myxxrecipes.com/api/lp/launchpad.js';    
+window.adthrive = window.adthrive || {};
+window.adthrive.cmd = window.adthrive.cmd || [];
+if (Math.random() > 0.5) {
+document.head.appendChild(chicscript);
+window.adthrive.cmd.push(function() {
+			window.adthrive.siteAds.targeting.push( {key: 'at_custom_1', value: 'myxx_on'} );
+			});
+} else {
+window.adthrive.cmd.push(function() {
+			window.adthrive.siteAds.targeting.push( {key: 'at_custom_1', value: 'myxx_off'} );
+			});
+}
+</script></p>
+</div>
+		</div>
+	<div id="custom_html-5" class="widget_text widget-even widget-2 subscribe widget_custom_html"><div class="widget_text wrap subscribe-wrap"><h3 class="widget-title">Get the <em>Latest Recipes</em> Right in your Inbox:</h3><div class="textwidget custom-html-widget"><!-- Begin MailChimp Signup Form -->
+
+<form action="http://damndelicious.us5.list-manage.com/subscribe/post?u=e81eb9facd120894de0e61e0d&amp;id=ab2b965540" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate email-form" target="_blank" novalidate>
+
+<input type="email" value="" name="EMAIL" placeholder="email address" class="required email email-input" id="mce-EMAIL">
+
+<input type="submit" value="Sign Up &raquo;" name="SUBMIT" id="mc-embedded-submit" class="button email-submit">
+
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	
+</form>
+
+<!--End mc_embed_signup-->
+</div></div></div></div>
+
+<div class="sub-footer">
+<div class="wrap">
+	<ul id="menu-footer" class="footer-nav"><li id="menu-item-16603" class="top menu-item menu-item-type-custom menu-item-object-custom menu-item-16603"><a href="#">^ Top</a></li>
+<li id="menu-item-21166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-21166"><a href="https://damndelicious.net/">Home</a></li>
+<li id="menu-item-16592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16592"><a href="https://damndelicious.net/about-me/">About</a></li>
+<li id="menu-item-16602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16602"><a href="https://damndelicious.net/recipe-index/">Browse Recipes</a></li>
+<li id="menu-item-16594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16594"><a href="https://damndelicious.net/press/">Press</a></li>
+<li id="menu-item-27737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27737"><a href="https://damndelicious.net/team/">Team</a></li>
+<li id="menu-item-16595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16595"><a href="https://damndelicious.net/privacy-policy/">Privacy</a></li>
+<li id="menu-item-16593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16593"><a href="https://damndelicious.net/contact-me/">Contact</a></li>
+</ul>	
+	<div class="copyright">
+		&copy;2020<i class="icon"></i> Damn Delicious. Design by <a href="http://www.purrdesign.com" target="_blank" rel="nofollow">Purr</a>.
+	</div>
+	
+	<script type='text/javascript' id='thickbox-js-extra'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"https:\/\/damndelicious.net\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105' id='thickbox-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/shortcode.min.js?ver=5.5.2' id='shortcode-js'></script>
+<script type='text/javascript' src='https://damndelicious.net/wp-admin/js/media-upload.min.js?ver=5.5.2' id='media-upload-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/js/custom.js?ver=1.0.11' id='custom-js-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/js/pinterest.js?ver=1' id='pinterest-js-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/comment-reply.min.js?ver=5.5.2' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/mobile-header/mobile-header-scripts.js?ver=1.0.0' id='cmh-scripts-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/wp-embed.min.js?ver=5.5.2' id='wp-embed-js'></script>
+<script async="async" type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/akismet/_inc/form.js?ver=4.1.7' id='akismet-form-js'></script>
+	<!--34 queries. 0.180 seconds-->
+</div>
+</div>
+
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"8f2cac8c19","applicationID":"108064120","transactionName":"ZFdabERTCEFQAE0NWl0deVtCWwlcHhBQClJfVw==","queueTime":0,"applicationTime":182,"atts":"SBBZGgxJG08=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

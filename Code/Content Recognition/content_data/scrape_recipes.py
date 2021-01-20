@@ -42,6 +42,11 @@ def scrape_and_create_dragnet_structure(sources_path,
     if outputdir is None:
         outputdir = _os.path.join(_os.getcwd(), 'scraped_data')
 
+    # Some sites close their content for 'bots', so user-agent must be supplied
+    HEADERS = {
+        "User-Agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7"
+    }
+    # Begin scraping each source in our input, as needed
     for source in sources.keys():
         unique_sources = list(dict.fromkeys(sources[source]))
         for index, url in enumerate(unique_sources):
@@ -50,7 +55,7 @@ def scrape_and_create_dragnet_structure(sources_path,
 
             if overwrite or not _os.path.exists(filename):
                 # Extract the HTML content and write it
-                html_content = str(_requests.get(url).text)
+                html_content = str(_requests.get(url, headers=HEADERS).text)
                 _write_html(filename, html_content)
 
             # Create an empty "corrected" file in "Corrected" directory
@@ -77,7 +82,7 @@ def remove_duplicate_sources(sources_path, overwrite=True):
     sources : dict
         The unique sources dictionary
     """
-    
+
     with open(sources_path) as json_file:
         sources = _json.load(json_file)
     for key in sources.keys():
@@ -87,7 +92,7 @@ def remove_duplicate_sources(sources_path, overwrite=True):
     if overwrite:
         with open(sources_path, 'w') as json_file:
             _json.dump(sources, json_file)
-    
+
     return sources
 
 

@@ -3,6 +3,7 @@ from enum import unique as _unique
 from typing import Iterable as _Iterable
 import os as _os
 import multiprocessing as _multiprocessing
+import pprint as _pprint
 
 from dragnet.extractor import Extractor as _Extractor
 import dragnet.model_training as _model_training
@@ -34,14 +35,15 @@ class RecipeExtractionModel(_Enum):
     )
     SVC = _SVC(
         C=1,
-        probability=True
+        probability=True,
+        gamma='auto'
     )
-    MlpModel = _MLPClassifier(
-        max_iter=1000
+    MLP = _MLPClassifier(
+        max_iter=1000,
     )
 
     def __str__(self):
-        return str(self.value)
+        return _pprint.pformat(self.value)
 
 
 def train(model: RecipeExtractionModel = RecipeExtractionModel.SVC,
@@ -71,6 +73,7 @@ def train(model: RecipeExtractionModel = RecipeExtractionModel.SVC,
     )
 
     print('Beginning training...')
+    print(model)
     base_extractor = _Extractor(
         features=features,
         to_extract='content',

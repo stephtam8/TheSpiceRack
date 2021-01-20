@@ -1,0 +1,2701 @@
+<!doctype html>  
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> <![endif]-->  
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> <![endif]-->  
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> <![endif]-->  
+<!--[if gt IE 8]><!--> <html lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> <!--<![endif]-->  
+
+<head> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+<meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"8f2cac8c19",applicationID:"108064120"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="https://s23209.pcdn.co/wp-content/themes/damndelicious2018/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://s23209.pcdn.co/wp-content/themes/damndelicious2018/favicon.ico" type="image/x-icon" /> 
+
+<link rel="alternate" type="application/rss+xml" title="Damn Delicious RSS2 Feed" href="https://damndelicious.net/feed/" />  
+
+
+
+<script>
+(function(w, d) {
+	w.adthrive = w.adthrive || {};
+	w.adthrive.cmd = w.adthrive.cmd || [];
+	w.adthrive.plugin = 'adthrive-ads-1.0.41';
+	w.adthrive.host = 'ads.adthrive.com';
+
+	var s = d.createElement('script');
+	s.async = true;
+	s.referrerpolicy='no-referrer-when-downgrade';
+	s.src = 'https://' + w.adthrive.host + '/sites/52e41fac28963d1e058a110e/ads.min.js?referrer=' + w.encodeURIComponent(w.location.href);
+	var n = d.getElementsByTagName('script')[0];
+	n.parentNode.insertBefore(s, n);
+})(window, document);
+</script>
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>//<![CDATA[
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+//]]>
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+	<!-- This site is optimized with the Yoast SEO plugin v15.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Instant Pot Mississippi Pot Roast - Damn Delicious</title>
+	<meta name="description" content="Instant Pot Mississippi Pot Roast - The most amazing pot roast ever! Made in the IP in just a fraction of the time. So juicy and melt-in-your-mouth tender!" />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/" />
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Chungah @ Damn Delicious">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="1 minute">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//m9m6e2w5.stackpathcdn.com' />
+<link rel='dns-prefetch' href='//cdn.shareaholic.net' />
+<link rel='dns-prefetch' href='//www.shareaholic.net' />
+<link rel='dns-prefetch' href='//analytics.shareaholic.com' />
+<link rel='dns-prefetch' href='//recs.shareaholic.com' />
+<link rel='dns-prefetch' href='//go.shareaholic.com' />
+<link rel='dns-prefetch' href='//partner.shareaholic.com' />
+<link rel="alternate" type="application/rss+xml" title="Damn Delicious &raquo; Instant Pot Mississippi Pot Roast Comments Feed" href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/feed/" />
+<!-- Shareaholic - https://www.shareaholic.com -->
+<link rel='preload' href='//cdn.shareaholic.net/assets/pub/shareaholic.js' as='script'/>
+<script data-no-minify='1' data-cfasync='false'>
+_SHR_SETTINGS = {"endpoints":{"local_recs_url":"https:\/\/damndelicious.net\/wp-admin\/admin-ajax.php?action=shareaholic_permalink_related","ajax_url":"https:\/\/damndelicious.net\/wp-admin\/admin-ajax.php","share_counts_url":"https:\/\/damndelicious.net\/wp-admin\/admin-ajax.php?action=shareaholic_share_counts_api"},"site_id":"917dae0c6d3c4c7c2f861beb78f1b756","url_components":{"year":"2020","monthnum":"06","day":"06","hour":"21","minute":"00","second":"37","post_id":"31566","postname":"instant-pot-mississippi-pot-roast","category":"entree"}};
+</script>
+<script data-no-minify='1' data-cfasync='false' src='//cdn.shareaholic.net/assets/pub/shareaholic.js' data-shr-siteid='917dae0c6d3c4c7c2f861beb78f1b756' async ></script>
+
+<!-- Shareaholic Content Tags -->
+<meta name='shareaholic:site_name' content='Damn Delicious' />
+<meta name='shareaholic:language' content='en-US' />
+<meta name='shareaholic:url' content='https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/' />
+<meta name='shareaholic:keywords' content='cat:entree, cat:instant pot, type:post' />
+<meta name='shareaholic:article_published_time' content='2020-06-06T21:00:37-07:00' />
+<meta name='shareaholic:article_modified_time' content='2020-08-19T15:39:05-07:00' />
+<meta name='shareaholic:shareable_page' content='true' />
+<meta name='shareaholic:article_author_name' content='Chungah @ Damn Delicious' />
+<meta name='shareaholic:site_id' content='917dae0c6d3c4c7c2f861beb78f1b756' />
+<meta name='shareaholic:wp_version' content='9.5.0' />
+<meta name='shareaholic:image' content='https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380-640x960.jpg' />
+<!-- Shareaholic Content Tags End -->
+
+<!-- Shareaholic Open Graph Tags -->
+<meta property='og:image' content='https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380.jpg' />
+<!-- Shareaholic Open Graph Tags End -->
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.13.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+    (window.gaDevIds=window.gaDevIds||[]).push("dZGIzZG");
+	var mi_version         = '7.13.2';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-43450335-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+
+	if ( 'undefined' === typeof gaOptout ) {
+		function gaOptout() {
+			__gaTrackerOptout();
+		}
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-43450335-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s23209.pcdn.co\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='dashicons-css'  href='https://s23209.pcdn.co/wp-includes/css/dashicons.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='thickbox-css'  href='https://s23209.pcdn.co/wp-includes/js/thickbox/thickbox.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-style-css'  href='//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='spectrum-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/spectrum.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='smart-review-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/pluginstyle.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://s23209.pcdn.co/wp-includes/css/dist/block-library/style.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-banner-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/simple-banner/simple-banner.css?ver=2.8.0' type='text/css' media='all' />
+<link rel='stylesheet' id='monsterinsights-popular-posts-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.13.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/font-awesome/css/all.css?ver=5.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsso-rar-style-css'  href='https://s23209.pcdn.co/wp-content/plugins/wpsso-ratings-and-reviews/css/style.min.css?ver=2.11.1' type='text/css' media='all' />
+<style id='wpsso-rar-style-inline-css' type='text/css'>
+@font-face{font-family:"WpssoStar";font-weight:normal;font-style:normal;src:url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.eot?2.11.1");src:url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.eot?2.11.1#iefix") format("embedded-opentype"),
+url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.woff?2.11.1") format("woff"),
+url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.ttf?2.11.1") format("truetype"),
+url("https://s23209.pcdn.co/wp-content/plugins/wpsso/fonts/star.svg?2.11.1#star") format("svg")}.wpsso-rar .star-rating::before{color:#ddd}.wpsso-rar .star-rating span::before{color:#222}.wpsso-rar p.select-star a::before{color:#ddd}.wpsso-rar p.select-star a:hover~a::before{color:#ddd}.wpsso-rar p.select-star:hover a::before{color:#222}.wpsso-rar p.select-star.selected a.active::before{color:#222}.wpsso-rar p.select-star.selected a.active~a::before{color:#ddd}.wpsso-rar p.select-star.selected a:not(.active)::before{color:#222}
+</style>
+<link rel='stylesheet' id='custom-style-css'  href='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/style.css?ver=2.31' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-style-css'  href='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/responsive.css?ver=2.32' type='text/css' media='all' />
+<link rel='stylesheet' id='cmh-style-css'  href='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/mobile-header/mobile-header-style.css?ver=1.0.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/jsfiles/font-select.js?ver=5.5.2' id='font-select-js-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/jsfiles/spectrum.js?ver=5.5.2' id='spectrum-js-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/TapInfluence/jsfiles/ready.js?ver=5.5.2' id='ready-js-js'></script>
+<script type='text/javascript' id='monsterinsights-frontend-script-js-extra'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/damndelicious.net","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.13.2' id='monsterinsights-frontend-script-js'></script>
+<script type='text/javascript' id='simple-banner-script-js-extra'>
+/* <![CDATA[ */
+var scriptParams = {"hide_simple_banner":"","simple_banner_position":"","header_margin":"","header_padding":"","simple_banner_text":"ORDERS PLACED AFTER 2\/13 WILL BE SHIPPED STARTING 2\/24","pro_version_enabled":"1","in_array":"","debug_mode":"","id":"31566","disabled_pages_array":["1","648","7265","31228","662","31221","1490","30147","23232","22435","26500","27985","27988","27732","657","16015","16598","25774","25533","1318"],"simple_banner_font_size":"","simple_banner_color":"#121212","simple_banner_text_color":"#ffffff","simple_banner_link_color":"","simple_banner_custom_css":"","simple_banner_scrolling_custom_css":"","simple_banner_text_custom_css":"","site_custom_css":"","keep_site_custom_css":"","site_custom_js":"","keep_site_custom_js":"","wp_body_open_enabled":"","wp_body_open":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/simple-banner/simple-banner.js?ver=2.8.0' id='simple-banner-script-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.11.6' id='gtm4wp-form-move-tracker-js'></script>
+<script type='text/javascript' id='wpsso-rar-script-js-extra'>
+/* <![CDATA[ */
+var wpsso_rar_script = {"i18n_required_rating_text":"Please select a rating before submitting.","i18n_required_review_text":"Please write a review before submitting.","review_rating_required":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/wpsso-ratings-and-reviews/js/script.min.js?ver=2.11.1' id='wpsso-rar-script-js'></script>
+<link rel="https://api.w.org/" href="https://damndelicious.net/wp-json/" /><link rel="alternate" type="application/json" href="https://damndelicious.net/wp-json/wp/v2/posts/31566" /><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s23209.pcdn.co/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.2" />
+<link rel="alternate" type="application/json+oembed" href="https://damndelicious.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdamndelicious.net%2F2020%2F06%2F06%2Finstant-pot-mississippi-pot-roast%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://damndelicious.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdamndelicious.net%2F2020%2F06%2F06%2Finstant-pot-mississippi-pot-roast%2F&#038;format=xml" />
+
+            <!-- TapInfluence -->
+            <script type="text/javascript">
+            ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+            p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+            };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+            n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//a.tapinfluence.com/tap.js","taptracker"));
+            taptracker('newTracker', 'cf', 'c.tapinfluence.com', {appId: '1333b1a2-64a9-11e2-9c98-22000af92f17'});
+            taptracker('crossDomainLinker', function(linkElement) {
+  				return true;
+			});
+            taptracker('trackPageView');
+            </script>
+            <!-- TapInfluence -->
+
+            <style type='text/css'>
+	.wp-nutrition-label { border: 1px solid #ccc; font-family: helvetica, arial, sans-serif; font-size: .9em; width: 22em; padding: 1em 1.25em 1em 1.25em; line-height: 1.4em; margin: 1em; }
+	.wp-nutrition-label hr { border:none; border-bottom: solid 8px #666; margin: 3px 0px; }
+	.wp-nutrition-label .heading { font-size: 2.6em; font-weight: 900; margin: 0; line-height: 1em; }
+	.wp-nutrition-label .indent { margin-left: 1em; }
+	.wp-nutrition-label .small { font-size: .8em; line-height: 1.2em; }
+	.wp-nutrition-label .item_row { border-top: solid 1px #ccc; padding: 3px 0; }
+	.wp-nutrition-label .amount-per { padding: 0 0 8px 0; }
+	.wp-nutrition-label .daily-value { padding: 0 0 8px 0; font-weight: bold; text-align: right; border-top: solid 4px #666; }
+	.wp-nutrition-label .f-left { float: left; }
+	.wp-nutrition-label .f-right { float: right; }
+	.wp-nutrition-label .noborder { border: none; }
+	
+	.cf:before,.cf:after { content: " "; display: table;}
+	.cf:after { clear: both; }
+	.cf { *zoom: 1; }  
+</style>
+<style type="text/css" media="screen">.simple-banner{background:#121212;}</style><style type="text/css" media="screen">.simple-banner .simple-banner-text{color:#ffffff;}</style><style type="text/css" media="screen">.simple-banner .simple-banner-text a{color:#f16521;}</style><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests;block-all-mixed-content" />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>//<![CDATA[
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["entree","instant-pot-recipes"],"pagePostAuthor":"Chungah @ Damn Delicious"};
+	dataLayer.push( dataLayer_content );//]]>
+</script>
+<script data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T4LMV2F');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js""></script>
+
+<!-- social and search optimization by WPSSO Core v8.14.1 - https://wpsso.com/ -->
+<!-- wpsso meta tags begin -->
+<meta name="wpsso:mark:begin" content="wpsso meta tags begin"/>
+<!-- generator:1 --><meta name="generator" content="WPSSO Core 8.14.1/L*"/>
+<!-- generator:2 --><meta name="generator" content="WPSSO RAR 2.11.1/S"/>
+<!-- generator:3 --><meta name="generator" content="WPSSO JSON 4.10.0/L*"/>
+<!-- generator:4 --><meta name="generator" content="WPSSO UM 4.0.1/S"/>
+<link rel="shortlink" href="https://damndelicious.net/?p=31566"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Damn Delicious"/>
+<meta property="og:title" content="Instant Pot Mississippi Pot Roast - Damn Delicious"/>
+<meta property="og:description" content="Instant Pot Mississippi Pot Roast - The most amazing pot roast ever! Made in the IP in just a fraction of the time. So juicy and melt-in-your-mouth tender!"/>
+<meta property="og:updated_time" content="2020-08-19T22:39:05+00:00"/>
+<!-- og:image:1 --><meta property="og:image" content="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380-600x315-cropped.jpg"/>
+<!-- og:image:1 --><meta property="og:image:width" content="600"/>
+<!-- og:image:1 --><meta property="og:image:height" content="315"/>
+<!-- article:author:1 --><meta property="article:author" content="https://www.facebook.com/damndeliciousblog"/>
+<meta property="article:published_time" content="2020-06-07T04:00:37+00:00"/>
+<meta name="twitter:domain" content="damndelicious.net"/>
+<meta name="twitter:title" content="Instant Pot Mississippi Pot Roast - Damn Delicious"/>
+<meta name="twitter:description" content="Instant Pot Mississippi Pot Roast - The most amazing pot roast ever! Made in the IP in just a fraction of the time. So juicy and melt-in-your-mouth tender!"/>
+<meta name="twitter:creator" content="@damn_delicious"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380-600x900.jpg?p=31566"/>
+<meta name="twitter:label1" content="Written by"/>
+<meta name="twitter:data1" content="Chungah @ Damn Delicious"/>
+<meta name="twitter:label2" content="Est. reading time"/>
+<meta name="twitter:data2" content="1 minute"/>
+<meta name="author" content="Chungah @ Damn Delicious"/>
+<meta name="thumbnail" content="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380-600x315-cropped.jpg"/>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@id": "/2020/06/06/instant-pot-mississippi-pot-roast/#sso/blog.posting",
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/",
+            "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/",
+            "sameAs": [
+                "https://damndelicious.net/?p=31566"
+            ],
+            "name": "Instant Pot Mississippi Pot Roast - Damn Delicious",
+            "description": "Instant Pot Mississippi Pot Roast - The most amazing pot roast ever! Made in the IP in just a fraction of the time. So juicy and melt-in-your-mouth tender!",
+            "publisher": [
+                {
+                    "@id": "#sso/organization/site/org_logo_url"
+                }
+            ],
+            "headline": "Instant Pot Mississippi Pot Roast - Damn Delicious",
+            "copyrightYear": "2020",
+            "inLanguage": "en_US",
+            "dateCreated": "2020-06-07T04:00:37+00:00",
+            "datePublished": "2020-06-07T04:00:37+00:00",
+            "author": {
+                "@id": "/d2207a856a19cf578eb576be9d8c43d0#sso/person"
+            },
+            "thumbnailUrl": "https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380-600x315-cropped.jpg",
+            "commentCount": 43,
+            "comment": [
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-210791",
+                    "dateCreated": "2020-10-20T02:05:02-07:00",
+                    "description": "I have the ninja foodi...same pressure time ?",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Lisa"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-210245",
+                    "dateCreated": "2020-10-12T17:18:32-07:00",
+                    "description": "Loved this dish!!! What a fabulous recipe and doesn\u2019t use butter like the slow cooker versions.\u00a0",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Mmouse9401"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-210242",
+                    "dateCreated": "2020-10-12T16:15:09-07:00",
+                    "description": "A must 1-2 times per month! The pepperoncini pepper add the most interesting flavor to a dish we have been&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Cheri"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-209224",
+                    "dateCreated": "2020-09-28T23:08:16-07:00",
+                    "description": "Wow! Where has this been all my life?? This was so so so good! My extremely picky 6 year-old even&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Jessica Cain"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-208189",
+                    "dateCreated": "2020-09-14T01:16:39-07:00",
+                    "description": "Made it tonight and it was SO GOOD! Sometimes I shy away from pot roast, because it\u2019s a little bland&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Selena"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-205802",
+                    "dateCreated": "2020-08-19T13:23:54-07:00",
+                    "description": "Does anybody have recommendations on whether or not I should reduce cook time if I use a smaller amount of&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Christina"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-209225",
+                            "dateCreated": "2020-09-28T23:10:07-07:00",
+                            "description": "I would say no. I used a 2.5 pound roast (the biggest I could find) and didn\u2019t reduce the cooking&hellip;",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Jessica Cain"
+                            }
+                        },
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-206383",
+                            "dateCreated": "2020-08-27T20:15:54-07:00",
+                            "description": "i was wondering the same thing.",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "haley"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-205120",
+                    "dateCreated": "2020-08-15T19:05:51-07:00",
+                    "description": "This is really a flavorful, unique treatment for pot roast. I have very finicky family members who normally don\u2019t like&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Scott Huntley"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-205121",
+                            "dateCreated": "2020-08-15T19:08:08-07:00",
+                            "description": "Pepperoncini is apparently a word not liked by iPads...not pepperoni...pepperoncini",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Scott Huntley"
+                            },
+                            "comment": [
+                                {
+                                    "@context": "https://schema.org",
+                                    "@type": "Comment",
+                                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-214271",
+                                    "dateCreated": "2020-11-28T20:38:19-08:00",
+                                    "description": "LOL",
+                                    "author": {
+                                        "@context": "https://schema.org",
+                                        "@type": "Person",
+                                        "name": "Yuana Blanke"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-204240",
+                    "dateCreated": "2020-08-07T15:14:43-07:00",
+                    "description": "I made this recipe exactly as written and loved it. I spent some time trimming the fat off the beef&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Natalie Ehrlich"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-203521",
+                    "dateCreated": "2020-07-30T02:08:26-07:00",
+                    "description": "Yum yum yum. Followed exactly and turned out perfect. I served with baby potatoes and a dollop of sour cream.&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Andrea"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-203374",
+                    "dateCreated": "2020-07-28T15:43:04-07:00",
+                    "description": "This was truly one of the most flavorful things I\u2019ve ever eaten. \u00a0Followed the directions exactly as written and it&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Marty Briggs"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-201917",
+                    "dateCreated": "2020-07-09T23:53:27-07:00",
+                    "description": "I love 99.9 percent of DD recipes, but this one missed the mark. The quantity of dried dill seriously overpowered&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Bayou-Mama"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-200961",
+                    "dateCreated": "2020-07-01T13:48:20-07:00",
+                    "description": "Really good! I chopped up some more pepperoncinis and added them on top for serving. Will make again!",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Mary"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-200292",
+                    "dateCreated": "2020-06-29T03:43:22-07:00",
+                    "description": "The Best ever. This \u00a0has to be one of the best pot roast I have ever made. The meat was&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "David Bierwirth"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-199579",
+                    "dateCreated": "2020-06-25T19:58:38-07:00",
+                    "description": "I made this last night!!! Amazing! So yummmy The only change I made.... I seared my roast in my cast&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "CherylB"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198864",
+                    "dateCreated": "2020-06-22T10:51:13-07:00",
+                    "description": "This looks so good! Thank you for the nice recipe!",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Violet"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198855",
+                    "dateCreated": "2020-06-22T03:23:20-07:00",
+                    "description": "Made this tonight. \u00a0It was delish! \u00a0So flavorful and the meat was very tender. \u00a0Served with toasted Hawaiian rolls. \u00a0",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Bea"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198788",
+                    "dateCreated": "2020-06-21T12:35:39-07:00",
+                    "description": "I made this recipe in a crockpot instead of an instant pot. I used the same ingredients but cooked it&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Frankie"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-205116",
+                            "dateCreated": "2020-08-15T18:02:13-07:00",
+                            "description": "Awesome this is what I was looking to see! Did you do step 1? I\u2019d love to be able to&hellip;",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Cristina"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198743",
+                    "dateCreated": "2020-06-20T15:21:45-07:00",
+                    "description": "Two questions: 1) can I use this same recipe as-is in an 8qt IP? 2) is there a way to&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Janice"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198724",
+                    "dateCreated": "2020-06-20T03:10:03-07:00",
+                    "description": "So I thought I\u2019d be innovative and throw in some veg with the meat ; potatoes, celery and carrots. \u00a0I&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Lynn"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-205130",
+                            "dateCreated": "2020-08-15T22:14:48-07:00",
+                            "description": "10/10. Uh-freaking-mazing. One of our more expensive meals but worth it. We dont like onion soup so we subbed that&hellip;",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Brian"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198696",
+                    "dateCreated": "2020-06-19T19:21:37-07:00",
+                    "description": "Made this last night- it was AWESOME. And by far- ridiculously easy. Gotta love that combo. It's a special night&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "K"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198569",
+                    "dateCreated": "2020-06-18T04:04:05-07:00",
+                    "description": "wonderful pot roast recipe, I would have never guessed pepperoncini, but love them even by themselves good thinking, and a&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Sabrina"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198512",
+                    "dateCreated": "2020-06-17T21:25:47-07:00",
+                    "description": "I am really addicted on your recipes. I follow you everyday, bravo. Thanks a lot!",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "ibrahim demir"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198005",
+                    "dateCreated": "2020-06-10T22:42:44-07:00",
+                    "description": "How can I do this in a crock pot?",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Gail Tilton"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197809",
+                    "dateCreated": "2020-06-08T00:19:32-07:00",
+                    "description": "Since there are just 2 of us can I reduce all but cook time in half giving us some left&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "george"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197849",
+                            "dateCreated": "2020-06-08T16:12:44-07:00",
+                            "description": "I've frozen it after shredded it up. Tastes great! I use the leftovers to make shredded beef enchiladas.",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Danica"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197787",
+                    "dateCreated": "2020-06-07T19:48:30-07:00",
+                    "description": "Yummo!! We love Mississippi pot roast. I will have to try this in the IP. Have you tried Miss. pot&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Tesia"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-210715",
+                            "dateCreated": "2020-10-19T14:25:05-07:00",
+                            "description": "I agree on the ranch sesoning, particularly if you don't want so much dill seasoning. This is the way I&hellip;",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Trish"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197776",
+                    "dateCreated": "2020-06-07T17:58:38-07:00",
+                    "description": "You can definitely make this in crockpot. I do it all the time. Just throw everything, except for the cornstarch&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Debbie"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197765",
+                    "dateCreated": "2020-06-07T15:14:57-07:00",
+                    "description": "I only have an 8at IP, is the cook time the same? Thanks!",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Christine"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197763",
+                    "dateCreated": "2020-06-07T14:46:17-07:00",
+                    "description": "Sounds delicious!!! What if you don\u2019t have a Instant Pot? How long would this need to cook in a crock&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Christina Soto"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197768",
+                            "dateCreated": "2020-06-07T16:19:05-07:00",
+                            "description": "Original Mississippi Roast\u00a0 Chuck roast up to 4 lbs\u00a0 \u25aa\ufe0fblack pepper\u00a0 \u25aa\ufe0fAu Jus mix\u00a0 \u25aa\ufe0fHidden Valley Ranch mix \u25aa\ufe0fpepperoncini\u00a0 \u25aa\ufe0fstick&hellip;",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Donna"
+                            }
+                        },
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197766",
+                            "dateCreated": "2020-06-07T15:21:37-07:00",
+                            "description": "Agree. Need a stovetop or crockpot adaption please Thank you",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Kathryn Varga Flores"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197762",
+                    "dateCreated": "2020-06-07T14:32:45-07:00",
+                    "description": "I love making pot roast with onion soup mix. It's the best! Your recipe sounds delicious.",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Michelle"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197760",
+                    "dateCreated": "2020-06-07T13:46:25-07:00",
+                    "description": "Looks so good. \u00a0I never know how much fat to remove. \u00a0Do you take out that thick white middle section&hellip;",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "sweetpea"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Comment",
+                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197758",
+                    "dateCreated": "2020-06-07T13:21:25-07:00",
+                    "description": "Sure looks YUMMY! \u00a0No IP here. \u00a0Suggestion(s) for making stovetop and/or crockpot?",
+                    "author": {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Marlynne"
+                    },
+                    "comment": [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Comment",
+                            "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197856",
+                            "dateCreated": "2020-06-08T18:10:48-07:00",
+                            "description": "You can make this in the crockpot on low. Just add the cornstarch slurry towards the end and after you&hellip;",
+                            "author": {
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                "name": "Kristen"
+                            },
+                            "comment": [
+                                {
+                                    "@context": "https://schema.org",
+                                    "@type": "Comment",
+                                    "url": "https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197902",
+                                    "dateCreated": "2020-06-09T14:17:54-07:00",
+                                    "description": "Just a question. Can you substitute boneless, skinless chicken and chicken broth instead of beef?",
+                                    "author": {
+                                        "@context": "https://schema.org",
+                                        "@type": "Person",
+                                        "name": "Barbara"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "articleBody": "The most amazing pot roast ever! Made in the IP in just a fraction of the time. So juicy and melt-in-your-mouth tender! I have never had a pot roast that I didn&#039;t like. And this is no exception. Now it&#039;s definitely not your grandma&#039;s traditional pot roast as it is made with some very unconventional ingredients like pepperoncini and dry onion soup mix. But fear not because this pot roast will blow. your. mind. And with the help of the pressure cooker, this is made in just a fraction of the time. Not only that, the meat is cooked so perfectly. Melt-in-your-mouth tender, literally falling apart with the most heavenly gravy - slightly spicy, tangy and savory. It&#039;s also perfect as a low-carb meal if you want to serve this with cauliflower rice and an assortment of vegetables. But honestly, I serve the meat as is with all the gravy, a glass of wine and all the crusty bread. There&#039;s just no wrong way to serve this."
+        },
+        {
+            "@id": "#sso/organization/site/org_logo_url",
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://damndelicious.net",
+            "name": "Damn Delicious",
+            "description": "Simple ingredients. Elegant dishes.",
+            "image": [
+                {
+                    "@context": "https://schema.org",
+                    "@type": "ImageObject",
+                    "url": "https://s23209.pcdn.co/wp-content/themes/damndelicious2018/images/logo@2x.png",
+                    "width": 580,
+                    "height": 350
+                }
+            ],
+            "logo": {
+                "@context": "https://schema.org",
+                "@type": "ImageObject",
+                "url": "https://s23209.pcdn.co/wp-content/themes/damndelicious2018/images/logo@2x.png",
+                "width": 580,
+                "height": 350
+            }
+        },
+        {
+            "@id": "/d2207a856a19cf578eb576be9d8c43d0#sso/person",
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "url": "https://damndelicious.net",
+            "name": "Chungah @ Damn Delicious",
+            "description": "Chungah is the recipe developer and photographer of Damn Delicious, a blog that was founded in 2011. She thought she would become an epidemiologist, obtaining a sociology degree at UCLA and a Masters in Public Health at USC. But what began as a grad school hobby blog is now her full-time job. Originally from Queens and living most of her life in Los Angeles, she now resides in Chicago with her crazy corgi duo, Butters and Cartman. She loves donuts and binging on Grey's Anatomy reruns, and hopes to one day start her very own corgi rescue.",
+            "image": [
+                {
+                    "@context": "https://schema.org",
+                    "@type": "ImageObject",
+                    "url": "https://secure.gravatar.com/avatar/bccd093023d66cf4ba1a8be171cd08c1.jpg?d=mp&s=1200",
+                    "width": 1200,
+                    "height": 1200
+                }
+            ],
+            "sameAs": [
+                "https://www.facebook.com/damndeliciousblog",
+                "https://www.instagram.com/damn_delicious/",
+                "https://snapchat.com/add/chungahrhee",
+                "https://twitter.com/damn_delicious"
+            ]
+        }
+    ]
+}</script>
+<meta name="wpsso:mark:end" content="wpsso meta tags end"/>
+<!-- wpsso meta tags end -->
+<!-- added on 2020-12-21T23:08:13+00:00 in 0.083714 secs from https://damndelicious.net -->
+
+<link rel="icon" href="https://s23209.pcdn.co/wp-content/uploads/2020/09/cropped-Untitled1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://s23209.pcdn.co/wp-content/uploads/2020/09/cropped-Untitled1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://s23209.pcdn.co/wp-content/uploads/2020/09/cropped-Untitled1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://s23209.pcdn.co/wp-content/uploads/2020/09/cropped-Untitled1-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			/* B&C Email signup */
+
+.bc-signup {
+	color: #121212;
+	font-family: proximanova,Arial,Helvetica,Geneva,sans-serif;
+	font-weight: 700;
+	margin: 0 0 50px auto;
+	padding: 15px 0;
+}
+
+.bc-signup span {
+	background: url(https://s23209.pcdn.co/wp-content/uploads/2020/01/new-arrivals.jpg) no-repeat;
+	background-position: 0 -5px;
+	background-size: 100% auto;
+	display: inline-block;
+	height: 65px;
+	line-height: 65px;
+	text-indent: -9999px;
+	width: 200px;
+}
+
+.bc-signup .email-input {
+	width: calc(100% - 125px);
+}
+
+.bc-signup form p {
+	display: none;
+}
+
+#simple-banner {
+	display: none;
+}
+
+.page-id-31221 #simple-banner {
+	display: block !important;
+}
+
+.page-id-31221 .simple-banner-text {
+	font-family: proximanova,Arial,Helvetica,Geneva,sans-serif;
+	font-size: 1em;
+}
+
+@media only screen and (max-width: 425px) { 
+	.nav-links {
+		line-height: 3em;
+	}
+	.bc-signup {
+		text-align: center;
+	}
+	.bc-signup span {
+		background-position: 0 11px;
+		display: inline-block;
+		margin: 0 auto;
+		text-align: center;
+		width: 117px;
+	}
+	.bc-signup .email-submit {
+		float: none;
+	}
+	
+	.page-id-31221 #cmh {
+		padding-top: 80px;
+	}
+	
+}
+
+/* Preserve theme styling for comment forms */
+.wpsso-rar input[type="submit"] {
+	color: #fff !important;
+	font-size: 16px !important;
+	line-height: 1.2 !important;
+	background-color: #121212 !important;
+	font-family: "proximanova", Arial, Helvetica, Geneva, sans-serif !important;
+	font-weight: bold !important;
+	text-transform: uppercase !important;
+	letter-spacing: .15em !important;
+	cursor: pointer !important;
+	margin-top: 5px !important;
+	padding: 9px 16px !important;
+	-webkit-transition: all .2s ease-in-out !important;
+	-moz-transition: all .2s ease-in-out !important;
+	transition: all .2s ease-in-out !important;
+	border-style: none !important;
+	text-decoration: none !important;
+	width: auto !important;
+}
+
+.wpsso-rar input[type="submit"]:hover {
+	background-color: #afaeaf;
+}	
+
+a.dd-fullwidth-button {
+	background: #121212 !important;
+	border-bottom: none !important;
+	box-shadow: none !important;
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	font-family: proximanova,Arial,Helvetica,Geneva,sans-serif;
+	font-weight: 700;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+a.dd-fullwidth-button:hover {
+	background: #afaeaf !important;
+	color: #fff !important;
+}
+
+h1.archivetitle {
+	font-size: 20px !important;
+}
+
+h1.pagination-header {
+	margin-top: 20px;
+}
+
+/** WP Shopify - Floating Cart */
+
+.wpshopify [data-wps-is-client-component-wrapper][data-wps-client-component-type="cart"] {
+	display: none;
+}
+
+.wps-btn-cart.wps-cart-icon-fixed {
+	background: #121212 !important;
+}
+
+.wps-btn.wps-btn-secondary.wps-add-to-cart {
+    background: 
+    #121212 !important;
+    border-radius: 0;
+}		</style>
+		
+</head>
+
+<body class="post-template-default single single-post postid-31566 single-format-standard">
+
+	
+	<div id="cmh" class="layout-left text-dark">
+		
+		<div id="cmtb" style="background-color: rgba(255,255,255, 0.95);">
+			
+			<div id="cmfw">
+				<form method="get" class="search-form" action="https://damndelicious.net/">
+	<input type="text" class="search-input" name="s" id="s" value="" placeholder="search..." />
+	<button type="submit" class="btn btn-success search-submit">
+		<i class="fa fa-search"></i>
+	</button>
+</form>
+			</div>
+			
+			<a href="https://damndelicious.net/" id="custom-mobile-logo-link">
+				<img src="https://s23209.pcdn.co/wp-content/themes/damndelicious2018/mobile-header/logo-mobile.png" alt="Damn Delicious" />
+			</a>
+			
+			<div id="cmhb">
+				<div id="mt">
+					<span></span>
+				</div>
+			</div>
+			
+			<div id="cms">
+				<i class="far fa-search"></i>
+				<i class="fal fa-times"></i>
+			</div>
+			
+		</div>
+		
+		<div id="cmmc" style="background-color: rgba(255,255,255, 0.95);">
+				
+			<ul id="custom-mobile-menu" class="custom-mobile-menu"><li id="menu-item-655" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-655"><a href="https://damndelicious.net">Home</a></li>
+<li id="menu-item-16604" class="recipes menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16604"><a href="https://damndelicious.net/recipe-index/">Browse Recipes</a>
+<ul class="sub-menu">
+	<li id="menu-item-26772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26772"><a href="https://damndelicious.net/recipe-index/">Recipes by Category</a>
+	<ul class="sub-menu">
+		<li id="menu-item-16605" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16605"><a href="https://damndelicious.net/category/appetizer/">appetizer</a></li>
+		<li id="menu-item-16606" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16606"><a href="https://damndelicious.net/category/asian-inspired/">asian inspired</a></li>
+		<li id="menu-item-27078" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27078"><a href="https://damndelicious.net/category/breakfast/">breakfast</a></li>
+		<li id="menu-item-28977" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28977"><a href="https://damndelicious.net/category/freezer-friendly/">freezer friendly</a></li>
+		<li id="menu-item-28976" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-28976"><a href="https://damndelicious.net/category/instant-pot-recipes/">instant pot</a></li>
+		<li id="menu-item-26780" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26780"><a href="https://damndelicious.net/category/meal-prep/">meal prep</a></li>
+		<li id="menu-item-16613" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16613"><a href="https://damndelicious.net/category/entree/quick-easy/">quick &#038; easy</a></li>
+		<li id="menu-item-16616" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16616"><a href="https://damndelicious.net/category/side-dish/">side dish</a></li>
+		<li id="menu-item-16617" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16617"><a href="https://damndelicious.net/category/slow-cooker/">slow cooker</a></li>
+		<li id="menu-item-16618" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16618"><a href="https://damndelicious.net/category/soup/">soup</a></li>
+		<li id="menu-item-26774" class="bold menu-item menu-item-type-post_type menu-item-object-page menu-item-26774"><a href="https://damndelicious.net/recipe-index/">MORE&#8230;</a></li>
+	</ul>
+</li>
+	<li id="menu-item-27081" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-27081"><a href="https://damndelicious.net/recipe-index/">Recipes by Season</a>
+	<ul class="sub-menu">
+		<li id="menu-item-27082" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27082"><a href="https://damndelicious.net/category/christmas/">christmas</a></li>
+		<li id="menu-item-27083" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27083"><a href="https://damndelicious.net/category/fall/">fall</a></li>
+		<li id="menu-item-27084" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27084"><a href="https://damndelicious.net/category/game-day/">game day</a></li>
+		<li id="menu-item-27085" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27085"><a href="https://damndelicious.net/category/summer/">summer</a></li>
+		<li id="menu-item-27086" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27086"><a href="https://damndelicious.net/category/thanksgiving/">thanksgiving</a></li>
+		<li id="menu-item-27087" class="bold menu-item menu-item-type-post_type menu-item-object-page menu-item-27087"><a href="https://damndelicious.net/recipe-index/">MORE</a></li>
+	</ul>
+</li>
+	<li id="menu-item-27080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27080"><a href="https://damndelicious.net/recipe-index/">Recipes by Ingredient</a></li>
+	<li id="menu-item-27079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27079"><a href="https://damndelicious.net/recipe-index/">View All Recipes »</a></li>
+</ul>
+</li>
+<li id="menu-item-30180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30180"><a href="#">Cookbook</a>
+<ul class="sub-menu">
+	<li id="menu-item-30159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30159"><a href="https://damndelicious.net/damn-delicious-100-super-easy-super-fast-recipes/">Damn Delicious</a></li>
+	<li id="menu-item-30158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30158"><a href="https://damndelicious.net/damn-delicious-meal-prep-115-easy-recipes-for-low-calorie-high-energy-living/">Damn Delicious Meal Prep</a></li>
+</ul>
+</li>
+<li id="menu-item-656" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-656"><a href="https://damndelicious.net/about-me/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-26771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26771"><a href="https://damndelicious.net/about-me/">About Chungah</a></li>
+	<li id="menu-item-29152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29152"><a href="https://damndelicious.net/team/">Meet the Team</a></li>
+	<li id="menu-item-1493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1493"><a href="https://damndelicious.net/contact-me/">Contact</a></li>
+	<li id="menu-item-659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-659"><a href="https://damndelicious.net/press/">Press</a></li>
+	<li id="menu-item-7270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7270"><a title="FAQ" href="https://damndelicious.net/about-me/faq/">FAQ</a></li>
+	<li id="menu-item-1322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1322"><a href="https://damndelicious.net/work/">Work With Me</a></li>
+</ul>
+</li>
+<li id="menu-item-31648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31648"><a href="https://damn-delicious-inc.myshopify.com/">Store</a></li>
+</ul>			
+							<div id="cmwa">
+					<div id="custom_html-3" class="widget_text widget-odd widget-last widget-first widget-1 social widget_custom_html"><h5>Follow Me!</h5><div class="textwidget custom-html-widget"><a href="/feed/" title="RSS" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="https://www.facebook.com/damndeliciousblog" title="Facebook" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="http://pinterest.com/damndelicious/" title="Pinterest" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-pinterest-p fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="http://instagram.com/damn_delicious" title="Instagram" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="https://twitter.com/damn_delicious" title="Twitter" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+	</span>
+</a>
+<a href="https://www.youtube.com/c/damndeliciousblog" title="YouTube" target="_blank" rel="noopener noreferrer">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+	</span>
+</a></div></div>				</div>
+						
+		</div>
+		
+	</div>
+	
+
+<div id="page_wrap" class="container row">
+
+<div id="header" class="header">
+<div class="wrap">
+
+<div class="logo">
+	<a href="https://damndelicious.net"></a>
+</div>
+
+<nav id="top" class="top-nav">
+
+	<div class="social">
+		<a href="/feed/" title="RSS" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="https://www.facebook.com/damndeliciousblog" title="Facebook" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="http://pinterest.com/damndelicious/" title="Pinterest" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-pinterest-p fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="http://instagram.com/damn_delicious" title="Instagram" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="https://twitter.com/damn_delicious" title="Twitter" target="_blank">
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<a href="https://www.youtube.com/c/damndeliciousblog" title="YouTube" target="_blank" >
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+	</div>
+
+	<div class="header-search">
+		<form method="get" class="search-form" action="https://damndelicious.net/">
+		<input type="search" class="search-input" name="s" id="s" value="" placeholder="search" />
+		<button type="submit" class="btn btn-success search-submit">
+			<i class="fa fa-search"></i>
+		</button>
+		</form>
+	</div>
+
+	
+</nav>
+
+<nav id="main" class="main-nav">
+	<ul id="mainmenu" class="mainmenu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-655"><a href="https://damndelicious.net">Home</a></li>
+<li class="recipes menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16604"><a href="https://damndelicious.net/recipe-index/">Browse Recipes</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26772"><a href="https://damndelicious.net/recipe-index/">Recipes by Category</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16605"><a href="https://damndelicious.net/category/appetizer/">appetizer</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16606"><a href="https://damndelicious.net/category/asian-inspired/">asian inspired</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27078"><a href="https://damndelicious.net/category/breakfast/">breakfast</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28977"><a href="https://damndelicious.net/category/freezer-friendly/">freezer friendly</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-28976"><a href="https://damndelicious.net/category/instant-pot-recipes/">instant pot</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26780"><a href="https://damndelicious.net/category/meal-prep/">meal prep</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16613"><a href="https://damndelicious.net/category/entree/quick-easy/">quick &#038; easy</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16616"><a href="https://damndelicious.net/category/side-dish/">side dish</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16617"><a href="https://damndelicious.net/category/slow-cooker/">slow cooker</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16618"><a href="https://damndelicious.net/category/soup/">soup</a></li>
+		<li class="bold menu-item menu-item-type-post_type menu-item-object-page menu-item-26774"><a href="https://damndelicious.net/recipe-index/">MORE&#8230;</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-27081"><a href="https://damndelicious.net/recipe-index/">Recipes by Season</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27082"><a href="https://damndelicious.net/category/christmas/">christmas</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27083"><a href="https://damndelicious.net/category/fall/">fall</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27084"><a href="https://damndelicious.net/category/game-day/">game day</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27085"><a href="https://damndelicious.net/category/summer/">summer</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27086"><a href="https://damndelicious.net/category/thanksgiving/">thanksgiving</a></li>
+		<li class="bold menu-item menu-item-type-post_type menu-item-object-page menu-item-27087"><a href="https://damndelicious.net/recipe-index/">MORE</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27080"><a href="https://damndelicious.net/recipe-index/">Recipes by Ingredient</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27079"><a href="https://damndelicious.net/recipe-index/">View All Recipes »</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30180"><a href="#">Cookbook</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30159"><a href="https://damndelicious.net/damn-delicious-100-super-easy-super-fast-recipes/">Damn Delicious</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30158"><a href="https://damndelicious.net/damn-delicious-meal-prep-115-easy-recipes-for-low-calorie-high-energy-living/">Damn Delicious Meal Prep</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-656"><a href="https://damndelicious.net/about-me/">About</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26771"><a href="https://damndelicious.net/about-me/">About Chungah</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29152"><a href="https://damndelicious.net/team/">Meet the Team</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1493"><a href="https://damndelicious.net/contact-me/">Contact</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-659"><a href="https://damndelicious.net/press/">Press</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7270"><a title="FAQ" href="https://damndelicious.net/about-me/faq/">FAQ</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1322"><a href="https://damndelicious.net/work/">Work With Me</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31648"><a href="https://damn-delicious-inc.myshopify.com/">Store</a></li>
+	</ul>
+</nav>
+
+<div class="clear"></div>
+</div>
+</div> <!--end .header-->
+
+
+<div id="custom_html-5" class="widget_text widget-odd widget-last widget-first widget-1 subscribe widget_custom_html"><div class="widget_text wrap subscribe-wrap"><h3 class="widget-title">Get the <em>Latest Recipes</em> Right in your Inbox:</h3><div class="textwidget custom-html-widget"><!-- Begin MailChimp Signup Form -->
+
+<form action="http://damndelicious.us5.list-manage.com/subscribe/post?u=e81eb9facd120894de0e61e0d&amp;id=ab2b965540" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate email-form" target="_blank" novalidate>
+
+<input type="email" value="" name="EMAIL" placeholder="email address" class="required email email-input" id="mce-EMAIL">
+
+<input type="submit" value="Sign Up &raquo;" name="SUBMIT" id="mc-embedded-submit" class="button email-submit">
+
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	
+</form>
+
+<!--End mc_embed_signup-->
+</div></div></div>
+
+<div class="wrapper">
+<div id="content" class="col span_10 clr span_content">
+
+<article class="post single-post-content">
+
+	<div class="post-meta post-date">
+		June 6, 2020	</div>
+	<h1 class="post-title">Instant Pot Mississippi Pot Roast</h1>
+	<div class="fork"></div>
+	<div class="post-meta">
+		<em>posted in</em> <a href="https://damndelicious.net/category/entree/" rel="category tag">entree</a>, <a href="https://damndelicious.net/category/instant-pot-recipes/" rel="category tag">instant pot</a>		<span class="spacer">//</span>
+		<i class="fa fa-comment"></i><a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comments">43 <em>Comments &raquo;</em></a>			</div>
+
+	<div style='display:none;' class='shareaholic-canvas' data-app='share_buttons' data-title='Instant Pot Mississippi Pot Roast' data-link='https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/' data-app-id-name='post_above_content'></div><div style="display: none;">
+<p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-31569 size-full" src="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-Roast.jpg" alt="Instant Pot Mississippi Pot Roast - The most amazing pot roast ever! Made in the IP in just a fraction of the time. So juicy and melt-in-your-mouth tender!" width="760" height="2273" data-wp-pid="31569" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-Roast.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-Roast-500x1495.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-Roast-514x1536.jpg 514w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-Roast-685x2048.jpg 685w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-Roast-640x1914.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-Roast-602x1800.jpg 602w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-Roast-535x1600.jpg 535w" sizes="(max-width: 760px) 100vw, 760px" /></p>
+</div>
+<p style="text-align: center;"><em>The most amazing pot roast ever! Made in the IP in just a fraction of the time. So juicy and melt-in-your-mouth tender!</em></p>
+<p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-31567 size-full" src="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380.jpg" alt="Instant Pot Mississippi Pot Roast - The most amazing pot roast ever! Made in the IP in just a fraction of the time. So juicy and melt-in-your-mouth tender!" width="760" height="1140" data-wp-pid="31567" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380-600x900.jpg 600w" sizes="(max-width: 760px) 100vw, 760px" /></p>
+<p>I have never had a pot roast that I didn&#8217;t like. And this is no exception.</p>
+<p>Now it&#8217;s definitely not your grandma&#8217;s traditional pot roast as it is made with some very unconventional ingredients like pepperoncini and dry onion soup mix. But fear not because this pot roast will blow. your. mind.</p>
+<p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-31570 size-full" src="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0341.jpg" alt="Instant Pot Mississippi Pot Roast - The most amazing pot roast ever! Made in the IP in just a fraction of the time. So juicy and melt-in-your-mouth tender!" width="760" height="1140" data-wp-pid="31570" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0341.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0341-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0341-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0341-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0341-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0341-600x900.jpg 600w" sizes="(max-width: 760px) 100vw, 760px" /></p>
+<p>And with the help of the pressure cooker, this is made in just a fraction of the time.</p>
+<p>Not only that, the meat is cooked so perfectly. Melt-in-your-mouth tender, literally falling apart with the most heavenly gravy &#8211; slightly spicy, tangy and savory. It&#8217;s also perfect as a low-carb meal if you want to serve this with cauliflower rice and an assortment of vegetables.</p>
+<p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-31568 size-full" src="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0385.jpg" alt="Instant Pot Mississippi Pot Roast - The most amazing pot roast ever! Made in the IP in just a fraction of the time. So juicy and melt-in-your-mouth tender!" width="760" height="1140" data-wp-pid="31568" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0385.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0385-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0385-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0385-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0385-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0385-600x900.jpg 600w" sizes="(max-width: 760px) 100vw, 760px" /></p>
+<p>But honestly, I serve the meat as is with all the gravy, a glass of wine and all the crusty bread.</p>
+<p>There&#8217;s just no wrong way to serve this.</p>
+<div class="recipe" itemscope itemtype="http://schema.org/Recipe"><div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                        <meta itemprop="ratingValue" content="4.90"/>
+                        <meta itemprop="ratingCount" content="21"/>
+                        <meta itemprop="worstRating" content="1"/>
+                        <meta itemprop="bestRating" content="5"/>
+                        <meta itemprop="reviewCount" content="31"/>
+                        <meta itemprop="itemReviewed" content="Instant Pot Mississippi Pot Roast"/>
+                    </div><div class="recipe-title"><img itemprop="image" src="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380-360x360.jpg" class="photo nopin" nopin="nopin" /><h2 itemprop="name">Instant Pot Mississippi Pot Roast</h2><div class="post-meta time"><p><strong>Yield:</strong> <span itemprop="recipeYield">8 servings</span></p><p><strong>prep time:</strong> <span>20 minutes</span></p><p><strong>cook time:</strong> <span>1 hour 10 minutes</span></p><p><strong>total time:</strong> <span>1 hour 30 minutes</span></p></div><div class="summary" itemprop="description"><p>The most amazing pot roast ever! Made in the IP in just a fraction of the time. So juicy and melt-in-your-mouth tender!</p>
+</div></div>
+                    
+                    <div class="printbutton">
+                        <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/print/" title="Print Recipe" class="print"><i class="fa fa-print"></i> Print Recipe</a>
+                    </div><div class="recipe-content">
+                            <div class="recipe-cat" itemprop="recipeCategory" style="display: none;">entree</div>
+                            <div class="recipe-keywords" itemprop="keywords" style="display: none;">Instant Pot Mississippi Pot Roast</div><span itemprop="prepTime" content="PT20M" style="display: none;" >20 minutes</span><span itemprop="cookTime" content="PT1H10M" style="display: none;">1 hour 10 minutes</span><div class="recipe-author" itemprop="author" style="display: none;">Chungah Rhee</div>
+                            <div class="photo2"><img itemprop="image" src="https://s23209.pcdn.co/wp-content/uploads/2020/06/Instant-Pot-Mississippi-Pot-RoastIMG_0380-360x360.jpg" class="photo nopin" nopin="nopin" /></div>
+                            <div class="left"><h3 id="ingredients" >Ingredients:</h3> <div class="ingredients"><ul>
+<li itemprop="ingredients">1 tablespoon canola oil</li>
+<li itemprop="ingredients">1 (4 to 4 1/2 pound) boneless chuck roast, excess fat trimmed and cut into 6 pieces</li>
+<li itemprop="ingredients">1 cup beef stock</li>
+<li itemprop="ingredients">1 (1-ounce) package dry onion soup mix</li>
+<li itemprop="ingredients">6-8 jarred pepperoncini salad peppers, plus 1/4 cup liquid from jar</li>
+<li itemprop="ingredients">2 tablespoons dried parsley flakes</li>
+<li itemprop="ingredients">1 tablespoon dried chives</li>
+<li itemprop="ingredients">2 teaspoons dried dill</li>
+<li itemprop="ingredients">1 1/2 teaspoons onion powder</li>
+<li itemprop="ingredients">1 teaspoon garlic powder</li>
+<li itemprop="ingredients">1 teaspoon freshly ground black pepper</li>
+<li itemprop="ingredients">3 tablespoons cornstarch</li>
+</ul>
+</div></div>
+                            <div class="right"><h3 id="directions">Directions:</h3> <div class="instructions" itemprop="recipeInstructions"><ol>
+<li>Set a <a href="https://amzn.to/2YgUv5b" target="_blank" rel="noopener">6-qt Instant Pot®</a> to the high saute setting. Heat oil; add beef and cook until evenly browned, about 2-3 minutes per side; set aside.</li>
+<li>Stir in beef stock, scraping any browned bits from the bottom of the pot.</li>
+<li>Stir in dry onion soup mix, pepperoncini salad peppers and liquid, parsley flakes, chives, dill, onion powder, garlic powder and pepper. Return beef to the pot.</li>
+<li>Select manual setting; adjust pressure to high, and set time for 45 minutes. When finished cooking, naturally release pressure according to manufacturer&#8217;s directions, about 20-30 minutes.</li>
+<li>Remove beef from the Instant Pot®; shred, using two forks.</li>
+<li>In a small bowl, whisk together cornstarch and 3 tablespoons cold water; set aside.</li>
+<li>Select high sauté setting. Bring to a boil; stir in cornstarch mixture and cook, stirring frequently, until slightly thickened, about 3-5 minutes. If the mixture is too thick, add more beef stock as needed until desired consistency is reached.</li>
+<li>Serve beef with juices immediately.</li>
+</ol>
+</div></div>
+                            <div class="clear"></div></div><div class="recipe-ps">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <h4>Did you Make This Recipe?</h4>
+                            <p>Tag <a href="http://instagram.com/damn_delicious" target="_blank">@damn_delicious</a> on Instagram and hashtag it <em>#damndelicious</em>.</p>
+                    </div></div>
+<div style='display:none;' class='shareaholic-canvas' data-app='share_buttons' data-title='Instant Pot Mississippi Pot Roast' data-link='https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/' data-app-id-name='post_below_content'></div>
+	
+	<div class="post-meta meta-bottom meta-centered">
+		<div class="post-cats">
+		<a href="https://damndelicious.net/category/entree/" rel="category tag">entree</a> <a href="https://damndelicious.net/category/instant-pot-recipes/" rel="category tag">instant pot</a>		</div>
+
+		<div><i class="fa fa-comment"></i><a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comments">43 <em>Comments</em></a>		<span class="spacer">//</span>
+		<a href="#respond">Leave a Comment &raquo;</a>
+		</div>
+	</div>
+
+</article> <!-- end .post -->
+
+
+<div class="fork"></div>
+
+<div class="post-nav">
+	<div class="nav-previous"><a href="https://damndelicious.net/2020/05/16/weeknight-baked-gnocchi/"><em>&laquo; Previous Post</em>Weeknight Baked Gnocchi</a></div>
+	<div class="nav-next"><a href="https://damndelicious.net/2020/06/22/swedish-meatball-pasta/"><em>Next Post &raquo;</i>
+	</em>Swedish Meatball Pasta</a></div>
+</div>
+
+
+
+<div class="inner-post">
+	<div id="custom_html-6" class="widget_text widget-odd widget-last widget-first widget-1 subscribe widget widget_custom_html"><h3 class="widget-title">Get the <em>Latest Recipes</em> Right in your Inbox:</h3><div class="textwidget custom-html-widget"><!-- Begin MailChimp Signup Form -->
+
+<form action="http://damndelicious.us5.list-manage.com/subscribe/post?u=e81eb9facd120894de0e61e0d&amp;id=ab2b965540" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate email-form" target="_blank" novalidate>
+
+<input type="email" value="" name="EMAIL" placeholder="email address" class="required email email-input" id="mce-EMAIL">
+
+<input type="submit" value="Sign Up &raquo;" name="SUBMIT" id="mc-embedded-submit" class="button email-submit">
+
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	
+</form>
+
+<!--End mc_embed_signup-->
+</div></div></div>
+
+
+
+
+<div id="comments" class="comments-area">
+
+		
+	
+		<div id="respond" class="comment-respond">
+		<span class="wpsso-rar title-reply">
+<span class="comment-toggle-review"><!-- form label: Leave a Review --><h3 id="review-title" class="comment-review-title">Leave a Review</h3></span><!-- .comment-toggle-review -->
+<span class="comment-toggle-comment" style="display:none;"><!-- form label: Leave a Reply --><h3 id="reply-title" class="comment-reply-title">Leave a Review <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2020/06/06/instant-pot-mississippi-pot-roast/#respond" style="display:none;">Cancel reply</a></small></h3></span><!-- .comment-toggle-comment --></span><!-- .wpsso-rar.title-reply -->
+<form action="https://damndelicious.net/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><span class="wpsso-rar comment-field">
+<p class="comment-form-rating">
+<!-- form label: Your Rating --><label for="rating">Your Rating <span class="required">*</span></label>
+<select name="rating" id="rating">
+	<option value="">Rating&hellip;</option>
+	<option value="5">Excellent</option>
+	<option value="4">Good</option>
+	<option value="3">Average</option>
+	<option value="2">Not Good</option>
+	<option value="1">Awful</option>
+</select></p><!-- .comment-form-rating -->
+<p class="comment-form-comment">
+<span class="comment-toggle-review"><!-- form label: Your Review --><label for="review">Your Review <span class="required">*</span></label></span><!-- .comment-toggle-review -->
+<span class="comment-toggle-comment" style="display:none;"><!-- form label: Comment --><label for="comment">Comment</label></span><!-- .comment-toggle-comment --> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p></span><!-- .wpsso-rar.comment-field -->
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><span class="wpsso-rar submit-button">
+<span class="comment-toggle-review"><!-- form label: Post Review --><input name="%1$s" type="submit" id="%2$s" class="%3$s" value="Post Review"/></span><!-- .comment-toggle-review -->
+<span class="comment-toggle-comment" style="display:none;"><!-- form label: Post Comment --><!-- wpsso-rar comment label attribute missing in 'comment_field' value -->
+<input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /></span><!-- .comment-toggle-comment --></span><!-- .wpsso-rar.submit-button -->
+ <input type='hidden' name='comment_post_ID' value='31566' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="058ca0145c" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="239"/></p></form>	</div><!-- #respond -->
+		
+	<div class="fork" style="margin:35px 0 50px"></div>
+	
+			<h3 id="comments">
+			43 comments		</h2>
+
+		
+		<ol id="comment-list" class="comment-list">
+				    <li class="comment even thread-even depth-1" id="li-comment-210791">
+	        <div id="comment-210791" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/a720b54404c35ce924c276582ffc95cb?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/a720b54404c35ce924c276582ffc95cb?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Lisa</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-210791">
+                <time pubdate datetime="2020-10-19T19:05:02-07:00">
+                October 19, 2020 @ 7:05 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-210791' data-commentid="210791" data-postid="31566" data-belowelement="comment-210791" data-respondelement="respond" data-replyto="Reply to Lisa" aria-label='Reply to Lisa'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->I have the ninja foodi&#8230;same pressure time ?<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-210245">
+	        <div id="comment-210245" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/1eb4f54c58c54716913a7cbdd859bd60?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/1eb4f54c58c54716913a7cbdd859bd60?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Mmouse9401</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-210245">
+                <time pubdate datetime="2020-10-12T10:18:32-07:00">
+                October 12, 2020 @ 10:18 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-210245' data-commentid="210245" data-postid="31566" data-belowelement="comment-210245" data-respondelement="respond" data-replyto="Reply to Mmouse9401" aria-label='Reply to Mmouse9401'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Loved this dish!!! What a fabulous recipe and doesn’t use butter like the slow cooker versions. <!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-210242">
+	        <div id="comment-210242" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/1a3ee15536818b1bcaab845b520641b2?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/1a3ee15536818b1bcaab845b520641b2?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Cheri</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-210242">
+                <time pubdate datetime="2020-10-12T09:15:09-07:00">
+                October 12, 2020 @ 9:15 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-210242' data-commentid="210242" data-postid="31566" data-belowelement="comment-210242" data-respondelement="respond" data-replyto="Reply to Cheri" aria-label='Reply to Cheri'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->A must 1-2 times per month!   The pepperoncini pepper add the most interesting flavor to a dish we have been serving for years&#8230;</p>
+<p>We love the new twist!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-209224">
+	        <div id="comment-209224" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/a6d55e88198ea482c88430840815efaf?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/a6d55e88198ea482c88430840815efaf?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Jessica Cain</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-209224">
+                <time pubdate datetime="2020-09-28T16:08:16-07:00">
+                September 28, 2020 @ 4:08 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-209224' data-commentid="209224" data-postid="31566" data-belowelement="comment-209224" data-respondelement="respond" data-replyto="Reply to Jessica Cain" aria-label='Reply to Jessica Cain'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Wow! Where has this been all my life?? This was so so so good! My extremely picky 6 year-old even ate some. And I am not ashamed to say that I was just slurping up the sauce by the spoonful! This will definitely be put into regular rotation!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-208189">
+	        <div id="comment-208189" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/af87ed0b974973b855f728856fdd1b41?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/af87ed0b974973b855f728856fdd1b41?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Selena</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-208189">
+                <time pubdate datetime="2020-09-13T18:16:39-07:00">
+                September 13, 2020 @ 6:16 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-208189' data-commentid="208189" data-postid="31566" data-belowelement="comment-208189" data-respondelement="respond" data-replyto="Reply to Selena" aria-label='Reply to Selena'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Made it tonight and it was SO GOOD! Sometimes I shy away from pot roast, because it’s a little bland for the amount of work that goes into it. But this was PACKED with flavor, a little heat, and lots   of moisture! Will be a “go-to&#8230;” thanks for a new fan favorite!!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-205802">
+	        <div id="comment-205802" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/c0589c6f78d1dcebdfc52eabf9108c8d?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/c0589c6f78d1dcebdfc52eabf9108c8d?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Christina</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-205802">
+                <time pubdate datetime="2020-08-19T06:23:54-07:00">
+                August 19, 2020 @ 6:23 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-205802' data-commentid="205802" data-postid="31566" data-belowelement="comment-205802" data-respondelement="respond" data-replyto="Reply to Christina" aria-label='Reply to Christina'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Does anybody have recommendations on whether or not I should reduce cook time if I use a smaller amount of chuck roast? Didn&#8217;t want to make the full amount for just the two of us the first time around! Thank you!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment even depth-2" id="li-comment-206383">
+	        <div id="comment-206383" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/868751b1372c21204f9233a5e528ab06?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/868751b1372c21204f9233a5e528ab06?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>haley</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-206383">
+                <time pubdate datetime="2020-08-27T13:15:54-07:00">
+                August 27, 2020 @ 1:15 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-206383' data-commentid="206383" data-postid="31566" data-belowelement="comment-206383" data-respondelement="respond" data-replyto="Reply to haley" aria-label='Reply to haley'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->i was wondering the same thing.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt depth-2" id="li-comment-209225">
+	        <div id="comment-209225" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/a6d55e88198ea482c88430840815efaf?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/a6d55e88198ea482c88430840815efaf?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Jessica Cain</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-209225">
+                <time pubdate datetime="2020-09-28T16:10:07-07:00">
+                September 28, 2020 @ 4:10 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-209225' data-commentid="209225" data-postid="31566" data-belowelement="comment-209225" data-respondelement="respond" data-replyto="Reply to Jessica Cain" aria-label='Reply to Jessica Cain'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->I would say no. I used a 2.5 pound roast (the biggest I could find) and didn’t reduce the cooking time. It came out perfect.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-205120">
+	        <div id="comment-205120" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/fe07af06fe8308ebd6071eed2f0f52db?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/fe07af06fe8308ebd6071eed2f0f52db?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Scott Huntley</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-205120">
+                <time pubdate datetime="2020-08-15T12:05:51-07:00">
+                August 15, 2020 @ 12:05 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-205120' data-commentid="205120" data-postid="31566" data-belowelement="comment-205120" data-respondelement="respond" data-replyto="Reply to Scott Huntley" aria-label='Reply to Scott Huntley'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->This is really a flavorful, unique treatment for pot roast. I have very finicky family members who normally don’t like something a little different&#8230;but I screwed up my courage and tried this on them anyway and they raved about it.  Now this is how I have to make pot roast with them. I really like the tangy flavor from the pepperoni and the dry herb mixture.  The crusty bread suggestion is on point and I usually also throw some small potatoes, carrots, green beans and shallots In olive oil in a foil wrapped grill basket and have an amazing weekend feast. This is a great take on pot roast, really cool flavor profile, one of the very best I’ve come across.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment odd alt depth-2" id="li-comment-205121">
+	        <div id="comment-205121" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/fe07af06fe8308ebd6071eed2f0f52db?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/fe07af06fe8308ebd6071eed2f0f52db?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Scott Huntley</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-205121">
+                <time pubdate datetime="2020-08-15T12:08:08-07:00">
+                August 15, 2020 @ 12:08 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-205121' data-commentid="205121" data-postid="31566" data-belowelement="comment-205121" data-respondelement="respond" data-replyto="Reply to Scott Huntley" aria-label='Reply to Scott Huntley'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Pepperoncini is apparently a word not liked by iPads&#8230;not pepperoni&#8230;pepperoncini<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment even depth-3" id="li-comment-214271">
+	        <div id="comment-214271" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/03698a115a3e8a9f7d4166c57cca29a4?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/03698a115a3e8a9f7d4166c57cca29a4?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Yuana Blanke</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-214271">
+                <time pubdate datetime="2020-11-28T12:38:19-08:00">
+                November 28, 2020 @ 12:38 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-214271' data-commentid="214271" data-postid="31566" data-belowelement="comment-214271" data-respondelement="respond" data-replyto="Reply to Yuana Blanke" aria-label='Reply to Yuana Blanke'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->LOL<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-204240">
+	        <div id="comment-204240" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/15bbdb7cbaa23adbf23f2de062ed6ce6?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/15bbdb7cbaa23adbf23f2de062ed6ce6?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Natalie Ehrlich</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-204240">
+                <time pubdate datetime="2020-08-07T08:14:43-07:00">
+                August 7, 2020 @ 8:14 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-204240' data-commentid="204240" data-postid="31566" data-belowelement="comment-204240" data-respondelement="respond" data-replyto="Reply to Natalie Ehrlich" aria-label='Reply to Natalie Ehrlich'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->I made this recipe exactly as written and loved it.  I spent some time trimming the fat off the beef but other than that it came together quickly.  We served it on toasted rolls and got a couple of meals out of it.  This is a keeper for me.  I did not find the dill overwhelming at all but that is just my taste.  Great recipe!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-203521">
+	        <div id="comment-203521" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/5c1d1edf6d14ee30e3fa7af2f6d9a8bc?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/5c1d1edf6d14ee30e3fa7af2f6d9a8bc?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Andrea</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-203521">
+                <time pubdate datetime="2020-07-29T19:08:26-07:00">
+                July 29, 2020 @ 7:08 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-203521' data-commentid="203521" data-postid="31566" data-belowelement="comment-203521" data-respondelement="respond" data-replyto="Reply to Andrea" aria-label='Reply to Andrea'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Yum yum yum. Followed exactly and turned out perfect. I served with baby potatoes and a dollop of sour cream. The combo of these flavors is reallllllly good. Don’t sleep on this recipe, friends. <!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-203374">
+	        <div id="comment-203374" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/2a6e8e905a2913178a1ebcc503b42c5f?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/2a6e8e905a2913178a1ebcc503b42c5f?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Marty Briggs</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-203374">
+                <time pubdate datetime="2020-07-28T08:43:04-07:00">
+                July 28, 2020 @ 8:43 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-203374' data-commentid="203374" data-postid="31566" data-belowelement="comment-203374" data-respondelement="respond" data-replyto="Reply to Marty Briggs" aria-label='Reply to Marty Briggs'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->This was truly one of the most flavorful things I’ve ever eaten.  Followed the directions exactly as written and it came out perfectly!  Will add this to my regular rotation!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-201917">
+	        <div id="comment-201917" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/25a755f7a12d141551575fb5b82ac945?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/25a755f7a12d141551575fb5b82ac945?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Bayou-Mama</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-201917">
+                <time pubdate datetime="2020-07-09T16:53:27-07:00">
+                July 9, 2020 @ 4:53 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-201917' data-commentid="201917" data-postid="31566" data-belowelement="comment-201917" data-respondelement="respond" data-replyto="Reply to Bayou-Mama" aria-label='Reply to Bayou-Mama'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 3 out of 5"><span style="width:60%;">Rated 3 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->I love 99.9 percent of DD recipes, but this one missed the mark. The quantity of dried dill seriously overpowered the dish. I think that if the dill was reduced by half, this roast would be excellent (and I love dill a lot). </p>
+<p>Otherwise, cooking times were spot on, texture was what I expect from a Mississippi roast. I made this exactly as written, and other than the dill problem, I would try it again with modifications. <!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-200961">
+	        <div id="comment-200961" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/a5721368790bdff3ed52da385a0e1e39?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/a5721368790bdff3ed52da385a0e1e39?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Mary</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-200961">
+                <time pubdate datetime="2020-07-01T06:48:20-07:00">
+                July 1, 2020 @ 6:48 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-200961' data-commentid="200961" data-postid="31566" data-belowelement="comment-200961" data-respondelement="respond" data-replyto="Reply to Mary" aria-label='Reply to Mary'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Really good! I chopped up some more pepperoncinis and added them on top for serving. Will make again!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-200292">
+	        <div id="comment-200292" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/96bffa98449492805926ee7ed512a64f?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/96bffa98449492805926ee7ed512a64f?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>David Bierwirth</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-200292">
+                <time pubdate datetime="2020-06-28T20:43:22-07:00">
+                June 28, 2020 @ 8:43 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-200292' data-commentid="200292" data-postid="31566" data-belowelement="comment-200292" data-respondelement="respond" data-replyto="Reply to David Bierwirth" aria-label='Reply to David Bierwirth'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->The Best ever. This  has to be one of the best pot roast I have ever made. The meat was tender and extremely flavorful. Make sure you buy the right cut of meat.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-199579">
+	        <div id="comment-199579" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/2fcbbab4921368960e6472488f0b0cd5?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/2fcbbab4921368960e6472488f0b0cd5?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>CherylB</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-199579">
+                <time pubdate datetime="2020-06-25T12:58:38-07:00">
+                June 25, 2020 @ 12:58 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-199579' data-commentid="199579" data-postid="31566" data-belowelement="comment-199579" data-respondelement="respond" data-replyto="Reply to CherylB" aria-label='Reply to CherylB'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->I made this last night!!! Amazing! So yummmy<br />
+The only change I made&#8230;. I seared my roast in my cast &#8230;..because well&#8230; I just get the sear I like in my Enameled cast better than IP<br />
+I deglazed w the beef broth in my cast THEN Put it all in my IP<br />
+Yuuuummmm<br />
+Try it<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-198864">
+	        <div id="comment-198864" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/ca4670c02c29942126f05182fb0560fe?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/ca4670c02c29942126f05182fb0560fe?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Violet</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198864">
+                <time pubdate datetime="2020-06-22T03:51:13-07:00">
+                June 22, 2020 @ 3:51 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-198864' data-commentid="198864" data-postid="31566" data-belowelement="comment-198864" data-respondelement="respond" data-replyto="Reply to Violet" aria-label='Reply to Violet'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->This looks so good! Thank you for the nice recipe!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-198855">
+	        <div id="comment-198855" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/681de72d3ecd9703c58b9f320c1b91eb?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/681de72d3ecd9703c58b9f320c1b91eb?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Bea</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198855">
+                <time pubdate datetime="2020-06-21T20:23:20-07:00">
+                June 21, 2020 @ 8:23 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-198855' data-commentid="198855" data-postid="31566" data-belowelement="comment-198855" data-respondelement="respond" data-replyto="Reply to Bea" aria-label='Reply to Bea'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Made this tonight.  It was delish!  So flavorful and the meat was very tender.  Served with toasted Hawaiian rolls.  <!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-198788">
+	        <div id="comment-198788" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/997755f701c8cc470a23c1592a48ce3c?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/997755f701c8cc470a23c1592a48ce3c?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Frankie</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198788">
+                <time pubdate datetime="2020-06-21T05:35:39-07:00">
+                June 21, 2020 @ 5:35 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-198788' data-commentid="198788" data-postid="31566" data-belowelement="comment-198788" data-respondelement="respond" data-replyto="Reply to Frankie" aria-label='Reply to Frankie'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->I made this recipe in a crockpot instead of an instant pot. I used the same ingredients but cooked it seven hours on low. Turned out perfect. My husband said it was the best pot roast he’s ever had. I used leftovers to make pulled beef enchiladas that were also incredible.</p>
+<p>Thanks for an awesome recipe! <!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment odd alt depth-2" id="li-comment-205116">
+	        <div id="comment-205116" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/312711d7a8fea199cc4b520c9edb3572?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/312711d7a8fea199cc4b520c9edb3572?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Cristina</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-205116">
+                <time pubdate datetime="2020-08-15T11:02:13-07:00">
+                August 15, 2020 @ 11:02 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-205116' data-commentid="205116" data-postid="31566" data-belowelement="comment-205116" data-respondelement="respond" data-replyto="Reply to Cristina" aria-label='Reply to Cristina'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Awesome this is what I was looking to see! Did you do step 1? I’d love to be able to skip that lol<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-198743">
+	        <div id="comment-198743" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/c2c90a5668f7917c940de40917dfb498?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/c2c90a5668f7917c940de40917dfb498?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Janice</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198743">
+                <time pubdate datetime="2020-06-20T08:21:45-07:00">
+                June 20, 2020 @ 8:21 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-198743' data-commentid="198743" data-postid="31566" data-belowelement="comment-198743" data-respondelement="respond" data-replyto="Reply to Janice" aria-label='Reply to Janice'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Two questions:<br />
+1) can I use this same recipe as-is in an 8qt IP?<br />
+2) is there a way to use pork instead of beef? one of my family members is stomach-sensitive to beef<br />
+Thank  you!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-even depth-1" id="li-comment-198724">
+	        <div id="comment-198724" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/dbd0033fb3228fe71383ce1b0cb76d61?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/dbd0033fb3228fe71383ce1b0cb76d61?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Lynn</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198724">
+                <time pubdate datetime="2020-06-19T20:10:03-07:00">
+                June 19, 2020 @ 8:10 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-198724' data-commentid="198724" data-postid="31566" data-belowelement="comment-198724" data-respondelement="respond" data-replyto="Reply to Lynn" aria-label='Reply to Lynn'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->So I thought I’d be innovative and throw in some veg with the meat ; potatoes, celery and carrots.  I spooned out the meat and veg before adding the starch mixture.  It was very delicious, served over buttered noodles-  the vegetables were pretty mushy..but the taste was definitely there!  Next time, I’ll make it as directed, thank you for another great and easy recipe!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment even depth-2" id="li-comment-205130">
+	        <div id="comment-205130" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/a6583956b97f510a9a4024dbf920f837?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/a6583956b97f510a9a4024dbf920f837?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Brian</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-205130">
+                <time pubdate datetime="2020-08-15T15:14:48-07:00">
+                August 15, 2020 @ 3:14 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-205130' data-commentid="205130" data-postid="31566" data-belowelement="comment-205130" data-respondelement="respond" data-replyto="Reply to Brian" aria-label='Reply to Brian'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->10/10. Uh-freaking-mazing. One of our more expensive meals but worth it. We dont like onion soup so we subbed that for a pot roast seasoning packet.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-198696">
+	        <div id="comment-198696" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/4fff6da62ad3226c98f0f8e97d6f3c8b?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/4fff6da62ad3226c98f0f8e97d6f3c8b?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>K</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198696">
+                <time pubdate datetime="2020-06-19T12:21:37-07:00">
+                June 19, 2020 @ 12:21 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-198696' data-commentid="198696" data-postid="31566" data-belowelement="comment-198696" data-respondelement="respond" data-replyto="Reply to K" aria-label='Reply to K'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Made this last night- it was AWESOME.  And by far- ridiculously easy.  Gotta love that combo.<br />
+It&#8217;s a special night when my picky husband AND my 19 month old are excited about the same meal.  Thanks, Chungah!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-198569">
+	        <div id="comment-198569" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/f146206aa21726c207e9073424677f8c?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/f146206aa21726c207e9073424677f8c?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong><a href='https://newkitchenlife.com/' rel='external nofollow ugc' class='url'>Sabrina</a></strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198569">
+                <time pubdate datetime="2020-06-17T21:04:05-07:00">
+                June 17, 2020 @ 9:04 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-198569' data-commentid="198569" data-postid="31566" data-belowelement="comment-198569" data-respondelement="respond" data-replyto="Reply to Sabrina" aria-label='Reply to Sabrina'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->wonderful pot roast recipe, I would have never guessed pepperoncini, but love them even by themselves good thinking, and a great thing to IP! Thank you!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-198512">
+	        <div id="comment-198512" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/fc80577b1e14f1bb30693fb0e523fece?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/fc80577b1e14f1bb30693fb0e523fece?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong><a href='https://sezar.org' rel='external nofollow ugc' class='url'>ibrahim demir</a></strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198512">
+                <time pubdate datetime="2020-06-17T14:25:47-07:00">
+                June 17, 2020 @ 2:25 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-198512' data-commentid="198512" data-postid="31566" data-belowelement="comment-198512" data-respondelement="respond" data-replyto="Reply to ibrahim demir" aria-label='Reply to ibrahim demir'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->I am really addicted on your recipes. I follow you everyday, bravo. Thanks a lot!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-198005">
+	        <div id="comment-198005" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/778755eb9d7c124a09458a9e9669858f?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/778755eb9d7c124a09458a9e9669858f?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong><a href='http://sassy151613@aol.com' rel='external nofollow ugc' class='url'>Gail Tilton</a></strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-198005">
+                <time pubdate datetime="2020-06-10T15:42:44-07:00">
+                June 10, 2020 @ 3:42 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-198005' data-commentid="198005" data-postid="31566" data-belowelement="comment-198005" data-respondelement="respond" data-replyto="Reply to Gail Tilton" aria-label='Reply to Gail Tilton'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->How can I do this in a crock pot?<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-197809">
+	        <div id="comment-197809" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/a1ecec44741214ac17e525b2c4529afa?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/a1ecec44741214ac17e525b2c4529afa?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>george</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197809">
+                <time pubdate datetime="2020-06-07T17:19:32-07:00">
+                June 7, 2020 @ 5:19 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197809' data-commentid="197809" data-postid="31566" data-belowelement="comment-197809" data-respondelement="respond" data-replyto="Reply to george" aria-label='Reply to george'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Since there are just 2 of us can I reduce all but cook time in half giving us some left overs? Can the left overs be frozen. I would appreciate a capability on your web site to adjust # of servings and it would recalculate the ingredients?<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment even depth-2" id="li-comment-197849">
+	        <div id="comment-197849" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/4c213a805697480c423933b028a9f108?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/4c213a805697480c423933b028a9f108?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Danica</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197849">
+                <time pubdate datetime="2020-06-08T09:12:44-07:00">
+                June 8, 2020 @ 9:12 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197849' data-commentid="197849" data-postid="31566" data-belowelement="comment-197849" data-respondelement="respond" data-replyto="Reply to Danica" aria-label='Reply to Danica'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->I&#8217;ve frozen it after shredded it up.  Tastes great!  I use the leftovers to make shredded beef enchiladas.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment odd alt thread-even depth-1" id="li-comment-197787">
+	        <div id="comment-197787" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/069d24cd138c8f22cc377ddd8489cfdc?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/069d24cd138c8f22cc377ddd8489cfdc?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Tesia</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197787">
+                <time pubdate datetime="2020-06-07T12:48:30-07:00">
+                June 7, 2020 @ 12:48 PM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197787' data-commentid="197787" data-postid="31566" data-belowelement="comment-197787" data-respondelement="respond" data-replyto="Reply to Tesia" aria-label='Reply to Tesia'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Yummo!! We love Mississippi pot roast. I will have to try this in the IP. Have you tried Miss. pot roast with the ranch seasoning packet instead of the onion mix? So delicious. I will try this version! We love all your recipes!!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment even depth-2" id="li-comment-210715">
+	        <div id="comment-210715" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/bb76ef85244ee7cb0d3d715cb5e4d436?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/bb76ef85244ee7cb0d3d715cb5e4d436?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Trish</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-210715">
+                <time pubdate datetime="2020-10-19T07:25:05-07:00">
+                October 19, 2020 @ 7:25 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-210715' data-commentid="210715" data-postid="31566" data-belowelement="comment-210715" data-respondelement="respond" data-replyto="Reply to Trish" aria-label='Reply to Trish'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->I agree on the ranch sesoning, particularly if you don&#8217;t want so much dill seasoning. This is the way I have always made it &#8212; with ranch rather than dried onion soup. Each to their own.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-197776">
+	        <div id="comment-197776" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/ecdf793048fe05a6a28b66413bef9324?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/ecdf793048fe05a6a28b66413bef9324?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Debbie</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197776">
+                <time pubdate datetime="2020-06-07T10:58:38-07:00">
+                June 7, 2020 @ 10:58 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197776' data-commentid="197776" data-postid="31566" data-belowelement="comment-197776" data-respondelement="respond" data-replyto="Reply to Debbie" aria-label='Reply to Debbie'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->You can definitely make this in crockpot.  I do it all the time.  Just throw everything, except for the cornstarch mix, into CP.  Cook on low 6-8 hours.  I don&#8217;t add in cornstarch, but I would imagine it would be added in at the last half hour or so.  Delish!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-197765">
+	        <div id="comment-197765" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/fb36430d80abf3ba5e5b0d89d77be97e?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/fb36430d80abf3ba5e5b0d89d77be97e?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Christine</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197765">
+                <time pubdate datetime="2020-06-07T08:14:57-07:00">
+                June 7, 2020 @ 8:14 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197765' data-commentid="197765" data-postid="31566" data-belowelement="comment-197765" data-respondelement="respond" data-replyto="Reply to Christine" aria-label='Reply to Christine'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->I only have an 8at IP, is the cook time the same?<br />
+Thanks!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-197763">
+	        <div id="comment-197763" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/c96aee2cab7876f7460099d535abe41e?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/c96aee2cab7876f7460099d535abe41e?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Christina Soto</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197763">
+                <time pubdate datetime="2020-06-07T07:46:17-07:00">
+                June 7, 2020 @ 7:46 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197763' data-commentid="197763" data-postid="31566" data-belowelement="comment-197763" data-respondelement="respond" data-replyto="Reply to Christina Soto" aria-label='Reply to Christina Soto'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->Sounds delicious!!! What if you don’t have a Instant Pot? How long would this need to cook in a crock pot? Thanks!<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment even depth-2" id="li-comment-197766">
+	        <div id="comment-197766" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/95f6b4763d38c5875f29337d695bebe2?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/95f6b4763d38c5875f29337d695bebe2?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Kathryn Varga Flores</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197766">
+                <time pubdate datetime="2020-06-07T08:21:37-07:00">
+                June 7, 2020 @ 8:21 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197766' data-commentid="197766" data-postid="31566" data-belowelement="comment-197766" data-respondelement="respond" data-replyto="Reply to Kathryn Varga Flores" aria-label='Reply to Kathryn Varga Flores'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Agree. Need a stovetop or crockpot adaption please<br />
+Thank you<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt depth-2" id="li-comment-197768">
+	        <div id="comment-197768" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/54b9dd3426298ccbcfd94dc6e7d1083d?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/54b9dd3426298ccbcfd94dc6e7d1083d?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Donna</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197768">
+                <time pubdate datetime="2020-06-07T09:19:05-07:00">
+                June 7, 2020 @ 9:19 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197768' data-commentid="197768" data-postid="31566" data-belowelement="comment-197768" data-respondelement="respond" data-replyto="Reply to Donna" aria-label='Reply to Donna'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Original Mississippi Roast </p>
+<p>Chuck roast up to 4 lbs <br />
+▪️black pepper <br />
+▪️Au Jus mix <br />
+▪️Hidden Valley Ranch mix<br />
+▪️pepperoncini <br />
+▪️stick of butter<br />
+Low heat – eight hours – slow cooker<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-197762">
+	        <div id="comment-197762" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/e31f639d6a66d9f10d5482c12cb1171e?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/e31f639d6a66d9f10d5482c12cb1171e?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Michelle</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197762">
+                <time pubdate datetime="2020-06-07T07:32:45-07:00">
+                June 7, 2020 @ 7:32 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197762' data-commentid="197762" data-postid="31566" data-belowelement="comment-197762" data-respondelement="respond" data-replyto="Reply to Michelle" aria-label='Reply to Michelle'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin --></p>
+<div class="wpsso-rar">
+<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%;">Rated 5 out of 5</span></div>
+<p><!-- .star-rating --></div>
+<p><!-- .wpsso-rar -->I love making pot roast with onion soup mix. It&#8217;s the best! Your recipe sounds delicious.<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-197760">
+	        <div id="comment-197760" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/738fd09a657bc52f5b4afecd9e56885f?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/738fd09a657bc52f5b4afecd9e56885f?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>sweetpea</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197760">
+                <time pubdate datetime="2020-06-07T06:46:25-07:00">
+                June 7, 2020 @ 6:46 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197760' data-commentid="197760" data-postid="31566" data-belowelement="comment-197760" data-respondelement="respond" data-replyto="Reply to sweetpea" aria-label='Reply to sweetpea'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Looks so good.  I never know how much fat to remove.  Do you take out that thick white middle section and leave all else?<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+	    <li class="comment even thread-even depth-1" id="li-comment-197758">
+	        <div id="comment-197758" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/c57d96e243a36bab247dadbbff3d0992?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/c57d96e243a36bab247dadbbff3d0992?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong><a href='http://Damn%20Delicious' rel='external nofollow ugc' class='url'>Marlynne</a></strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197758">
+                <time pubdate datetime="2020-06-07T06:21:25-07:00">
+                June 7, 2020 @ 6:21 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197758' data-commentid="197758" data-postid="31566" data-belowelement="comment-197758" data-respondelement="respond" data-replyto="Reply to Marlynne" aria-label='Reply to Marlynne'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Sure looks YUMMY!  No IP here.  Suggestion(s) for making stovetop and/or crockpot?<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment odd alt depth-2" id="li-comment-197856">
+	        <div id="comment-197856" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/972d3c9d74a8853510cf6daa1a05da71?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/972d3c9d74a8853510cf6daa1a05da71?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong>Kristen</strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197856">
+                <time pubdate datetime="2020-06-08T11:10:48-07:00">
+                June 8, 2020 @ 11:10 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197856' data-commentid="197856" data-postid="31566" data-belowelement="comment-197856" data-respondelement="respond" data-replyto="Reply to Kristen" aria-label='Reply to Kristen'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->You can make this in the crockpot on low. Just add the cornstarch slurry towards the end and after you remove the meat to shred (30 minutes or so before finish cooking).<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    <ul class="children">
+	    <li class="comment even depth-3" id="li-comment-197902">
+	        <div id="comment-197902" class="comment">
+
+            <img alt='' src='https://secure.gravatar.com/avatar/e695a8284528bf89dee4563c821b4fe0?s=60&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/e695a8284528bf89dee4563c821b4fe0?s=120&#038;d=blank&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' loading='lazy' data-pin-nopin="nopin"/>            
+            		
+            <div class="post-meta comment-meta">
+            	<strong><a href='http://Newsbreak' rel='external nofollow ugc' class='url'>Barbara</a></strong>            	 &#8212; 
+                <a href="https://damndelicious.net/2020/06/06/instant-pot-mississippi-pot-roast/#comment-197902">
+                <time pubdate datetime="2020-06-09T07:17:54-07:00">
+                June 9, 2020 @ 7:17 AM                </time>
+                </a>
+                
+                <a rel='nofollow' class='comment-reply-link' href='#comment-197902' data-commentid="197902" data-postid="31566" data-belowelement="comment-197902" data-respondelement="respond" data-replyto="Reply to Barbara" aria-label='Reply to Barbara'>Reply</a>                            </div><!-- .comment-meta -->
+
+	 
+	        <div class="comment-content"><p><!-- wpsso-rar add_rating_to_comment_text begin -->Just a question. Can you substitute boneless, skinless chicken and chicken broth instead of beef?<!-- wpsso-rar add_rating_to_comment_text end --></p>
+</div>
+
+	        </div><!-- #comment-## -->
+	 
+	    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+
+</div><!-- #comments -->
+
+</div> <!-- end #content -->
+
+<div class="sidebar jw-sidebar row span_6 clr span_sidebar">
+			
+	<div class="topsidebar">
+	<div id="simpleimage-2" class="widget-odd widget-first widget-1 about widget widget_simpleimage">
+	<p class="simple-image nopin">
+		<a href="/about-me/"><img width="500" height="680" src="https://s23209.pcdn.co/wp-content/uploads/2018/06/about.jpg" class="attachment-full size-full" alt="" loading="lazy" nopin="nopin" data-wp-pid="29472" /></a>	</p>
+
+
+<p>Come join me in my culinary adventures where we'll be using <strong>simple, fresh ingredients</strong> and transforming them into <em>sophisticated and elegant meals</em> for the <strong>everyday home cook</strong>.</p>
+
+	<p class="more">
+		<a href="/about-me/">More About Me »</a>	</p>
+</div><div id="text-26" class="widget-even widget-2 cookbook widget widget_text">			<div class="textwidget"><p><a href="https://damn-delicious-inc.myshopify.com/"><img class="alignnone src=" src="https://s23209.pcdn.co/wp-content/uploads/2020/01/corgi-shop.jpg" alt="Corgi Shop" /></a></p>
+<p class="links"><a href="https://damn-delicious-inc.myshopify.com/">SHOP NOW</a></p>
+</div>
+		</div><div id="text-24" class="widget-odd widget-3 cookbook widget widget_text">			<div class="textwidget"><p><a href="https://www.amazon.com/Damn-Delicious-Meal-Prep-Low-Calorie/dp/1538729423/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1544547332&amp;sr=1-1&amp;keywords=damn+delicious+meal+prep"><img loading="lazy" class="alignnone size-full wp-image-29471" src="https://s23209.pcdn.co/wp-content/uploads/2019/02/in-stores-now.jpg" alt="" width="600" height="486" /></a></p>
+<p>Get your copy today:</p>
+<p class="links"><a href="https://www.amazon.com/Damn-Delicious-Meal-Prep-Low-Calorie/dp/1538729423/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1544547332&amp;sr=1-1&amp;keywords=damn+delicious+meal+prep" target="_blank" rel="nofollow noopener noreferrer">Amazon</a> // <a href="https://www.barnesandnoble.com/w/damn-delicious-meal-prep-chungah-rhee/1129915469?ean=9781538729427" target="_blank" rel="nofollow noopener noreferrer">Barnes &amp; Noble </a> // <a href="https://www.indiebound.org/book/9781538729427" target="_blank" rel="nofollow noopener noreferrer">Indiebound </a></p>
+</div>
+		</div><div id="text-23" class="widget-even widget-4 cookbook widget widget_text">			<div class="textwidget"><p><a href="https://www.amazon.com/Damn-Delicious-Super-Easy-Recipes/dp/084874585X/"><img loading="lazy" class="alignnone size-full wp-image-29471" src="https://s23209.pcdn.co/wp-content/uploads/2018/06/cookbook@2x.jpg" alt="" width="600" height="486" /></a></p>
+<p>Get your copy today:</p>
+<p class="links"><a href="http://bit.ly/damndeliciousbook" target="_blank" rel="nofollow noopener noreferrer">Amazon</a> // <a href="http://bit.ly/1W9MFUV" target="_blank" rel="nofollow noopener noreferrer">Barnes &amp; Noble </a> // <a href="http://bit.ly/1WJmvH8" target="_blank" rel="nofollow noopener noreferrer">Indiebound </a></p>
+</div>
+		</div><div id="search-4" class="widget-odd widget-last widget-5 widget widget_search"><h3 class="widget-title">Search Recipes:</h3><form method="get" class="search-form" action="https://damndelicious.net/">
+	<input type="text" class="search-input" name="s" id="s" value="" placeholder="search..." />
+	<button type="submit" class="btn btn-success search-submit">
+		<i class="fa fa-search"></i>
+	</button>
+</form>
+</div>
+	</div>
+
+	<div class="midsidebar">
+		<div class="leftsidebar">
+		
+		
+		</div>
+		
+		<div class="rightsidebar">
+		
+		
+		</div>
+	</div>
+	
+	<div class="lowersidebar">
+	
+	
+	</div>
+	
+<div class="clear"></div>
+</div><!-- end #sidebar --><div class="clear"></div>
+</div> <!-- end #wrapper -->
+
+<div class="footer">
+				<div id="ll-custom-recent-posts-2" class="widget-odd widget-first widget-1 footer-widget recentposts">			<h3 class="widget-title">What&#8217;s Trending</h3>			<div class="recent">
+									<div class="item">
+						<a href="https://damndelicious.net/2020/01/25/homestyle-chicken-noodle-soup/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2-600x900.jpg 600w, https://s23209.pcdn.co/wp-content/uploads/2020/01/Homestyle-Chicken-Noodle-SoupIMG_9867-2.jpg 760w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="31324" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/12/10/quick-chicken-ramen-noodle-stir-fry/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/10/Quick-Chicken-Ramen-Noodle-Stir-FryQuick-Chicken-Ramen-Noodle-Stir-FryIMG_1037-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="31195" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/09/24/skillet-lemon-dill-chicken-thighs/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/09/Skillet-Lemon-Dill-Chicken-ThighsIMG_0247-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="31016" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/08/31/make-ahead-breakfast-biscuit-sandwiches/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Make-Ahead-Breakfast-Biscuit-SandwichesIMG_9399-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="30970" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/08/28/greek-chicken-kabobs/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/08/Greek-Chicken-KabobsIMG_9984-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="30961" />																				</a>
+					</div>
+									<div class="item">
+						<a href="https://damndelicious.net/2019/05/05/carne-asada/" rel="bookmark">
+															<img width="240" height="360" src="https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-240x360.jpg" class="nopin wp-post-image" alt="" loading="lazy" nopin="nopin" srcset="https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-240x360.jpg 240w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-500x750.jpg 500w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244.jpg 760w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-360x540.jpg 360w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-640x960.jpg 640w, https://s23209.pcdn.co/wp-content/uploads/2019/05/Carne-AsadaIMG_8244-600x900.jpg 600w" sizes="(max-width: 240px) 100vw, 240px" data-wp-pid="30749" />																				</a>
+					</div>
+							</div>
+			</div>			<div id="text-25" class="widget-even widget-last widget-2 footer-widget widget_text"><h3 class="widget-title">Shoppable Recipes</h3>			<div class="textwidget"><p><!-- shoppable recipe --><br />
+<script language="javascript" type="text/javascript">
+var chicscript = document.createElement('script');
+chicscript.type = 'text/javascript';
+chicscript.src = '//mini.myxxrecipes.com/api/lp/launchpad.js';    
+window.adthrive = window.adthrive || {};
+window.adthrive.cmd = window.adthrive.cmd || [];
+if (Math.random() > 0.5) {
+document.head.appendChild(chicscript);
+window.adthrive.cmd.push(function() {
+			window.adthrive.siteAds.targeting.push( {key: 'at_custom_1', value: 'myxx_on'} );
+			});
+} else {
+window.adthrive.cmd.push(function() {
+			window.adthrive.siteAds.targeting.push( {key: 'at_custom_1', value: 'myxx_off'} );
+			});
+}
+</script></p>
+</div>
+		</div>
+	<div id="custom_html-5" class="widget_text widget-even widget-2 subscribe widget_custom_html"><div class="widget_text wrap subscribe-wrap"><h3 class="widget-title">Get the <em>Latest Recipes</em> Right in your Inbox:</h3><div class="textwidget custom-html-widget"><!-- Begin MailChimp Signup Form -->
+
+<form action="http://damndelicious.us5.list-manage.com/subscribe/post?u=e81eb9facd120894de0e61e0d&amp;id=ab2b965540" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate email-form" target="_blank" novalidate>
+
+<input type="email" value="" name="EMAIL" placeholder="email address" class="required email email-input" id="mce-EMAIL">
+
+<input type="submit" value="Sign Up &raquo;" name="SUBMIT" id="mc-embedded-submit" class="button email-submit">
+
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	
+</form>
+
+<!--End mc_embed_signup-->
+</div></div></div></div>
+
+<div class="sub-footer">
+<div class="wrap">
+	<ul id="menu-footer" class="footer-nav"><li id="menu-item-16603" class="top menu-item menu-item-type-custom menu-item-object-custom menu-item-16603"><a href="#">^ Top</a></li>
+<li id="menu-item-21166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-21166"><a href="https://damndelicious.net/">Home</a></li>
+<li id="menu-item-16592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16592"><a href="https://damndelicious.net/about-me/">About</a></li>
+<li id="menu-item-16602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16602"><a href="https://damndelicious.net/recipe-index/">Browse Recipes</a></li>
+<li id="menu-item-16594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16594"><a href="https://damndelicious.net/press/">Press</a></li>
+<li id="menu-item-27737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27737"><a href="https://damndelicious.net/team/">Team</a></li>
+<li id="menu-item-16595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16595"><a href="https://damndelicious.net/privacy-policy/">Privacy</a></li>
+<li id="menu-item-16593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16593"><a href="https://damndelicious.net/contact-me/">Contact</a></li>
+</ul>	
+	<div class="copyright">
+		&copy;2020<i class="icon"></i> Damn Delicious. Design by <a href="http://www.purrdesign.com" target="_blank" rel="nofollow">Purr</a>.
+	</div>
+	
+	<script type='text/javascript' id='thickbox-js-extra'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"https:\/\/damndelicious.net\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105' id='thickbox-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/shortcode.min.js?ver=5.5.2' id='shortcode-js'></script>
+<script type='text/javascript' src='https://damndelicious.net/wp-admin/js/media-upload.min.js?ver=5.5.2' id='media-upload-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/js/custom.js?ver=1.0.11' id='custom-js-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/js/pinterest.js?ver=1' id='pinterest-js-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/comment-reply.min.js?ver=5.5.2' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-content/themes/damndelicious2018/mobile-header/mobile-header-scripts.js?ver=1.0.0' id='cmh-scripts-js'></script>
+<script type='text/javascript' src='https://s23209.pcdn.co/wp-includes/js/wp-embed.min.js?ver=5.5.2' id='wp-embed-js'></script>
+<script async="async" type='text/javascript' src='https://s23209.pcdn.co/wp-content/plugins/akismet/_inc/form.js?ver=4.1.7' id='akismet-form-js'></script>
+	<!--60 queries. 0.240 seconds-->
+</div>
+</div>
+
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"8f2cac8c19","applicationID":"108064120","transactionName":"ZFdabERTCEFQAE0NWl0deVtCWwlcHhBQClJfVw==","queueTime":0,"applicationTime":243,"atts":"SBBZGgxJG08=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

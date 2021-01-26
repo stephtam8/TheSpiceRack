@@ -1,0 +1,80 @@
+0.0	0.0	Superiority Burger s Crispy Fried Tofu Sandwich Recipe NYT Cooking		
+0.0	0.0	X Search		
+1.0	0.0	Superiority Burger s Crispy Fried Tofu Sandwich	Superiority Burger s Crispy Fried Tofu Sandwich	
+0.0	0.0	Recipe from Brooks Headley		
+0.0	0.0	Adapted by Alexa Weibel Yield 6 sandwiches Time 45 minutes plus marinating		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	David Malosh for The New York Times Food Stylist Barrett Washburne		
+0.0	0.0	Ranging from silken and creamy to firm and chewy tofu comes in many forms and is prized around the world for its versatility In this recipe which is adapted from the Superiority Burger Cookbook W W Norton Company 2018 by chef Brooks Headley extra firm tofu is pressed marinated breaded and fried to make the tofu fried tofu sandwich at Superiority Burger his popular vegetarian restaurant in New York City To achieve a dense tofu patty with plenty of flavor and bite Mr Headley starts with extra firm tofu presses out any excess liquid then marinates it in a spicy pickle juice brine It s then double battered and deep fried until crisp This sandwich is best enjoyed on a sunlit stoop in the East Village just steps outside Superiority Burger but it s also achievable in any home kitchen Alexa Weibel		
+0.0	0.0	More		
+0.0	0.0	American Sandwiches Dijon Mustard Flour Pickled Beet Tofu Dinner Lunch Main Course Vegan Vegetarian		
+0.0	0.0	Ingredients		
+0.9	0.0	For the marinated tofu 1 14 ounce package extra firm tofu drained 1 ½ cups pickle juice 1 tablespoon hot sauce 1 tablespoon Dijon mustard 1 teaspoon gochugaru or red pepper flakes 2 tablespoons grapeseed oil or other neutral oil	1 14 ounce package extra firm tofu drained 1 ½ cups pickle juice 1 tablespoon hot sauce 1 tablespoon Dijon mustard 1 teaspoon gochugaru or red pepper flakes 2 tablespoons grapeseed oil or other neutral oil	
+0.9245283018867925	0.0	For the fried tofu ½ cup Dijon mustard 2 cups all purpose flour ½ teaspoon baking powder 1 teaspoon smoked paprika ½ teaspoon onion powder ½ teaspoon garlic powder ½ teaspoon ground cayenne 1 teaspoon kosher salt plus more as needed 1 teaspoon black pepper Grapeseed oil or other neutral oil for frying	½ cup Dijon mustard 2 cups all purpose flour ½ teaspoon baking powder 1 teaspoon smoked paprika ½ teaspoon onion powder ½ teaspoon garlic powder ½ teaspoon ground cayenne 1 teaspoon kosher salt plus more as needed 1 teaspoon black pepper Grapeseed oil or other neutral oil for frying	
+0.92	0.0	For assembly 6 potato buns or other soft rolls Vegan mayonnaise and hot sauce as needed Thinly shredded green cabbage and dill pickles for serving	6 potato buns or other soft rolls Vegan mayonnaise and hot sauce as needed Thinly shredded green cabbage and dill pickles for serving	
+0.0	0.0	Preparation Prepare the marinated tofu Line a baking sheet with paper towels or a clean kitchen towel Cut the tofu crosswise into two rectangles that are each about 2 1 2 inches wide and 4 inches long Slice each rectangle into three 1 2 inch thick slabs and arrange in a single layer on the baking sheet Cover the sliced tofu with more towels and gently press each piece to extract some of the moisture In a large bowl combine the pickle juice hot sauce mustard and gochugaru Heat the grapeseed oil in a large nonstick or cast iron skillet over high heat until shimmering Sear the tofu to form a golden brown crust 4 to 5 minutes per side Immediately drop the hot tofu into the pickle juice mixture Refrigerate and let the tofu marinate for at least a few hours or even overnight Prepare the fried tofu In a medium shallow bowl stir the mustard with 1 4 cup water until it s the consistency of heavy cream and set aside In a large shallow bowl whisk together the flour baking powder spices salt and pepper In a Dutch oven or sturdy pot heat 2 inches of grapeseed oil over medium heat and set a wire rack on top of a baking sheet Remove the tofu from the brine and pat dry Dip the tofu in the mustard mixture turning until coated all over then the flour mixture dip it again in the mustard then flour until twice coated When the oil temperature reaches 350 degrees carefully place the battered tofu into the hot oil and fry flipping as needed until golden brown about 5 minutes Transfer the fried tofu to the wire rack and sprinkle with a little salt To serve toast the buns and spread generously with mayo and dot with hot sauce if desired Top with fried tofu cabbage and dill pickles and eat immediately		
+0.0	0.0	Like this recipe		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Adapted from Superiority Burger Cookbook The Vegetarian Hamburger Is Now Delicious by Brooks Headley W W Norton Company 2018		
+0.0	0.0	Try more recipes like this		
+0.0	0.0	Healthy		
+0.0	0.0	FOOD s Amazing Cilantro Tofu Sandwich Martha Rose Shulman 30 minutes		
+0.0	0.0	Healthy		
+0.0	0.0	Stir Fried Tofu and Peppers Martha Rose Shulman 30 minutes		
+0.0	0.0	Healthy		
+0.0	0.0	Stir Fried Noodles With Tofu and Peppers Martha Rose Shulman 30 minutes		
+0.0	0.0	Healthy		
+0.0	0.0	Marinated Tofu Sandwich With Asian Greens Martha Rose Shulman 1 hour		
+0.0	0.0	Healthy		
+0.0	0.0	Grilled or Pan Fried Marinated Tofu Martha Rose Shulman 15 minutes plus 1 hour s refrigeration		
+0.0	0.0	Healthy		
+0.0	0.0	Two Tofu Sandwiches Martha Rose Shulman 40 minutes		
+0.0	0.0	Healthy		
+0.0	0.0	Stir Fried Beet Greens Tofu and Beets Martha Rose Shulman 15 minutes		
+0.0	0.0	General Tso s Tofu Sub Elaine Louie Tyler Kord 1 hour and 15 minutes		
+0.0	0.0	Tofu Escabeche Mark Bittman About 1 hour and 15 minutes mostly unattended		
+0.0	0.0	Tofu Chorizo Mark Bittman 20 to 45 minutes depending on desired texture		
+0.0	0.0	Indian Butter Tofu Tofu Makhani Sarah Copeland 40 minutes		
+0.0	0.0	Stir Fried Cucumber With Tofu Hetty Mckinnon 30 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Tofu in Sesame Oil And Rice Vinegar Moira Hodgson Kelly McCune 1 hour 30 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Vegan Ma Po Tofu Elaine Louie Susur Lee 1 hour		
+0.0	0.0	Vegan Summer Three Bean Salad With Tofu and Soy Vinaigrette Elaine Louie Tien Ho 1 hour		
+0.0	0.0	Tofu Mayonnaise Mark Bittman 10 minutes		
+0.0	0.0	More from Our 50 Most Popular Vegetarian Recipes of 2020		
+0.0	0.0	Roasted Tomato and White Bean Stew Colu Henry 30 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Sheet Pan Baked Feta With Broccolini Tomatoes and Lemon Yasmin Fahr 25 minutes		
+0.0	0.0	Southern Macaroni and Cheese Kiera Wright Ruiz Millie Peartree 45 minutes plus cooling		
+0.0	0.0	Spicy White Bean Stew With Broccoli Rabe Alison Roman 40 minutes		
+0.0	0.0	Crispy Tofu With Cashews and Blistered Snap Peas Yewande Komolafe 30 minutes		
+0.0	0.0	Mushroom Bourguignon Melissa Clark 1 hour		
+0.0	0.0	Pasta e Ceci Italian Pasta and Chickpea Stew Colu Henry 30 minutes		
+0.0	0.0	Heirloom Tomato Tart Vallery Lomas 1 1 2 hours		
+0.0	0.0	Cheesy Pan Pizza Tejal Rao King Arthur Flour 45 minutes plus resting		
+0.0	0.0	Easy		
+0.0	0.0	Red Curry Lentils With Sweet Potatoes and Spinach Lidey Heuck 1 hour		
+0.0	0.0	The Big Lasagna Samin Nosrat About 2 1 2 hours		
+0.0	0.0	Spicy Butternut Squash Pasta With Spinach Yasmin Fahr 40 minutes		
+0.0	0.0	Five Ingredient Creamy Miso Pasta Alexa Weibel 20 minutes		
+0.0	0.0	Easy		
+0.0	0.0	One Pan Orzo With Spinach and Feta Melissa Clark 30 minutes		
+0.0	0.0	Oven Fried Patatas Bravas Crispy Potatoes With Two Sauces David Tanis 30 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Creamy Braised White Beans Ali Slagle 25 minutes		
+0.0	0.0	Brush Up On The Basics With Our Cooking Guides		
+0.0	0.0	Cooking Guide How to Cook a Turkey By Melissa Clark		
+0.0	0.0	Cooking Guide How to Stock a Modern Pantry By Julia Moskin		
+0.0	0.0	Cooking Guide How to Make Chili By Sam Sifton		
+0.0	0.0	Cooking Guide How to Make Sole Meunière By Melissa Clark		
+0.0	0.0	Get Our Newsletter		
+0.0	0.0	Get recipes tips and NYT special offers delivered straight to your inbox Opt out or contact us anytime See our Privacy Policy		
+0.0	0.0	Please enter a valid email address		
+0.0	0.0	Follow Us		
+0.0	0.0	Get the App		
+0.0	0.0	About Us		
+0.0	0.0	NYT Cooking is a subscription service of The New York Times It is a digital cookbook and cooking guide alike available on all platforms that helps home cooks of every level discover save and organize the world s best recipes while also helping them become better more competent cooks Subscribe now for full access		
+0.0	0.0	Learn More Our Cooks See Our Features FAQ Tools for Saving NYTimes com food Send Us Feedback		
+0.0	0.0	Shop Gift Subscription Merchandise The New York Times Company Terms of Service Privacy Policy		
+0.0	0.0	Sorry your changes didn t save		

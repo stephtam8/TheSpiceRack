@@ -1,0 +1,58 @@
+0.0	0.0	Classic Tuna Salad Sandwich Recipe NYT Cooking		
+0.0	0.0	X Search		
+0.0	0.0	Easy		
+1.0	0.0	Classic Tuna Salad Sandwich	Classic Tuna Salad Sandwich	
+0.0	0.0	Recipe from Craig Claiborne		
+0.0	0.0	Adapted by The New York Times Yield 4 to 6 servings Time 5 minutes		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Rikki Snyder for The New York Times		
+0.0	0.0	Here is Craig Claiborne s version of the classic lunchbox staple Celery red onion and red bell pepper add crunch capers and lemon juice lend a little tang The New York Times		
+0.0	0.0	Featured in Salads Sandwiches Sauces		
+0.0	0.0	Learn Basic Knife Skills		
+0.0	0.0	More		
+0.0	0.0	American Sandwiches Caper Celery Mayonnaise Tuna Easy Lunch Quick Snack Weekday Main Course		
+0.9811320754716981	0.0	Ingredients 2 6 ounce cans solid waterpacked tuna ½ cup mayonnaise preferably homemade ½ cup finely diced celery 3 tablespoons finely diced red onion 3 tablespoons finely minced red bell pepper 2 tablespoons drained capers 2 teaspoons lemon juice Kosher salt and freshly ground black pepper to taste Sliced sandwich bread of choice	2 6 ounce cans solid waterpacked tuna ½ cup mayonnaise preferably homemade ½ cup finely diced celery 3 tablespoons finely diced red onion 3 tablespoons finely minced red bell pepper 2 tablespoons drained capers 2 teaspoons lemon juice Kosher salt and freshly ground black pepper to taste Sliced sandwich bread of choice	
+0.9743589743589743	0.0	Preparation In a medium bowl combine the tuna mayonnaise celery onion bell pepper capers and lemon juice Mix with a fork until thoroughly combined Season to taste with salt and pepper Serve on the sandwich bread of your choice	In a medium bowl combine the tuna mayonnaise celery onion bell pepper capers and lemon juice Mix with a fork until thoroughly combined Season to taste with salt and pepper Serve on the sandwich bread of your choice	
+0.0	0.0	Like this recipe		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Craig Claiborne		
+0.0	0.0	More from Sam Sifton s Suggestions		
+0.0	0.0	Broiled Fish Tacos Sarah Copeland 20 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Family Meal Fish Tacos Sam Sifton Chad Shaner 30 minutes		
+0.0	0.0	Red Beans and Rice Kim Severson Pableaux Johnson 2 1 2 hours plus at least 4 hours soaking		
+0.0	0.0	Baked Risotto With Greens and Peas Kay Chun 30 minutes		
+0.0	0.0	Spaghetti al Limone The New York Times 45 minutes		
+0.0	0.0	A Cheat s Bordelaise Sauce Sam Sifton 20 minutes		
+0.0	0.0	Cider Cured Pork Chops Sam Sifton 45 minutes plus up to 72 hours refrigeration		
+0.0	0.0	Lane Cake Yewande Komolafe 1 1 4 hours plus cooling		
+0.0	0.0	Chai Masala Julia Moskin Sephi Bergerson 10 minutes		
+0.0	0.0	Peanut Butter Miso Cookies Krysten Chambrot 30 minutes plus chilling		
+0.0	0.0	Peppermint Stripe Cookies Susan Spungen 1 hour plus at least 4 hours drying		
+0.0	0.0	Stamped Citrus Shortbread Susan Spungen 40 minutes plus chilling		
+0.0	0.0	Black Cake Julia Moskin Naparima Girls High School Cookbook 4 hours plus 2 days macerating		
+0.0	0.0	Superiority Burger s Crispy Fried Tofu Sandwich Alexa Weibel Brooks Headley 45 minutes plus marinating		
+0.0	0.0	Classic		
+0.0	0.0	Sesame Coated Sautéed Chicken Breasts Pierre Franey About 1 hour		
+0.0	0.0	Moo Shu Mushrooms J Kenji López Alt 45 minutes		
+0.0	0.0	Trending on Cooking		
+0.0	0.0	Classic		
+0.0	0.0	Soba Salad Mark Bittman 15 minutes		
+0.0	0.0	Roasted Tomato and White Bean Stew Colu Henry 30 minutes		
+0.0	0.0	Spicy Butternut Squash Pasta With Spinach Yasmin Fahr 40 minutes		
+0.0	0.0	Brussels Sprouts With Pickled Shallots and Labneh Nik Sharma 40 minutes		
+0.0	0.0	Brush Up On The Basics With Our Cooking Guides		
+0.0	0.0	Cooking Guide Basic Knife Skills By Julia Moskin		
+0.0	0.0	Cooking Guide How to Cook a Turkey By Melissa Clark		
+0.0	0.0	Cooking Guide How to Frost a Cake By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make Steak By Melissa Clark		
+0.0	0.0	Get Our Newsletter		
+0.0	0.0	Get recipes tips and NYT special offers delivered straight to your inbox Opt out or contact us anytime See our Privacy Policy		
+0.0	0.0	Please enter a valid email address		
+0.0	0.0	Follow Us		
+0.0	0.0	Get the App		
+0.0	0.0	About Us		
+0.0	0.0	NYT Cooking is a subscription service of The New York Times It is a digital cookbook and cooking guide alike available on all platforms that helps home cooks of every level discover save and organize the world s best recipes while also helping them become better more competent cooks Subscribe now for full access		
+0.0	0.0	Learn More Our Cooks See Our Features FAQ Tools for Saving NYTimes com food Send Us Feedback		
+0.0	0.0	Shop Gift Subscription Merchandise The New York Times Company Terms of Service Privacy Policy		
+0.0	0.0	Sorry your changes didn t save		

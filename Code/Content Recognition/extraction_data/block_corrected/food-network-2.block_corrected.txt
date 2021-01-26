@@ -1,0 +1,223 @@
+0.0	0.0	Brown Sugar Oatmeal Cookie Recipe Food Network Recipe Ree Drummond Food Network		
+0.0	0.0	Watch Full Seasons TV Schedule Videos Shop Sweepstakes Magazine Blog Shows A Z Chefs A Z Newsletters Restaurants		
+0.0	0.0	Recipes		
+0.0	0.0	Holiday Central Easy Comfort Food Healthy Family Dinners Our Best Recipes		
+0.0	0.0	See All Recipes		
+0.0	0.0	Recipe of the Day		
+0.0	0.0	Spinach and Feta Noodle Kugel		
+0.0	0.0	Trending Recipes		
+0.0	0.0	Cranberry Brie Knots		
+0.0	0.0	Shrimp Scampi		
+0.0	0.0	M M Magic Bars		
+0.0	0.0	Vegetarian Southern style Collard Greens		
+0.0	0.0	Shows		
+0.0	0.0	TV Schedule See TV Schedule		
+0.0	0.0	Girl Meets Farm		
+0.0	0.0	8am 7c		
+0.0	0.0	Girl Meets Farm		
+0.0	0.0	8 30am 7 30c		
+0.0	0.0	Girl Meets Farm		
+0.0	0.0	9am 8c		
+0.0	0.0	Girl Meets Farm		
+0.0	0.0	9 30am 8 30c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	10am 9c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	10 30am 9 30c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	11am 10c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	11 30am 10 30c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	12pm 11c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	12 30pm 11 30c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	1pm 12c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	2pm 1c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	3pm 2c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	4pm 3c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	5pm 4c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	6pm 5c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	7pm 6c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	8pm 7c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	9pm 8c		
+0.0	0.0	On Tonight		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	10pm 9c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	11pm 10c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	12am 11c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	1am 12c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	2am 1c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	3am 2c		
+0.0	0.0	Winner Cake All		
+0.0	0.0	4am 3c		
+0.0	0.0	See All Shows		
+0.0	0.0	Popular Shows		
+0.0	0.0	Candy Land		
+0.0	0.0	Holiday Baking Championship		
+0.0	0.0	Diners Drive Ins and Dives		
+0.0	0.0	In the Kitchen		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	The Kitchen		
+0.0	0.0	Delicious Miss Brown		
+0.0	0.0	Chefs		
+0.0	0.0	Chefs Hosts		
+0.0	0.0	Kardea Brown		
+0.0	0.0	Ree Drummond		
+0.0	0.0	Ina Garten		
+0.0	0.0	Sunny Anderson		
+0.0	0.0	Bobby Flay		
+0.0	0.0	Valerie Bertinelli		
+0.0	0.0	Guy Fieri		
+0.0	0.0	Giada De Laurentiis		
+0.0	0.0	Molly Yeh		
+0.0	0.0	See All Chefs		
+0.0	0.0	Food Network Kitchen		
+0.0	0.0	Premium		
+0.0	0.0	All your cooking needs in one place		
+0.0	0.0	Try it free for 30 days		
+0.0	0.0	Step by Step Tutorials		
+0.0	0.0	Live Classes with Q A		
+0.0	0.0	LIVE CLASS Today 4PM EST LIVE		
+0.0	0.0	Spaghetti Squash Croquettes		
+0.0	0.0	LIVE CLASS Today 6PM EST LIVE		
+0.0	0.0	Honey Glazed Pork Chops with Shaved Carrot and Mint Salad		
+0.0	0.0	LIVE CLASS Today 8PM EST LIVE		
+0.0	0.0	Mexican Hot Chocolate Cookies		
+0.0	0.0	LIVE CLASS Today 9PM EST LIVE		
+0.0	0.0	Herbed Yorkshire Puddings		
+0.0	0.0	LIVE CLASS Today 10PM EST LIVE		
+0.0	0.0	Encore My Mom s Coffee Braised Brisket		
+0.0	0.0	LIVE CLASS Tomorrow 4PM EST LIVE		
+0.0	0.0	Rosemary Simple Syrup Is the Last Minute Edible Gift You Need		
+0.0	0.0	Try Premium		
+0.0	0.0	Food Network Kitchen		
+0.0	0.0	Premium		
+0.0	0.0	Classes Live Class Schedule Weeknight Dinners Our Best Breakfasts Lunch Made Easy		
+0.0	0.0	Previously Live Classes		
+0.0	0.0	PREVIOUSLY LIVE		
+0.0	0.0	Sticky Toffee Pudding		
+0.0	0.0	PREVIOUSLY LIVE		
+0.0	0.0	Air Fryer Mini Swedish Meatballs		
+0.0	0.0	PREVIOUSLY LIVE		
+0.0	0.0	Orange Curd Mousse with Crushed Pretzels		
+0.0	0.0	Upcoming Classes		
+0.0	0.0	LIVE CLASS Today 4PM EST LIVE		
+0.0	0.0	Spaghetti Squash Croquettes		
+0.0	0.0	LIVE CLASS Today 6PM EST LIVE		
+0.0	0.0	Honey Glazed Pork Chops with Shaved Carrot and Mint Salad		
+0.0	0.0	LIVE CLASS Today 8PM EST LIVE		
+0.0	0.0	Mexican Hot Chocolate Cookies		
+0.0	0.0	LIVE CLASS Today 9PM EST LIVE		
+0.0	0.0	Herbed Yorkshire Puddings		
+0.0	0.0	LIVE CLASS Today 10PM EST LIVE		
+0.0	0.0	Encore My Mom s Coffee Braised Brisket		
+0.0	0.0	LIVE CLASS Tomorrow 4PM EST LIVE		
+0.0	0.0	Rosemary Simple Syrup Is the Last Minute Edible Gift You Need		
+0.0	0.0	LIVE CLASS Tomorrow 6PM EST LIVE		
+0.0	0.0	Fantasy Fudge		
+0.0	0.0	Home Recipes Ree Drummond		
+0.0	0.0	Prev Recipe Next Recipe		
+0.0	0.0	WATCH		
+0.0	0.0	Loading Video		
+0.0	0.0	See more		
+0.0	0.0	12		
+0.0	0.0	Brown Sugar Oatmeal Cookies		
+0.0	0.0	Recipe courtesy of Ree Drummond		
+0.0	0.0	Recipe courtesy of Ree Drummond		
+0.0	0.0	Show The Pioneer Woman		
+0.0	0.0	Episode Pet Parade		
+1.0	0.0	Brown Sugar Oatmeal Cookies	Brown Sugar Oatmeal Cookies	
+0.0	0.0	Getting reviews		
+0.0	0.0	Save Recipe		
+0.0	0.0	Level Easy Total 30 min includes cooling time Active 15 min Yield 24 cookies		
+0.0	0.0	Share This Recipe		
+0.0	0.0	Pinterest Facebook Twitter Email		
+0.0	0.0	Level Easy Total 30 min includes cooling time Active 15 min Yield 24 cookies		
+1.0	0.0	Ingredients	Ingredients	
+0.0	0.0	Deselect All		
+1.0	0.0	2 cups packed dark brown sugar	2 cups packed dark brown sugar	
+1.0	0.0	1 cup 2 sticks salted butter softened	1 cup 2 sticks salted butter softened	
+1.0	0.0	2 teaspoons vanilla extract	2 teaspoons vanilla extract	
+1.0	0.0	2 eggs	2 eggs	
+1.0	0.0	1 1 2 cups all purpose flour	1 1 2 cups all purpose flour	
+1.0	0.0	1 teaspoon salt	1 teaspoon salt	
+1.0	0.0	1 2 teaspoon baking soda	1 2 teaspoon baking soda	
+1.0	0.0	3 cups old fashioned oats	3 cups old fashioned oats	
+0.0	0.0	View Shopping List		
+1.0	0.0	Directions	Directions	
+0.0	0.0	WATCH		
+0.0	0.0	Watch how to make this recipe		
+1.0	0.0	Preheat the oven to 350 degrees F In the bowl of an electric mixer or using a hand mixer beat together the brown sugar and butter until fluffy Beat in the vanilla Add the eggs one at a time scraping the bowl after each one Mix together the flour salt and baking soda in a medium bowl Add it into the creamed mixture in 2 to 3 batches mixing until just combined Mix in the oats until just combined Use your preferred size cookie scoop or a regular spoon to drop portions of dough onto baking sheets spacing them a couple inches apart Bake until dark and chewy 12 to 13 minutes If you d like a crispier cookie just cook a little longer Let the cookies cool slightly on the baking sheets then transfer onto a plate for serving	Preheat the oven to 350 degrees F In the bowl of an electric mixer or using a hand mixer beat together the brown sugar and butter until fluffy Beat in the vanilla Add the eggs one at a time scraping the bowl after each one Mix together the flour salt and baking soda in a medium bowl Add it into the creamed mixture in 2 to 3 batches mixing until just combined Mix in the oats until just combined Use your preferred size cookie scoop or a regular spoon to drop portions of dough onto baking sheets spacing them a couple inches apart Bake until dark and chewy 12 to 13 minutes If you d like a crispier cookie just cook a little longer Let the cookies cool slightly on the baking sheets then transfer onto a plate for serving	
+0.0	0.0	Cook s Note		
+0.0	0.0	Add 1 2 cup finely chopped nuts to the flour mixture if you d like a nutty flavor and crunch		
+0.0	0.0	My Private Notes		
+0.0	0.0	Add a Note		
+0.0	0.0	WATCH		
+0.0	0.0	Show The Pioneer Woman		
+0.0	0.0	Episode Pet Parade		
+0.0	0.0	Categories		
+0.0	0.0	Oatmeal Cookie Cookie Oatmeal Recipes Baking Dessert Sugar Cookie Grain Recipes Oats		
+0.0	0.0	More from		
+0.0	0.0	Ultimate Baking Guide		
+0.0	0.0	Looking for Something Else		
+0.0	0.0	Healthy Highly Rated 5 Ingredients or Less Surprise Me		
+0.0	0.0	Brown Sugar Cookies		
+0.0	0.0	Iced Oatmeal Cookies		
+0.0	0.0	Raisin Pecan Oatmeal Cookies		
+0.0	0.0	Angel Sugar Cookies		
+0.0	0.0	Classes You May Also Like		
+0.0	0.0	Molly Yeh		
+0.0	0.0	Sugar Cookie Mini Cakes		
+0.0	0.0	17m Easy 97		
+0.0	0.0	CLASS		
+0.0	0.0	Samantha Seneviratne		
+0.0	0.0	Lemon Vanilla Sugar Cookies		
+0.0	0.0	8m Intermediate 98		
+0.0	0.0	CLASS		
+0.0	0.0	Dan Langan		
+0.0	0.0	Sugar Cookie Placecards		
+0.0	0.0	16m Intermediate 99		
+0.0	0.0	CLASS		
+0.0	0.0	Erin Jeanne McDowell		
+0.0	0.0	Soft Sugar Cookies		
+0.0	0.0	21m Easy 98		
+0.0	0.0	CLASS		
+0.0	0.0	Take a Class on Food Network Kitchen		
+0.0	0.0	Ree Drummond		
+0.0	0.0	Fish Almondine with Ree Drummond		
+0.0	0.0	11m Easy 98		
+0.0	0.0	CLASS		
+0.0	0.0	Alton Brown		
+0.0	0.0	Sugar Cookies 2 0		
+0.0	0.0	4m Easy 100		
+0.0	0.0	CLASS		
+0.0	0.0	James Briscione		
+0.0	0.0	Sugar Cookies		
+0.0	0.0	9m Easy 98		
+0.0	0.0	CLASS		
+0.0	0.0	Coming in 2021 discovery		
+0.0	0.0	Stream your favorite Discovery shows all in one spot starting on January 4 Learn More		
+0.0	0.0	What s Cooking		
+0.0	0.0	100 Holiday Cookies		
+0.0	0.0	Our Very Best Recipes		
+0.0	0.0	Festive Apps Snacks Discover More Recipes		
+0.0	0.0	Our Newsletter		
+0.0	0.0	Sign up for the Recipe of the Day Newsletter Privacy Policy		
+0.0	0.0	Related Pages Peanut Butter Chocolate No Bake Cookies Recipe Oatiest Oatmeal Cookie Recipe The Oatmeal Cookie Drink Recipe Angel Sugar Cookies Recipe Lacy Chocolate Oatmeal Cookie Sandwiches Recipe Oatmeal with Apple Brown Sugar and Raisins Recipe		
+0.0	0.0	Site Map Visitor Agreement AdChoices Privacy Notice About Newsroom Advertise Help TV Ratings Online Closed Captioning California Privacy Notice CA Do Not Sell My Info Discovery Inc International Editions United States Asia Brazil Canada Europe Middle East Africa United Kingdom Latin America The Discovery Family of Networks Cooking Channel Food com HGTV DIY Network Travel Channel Great American Country 2020 Discovery or its subsidiaries and affiliates All rights reserved		
+0.0	0.0	Pinterest Facebook Twitter Email		

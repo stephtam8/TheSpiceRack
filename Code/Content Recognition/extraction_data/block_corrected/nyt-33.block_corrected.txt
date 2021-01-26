@@ -1,0 +1,54 @@
+0.0	0.0	Perfect Chocolate Chip Cookies Recipe NYT Cooking		
+0.0	0.0	X Search		
+0.0	0.0	Perfect Chocolate Chip Cookies		
+0.0	0.0	Recipe from Ravneet Gill		
+0.0	0.0	Adapted by Charlotte Druckman Yield 14 cookies Time 30 minutes plus 12 hours chilling		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Ryan Liebe for The New York Times Food Stylist Hadas Smirnoff		
+0.0	0.0	What makes these cookies truly perfect isn t anything radical it s simply an attention to detail The pastry chef Ravneet Gill was meticulous in developing her recipe and all of her instructions exist for a reason When she tells you to chill your dough overnight don t think you can skip over that If you do your cookies will spread When she instructs you to roll the dough into balls before transferring them to the fridge to rest do as she says and you ll get a nice plump domed cookie instead of a sad flat one Don t go swapping in milk chocolate for dark and chop the chocolate into large chunks for those dramatic dense puddles of goo One allowance If you don t have Maldon salt another flaky salt or even kosher salt will do Charlotte Druckman		
+0.23076923076923078	0.0	Featured in A Perfect Chocolate Chip Cookie And The Chef Who Created It	Perfect Chocolate Chip	
+0.0	0.0	More		
+0.06666666666666667	0.0	American Cookies And Bars Butter Dark Brown Sugar Dark Chocolate Flour Superfine Sugar Snack Dessert	Cookies	
+0.9859154929577465	0.0	Ingredients ½ cup plus 2 tablespoons 140 grams unsalted butter 1 1 4 sticks softened Scant 3 4 cup 140 grams dark brown sugar ⅔ cup 110 grams superfine sugar 1 large egg 1 ¾ cups plus 2 tablespoons 250 grams all purpose flour 1 teaspoon baking powder ¾ teaspoon baking soda ¾ teaspoon Maldon sea salt or kosher salt 6 ounces 170 grams dark bittersweet chocolate chopped into large chunks	½ cup plus 2 tablespoons 140 grams unsalted butter 1 1 4 sticks softened Scant 3 4 cup 140 grams dark brown sugar ⅔ cup 110 grams superfine sugar 1 large egg 1 ¾ cups plus 2 tablespoons 250 grams all purpose flour 1 teaspoon baking powder ¾ teaspoon baking soda ¾ teaspoon Maldon sea salt or kosher salt 6 ounces 170 grams dark bittersweet chocolate chopped into large chunks	
+0.9965277777777778	0.0	Preparation Put the butter and both sugars in a stand mixer or mixing bowl Cream together using a paddle attachment on medium speed a handheld electric whisk or a wooden spoon for 1 to 2 minutes until paler but not fluffy Do not mix for too long if you beat the mixture until super light and fluffy that will cause the cookie to deflate later when cooking Add the egg and beat over medium speed until evenly combined In a separate bowl mix together the dry ingredients all the flour baking powder baking soda and salt then fold into the butter mixture using a rubber spatula until combined Add the chopped chocolate and fold into the dough until evenly distributed Immediately scoop out heaping 1 4 cup portions about 60 grams roll into balls and place on two baking sheets lined with parchment paper Cover with plastic wrap and refrigerate at least 12 hours If space is tight you can condense them on one sheet before refrigerating then redistribute among two sheets before baking The next day heat the oven to 350 degrees Make sure the dough balls are evenly spaced out among two baking sheets as they will spread Bake the cookies for 13 minutes or 15 minutes if baking from frozen until the cookies are puffed and golden at the edges You want the middle to be ever so slightly not quite set Allow the cookies to cool on the baking sheet they will continue firming up as they cool Once cooled eat These cookies will keep in an airtight container for up to 3 days The balls of dough will keep for up to 2 days in the fridge or 2 weeks in the freezer	Put the butter and both sugars in a stand mixer or mixing bowl Cream together using a paddle attachment on medium speed a handheld electric whisk or a wooden spoon for 1 to 2 minutes until paler but not fluffy Do not mix for too long if you beat the mixture until super light and fluffy that will cause the cookie to deflate later when cooking Add the egg and beat over medium speed until evenly combined In a separate bowl mix together the dry ingredients all the flour baking powder baking soda and salt then fold into the butter mixture using a rubber spatula until combined Add the chopped chocolate and fold into the dough until evenly distributed Immediately scoop out heaping 1 4 cup portions about 60 grams roll into balls and place on two baking sheets lined with parchment paper Cover with plastic wrap and refrigerate at least 12 hours If space is tight you can condense them on one sheet before refrigerating then redistribute among two sheets before baking The next day heat the oven to 350 degrees Make sure the dough balls are evenly spaced out among two baking sheets as they will spread Bake the cookies for 13 minutes or 15 minutes if baking from frozen until the cookies are puffed and golden at the edges You want the middle to be ever so slightly not quite set Allow the cookies to cool on the baking sheet they will continue firming up as they cool Once cooled eat These cookies will keep in an airtight container for up to 3 days The balls of dough will keep for up to 2 days in the fridge or 2 weeks in the freezer	
+0.0	0.0	Like this recipe		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Adapted from The Pastry Chef s Guide by Ravneet Gill Pavilion 2020		
+0.0	0.0	More from Our 50 Most Popular Desserts of 2020		
+0.0	0.0	Strawberry Spoon Cake Jerrelle Guy 30 minutes plus cooling		
+0.0	0.0	Joanne Chang s Maple Blueberry Scones Dorie Greenspan Joanne Chang 1 hour plus chilling and cooling		
+0.0	0.0	Chocolate Chip Banana Bread Erin Jeanne McDowell 1 1 2 hours		
+0.0	0.0	Pantry Crumb Cake Melissa Clark 1 hour		
+0.0	0.0	Swedish Almond Cake Dorie Greenspan 1 1 4 hours plus cooling		
+0.0	0.0	Easy		
+0.0	0.0	Blender Chocolate Mousse Tejal Rao Monica Stolbach 20 minutes plus chilling		
+0.0	0.0	Otis Lee s Detroit Famous Poundcake Cc Allen Otis Lee Mr Fofo s Deli 1 1 2 hours		
+0.0	0.0	Earl Grey Tea Cake With Dark Chocolate and Orange Zest Samantha Seneviratne 1 hour plus chilling		
+0.0	0.0	Peaches and Cream Pie Lidey Heuck 40 minutes plus 2 hours chilling		
+0.0	0.0	Cranberry Lemon Bars Genevieve Ko 1 hour plus cooling and chilling		
+0.0	0.0	Peach Poundcake Jerrelle Guy 2 hours plus cooling		
+0.0	0.0	Gluten Free Chocolate Chip Cookies Erin Jeanne McDowell About 30 minutes		
+0.0	0.0	No Bake Butterscotch Custards Melissa Clark 35 minutes plus chilling		
+0.0	0.0	Giant Cinnamon Roll Scone Margaux Laskey Erin Gardner 1 1 2 hours		
+0.0	0.0	Crème Fraîche Poundcake Melissa Clark 1 1 2 hours plus cooling		
+0.0	0.0	Peanut Butter Brownies Julia Moskin Joanna Gaines 45 minutes plus cooling and freezing		
+0.0	0.0	Trending on Cooking		
+0.0	0.0	Homemade Corned Beef Sam Sifton 3 hours plus 5 days brining		
+0.0	0.0	Baked Tofu With Peanut Sauce and Coconut Lime Rice Yewande Komolafe 25 minutes		
+0.0	0.0	Salmon With Whole Lemon Dressing Alison Roman 30 minutes		
+0.0	0.0	Superiority Burger s Crispy Fried Tofu Sandwich Alexa Weibel Brooks Headley 45 minutes plus marinating		
+0.0	0.0	Brush Up On The Basics With Our Cooking Guides		
+0.0	0.0	Cooking Guide How to Cook a Turkey By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make Burgers By Sam Sifton		
+0.0	0.0	Cooking Guide How to Cook Beans By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make an Omelet By Melissa Clark		
+0.0	0.0	Get Our Newsletter		
+0.0	0.0	Get recipes tips and NYT special offers delivered straight to your inbox Opt out or contact us anytime See our Privacy Policy		
+0.0	0.0	Please enter a valid email address		
+0.0	0.0	Follow Us		
+0.0	0.0	Get the App		
+0.0	0.0	About Us		
+0.0	0.0	NYT Cooking is a subscription service of The New York Times It is a digital cookbook and cooking guide alike available on all platforms that helps home cooks of every level discover save and organize the world s best recipes while also helping them become better more competent cooks Subscribe now for full access		
+0.0	0.0	Learn More Our Cooks See Our Features FAQ Tools for Saving NYTimes com food Send Us Feedback		
+0.0	0.0	Shop Gift Subscription Merchandise The New York Times Company Terms of Service Privacy Policy		
+0.0	0.0	Sorry your changes didn t save		

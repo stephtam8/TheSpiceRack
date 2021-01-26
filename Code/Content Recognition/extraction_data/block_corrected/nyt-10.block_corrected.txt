@@ -1,0 +1,55 @@
+0.0	0.0	Hamburgers Diner Style Recipe NYT Cooking		
+0.0	0.0	X Search		
+1.0	0.0	Hamburgers Diner Style	Hamburgers Diner Style	
+0.0	0.0	By Sam Sifton Yield 4 to 8 servings Time 20 minutes		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Andrew Scrivani for The New York Times		
+0.0	0.0	This is the traditional griddled hamburger of diners and takeaway spots smashed thin and cooked crisp on its edges It is best to cook in a heavy cast iron skillet slicked with oil or fat and not on a grill For meat ask a butcher for coarse ground chuck steak with at least a 20 percent fat content or grind your own Keep it in the refrigerator until you are ready to cook and try not to handle it with your fingers use an ice cream scoop or spoon instead Plop down a few ounces in the pan smash it with a spatula salt it let it go crisp and flip Add cheese and get your bun toasted The process moves quickly		
+0.0	0.0	Featured in Deconstructing The Perfect Burger		
+0.0	0.0	More		
+0.0	0.0	Burgers Ground Beef Weeknight Main Course		
+0.9787234042553191	0.0	Ingredients ½ teaspoon neutral oil like canola or a pat of unsalted butter 2 pounds ground chuck at least 20 percent fat Kosher salt and black pepper to taste 8 slices cheese optional 8 soft hamburger buns lightly toasted Lettuce leaves sliced tomatoes and condiments as desired	½ teaspoon neutral oil like canola or a pat of unsalted butter 2 pounds ground chuck at least 20 percent fat Kosher salt and black pepper to taste 8 slices cheese optional 8 soft hamburger buns lightly toasted Lettuce leaves sliced tomatoes and condiments as desired	
+0.994475138121547	0.0	Preparation Add oil or butter to a large cast iron or stainless steel skillet and place over medium heat Gently divide ground beef into 8 small piles of around 4 ounces each and even more gently gather them together into orbs that are about 2 inches in height Do not form patties Increase heat under skillet to high Put half the orbs into the skillet with plenty of distance between them and using a stiff metal spatula press down on each one to form a burger that is around 4 inches in diameter and about 1 2 inch thick Season with salt and pepper Cook without moving until patties have achieved a deep burnished crust a little less than 2 minutes Use the spatula to scrape free and carefully turn burgers over If using cheese lay slices on meat Continue to cook until meat is cooked through approximately a minute or so longer Remove burgers from skillet place on buns and top as desired Repeat process with remaining burgers Serving two hamburgers on a single bun is not an outrageous option	Add oil or butter to a large cast iron or stainless steel skillet and place over medium heat Gently divide ground beef into 8 small piles of around 4 ounces each and even more gently gather them together into orbs that are about 2 inches in height Do not form patties Increase heat under skillet to high Put half the orbs into the skillet with plenty of distance between them and using a stiff metal spatula press down on each one to form a burger that is around 4 inches in diameter and about 1 2 inch thick Season with salt and pepper Cook without moving until patties have achieved a deep burnished crust a little less than 2 minutes Use the spatula to scrape free and carefully turn burgers over If using cheese lay slices on meat Continue to cook until meat is cooked through approximately a minute or so longer Remove burgers from skillet place on buns and top as desired Repeat process with remaining burgers Serving two hamburgers on a single bun is not an outrageous option	
+0.0	0.0	Like this recipe		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	More from Sam Sifton s Suggestions		
+0.0	0.0	Broiled Fish Tacos Sarah Copeland 20 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Family Meal Fish Tacos Sam Sifton Chad Shaner 30 minutes		
+0.0	0.0	Red Beans and Rice Kim Severson Pableaux Johnson 2 1 2 hours plus at least 4 hours soaking		
+0.0	0.0	Baked Risotto With Greens and Peas Kay Chun 30 minutes		
+0.0	0.0	Spaghetti al Limone The New York Times 45 minutes		
+0.0	0.0	A Cheat s Bordelaise Sauce Sam Sifton 20 minutes		
+0.0	0.0	Cider Cured Pork Chops Sam Sifton 45 minutes plus up to 72 hours refrigeration		
+0.0	0.0	Lane Cake Yewande Komolafe 1 1 4 hours plus cooling		
+0.0	0.0	Chai Masala Julia Moskin Sephi Bergerson 10 minutes		
+0.0	0.0	Peanut Butter Miso Cookies Krysten Chambrot 30 minutes plus chilling		
+0.0	0.0	Peppermint Stripe Cookies Susan Spungen 1 hour plus at least 4 hours drying		
+0.0	0.0	Stamped Citrus Shortbread Susan Spungen 40 minutes plus chilling		
+0.0	0.0	Black Cake Julia Moskin Naparima Girls High School Cookbook 4 hours plus 2 days macerating		
+0.0	0.0	Superiority Burger s Crispy Fried Tofu Sandwich Alexa Weibel Brooks Headley 45 minutes plus marinating		
+0.0	0.0	Classic		
+0.0	0.0	Sesame Coated Sautéed Chicken Breasts Pierre Franey About 1 hour		
+0.0	0.0	Moo Shu Mushrooms J Kenji López Alt 45 minutes		
+0.0	0.0	Trending on Cooking		
+0.0	0.0	Healthy		
+0.0	0.0	Greens and Garlic Frittata to Go Martha Rose Shulman About 30 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Cheesy Spicy Black Bean Bake Ali Slagle 15 minutes		
+0.0	0.0	Perfect Chocolate Chip Cookies Charlotte Druckman Ravneet Gill 30 minutes plus 12 hours chilling		
+0.0	0.0	Hearty Beef Stew With Red Onions and Ale Melissa Clark 3 hours		
+0.0	0.0	Brush Up On The Basics With Our Cooking Guides		
+0.0	0.0	Cooking Guide How to Cook a Turkey By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make Sole Meunière By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make Yogurt By Melissa Clark		
+0.0	0.0	Cooking Guide How to Roast Chicken By Melissa Clark		
+0.0	0.0	Get Our Newsletter		
+0.0	0.0	Get recipes tips and NYT special offers delivered straight to your inbox Opt out or contact us anytime See our Privacy Policy		
+0.0	0.0	Please enter a valid email address		
+0.0	0.0	Follow Us		
+0.0	0.0	Get the App		
+0.0	0.0	About Us		
+0.0	0.0	NYT Cooking is a subscription service of The New York Times It is a digital cookbook and cooking guide alike available on all platforms that helps home cooks of every level discover save and organize the world s best recipes while also helping them become better more competent cooks Subscribe now for full access		
+0.0	0.0	Learn More Our Cooks See Our Features FAQ Tools for Saving NYTimes com food Send Us Feedback		
+0.0	0.0	Shop Gift Subscription Merchandise The New York Times Company Terms of Service Privacy Policy		
+0.0	0.0	Sorry your changes didn t save		

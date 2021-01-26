@@ -1,0 +1,55 @@
+0.0	0.0	Juicy Lucy Burger Recipe NYT Cooking		
+0.0	0.0	X Search		
+1.0	0.0	Juicy Lucy Burger	Juicy Lucy Burger	
+0.0	0.0	Recipe from 5 8 Club Matt s Bar and Grill		
+0.0	0.0	Adapted by Alexa Weibel Yield 4 burgers Time 35 minutes		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Johnny Miller for The New York Times Food Stylist Rebecca Jurkevich		
+0.0	0.0	This Minneapolis staple is smart and simple Sealing a slice of cheese inside two thin burger patties allows the burger to develop a serious char while the inside stays moist thanks to its molten core There s debate over whether the burger originated at 5 8 Club or Matt s Bar both have drawn locals and tourists alike since the 1950s The Juicy Lucy method takes some practice you ll need to make sure the edges of the stacked patties are properly sealed so that the melted cheese gushes out with every bite instead of making a mess in the skillet but the results far outweigh the challenge Because the ingredient list is short an unassuming bun a smattering of pickles and a pile of caramelized onions you ll need to season with abandon You may be tempted to use an expensive craft cheese but sliced American cheese is the only way to go for tradition and meltability Alexa Weibel		
+0.0	0.0	Learn How to Make Burgers		
+0.0	0.0	More		
+0.0	0.0	American Burgers American Cheese Ground Beef Onion Dinner Lunch Main Course Fourth Of July Labor Day Memorial Day Super Bowl		
+0.9846153846153847	0.0	Ingredients Kosher salt and black pepper 1 ½ pounds ground beef at least 15 percent fat 4 slices American cheese 2 tablespoons unsalted butter 1 large yellow onion about 1 pound peeled and cut into 1 4 inch rounds ½ teaspoon granulated sugar 1 to 2 tablespoons canola or vegetable oil 4 potato rolls or soft hamburger buns split Bread and butter pickles for serving	Kosher salt and black pepper 1 ½ pounds ground beef at least 15 percent fat 4 slices American cheese 2 tablespoons unsalted butter 1 large yellow onion about 1 pound peeled and cut into 1 4 inch rounds ½ teaspoon granulated sugar 1 to 2 tablespoons canola or vegetable oil 4 potato rolls or soft hamburger buns split Bread and butter pickles for serving	
+0.9975124378109452	0.0	Preparation In a small bowl stir together 2 teaspoons salt and 1 1 2 teaspoons pepper Divide the beef into four equal portions then halve each of those portions Gently roll each portion into a ball using the palm of your hand then flatten each into a disk shape on a large cutting board pressing with your fingers and palm until just over 4 inches wide and 1 4 inch thick Repeat to form eight patties Season both sides of each patty with the salt and pepper blend Add one slice cheese to the center of one patty folding any overhanging corners of the cheese inward Using a spatula lift another patty from the cutting board and place it on top of the cheese pressing gently to connect both patties Gently pinch the edges of the patties together to thoroughly seal then use your fingers to round the edges by pressing and patting along the perimeter Repeat with the remaining patties forming three more burgers and set aside In a large preferably 12 inch cast iron skillet melt butter over medium heat Add onion sprinkle with sugar 1 teaspoon salt and 1 4 teaspoon pepper Cook stirring occasionally adding 2 tablespoons water about every 5 minutes to prevent burning until tender and caramelized about 20 minutes Once the onions are caramelized transfer them to a bowl If you have any bits left in the pan wipe them out Add the oil to the skillet to lightly coat the bottom and heat over medium high until scalding hot about 2 minutes Add the burgers and cook until seared and dark brown on the outside 3 to 5 minutes per side You ll want to let the burgers cook undisturbed as long as possible to develop a crisp sear and to prevent them from splitting Their insides will cook through by the time the outsides form a proper sear Resist the urge to cut them open as the cheese will spurt out Transfer burgers to a clean cutting board to rest Meanwhile toast the buns Scrape up and remove from the pan any cheese that may have leaked leaving a thin layer of accumulated fat in the pan Reduce the heat to medium Working in batches toast the buns cut side down until warmed and toasted in spots about 1 minute Form sandwiches by layering pickles patties then caramelized onions on buns Serve immediately	In a small bowl stir together 2 teaspoons salt and 1 1 2 teaspoons pepper Divide the beef into four equal portions then halve each of those portions Gently roll each portion into a ball using the palm of your hand then flatten each into a disk shape on a large cutting board pressing with your fingers and palm until just over 4 inches wide and 1 4 inch thick Repeat to form eight patties Season both sides of each patty with the salt and pepper blend Add one slice cheese to the center of one patty folding any overhanging corners of the cheese inward Using a spatula lift another patty from the cutting board and place it on top of the cheese pressing gently to connect both patties Gently pinch the edges of the patties together to thoroughly seal then use your fingers to round the edges by pressing and patting along the perimeter Repeat with the remaining patties forming three more burgers and set aside In a large preferably 12 inch cast iron skillet melt butter over medium heat Add onion sprinkle with sugar 1 teaspoon salt and 1 4 teaspoon pepper Cook stirring occasionally adding 2 tablespoons water about every 5 minutes to prevent burning until tender and caramelized about 20 minutes Once the onions are caramelized transfer them to a bowl If you have any bits left in the pan wipe them out Add the oil to the skillet to lightly coat the bottom and heat over medium high until scalding hot about 2 minutes Add the burgers and cook until seared and dark brown on the outside 3 to 5 minutes per side You ll want to let the burgers cook undisturbed as long as possible to develop a crisp sear and to prevent them from splitting Their insides will cook through by the time the outsides form a proper sear Resist the urge to cut them open as the cheese will spurt out Transfer burgers to a clean cutting board to rest Meanwhile toast the buns Scrape up and remove from the pan any cheese that may have leaked leaving a thin layer of accumulated fat in the pan Reduce the heat to medium Working in batches toast the buns cut side down until warmed and toasted in spots about 1 minute Form sandwiches by layering pickles patties then caramelized onions on buns Serve immediately	
+0.0	0.0	Like this recipe		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Adapted from 5 8 Club and Matt s Bar Minneapolis		
+0.0	0.0	More from Sam Sifton s Suggestions		
+0.0	0.0	Broiled Fish Tacos Sarah Copeland 20 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Family Meal Fish Tacos Sam Sifton Chad Shaner 30 minutes		
+0.0	0.0	Red Beans and Rice Kim Severson Pableaux Johnson 2 1 2 hours plus at least 4 hours soaking		
+0.0	0.0	Baked Risotto With Greens and Peas Kay Chun 30 minutes		
+0.0	0.0	Spaghetti al Limone The New York Times 45 minutes		
+0.0	0.0	A Cheat s Bordelaise Sauce Sam Sifton 20 minutes		
+0.0	0.0	Cider Cured Pork Chops Sam Sifton 45 minutes plus up to 72 hours refrigeration		
+0.0	0.0	Lane Cake Yewande Komolafe 1 1 4 hours plus cooling		
+0.0	0.0	Chai Masala Julia Moskin Sephi Bergerson 10 minutes		
+0.0	0.0	Peanut Butter Miso Cookies Krysten Chambrot 30 minutes plus chilling		
+0.0	0.0	Peppermint Stripe Cookies Susan Spungen 1 hour plus at least 4 hours drying		
+0.0	0.0	Stamped Citrus Shortbread Susan Spungen 40 minutes plus chilling		
+0.0	0.0	Black Cake Julia Moskin Naparima Girls High School Cookbook 4 hours plus 2 days macerating		
+0.0	0.0	Superiority Burger s Crispy Fried Tofu Sandwich Alexa Weibel Brooks Headley 45 minutes plus marinating		
+0.0	0.0	Classic		
+0.0	0.0	Sesame Coated Sautéed Chicken Breasts Pierre Franey About 1 hour		
+0.0	0.0	Moo Shu Mushrooms J Kenji López Alt 45 minutes		
+0.0	0.0	Trending on Cooking		
+0.0	0.0	Pasta e Ceci Italian Pasta and Chickpea Stew Colu Henry 30 minutes		
+0.0	0.0	Crispy Sour Cream and Onion Chicken Ali Slagle 35 minutes		
+0.0	0.0	Spicy Butternut Squash Pasta With Spinach Yasmin Fahr 40 minutes		
+0.0	0.0	Classic Trifle With Berries or Citrus Melissa Clark 1 hour plus chilling		
+0.0	0.0	Brush Up On The Basics With Our Cooking Guides		
+0.0	0.0	Cooking Guide How to Make Burgers By Sam Sifton		
+0.0	0.0	Cooking Guide How to Cook a Turkey By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make Ratatouille By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make Cooking Substitutions By Alexa Weibel		
+0.0	0.0	Get Our Newsletter		
+0.0	0.0	Get recipes tips and NYT special offers delivered straight to your inbox Opt out or contact us anytime See our Privacy Policy		
+0.0	0.0	Please enter a valid email address		
+0.0	0.0	Follow Us		
+0.0	0.0	Get the App		
+0.0	0.0	About Us		
+0.0	0.0	NYT Cooking is a subscription service of The New York Times It is a digital cookbook and cooking guide alike available on all platforms that helps home cooks of every level discover save and organize the world s best recipes while also helping them become better more competent cooks Subscribe now for full access		
+0.0	0.0	Learn More Our Cooks See Our Features FAQ Tools for Saving NYTimes com food Send Us Feedback		
+0.0	0.0	Shop Gift Subscription Merchandise The New York Times Company Terms of Service Privacy Policy		
+0.0	0.0	Sorry your changes didn t save		

@@ -1,0 +1,73 @@
+0.0	0.0	Pasta e Ceci Italian Pasta and Chickpea Stew Recipe NYT Cooking		
+0.0	0.0	X Search		
+1.0	0.0	Pasta e Ceci Italian Pasta and Chickpea Stew	Pasta e Ceci Italian Pasta and Chickpea Stew	
+0.0	0.0	By Colu Henry Yield 4 servings Time 30 minutes		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Andrew Purcell for The New York Times Food Stylist Barrett Washburne		
+0.0	0.0	There is an incredible number of recipes for this classic Roman dish and everyone has an opinion on how it should be prepared This version is more stew than soup but it can be loosened up with a bit more water if you prefer It begins with sautéing onion tomatoes garlic and rosemary in olive oil then tossing in the chickpeas and smashing a few to give the stew a creamy texture Water is added then uncooked pasta which cooks as the stew simmers and results in one less dish for you wash Escarole is folded in right before serving This flexible stew can go in a number of directions so tweak it as you see fit but don t forget to finish each bowl with grated pecorino and a drizzle of olive oil Ciao		
+0.0	0.0	More		
+0.0	0.0	Italian Soups And Stews Chickpea Escarole Garlic Olive Oil Onion Pasta Red Pepper Flake Rosemary Tomato Dinner Weekday Appetizer Main Course Vegetarian		
+0.984375	0.0	Ingredients 3 tablespoons olive oil plus more for drizzling 1 medium yellow onion finely chopped 3 garlic cloves finely chopped 2 teaspoons chopped fresh rosemary ½ teaspoon red pepper flakes Kosher salt and black pepper 1 packed cup canned whole tomatoes drained 1 15 ounce can chickpeas rinsed 1 cup ditalini 4 cups roughly chopped escarole Tuscan kale or radicchio Grated pecorino for serving	3 tablespoons olive oil plus more for drizzling 1 medium yellow onion finely chopped 3 garlic cloves finely chopped 2 teaspoons chopped fresh rosemary ½ teaspoon red pepper flakes Kosher salt and black pepper 1 packed cup canned whole tomatoes drained 1 15 ounce can chickpeas rinsed 1 cup ditalini 4 cups roughly chopped escarole Tuscan kale or radicchio Grated pecorino for serving	
+0.994535519125683	0.0	Preparation Heat the oil in a large stock pot or Dutch oven over medium Add the onion and cook stirring occasionally until softened but not taking on any color 4 to 5 minutes Add the garlic rosemary and red pepper flakes and cook 1 minute more Season well with salt and pepper Stir in the tomatoes and the chickpeas breaking up the tomatoes with the back of a spoon or spatula and smashing about 1 2 cup of the beans Add 3 cups water and bring to a boil over high Add the pasta and simmer stirring often to make sure nothing sticks to the bottom of the pan until the pasta is al dente about 10 minutes The water will mostly be absorbed by the pasta but if you prefer it brothier you can add 1 2 to 1 cup water and simmer until warmed through 1 minute more Season to taste with salt and pepper Add the escarole and stir until wilted Taste and adjust seasonings accordingly Ladle into bowls and top with grated cheese and a drizzle of olive oil	Heat the oil in a large stock pot or Dutch oven over medium Add the onion and cook stirring occasionally until softened but not taking on any color 4 to 5 minutes Add the garlic rosemary and red pepper flakes and cook 1 minute more Season well with salt and pepper Stir in the tomatoes and the chickpeas breaking up the tomatoes with the back of a spoon or spatula and smashing about 1 2 cup of the beans Add 3 cups water and bring to a boil over high Add the pasta and simmer stirring often to make sure nothing sticks to the bottom of the pan until the pasta is al dente about 10 minutes The water will mostly be absorbed by the pasta but if you prefer it brothier you can add 1 2 to 1 cup water and simmer until warmed through 1 minute more Season to taste with salt and pepper Add the escarole and stir until wilted Taste and adjust seasonings accordingly Ladle into bowls and top with grated cheese and a drizzle of olive oil	
+0.0	0.0	Like this recipe		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Try more recipes like this		
+0.0	0.0	Pasta Puttanesca Mark Bittman 30 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Pasta Beans and Tomatoes Mark Bittman 10 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Chickpea Vegetable Soup With Parmesan Rosemary and Lemon Melissa Clark 1 1 2 to 2 hours		
+0.0	0.0	Healthy		
+0.0	0.0	Pasta With Pepper and Tomato Sauce Martha Rose Shulman 1 hour		
+0.0	0.0	Easy		
+0.0	0.0	Italian Potato Pasta Soup With Greens David Tanis 1 hour		
+0.0	0.0	Creamy Chickpea Pasta With Spinach and Rosemary Alexa Weibel 30 minutes		
+0.0	0.0	Midnight Pasta With Roasted Garlic Olive Oil and Chile Ali Slagle 1 hour		
+0.0	0.0	Vegetable and Pasta Stew Jacques Pepin 25 minutes		
+0.0	0.0	Pasta Fagioli Trish Hall Union Square Cafe 2 hours		
+0.0	0.0	Easy		
+0.0	0.0	Tomato Sauce for Pasta Nancy Harmon Jenkins Jack Greenberg James Vorenberg 55 minutes		
+0.0	0.0	Pasta With Potatoes Mark Bittman 1 hour		
+0.0	0.0	Easy		
+0.0	0.0	Pasta With Walnuts And Olive Oil Mark Bittman 20 minutes		
+0.0	0.0	Pasta With Grilled Summer Vegetables Moira Hodgson 40 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Pasta With Mushrooms Pierre Franey 20 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Pasta With Fresh Tomato Sauce Mark Bittman 20 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Pasta With Roasted Eggplant Pepper and Garlic Melissa Clark 1 hour		
+0.0	0.0	More from Sam Sifton s Suggestions		
+0.0	0.0	Broiled Fish Tacos Sarah Copeland 20 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Family Meal Fish Tacos Sam Sifton Chad Shaner 30 minutes		
+0.0	0.0	Red Beans and Rice Kim Severson Pableaux Johnson 2 1 2 hours plus at least 4 hours soaking		
+0.0	0.0	Baked Risotto With Greens and Peas Kay Chun 30 minutes		
+0.0	0.0	Spaghetti al Limone The New York Times 45 minutes		
+0.0	0.0	A Cheat s Bordelaise Sauce Sam Sifton 20 minutes		
+0.0	0.0	Cider Cured Pork Chops Sam Sifton 45 minutes plus up to 72 hours refrigeration		
+0.0	0.0	Lane Cake Yewande Komolafe 1 1 4 hours plus cooling		
+0.0	0.0	Chai Masala Julia Moskin Sephi Bergerson 10 minutes		
+0.0	0.0	Peanut Butter Miso Cookies Krysten Chambrot 30 minutes plus chilling		
+0.0	0.0	Peppermint Stripe Cookies Susan Spungen 1 hour plus at least 4 hours drying		
+0.0	0.0	Stamped Citrus Shortbread Susan Spungen 40 minutes plus chilling		
+0.0	0.0	Black Cake Julia Moskin Naparima Girls High School Cookbook 4 hours plus 2 days macerating		
+0.0	0.0	Superiority Burger s Crispy Fried Tofu Sandwich Alexa Weibel Brooks Headley 45 minutes plus marinating		
+0.0	0.0	Classic		
+0.0	0.0	Sesame Coated Sautéed Chicken Breasts Pierre Franey About 1 hour		
+0.0	0.0	Moo Shu Mushrooms J Kenji López Alt 45 minutes		
+0.0	0.0	Brush Up On The Basics With Our Cooking Guides		
+0.0	0.0	Cooking Guide How to Cook a Turkey By Melissa Clark		
+0.0	0.0	Cooking Guide How to Cook Beans By Melissa Clark		
+0.0	0.0	Cooking Guide How to Cook Brussels Sprouts By Alison Roman		
+0.0	0.0	Cooking Guide How to Make Cooking Substitutions By Alexa Weibel		
+0.0	0.0	Get Our Newsletter		
+0.0	0.0	Get recipes tips and NYT special offers delivered straight to your inbox Opt out or contact us anytime See our Privacy Policy		
+0.0	0.0	Please enter a valid email address		
+0.0	0.0	Follow Us		
+0.0	0.0	Get the App		
+0.0	0.0	About Us		
+0.0	0.0	NYT Cooking is a subscription service of The New York Times It is a digital cookbook and cooking guide alike available on all platforms that helps home cooks of every level discover save and organize the world s best recipes while also helping them become better more competent cooks Subscribe now for full access		
+0.0	0.0	Learn More Our Cooks See Our Features FAQ Tools for Saving NYTimes com food Send Us Feedback		
+0.0	0.0	Shop Gift Subscription Merchandise The New York Times Company Terms of Service Privacy Policy		
+0.0	0.0	Sorry your changes didn t save		

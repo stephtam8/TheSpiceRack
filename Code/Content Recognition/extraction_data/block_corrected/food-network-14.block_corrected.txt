@@ -1,0 +1,233 @@
+0.0	0.0	Overnight Baked French Toast Casserole Recipe Ree Drummond Food Network		
+0.0	0.0	Watch Full Seasons TV Schedule Videos Shop Sweepstakes Magazine Blog Shows A Z Chefs A Z Newsletters Restaurants		
+0.0	0.0	Recipes		
+0.0	0.0	Holiday Central Easy Comfort Food Healthy Family Dinners Our Best Recipes		
+0.0	0.0	See All Recipes		
+0.0	0.0	Recipe of the Day		
+0.0	0.0	Spinach and Feta Noodle Kugel		
+0.0	0.0	Trending Recipes		
+0.0	0.0	Cranberry Brie Knots		
+0.0	0.0	Shrimp Scampi		
+0.0	0.0	M M Magic Bars		
+0.0	0.0	Vegetarian Southern style Collard Greens		
+0.0	0.0	Shows		
+0.0	0.0	TV Schedule See TV Schedule		
+0.0	0.0	Girl Meets Farm		
+0.0	0.0	8am 7c		
+0.0	0.0	Girl Meets Farm		
+0.0	0.0	8 30am 7 30c		
+0.0	0.0	Girl Meets Farm		
+0.0	0.0	9am 8c		
+0.0	0.0	Girl Meets Farm		
+0.0	0.0	9 30am 8 30c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	10am 9c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	10 30am 9 30c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	11am 10c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	11 30am 10 30c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	12pm 11c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	12 30pm 11 30c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	1pm 12c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	2pm 1c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	3pm 2c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	4pm 3c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	5pm 4c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	6pm 5c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	7pm 6c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	8pm 7c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	9pm 8c		
+0.0	0.0	On Tonight		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	10pm 9c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	11pm 10c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	12am 11c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	1am 12c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	2am 1c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	3am 2c		
+0.0	0.0	Winner Cake All		
+0.0	0.0	4am 3c		
+0.0	0.0	See All Shows		
+0.0	0.0	Popular Shows		
+0.0	0.0	Candy Land		
+0.0	0.0	Holiday Baking Championship		
+0.0	0.0	Diners Drive Ins and Dives		
+0.0	0.0	In the Kitchen		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	The Kitchen		
+0.0	0.0	Delicious Miss Brown		
+0.0	0.0	Chefs		
+0.0	0.0	Chefs Hosts		
+0.0	0.0	Kardea Brown		
+0.0	0.0	Ree Drummond		
+0.0	0.0	Ina Garten		
+0.0	0.0	Sunny Anderson		
+0.0	0.0	Bobby Flay		
+0.0	0.0	Valerie Bertinelli		
+0.0	0.0	Guy Fieri		
+0.0	0.0	Giada De Laurentiis		
+0.0	0.0	Molly Yeh		
+0.0	0.0	See All Chefs		
+0.0	0.0	Food Network Kitchen		
+0.0	0.0	Premium		
+0.0	0.0	All your cooking needs in one place		
+0.0	0.0	Try it free for 30 days		
+0.0	0.0	Step by Step Tutorials		
+0.0	0.0	Live Classes with Q A		
+0.0	0.0	LIVE CLASS Today 4PM EST LIVE		
+0.0	0.0	Spaghetti Squash Croquettes		
+0.0	0.0	LIVE CLASS Today 6PM EST LIVE		
+0.0	0.0	Honey Glazed Pork Chops with Shaved Carrot and Mint Salad		
+0.0	0.0	LIVE CLASS Today 8PM EST LIVE		
+0.0	0.0	Mexican Hot Chocolate Cookies		
+0.0	0.0	LIVE CLASS Today 9PM EST LIVE		
+0.0	0.0	Herbed Yorkshire Puddings		
+0.0	0.0	LIVE CLASS Today 10PM EST LIVE		
+0.0	0.0	Encore My Mom s Coffee Braised Brisket		
+0.0	0.0	LIVE CLASS Tomorrow 4PM EST LIVE		
+0.0	0.0	Rosemary Simple Syrup Is the Last Minute Edible Gift You Need		
+0.0	0.0	Try Premium		
+0.0	0.0	Food Network Kitchen		
+0.0	0.0	Premium		
+0.0	0.0	Classes Live Class Schedule Weeknight Dinners Our Best Breakfasts Lunch Made Easy		
+0.0	0.0	Previously Live Classes		
+0.0	0.0	PREVIOUSLY LIVE		
+0.0	0.0	Sticky Toffee Pudding		
+0.0	0.0	PREVIOUSLY LIVE		
+0.0	0.0	Air Fryer Mini Swedish Meatballs		
+0.0	0.0	PREVIOUSLY LIVE		
+0.0	0.0	Orange Curd Mousse with Crushed Pretzels		
+0.0	0.0	Upcoming Classes		
+0.0	0.0	LIVE CLASS Today 4PM EST LIVE		
+0.0	0.0	Spaghetti Squash Croquettes		
+0.0	0.0	LIVE CLASS Today 6PM EST LIVE		
+0.0	0.0	Honey Glazed Pork Chops with Shaved Carrot and Mint Salad		
+0.0	0.0	LIVE CLASS Today 8PM EST LIVE		
+0.0	0.0	Mexican Hot Chocolate Cookies		
+0.0	0.0	LIVE CLASS Today 9PM EST LIVE		
+0.0	0.0	Herbed Yorkshire Puddings		
+0.0	0.0	LIVE CLASS Today 10PM EST LIVE		
+0.0	0.0	Encore My Mom s Coffee Braised Brisket		
+0.0	0.0	LIVE CLASS Tomorrow 4PM EST LIVE		
+0.0	0.0	Rosemary Simple Syrup Is the Last Minute Edible Gift You Need		
+0.0	0.0	LIVE CLASS Tomorrow 6PM EST LIVE		
+0.0	0.0	Fantasy Fudge		
+0.0	0.0	Home Recipes Ree Drummond		
+0.0	0.0	Prev Recipe Next Recipe		
+0.0	0.0	WATCH		
+0.0	0.0	Loading Video		
+0.0	0.0	See more		
+0.0	0.0	12		
+0.0	0.0	Cinnamon Baked French Toast		
+0.0	0.0	Recipe courtesy of Ree Drummond		
+0.0	0.0	Recipe courtesy of Ree Drummond		
+0.0	0.0	Show The Pioneer Woman		
+0.0	0.0	Episode Paige and Friends		
+1.0	0.0	Cinnamon Baked French Toast	Cinnamon Baked French Toast	
+0.0	0.0	Getting reviews		
+0.0	0.0	Save Recipe		
+0.0	0.0	Level Easy Total 13 hr Prep 15 min Inactive 12 hr Cook 45 min Yield 12 servings		
+0.0	0.0	Share This Recipe		
+0.0	0.0	Pinterest Facebook Twitter Email		
+0.0	0.0	Level Easy Total 13 hr Prep 15 min Inactive 12 hr Cook 45 min Yield 12 servings		
+1.0	0.0	Ingredients	Ingredients	
+0.0	0.0	Deselect All		
+0.0	0.0	French Toast		
+1.0	0.0	Butter for greasing	Butter for greasing	
+1.0	0.0	1 loaf crusty sourdough or French bread	1 loaf crusty sourdough or French bread	
+1.0	0.0	8 whole eggs	8 whole eggs	
+1.0	0.0	2 cups whole milk	2 cups whole milk	
+1.0	0.0	1 2 cup whipping heavy cream	1 2 cup whipping heavy cream	
+1.0	0.0	1 2 cup granulated sugar	1 2 cup granulated sugar	
+1.0	0.0	1 2 cup brown sugar	1 2 cup brown sugar	
+1.0	0.0	2 tablespoons vanilla extract	2 tablespoons vanilla extract	
+0.0	0.0	Topping		
+1.0	0.0	1 2 cup all purpose flour	1 2 cup all purpose flour	
+1.0	0.0	1 2 cup firmly packed brown sugar	1 2 cup firmly packed brown sugar	
+1.0	0.0	1 teaspoon ground cinnamon	1 teaspoon ground cinnamon	
+1.0	0.0	1 4 teaspoon salt	1 4 teaspoon salt	
+1.0	0.0	Freshly grated nutmeg	Freshly grated nutmeg	
+1.0	0.0	1 stick cold butter cut into pieces plus more for serving	1 stick cold butter cut into pieces plus more for serving	
+1.0	0.0	Warm pancake syrup for serving	Warm pancake syrup for serving	
+1.0	0.0	1 cup fresh blueberries for serving	1 cup fresh blueberries for serving	
+0.0	0.0	View Shopping List		
+1.0	0.0	Directions	Directions	
+0.0	0.0	WATCH		
+0.0	0.0	Watch how to make this recipe		
+0.0	0.0	Special equipment 9 by 13 inch baking pan		
+1.0	0.0	For the French toast Grease the baking pan with butter Tear the bread into chunks or cut into cubes and evenly distribute in the pan Crack the eggs in a big bowl Whisk together the eggs milk cream granulated sugar brown sugar and vanilla Pour evenly over the bread Cover the pan tightly and store in the fridge until needed overnight preferably For the topping Mix the flour brown sugar cinnamon salt and some nutmeg in a separate bowl Stir together using a fork Add the butter and with a pastry cutter and mix it all together until the mixture resembles fine pebbles Store in a re sealable plastic bag in the fridge When you re ready to bake the casserole preheat the oven to 350 degrees F Remove the casserole from the fridge and sprinkle the topping over the top Bake for 45 minutes for a softer more bread pudding texture or for 1 hour or more for a firmer crisper texture Scoop out individual portions Top with butter and drizzle with warm pancake syrup and sprinkle with blueberries	For the French toast Grease the baking pan with butter Tear the bread into chunks or cut into cubes and evenly distribute in the pan Crack the eggs in a big bowl Whisk together the eggs milk cream granulated sugar brown sugar and vanilla Pour evenly over the bread Cover the pan tightly and store in the fridge until needed overnight preferably For the topping Mix the flour brown sugar cinnamon salt and some nutmeg in a separate bowl Stir together using a fork Add the butter and with a pastry cutter and mix it all together until the mixture resembles fine pebbles Store in a re sealable plastic bag in the fridge When you re ready to bake the casserole preheat the oven to 350 degrees F Remove the casserole from the fridge and sprinkle the topping over the top Bake for 45 minutes for a softer more bread pudding texture or for 1 hour or more for a firmer crisper texture Scoop out individual portions Top with butter and drizzle with warm pancake syrup and sprinkle with blueberries	
+0.0	0.0	2012 Ree Drummond All Rights Reserved		
+0.0	0.0	My Private Notes		
+0.0	0.0	Add a Note		
+0.0	0.0	WATCH		
+0.0	0.0	Show The Pioneer Woman		
+0.0	0.0	Episode Paige and Friends		
+0.0	0.0	Categories		
+0.0	0.0	French Toast Recipes Main Dish Breakfast Brunch Vegetarian		
+0.0	0.0	More from		
+0.0	0.0	Back to School Made Easy		
+0.0	0.0	Looking for Something Else		
+0.0	0.0	Quick Easy More Bread Recipes 5 Ingredients or Less Highly Rated		
+0.0	0.0	French Toast		
+0.0	0.0	Challah French Toast		
+0.0	0.0	Avocado Toasts		
+0.0	0.0	Perfect French Toast		
+0.0	0.0	Classes You May Also Like		
+0.0	0.0	Dana Beninati		
+0.0	0.0	French Toast Pigs in Blankets		
+0.0	0.0	30m Easy 100		
+0.0	0.0	CLASS		
+0.0	0.0	Geoffrey Zakarian		
+0.0	0.0	Cherries Jubilee French Toast		
+0.0	0.0	27m Easy 99		
+0.0	0.0	CLASS		
+0.0	0.0	Dan Langan		
+0.0	0.0	Pumpkin Bread French Toast		
+0.0	0.0	13m Easy 98		
+0.0	0.0	CLASS		
+0.0	0.0	Ree Drummond		
+0.0	0.0	Ree s Lasagna Soup		
+0.0	0.0	17m Easy 99		
+0.0	0.0	CLASS		
+0.0	0.0	Take a Class on Food Network Kitchen		
+0.0	0.0	Ree Drummond		
+0.0	0.0	Fish Almondine with Ree Drummond		
+0.0	0.0	11m Easy 98		
+0.0	0.0	CLASS		
+0.0	0.0	Sebastien Rouxel		
+0.0	0.0	Eggnog French Toast		
+0.0	0.0	7m Easy 97		
+0.0	0.0	CLASS		
+0.0	0.0	Jet Tila		
+0.0	0.0	Cheddar and Bacon Stuffed French Toast Sponsored		
+0.0	0.0	23m Easy 100		
+0.0	0.0	CLASS		
+0.0	0.0	Coming in 2021 discovery		
+0.0	0.0	Stream your favorite Discovery shows all in one spot starting on January 4 Learn More		
+0.0	0.0	What s Cooking		
+0.0	0.0	100 Holiday Cookies		
+0.0	0.0	Our Very Best Recipes		
+0.0	0.0	Festive Apps Snacks Discover More Recipes		
+0.0	0.0	Our Newsletter		
+0.0	0.0	Sign up for the Recipe of the Day Newsletter Privacy Policy		
+0.0	0.0	Related Pages Healthy Overnight French Toast Bake Recipe Pumpkin French Toast Casserole Recipe Apple Crisp French Toast Casserole Recipe Raspberry Baked French Toast Recipe Berry French Toast Casserole Recipe The Best French Toast Casserole Recipe		
+0.0	0.0	Site Map Visitor Agreement AdChoices Privacy Notice About Newsroom Advertise Help TV Ratings Online Closed Captioning California Privacy Notice CA Do Not Sell My Info Discovery Inc International Editions United States Asia Brazil Canada Europe Middle East Africa United Kingdom Latin America The Discovery Family of Networks Cooking Channel Food com HGTV DIY Network Travel Channel Great American Country 2020 Discovery or its subsidiaries and affiliates All rights reserved		
+0.0	0.0	Pinterest Facebook Twitter Email		

@@ -1,0 +1,233 @@
+0.0	0.0	Chicken and Broccoli Stir Fry Recipe Food Network Kitchen Food Network		
+0.0	0.0	Watch Full Seasons TV Schedule Videos Shop Sweepstakes Magazine Blog Shows A Z Chefs A Z Newsletters Restaurants		
+0.0	0.0	Recipes		
+0.0	0.0	Holiday Central Easy Comfort Food Healthy Family Dinners Our Best Recipes		
+0.0	0.0	See All Recipes		
+0.0	0.0	Recipe of the Day		
+0.0	0.0	Spinach and Feta Noodle Kugel		
+0.0	0.0	Trending Recipes		
+0.0	0.0	Cranberry Brie Knots		
+0.0	0.0	Shrimp Scampi		
+0.0	0.0	M M Magic Bars		
+0.0	0.0	Vegetarian Southern style Collard Greens		
+0.0	0.0	Shows		
+0.0	0.0	TV Schedule See TV Schedule		
+0.0	0.0	Girl Meets Farm		
+0.0	0.0	8am 7c		
+0.0	0.0	Girl Meets Farm		
+0.0	0.0	8 30am 7 30c		
+0.0	0.0	Girl Meets Farm		
+0.0	0.0	9am 8c		
+0.0	0.0	Girl Meets Farm		
+0.0	0.0	9 30am 8 30c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	10am 9c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	10 30am 9 30c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	11am 10c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	11 30am 10 30c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	12pm 11c		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	12 30pm 11 30c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	1pm 12c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	2pm 1c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	3pm 2c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	4pm 3c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	5pm 4c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	6pm 5c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	7pm 6c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	8pm 7c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	9pm 8c		
+0.0	0.0	On Tonight		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	10pm 9c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	11pm 10c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	12am 11c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	1am 12c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	2am 1c		
+0.0	0.0	Guy s Grocery Games		
+0.0	0.0	3am 2c		
+0.0	0.0	Winner Cake All		
+0.0	0.0	4am 3c		
+0.0	0.0	See All Shows		
+0.0	0.0	Popular Shows		
+0.0	0.0	Candy Land		
+0.0	0.0	Holiday Baking Championship		
+0.0	0.0	Diners Drive Ins and Dives		
+0.0	0.0	In the Kitchen		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	The Kitchen		
+0.0	0.0	Delicious Miss Brown		
+0.0	0.0	Chefs		
+0.0	0.0	Chefs Hosts		
+0.0	0.0	Kardea Brown		
+0.0	0.0	Ree Drummond		
+0.0	0.0	Ina Garten		
+0.0	0.0	Sunny Anderson		
+0.0	0.0	Bobby Flay		
+0.0	0.0	Valerie Bertinelli		
+0.0	0.0	Guy Fieri		
+0.0	0.0	Giada De Laurentiis		
+0.0	0.0	Molly Yeh		
+0.0	0.0	See All Chefs		
+0.0	0.0	Food Network Kitchen		
+0.0	0.0	Premium		
+0.0	0.0	All your cooking needs in one place		
+0.0	0.0	Try it free for 30 days		
+0.0	0.0	Step by Step Tutorials		
+0.0	0.0	Live Classes with Q A		
+0.0	0.0	LIVE CLASS Today 4PM EST LIVE		
+0.0	0.0	Spaghetti Squash Croquettes		
+0.0	0.0	LIVE CLASS Today 6PM EST LIVE		
+0.0	0.0	Honey Glazed Pork Chops with Shaved Carrot and Mint Salad		
+0.0	0.0	LIVE CLASS Today 8PM EST LIVE		
+0.0	0.0	Mexican Hot Chocolate Cookies		
+0.0	0.0	LIVE CLASS Today 9PM EST LIVE		
+0.0	0.0	Herbed Yorkshire Puddings		
+0.0	0.0	LIVE CLASS Today 10PM EST LIVE		
+0.0	0.0	Encore My Mom s Coffee Braised Brisket		
+0.0	0.0	LIVE CLASS Tomorrow 4PM EST LIVE		
+0.0	0.0	Rosemary Simple Syrup Is the Last Minute Edible Gift You Need		
+0.0	0.0	Try Premium		
+0.0	0.0	Food Network Kitchen		
+0.0	0.0	Premium		
+0.0	0.0	Classes Live Class Schedule Weeknight Dinners Our Best Breakfasts Lunch Made Easy		
+0.0	0.0	Previously Live Classes		
+0.0	0.0	PREVIOUSLY LIVE		
+0.0	0.0	Sticky Toffee Pudding		
+0.0	0.0	PREVIOUSLY LIVE		
+0.0	0.0	Air Fryer Mini Swedish Meatballs		
+0.0	0.0	PREVIOUSLY LIVE		
+0.0	0.0	Orange Curd Mousse with Crushed Pretzels		
+0.0	0.0	Upcoming Classes		
+0.0	0.0	LIVE CLASS Today 4PM EST LIVE		
+0.0	0.0	Spaghetti Squash Croquettes		
+0.0	0.0	LIVE CLASS Today 6PM EST LIVE		
+0.0	0.0	Honey Glazed Pork Chops with Shaved Carrot and Mint Salad		
+0.0	0.0	LIVE CLASS Today 8PM EST LIVE		
+0.0	0.0	Mexican Hot Chocolate Cookies		
+0.0	0.0	LIVE CLASS Today 9PM EST LIVE		
+0.0	0.0	Herbed Yorkshire Puddings		
+0.0	0.0	LIVE CLASS Today 10PM EST LIVE		
+0.0	0.0	Encore My Mom s Coffee Braised Brisket		
+0.0	0.0	LIVE CLASS Tomorrow 4PM EST LIVE		
+0.0	0.0	Rosemary Simple Syrup Is the Last Minute Edible Gift You Need		
+0.0	0.0	LIVE CLASS Tomorrow 6PM EST LIVE		
+0.0	0.0	Fantasy Fudge		
+0.0	0.0	Home Recipes		
+0.0	0.0	Prev Recipe Next Recipe		
+0.0	0.0	WATCH		
+0.0	0.0	Loading Video		
+0.0	0.0	See more		
+0.0	0.0	12		
+0.0	0.0	Chicken and Broccoli Stir Fry		
+0.0	0.0	Recipe courtesy of Food Network Kitchen		
+0.0	0.0	Recipe courtesy of Food Network Kitchen		
+0.0	0.0	Show How to Boil Water		
+0.0	0.0	Episode Simple Stir Fry		
+1.0	0.0	Chicken and Broccoli Stir Fry	Chicken and Broccoli Stir Fry	
+0.0	0.0	Getting reviews		
+0.0	0.0	This simple weeknight stir fry is comforting and satisfying The broccoli stems are used to add textural contrast and also to help bulk up the dish and why waste them		
+0.0	0.0	Save Recipe		
+0.0	0.0	Level Easy Total 27 min Prep 5 min Inactive 15 min Cook 7 min Yield 4 servings Nutrition Info		
+0.0	0.0	Nutritional Analysis Per Serving Calories 431 calorie Total Fat 16 grams Saturated Fat 2 grams Cholesterol 66 milligrams Sodium 1097 milligrams Carbohydrates 40 grams Dietary Fiber 4 grams Protein 32 grams Sugar 8 grams		
+0.0	0.0	Share This Recipe		
+0.0	0.0	Pinterest Facebook Twitter Email		
+0.0	0.0	Level Easy Total 27 min Prep 5 min Inactive 15 min Cook 7 min Yield 4 servings Nutrition Info		
+0.0	0.0	Nutritional Analysis Per Serving Calories 431 calorie Total Fat 16 grams Saturated Fat 2 grams Cholesterol 66 milligrams Sodium 1097 milligrams Carbohydrates 40 grams Dietary Fiber 4 grams Protein 32 grams Sugar 8 grams		
+1.0	0.0	Ingredients	Ingredients	
+0.0	0.0	Deselect All		
+1.0	0.0	1 pound chicken breast about 2 breasts cubed	1 pound chicken breast about 2 breasts cubed	
+1.0	0.0	3 scallions whites only thinly sliced on a bias	3 scallions whites only thinly sliced on a bias	
+1.0	0.0	2 tablespoons sugar	2 tablespoons sugar	
+1.0	0.0	1 tablespoon dark sesame oil	1 tablespoon dark sesame oil	
+1.0	0.0	1 tablespoon dry sherry	1 tablespoon dry sherry	
+1.0	0.0	1 tablespoon soy sauce	1 tablespoon soy sauce	
+1.0	0.0	2 cloves garlic minced	2 cloves garlic minced	
+1.0	0.0	1 inch piece peeled fresh ginger minced	1 inch piece peeled fresh ginger minced	
+1.0	0.0	1 tablespoon plus 1 teaspoon cornstarch	1 tablespoon plus 1 teaspoon cornstarch	
+1.0	0.0	Kosher salt and freshly ground black pepper	Kosher salt and freshly ground black pepper	
+1.0	0.0	About 1 3 cup water	About 1 3 cup water	
+1.0	0.0	3 tablespoons vegetable oil	3 tablespoons vegetable oil	
+1.0	0.0	5 to 6 cups broccoli florets and sliced stalks keep the 2 cuts separate	5 to 6 cups broccoli florets and sliced stalks keep the 2 cuts separate	
+1.0	0.0	3 4 to 1 teaspoon red chili flakes optional	3 4 to 1 teaspoon red chili flakes optional	
+1.0	0.0	1 tablespoon hoisin sauce	1 tablespoon hoisin sauce	
+1.0	0.0	Ttoasted sesame seeds for serving optional	Ttoasted sesame seeds for serving optional	
+1.0	0.0	Jasmine rice for serving optional	Jasmine rice for serving optional	
+0.0	0.0	View Shopping List		
+1.0	0.0	Directions	Directions	
+0.0	0.0	WATCH		
+0.0	0.0	Watch how to make this recipe		
+1.0	0.0	In a medium bowl toss the chicken with the scallion whites sugar sesame oil sherry soy sauce about half the garlic half the ginger 1 teaspoon of the cornstarch and 1 teaspoon salt Marinate at room temperature for 15 minutes Mix the remaining 1 tablespoon cornstarch with 1 3 cup water in a small bowl and reserve Heat a large nonstick skillet over high heat Add 1 tablespoon of the vegetable oil and heat Add the broccoli stems and stir fry for 30 seconds Add the florets and the remaining garlic and ginger 2 tablespoons water 1 4 teaspoon salt and some black pepper Stir fry until the broccoli is bright green but still crisp about 2 minutes Transfer to a plate Get the skillet good and hot again and then heat the remaining 2 tablespoons vegetable oil Add the chicken and red pepper flakes if using Stir fry until the chicken loses its raw color and gets a little brown about 3 minutes Add the hoisin sauce return the broccoli to the pan and toss to heat through Stir in the reserved cornstarch mixture and bring to a boil to thicken Add more water if need to thin the sauce if necessary Taste and season with salt and pepper if you like Mound the stir fry on a serving platter or divide among 4 plates and garnish with sesame seeds serve with rice	In a medium bowl toss the chicken with the scallion whites sugar sesame oil sherry soy sauce about half the garlic half the ginger 1 teaspoon of the cornstarch and 1 teaspoon salt Marinate at room temperature for 15 minutes Mix the remaining 1 tablespoon cornstarch with 1 3 cup water in a small bowl and reserve Heat a large nonstick skillet over high heat Add 1 tablespoon of the vegetable oil and heat Add the broccoli stems and stir fry for 30 seconds Add the florets and the remaining garlic and ginger 2 tablespoons water 1 4 teaspoon salt and some black pepper Stir fry until the broccoli is bright green but still crisp about 2 minutes Transfer to a plate Get the skillet good and hot again and then heat the remaining 2 tablespoons vegetable oil Add the chicken and red pepper flakes if using Stir fry until the chicken loses its raw color and gets a little brown about 3 minutes Add the hoisin sauce return the broccoli to the pan and toss to heat through Stir in the reserved cornstarch mixture and bring to a boil to thicken Add more water if need to thin the sauce if necessary Taste and season with salt and pepper if you like Mound the stir fry on a serving platter or divide among 4 plates and garnish with sesame seeds serve with rice	
+0.0	0.0	Cook s Note		
+0.0	0.0	This simple weeknight stir fry is comforting and satisfying The broccoli stems are used to add textural contrast and also to help bulk up the dish and why waste them		
+0.0	0.0	My Private Notes		
+0.0	0.0	Add a Note		
+0.0	0.0	WATCH		
+0.0	0.0	Show How to Boil Water		
+0.0	0.0	Episode Simple Stir Fry		
+0.0	0.0	Categories		
+0.0	0.0	Easy Chicken Chicken Recipes Poultry Easy Main Dish Main Dish Healthy Wok Recipes Asian Broccoli Low Calorie		
+0.0	0.0	Looking for Something Else		
+0.0	0.0	Quick Easy More Chicken Recipes 5 Ingredients or Less Highly Rated		
+0.0	0.0	Chicken Stir Fry		
+0.0	0.0	Chicken Broccoli Casserole		
+0.0	0.0	Chicken Broccoli and Cheese Casserole		
+0.0	0.0	Curried Chicken Thighs		
+0.0	0.0	Classes You May Also Like		
+0.0	0.0	Arlyn Osborne		
+0.0	0.0	Freezer Bag Chicken Fajita Stir Fry		
+0.0	0.0	19m Easy 96		
+0.0	0.0	CLASS		
+0.0	0.0	Rachael Ray		
+0.0	0.0	Make Your Own Take Out Teriyaki Stir Fry		
+0.0	0.0	11m Easy 99		
+0.0	0.0	CLASS		
+0.0	0.0	Gabriela Rodiles		
+0.0	0.0	Chicken Marsala Hand Pies		
+0.0	0.0	32m Easy 100		
+0.0	0.0	CLASS		
+0.0	0.0	Jet Tila		
+0.0	0.0	Pad See You with Chicken		
+0.0	0.0	15m Easy 99		
+0.0	0.0	CLASS		
+0.0	0.0	Take a Class on Food Network Kitchen		
+0.0	0.0	Jet Tila		
+0.0	0.0	Autumn Vegetable Stir Fry		
+0.0	0.0	21m Easy 99		
+0.0	0.0	CLASS		
+0.0	0.0	Dana Beninati		
+0.0	0.0	Chicken Pepper and Corn Stir Fry		
+0.0	0.0	36m Intermediate 99		
+0.0	0.0	CLASS		
+0.0	0.0	Mark Bittman		
+0.0	0.0	Stir Fried Chicken with Broccoli		
+0.0	0.0	21m Easy 96		
+0.0	0.0	CLASS		
+0.0	0.0	Coming in 2021 discovery		
+0.0	0.0	Stream your favorite Discovery shows all in one spot starting on January 4 Learn More		
+0.0	0.0	What s Cooking		
+0.0	0.0	100 Holiday Cookies		
+0.0	0.0	Our Very Best Recipes		
+0.0	0.0	Festive Apps Snacks Discover More Recipes		
+0.0	0.0	Our Newsletter		
+0.0	0.0	Sign up for the Recipe of the Day Newsletter Privacy Policy		
+0.0	0.0	Related Pages Simple Broccoli Stir fry Recipe Beef and Broccoli Stir Fry with Peanut Noodles Pat s Broccoli and Chicken Stir Fry Recipe Orange Chicken Stir fry Recipe Freezer Bag Chicken and Broccoli Stir Fry Recipe 5 Ingredient Salmon and Broccoli Stir Fry Recipe		
+0.0	0.0	Site Map Visitor Agreement AdChoices Privacy Notice About Newsroom Advertise Help TV Ratings Online Closed Captioning California Privacy Notice CA Do Not Sell My Info Discovery Inc International Editions United States Asia Brazil Canada Europe Middle East Africa United Kingdom Latin America The Discovery Family of Networks Cooking Channel Food com HGTV DIY Network Travel Channel Great American Country 2020 Discovery or its subsidiaries and affiliates All rights reserved		
+0.0	0.0	Pinterest Facebook Twitter Email		

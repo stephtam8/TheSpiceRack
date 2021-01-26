@@ -1,0 +1,54 @@
+0.0	0.0	Crispy Sour Cream and Onion Chicken Recipe NYT Cooking		
+0.0	0.0	X Search		
+0.8333333333333334	0.0	Crispy Sour Cream and Onion Chicken	Crispy Sour Cream and Onion	
+0.0	0.0	By Ali Slagle Yield 4 servings Time 35 minutes		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Johnny Miller for The New York Times Food Stylist Rebecca Jurkevich		
+0.0	0.0	Picture sour cream and onion dip slathered on chicken cutlets dredged in panko bread crumbs and fried until crisp like a potato chip and you ll envision this recipe The marinade doesn t just deliver flavor here The lactic acid in the sour cream also keeps the thin chicken breasts juicy Shower the crispy chicken with fresh chives and lemon juice or if you crave something creamy for dunking pair it with a dip of sour cream lemon juice and chives		
+0.0	0.0	More		
+0.1	0.0	Poultry Chicken Breast Chive Panko Sour Cream Weekday Main Course	Chicken	
+0.9857142857142858	0.0	Ingredients 4 boneless skinless chicken breasts halved horizontally see Tip and pounded 1 8 inch thick or use 4 chicken cutlets don t split or pound Kosher salt and black pepper ½ cup sour cream or Greek yogurt ¼ cup thinly sliced chives or 1 tablespoon dried chives plus more for serving 2 tablespoons onion powder 2 cups panko bread crumbs Canola oil for frying 1 lemon cut into wedges	4 boneless skinless chicken breasts halved horizontally see Tip and pounded 1 8 inch thick or use 4 chicken cutlets don t split or pound Kosher salt and black pepper ½ cup sour cream or Greek yogurt ¼ cup thinly sliced chives or 1 tablespoon dried chives plus more for serving 2 tablespoons onion powder 2 cups panko bread crumbs Canola oil for frying 1 lemon cut into wedges	
+0.9953051643192489	0.0	Preparation Pat chicken dry and season both sides with salt and pepper In a medium bowl stir together the sour cream chives and 1 tablespoon onion powder Season with salt and pepper Add the chicken and turn to coat Chicken can sit in the marinade for up to 8 hours Refrigerate then let come to room temperature before cooking In a shallow bowl or lipped plate stir together the panko and remaining 1 tablespoon onion powder season with salt and pepper Working one at a time press the chicken breasts into the panko using your fingers to pack the panko onto both sides of the chicken and place on a large plate or a sheet pan Line a plate with paper towels Heat 1 8 inch canola oil in a large skillet over medium high Drop a piece of panko in If it sizzles the oil s ready Add a chicken cutlet or two if they can fit comfortably and cook until golden brown 3 to 5 minutes per side Transfer to the paper towel lined plate and sprinkle with salt Repeat with remaining chicken adding and heating more oil as needed and removing excess panko from the pan with a slotted spoon Serve chicken with more chives and lemon wedges for squeezing	Pat chicken dry and season both sides with salt and pepper In a medium bowl stir together the sour cream chives and 1 tablespoon onion powder Season with salt and pepper Add the chicken and turn to coat Chicken can sit in the marinade for up to 8 hours Refrigerate then let come to room temperature before cooking In a shallow bowl or lipped plate stir together the panko and remaining 1 tablespoon onion powder season with salt and pepper Working one at a time press the chicken breasts into the panko using your fingers to pack the panko onto both sides of the chicken and place on a large plate or a sheet pan Line a plate with paper towels Heat 1 8 inch canola oil in a large skillet over medium high Drop a piece of panko in If it sizzles the oil s ready Add a chicken cutlet or two if they can fit comfortably and cook until golden brown 3 to 5 minutes per side Transfer to the paper towel lined plate and sprinkle with salt Repeat with remaining chicken adding and heating more oil as needed and removing excess panko from the pan with a slotted spoon Serve chicken with more chives and lemon wedges for squeezing	
+0.0	0.0	Tip Freezing the chicken breasts for 15 minutes to firm them up will make slicing them through the middle easier		
+0.0	0.0	Like this recipe		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	More from Our 50 Most Popular Recipes of 2020		
+0.0	0.0	Caramelized Shallot Pasta Alison Roman 40 minutes		
+0.0	0.0	Perfect Chocolate Chip Cookies Charlotte Druckman Ravneet Gill 30 minutes plus 12 hours chilling		
+0.0	0.0	Easy		
+0.0	0.0	Sheet Pan Baked Feta With Broccolini Tomatoes and Lemon Yasmin Fahr 25 minutes		
+0.0	0.0	Ginger Lime Chicken Ali Slagle 15 minutes		
+0.0	0.0	Roasted Cauliflower With Pancetta Olives and Crisp Parmesan Melissa Clark 45 minutes		
+0.0	0.0	Spicy White Bean Stew With Broccoli Rabe Alison Roman 40 minutes		
+0.0	0.0	Mushroom Bourguignon Melissa Clark 1 hour		
+0.0	0.0	Roasted Tomato and White Bean Stew Colu Henry 30 minutes		
+0.0	0.0	Crispy Tofu With Cashews and Blistered Snap Peas Yewande Komolafe 30 minutes		
+0.0	0.0	Heirloom Tomato Tart Vallery Lomas 1 1 2 hours		
+0.0	0.0	Sheet Pan Chicken With Roasted Plums and Onions Melissa Clark 1 hour plus at least 2 hours marinating		
+0.0	0.0	Pasta e Ceci Italian Pasta and Chickpea Stew Colu Henry 30 minutes		
+0.0	0.0	Carrot Loaf Cake With Tangy Lemon Glaze Yossy Arefi 1 1 2 hours plus cooling		
+0.0	0.0	Buttermilk Brined Roast Turkey Samin Nosrat 2 hours plus 48 hours brining		
+0.0	0.0	Easy		
+0.0	0.0	Red Curry Lentils With Sweet Potatoes and Spinach Lidey Heuck 1 hour		
+0.0	0.0	Cheesy Pan Pizza Tejal Rao King Arthur Flour 45 minutes plus resting		
+0.0	0.0	Trending on Cooking		
+0.0	0.0	Japanese Style Tuna Noodle Salad Sam Sifton Bart van Olphen 30 minutes		
+0.0	0.0	Turmeric Black Pepper Chicken With Asparagus Ali Slagle 15 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Spicy Cucumbers With Yogurt Lemon and Herbs Yewande Komolafe 30 minutes		
+0.0	0.0	Spicy Butternut Squash Pasta With Spinach Yasmin Fahr 40 minutes		
+0.0	0.0	Brush Up On The Basics With Our Cooking Guides		
+0.0	0.0	Cooking Guide How to Cook a Turkey By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make a Pie Crust By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make Baby Food By Sara Bonisteel		
+0.0	0.0	Cooking Guide How to Make Mac and Cheese By Alison Roman		
+0.0	0.0	Get Our Newsletter		
+0.0	0.0	Get recipes tips and NYT special offers delivered straight to your inbox Opt out or contact us anytime See our Privacy Policy		
+0.0	0.0	Please enter a valid email address		
+0.0	0.0	Follow Us		
+0.0	0.0	Get the App		
+0.0	0.0	About Us		
+0.0	0.0	NYT Cooking is a subscription service of The New York Times It is a digital cookbook and cooking guide alike available on all platforms that helps home cooks of every level discover save and organize the world s best recipes while also helping them become better more competent cooks Subscribe now for full access		
+0.0	0.0	Learn More Our Cooks See Our Features FAQ Tools for Saving NYTimes com food Send Us Feedback		
+0.0	0.0	Shop Gift Subscription Merchandise The New York Times Company Terms of Service Privacy Policy		
+0.0	0.0	Sorry your changes didn t save		

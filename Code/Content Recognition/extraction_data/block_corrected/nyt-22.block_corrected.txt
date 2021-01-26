@@ -1,0 +1,57 @@
+0.0	0.0	Heirloom Tomato Tart Recipe NYT Cooking		
+0.0	0.0	X Search		
+0.0	0.0	Heirloom Tomato Tart		
+0.0	0.0	By Vallery Lomas Yield 4 to 6 servings Time 1 1 2 hours		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Bryan Gardner for The New York Times Food Stylist Barrett Washburne		
+0.009615384615384616	0.0	Heirloom tomatoes may seem flawed but it s actually their uniformly red counterparts who are the genetic deviants of the tomato family Decades ago many businesses decided to prioritize cookie cutter like hybrid tomatoes which grow year round and can survive a long bumpy journey It left heirloom tomatoes on the wrong side of the deal The varieties that remain have a shorter shelf life and are relegated to just a few months of summer but they re sweeter with a more robust flavor This tart celebrates juicy vibrant tomatoes in a cheesy herby custard filled flaky crust with each bite punctuated with pesto	Heirloom	
+0.3333333333333333	0.0	Featured in A Timeless Tomato Tart	Tomato Tart	
+0.0	0.0	More		
+0.0	0.0	Pies And Tarts Basil Heirloom Tomato Mozzarella Pesto Brunch Dinner Main Course Summer Vegetarian		
+0.9859154929577465	0.0	Ingredients Dough for a 9 inch single crust pie or use store bought rolled into an 11 inch round see Note 1 ½ pounds ripe heirloom tomatoes about 4 medium ¼ cup store bought pesto ¾ cup shredded mozzarella about 3 ounces 1 tablespoon finely chopped fresh basil 1 tablespoon finely chopped fresh oregano 3 large eggs ⅓ cup heavy cream ½ teaspoon kosher salt ½ teaspoon freshly ground black pepper	Dough for a 9 inch single crust pie or use store bought rolled into an 11 inch round see Note 1 ½ pounds ripe heirloom tomatoes about 4 medium ¼ cup store bought pesto ¾ cup shredded mozzarella about 3 ounces 1 tablespoon finely chopped fresh basil 1 tablespoon finely chopped fresh oregano 3 large eggs ⅓ cup heavy cream ½ teaspoon kosher salt ½ teaspoon freshly ground black pepper	
+0.9953703703703703	0.0	Preparation Heat oven to 350 degrees Fit the rolled out dough into a 9 inch tart pan allowing the edges to rise about 1 4 inch above the rim of the pan Prick the dough all over with a fork Line the dough with aluminum foil and fill with pie weights or dried beans Bake for 15 minutes until beginning to brown at the edges Remove from the oven and carefully remove the foil and weights Increase the oven temperature to 375 degrees Meanwhile cut the tomatoes into 1 2 inch slices Place in a colander to drain excess tomato liquid for 20 minutes Spread 1 4 cup pesto in an even layer over the parbaked tart crust Sprinkle the shredded mozzarella over the pesto Sprinkle the fresh basil and oregano over the cheese In a medium bowl prepare the custard Whisk together the eggs cream salt and pepper until combined Place the sliced tomatoes evenly over the cheese and herbs in overlapping concentric circles Pour the custard evenly over the tomato slices Swirl the pan to evenly distribute the liquid Bake until the filling is set and won t jiggle when shaken about 35 minutes Remove from the oven and let cool slightly before serving warm This tart can also be served at room temperature	Heat oven to 350 degrees Fit the rolled out dough into a 9 inch tart pan allowing the edges to rise about 1 4 inch above the rim of the pan Prick the dough all over with a fork Line the dough with aluminum foil and fill with pie weights or dried beans Bake for 15 minutes until beginning to brown at the edges Remove from the oven and carefully remove the foil and weights Increase the oven temperature to 375 degrees Meanwhile cut the tomatoes into 1 2 inch slices Place in a colander to drain excess tomato liquid for 20 minutes Spread 1 4 cup pesto in an even layer over the parbaked tart crust Sprinkle the shredded mozzarella over the pesto Sprinkle the fresh basil and oregano over the cheese In a medium bowl prepare the custard Whisk together the eggs cream salt and pepper until combined Place the sliced tomatoes evenly over the cheese and herbs in overlapping concentric circles Pour the custard evenly over the tomato slices Swirl the pan to evenly distribute the liquid Bake until the filling is set and won t jiggle when shaken about 35 minutes Remove from the oven and let cool slightly before serving warm This tart can also be served at room temperature	
+0.0	0.0	Tip Packaged pie dough is an excellent shortcut for weeknight meals and the tart crust can be parbaked a day in advance		
+0.0	0.0	Like this recipe		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	More from Our 50 Most Popular Vegetarian Recipes of 2020		
+0.0	0.0	Roasted Tomato and White Bean Stew Colu Henry 30 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Sheet Pan Baked Feta With Broccolini Tomatoes and Lemon Yasmin Fahr 25 minutes		
+0.0	0.0	Southern Macaroni and Cheese Kiera Wright Ruiz Millie Peartree 45 minutes plus cooling		
+0.0	0.0	Spicy White Bean Stew With Broccoli Rabe Alison Roman 40 minutes		
+0.0	0.0	Crispy Tofu With Cashews and Blistered Snap Peas Yewande Komolafe 30 minutes		
+0.0	0.0	Mushroom Bourguignon Melissa Clark 1 hour		
+0.0	0.0	Pasta e Ceci Italian Pasta and Chickpea Stew Colu Henry 30 minutes		
+0.0	0.0	Cheesy Pan Pizza Tejal Rao King Arthur Flour 45 minutes plus resting		
+0.0	0.0	Easy		
+0.0	0.0	Red Curry Lentils With Sweet Potatoes and Spinach Lidey Heuck 1 hour		
+0.0	0.0	The Big Lasagna Samin Nosrat About 2 1 2 hours		
+0.0	0.0	Superiority Burger s Crispy Fried Tofu Sandwich Alexa Weibel Brooks Headley 45 minutes plus marinating		
+0.0	0.0	Spicy Butternut Squash Pasta With Spinach Yasmin Fahr 40 minutes		
+0.0	0.0	Five Ingredient Creamy Miso Pasta Alexa Weibel 20 minutes		
+0.0	0.0	Easy		
+0.0	0.0	One Pan Orzo With Spinach and Feta Melissa Clark 30 minutes		
+0.0	0.0	Oven Fried Patatas Bravas Crispy Potatoes With Two Sauces David Tanis 30 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Creamy Braised White Beans Ali Slagle 25 minutes		
+0.0	0.0	Trending on Cooking		
+0.0	0.0	Black Bean Tacos With Avocado and Spicy Onions Melissa Clark 45 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Red Curry Lentils With Sweet Potatoes and Spinach Lidey Heuck 1 hour		
+0.0	0.0	Lemon Goop and Vinaigrette Dorie Greenspan 1 1 2 hours		
+0.0	0.0	Baked Risotto With Greens and Peas Kay Chun 30 minutes		
+0.0	0.0	Brush Up On The Basics With Our Cooking Guides		
+0.0	0.0	Cooking Guide How to Cook a Turkey By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make Mac and Cheese By Alison Roman		
+0.0	0.0	Cooking Guide How to Grill By Sam Sifton		
+0.0	0.0	Cooking Guide How to Make Chili By Sam Sifton		
+0.0	0.0	Get Our Newsletter		
+0.0	0.0	Get recipes tips and NYT special offers delivered straight to your inbox Opt out or contact us anytime See our Privacy Policy		
+0.0	0.0	Please enter a valid email address		
+0.0	0.0	Follow Us		
+0.0	0.0	Get the App		
+0.0	0.0	About Us		
+0.0	0.0	NYT Cooking is a subscription service of The New York Times It is a digital cookbook and cooking guide alike available on all platforms that helps home cooks of every level discover save and organize the world s best recipes while also helping them become better more competent cooks Subscribe now for full access		
+0.0	0.0	Learn More Our Cooks See Our Features FAQ Tools for Saving NYTimes com food Send Us Feedback		
+0.0	0.0	Shop Gift Subscription Merchandise The New York Times Company Terms of Service Privacy Policy		
+0.0	0.0	Sorry your changes didn t save		

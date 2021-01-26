@@ -1,0 +1,56 @@
+0.0	0.0	Cheesy Spicy Black Bean Bake Recipe NYT Cooking		
+0.0	0.0	X Search		
+0.0	0.0	Easy		
+1.0	0.0	Cheesy Spicy Black Bean Bake	Cheesy Spicy Black Bean Bake	
+0.0	0.0	By Ali Slagle Yield 4 servings Time 15 minutes		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	Christopher Testani for The New York Times Food Stylist Simon Andrews		
+0.0	0.0	Whether or not you ve fallen for this cheesy white bean tomato bake we d like you to meet its bolder counterpart smoky and spiced with lots of melty cheese Black beans shine in a deep red mixture of fried garlic caramelized tomato paste smoked paprika and cumin The whole skillet gets coated in a generous sprinkling of sharp Cheddar or Manchego cheese then baked until melted The final result is what you hope for from a really good chili or stew but in a lot less time For a spicier rendition add a pinch of cayenne with the paprika or douse the final skillet with hot sauce Serve with tortillas tortilla chips rice a baked potato or fried eggs		
+0.0	0.0	More		
+0.0	0.0	Beans Black Bean Cheddar Cumin Garlic Smoked Paprika Tomato Paste Dinner Easy Weekday Main Course Vegetarian		
+0.9841269841269841	0.0	Ingredients 3 tablespoons extra virgin olive oil 5 garlic cloves peeled and sliced ¼ cup tomato paste 1 ½ teaspoons smoked paprika ¼ teaspoon red pepper flakes 1 teaspoon ground cumin 2 14 ounce cans black beans drained and rinsed ½ cup boiling water Kosher salt and black pepper 1 ½ cups grated Cheddar or Manchego cheese from about a 6 ounce block	3 tablespoons extra virgin olive oil 5 garlic cloves peeled and sliced ¼ cup tomato paste 1 ½ teaspoons smoked paprika ¼ teaspoon red pepper flakes 1 teaspoon ground cumin 2 14 ounce cans black beans drained and rinsed ½ cup boiling water Kosher salt and black pepper 1 ½ cups grated Cheddar or Manchego cheese from about a 6 ounce block	
+0.9914529914529915	0.0	Preparation Heat the oven to 475 degrees In a 10 inch ovenproof skillet heat the olive oil over medium high Fry the garlic until lightly golden about 1 minute Stir in the tomato paste paprika red pepper flakes and cumin be careful of splattering and fry for 30 seconds reducing the heat as needed to prevent the garlic from burning Add the beans water and generous pinches of salt and pepper and stir to combine Sprinkle the cheese evenly over the top then bake until the cheese has melted 5 to 10 minutes If the top is not as browned as you d like run the skillet under the broiler for 1 or 2 minutes Serve immediately	Heat the oven to 475 degrees In a 10 inch ovenproof skillet heat the olive oil over medium high Fry the garlic until lightly golden about 1 minute Stir in the tomato paste paprika red pepper flakes and cumin be careful of splattering and fry for 30 seconds reducing the heat as needed to prevent the garlic from burning Add the beans water and generous pinches of salt and pepper and stir to combine Sprinkle the cheese evenly over the top then bake until the cheese has melted 5 to 10 minutes If the top is not as browned as you d like run the skillet under the broiler for 1 or 2 minutes Serve immediately	
+0.0	0.0	Like this recipe		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	By Ali Slagle		
+0.0	0.0	More recipes from Ali Slagle		
+0.0	0.0	One Pan Coconut Curry Rice With Chicken and Vegetables Ali Slagle 1 hour		
+0.0	0.0	Spumoni Ice Cream Cake Ali Slagle 50 minutes plus 6 hours freezing		
+0.0	0.0	Tomato and White Bean Soup With Lots of Garlic Ali Slagle 30 minutes		
+0.0	0.0	Easy		
+0.0	0.0	One Pot Pasta With Ricotta and Lemon Ali Slagle 15 minutes		
+0.0	0.0	Shrimp Scampi With Orzo Ali Slagle 25 minutes		
+0.0	0.0	Baked Rice With White Beans Leeks and Lemon Ali Slagle 1 hour		
+0.0	0.0	Baked Alfredo Pasta With Broccoli Rabe and Lemon Ali Slagle 35 minutes		
+0.0	0.0	Summer Shrimp Scampi With Tomatoes and Corn Ali Slagle 15 minutes		
+0.0	0.0	Chimichurri Chicken Ali Slagle 30 minutes		
+0.0	0.0	Skillet Roast Chicken With Caramelized Shallots Ali Slagle 1 1 4 hours		
+0.0	0.0	Easy		
+0.0	0.0	Mashed Cauliflower Ali Slagle 30 minutes		
+0.0	0.0	Coconut Creamed Kale Ali Slagle 1 hour		
+0.0	0.0	Easy		
+0.0	0.0	One Pan Spicy Meatballs With Lentils and Fennel Ali Slagle 40 minutes		
+0.0	0.0	Mint Chocolate Chip Ice Cream Cake Ali Slagle 30 minutes plus at least 2 hours freezing		
+0.0	0.0	Turmeric Black Pepper Chicken With Asparagus Ali Slagle 15 minutes		
+0.0	0.0	Baked Spaghetti Squash Ali Slagle 1 hour 10 minutes		
+0.0	0.0	Trending on Cooking		
+0.0	0.0	Easy		
+0.0	0.0	Lemony Shrimp and Bean Stew Sue Li 30 minutes		
+0.0	0.0	Lemon Goop and Vinaigrette Dorie Greenspan 1 1 2 hours		
+0.0	0.0	Crispy Tofu With Cashews and Blistered Snap Peas Yewande Komolafe 30 minutes		
+0.0	0.0	Brussels Sprouts With Pickled Shallots and Labneh Nik Sharma 40 minutes		
+0.0	0.0	Brush Up On The Basics With Our Cooking Guides		
+0.0	0.0	Cooking Guide How to Cook a Turkey By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make Jam By Alison Roman		
+0.0	0.0	Cooking Guide How to Make Burgers By Sam Sifton		
+0.0	0.0	Cooking Guide How to Make Salad By Julia Moskin		
+0.0	0.0	Get Our Newsletter		
+0.0	0.0	Get recipes tips and NYT special offers delivered straight to your inbox Opt out or contact us anytime See our Privacy Policy		
+0.0	0.0	Please enter a valid email address		
+0.0	0.0	Follow Us		
+0.0	0.0	Get the App		
+0.0	0.0	About Us		
+0.0	0.0	NYT Cooking is a subscription service of The New York Times It is a digital cookbook and cooking guide alike available on all platforms that helps home cooks of every level discover save and organize the world s best recipes while also helping them become better more competent cooks Subscribe now for full access		
+0.0	0.0	Learn More Our Cooks See Our Features FAQ Tools for Saving NYTimes com food Send Us Feedback		
+0.0	0.0	Shop Gift Subscription Merchandise The New York Times Company Terms of Service Privacy Policy		
+0.0	0.0	Sorry your changes didn t save		

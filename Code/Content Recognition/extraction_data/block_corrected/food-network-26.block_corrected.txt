@@ -1,0 +1,230 @@
+0.0	0.0	Mexican Chicken Stew Recipe Dave Lieberman Food Network		
+0.0	0.0	Watch Full Seasons TV Schedule Videos Shop Sweepstakes Magazine Blog Shows A Z Chefs A Z Newsletters Restaurants		
+0.0	0.0	Recipes		
+0.0	0.0	Holiday Central Easy Comfort Food Healthy Family Dinners Our Best Recipes		
+0.0	0.0	See All Recipes		
+0.0	0.0	Recipe of the Day		
+0.0	0.0	Kielbasa and Honey Mustard Pinwheels		
+0.0	0.0	Trending Recipes		
+0.0	0.0	Shrimp Scampi		
+0.0	0.0	Cranberry Brie Knots		
+0.0	0.0	M M Magic Bars		
+0.0	0.0	Vegetarian Southern style Collard Greens		
+0.0	0.0	Shows		
+0.0	0.0	TV Schedule See TV Schedule		
+0.0	0.0	Buddy vs Christmas		
+0.0	0.0	8am 7c		
+0.0	0.0	Buddy vs Christmas		
+0.0	0.0	9am 8c		
+0.0	0.0	Chopped		
+0.0	0.0	10am 9c		
+0.0	0.0	Chopped		
+0.0	0.0	11am 10c		
+0.0	0.0	Chopped		
+0.0	0.0	12pm 11c		
+0.0	0.0	Chopped		
+0.0	0.0	1pm 12c		
+0.0	0.0	Chopped		
+0.0	0.0	2pm 1c		
+0.0	0.0	Beat Bobby Flay		
+0.0	0.0	3pm 2c		
+0.0	0.0	Beat Bobby Flay		
+0.0	0.0	3 30pm 2 30c		
+0.0	0.0	Beat Bobby Flay		
+0.0	0.0	4pm 3c		
+0.0	0.0	Beat Bobby Flay		
+0.0	0.0	4 30pm 3 30c		
+0.0	0.0	Beat Bobby Flay		
+0.0	0.0	5pm 4c		
+0.0	0.0	Beat Bobby Flay		
+0.0	0.0	5 30pm 4 30c		
+0.0	0.0	Beat Bobby Flay		
+0.0	0.0	6pm 5c		
+0.0	0.0	Beat Bobby Flay		
+0.0	0.0	6 30pm 5 30c		
+0.0	0.0	Beat Bobby Flay		
+0.0	0.0	7pm 6c		
+0.0	0.0	Beat Bobby Flay		
+0.0	0.0	7 30pm 6 30c		
+0.0	0.0	Christmas Cookie Challenge		
+0.0	0.0	8pm 7c		
+0.0	0.0	Christmas Cookie Challenge		
+0.0	0.0	9pm 8c		
+0.0	0.0	On Tonight		
+0.0	0.0	Christmas Cookie Challenge		
+0.0	0.0	10pm 9c		
+0.0	0.0	Christmas Cookie Challenge		
+0.0	0.0	11pm 10c		
+0.0	0.0	Christmas Cookie Challenge		
+0.0	0.0	12am 11c		
+0.0	0.0	Christmas Cookie Challenge		
+0.0	0.0	1am 12c		
+0.0	0.0	Christmas Cookie Challenge		
+0.0	0.0	2am 1c		
+0.0	0.0	Christmas Cookie Challenge		
+0.0	0.0	3am 2c		
+0.0	0.0	Beat Bobby Flay		
+0.0	0.0	4am 3c		
+0.0	0.0	Beat Bobby Flay		
+0.0	0.0	4 30am 3 30c		
+0.0	0.0	See All Shows		
+0.0	0.0	Popular Shows		
+0.0	0.0	Candy Land		
+0.0	0.0	Holiday Baking Championship		
+0.0	0.0	Diners Drive Ins and Dives		
+0.0	0.0	In the Kitchen		
+0.0	0.0	The Pioneer Woman		
+0.0	0.0	The Kitchen		
+0.0	0.0	Delicious Miss Brown		
+0.0	0.0	Chefs		
+0.0	0.0	Chefs Hosts		
+0.0	0.0	Kardea Brown		
+0.0	0.0	Ree Drummond		
+0.0	0.0	Ina Garten		
+0.0	0.0	Sunny Anderson		
+0.0	0.0	Bobby Flay		
+0.0	0.0	Valerie Bertinelli		
+0.0	0.0	Guy Fieri		
+0.0	0.0	Giada De Laurentiis		
+0.0	0.0	Molly Yeh		
+0.0	0.0	See All Chefs		
+0.0	0.0	Food Network Kitchen		
+0.0	0.0	Premium		
+0.0	0.0	All your cooking needs in one place		
+0.0	0.0	Try it free for 30 days		
+0.0	0.0	Step by Step Tutorials		
+0.0	0.0	Browse Meal Plans		
+0.0	0.0	LIVE CLASS Today 8PM EST LIVE		
+0.0	0.0	Roast Beef Tenderloin with Mushroom Ragout		
+0.0	0.0	LIVE CLASS Today 9PM EST LIVE		
+0.0	0.0	Encore Orange Chicken		
+0.0	0.0	LIVE CLASS Today 10PM EST LIVE		
+0.0	0.0	Encore Puffy Tacos with Picadillo Filling		
+0.0	0.0	LIVE CLASS Tomorrow 4PM EST LIVE		
+0.0	0.0	Dirty Rice		
+0.0	0.0	LIVE CLASS Tomorrow 6PM EST LIVE		
+0.0	0.0	No Bake Gingerbread Cookie Balls		
+0.0	0.0	LIVE CLASS Tomorrow 8PM EST LIVE		
+0.0	0.0	Peppermint Bark Brownies		
+0.0	0.0	Try Premium		
+0.0	0.0	Food Network Kitchen		
+0.0	0.0	Premium		
+0.0	0.0	My Meal Plans Browse Meal Plans Classes Live Class Schedule Weeknight Dinners		
+0.0	0.0	New Meal Plans this Week		
+0.0	0.0	An Easy to Customize Dinner Plan		
+0.0	0.0	Weeknight Dinners Chicken Edition		
+0.0	0.0	Upcoming Live Classes		
+0.0	0.0	LIVE CLASS Today 8PM EST LIVE		
+0.0	0.0	Roast Beef Tenderloin with Mushroom Ragout		
+0.0	0.0	LIVE CLASS Today 9PM EST LIVE		
+0.0	0.0	Encore Orange Chicken		
+0.0	0.0	LIVE CLASS Today 10PM EST LIVE		
+0.0	0.0	Encore Puffy Tacos with Picadillo Filling		
+0.0	0.0	LIVE CLASS Tomorrow 4PM EST LIVE		
+0.0	0.0	Dirty Rice		
+0.0	0.0	LIVE CLASS Tomorrow 6PM EST LIVE		
+0.0	0.0	No Bake Gingerbread Cookie Balls		
+0.0	0.0	LIVE CLASS Tomorrow 8PM EST LIVE		
+0.0	0.0	Peppermint Bark Brownies		
+0.0	0.0	LIVE CLASS Tomorrow 9PM EST LIVE		
+0.0	0.0	Encore Chicken Breasts with Tarragon Shallot Butter		
+0.0	0.0	LIVE CLASS Tomorrow 10PM EST LIVE		
+0.0	0.0	Encore Pomegranate and Mint Cocktail		
+0.0	0.0	Home Recipes Dave Lieberman		
+0.0	0.0	Prev Recipe Next Recipe		
+0.0	0.0	WATCH		
+0.0	0.0	Loading Video		
+0.0	0.0	See more		
+0.0	0.0	12		
+0.0	0.0	Mexican Chicken Stew		
+0.0	0.0	Recipe courtesy of Dave Lieberman		
+0.0	0.0	Recipe courtesy of Dave Lieberman		
+0.0	0.0	Show Good Deal with Dave Lieberman		
+0.0	0.0	Episode Waste Not Want Not		
+1.0	0.0	Mexican Chicken Stew	Mexican Chicken Stew	
+0.0	0.0	Getting reviews		
+0.0	0.0	Save Recipe		
+0.0	0.0	Level Easy Total 40 min Prep 10 min Cook 30 min Yield about 6 servings Nutrition Info		
+0.0	0.0	Nutritional Analysis Per Serving Calories 276 Total Fat 12 grams Saturated Fat 2 grams Cholesterol 60 milligrams Sodium 543 milligrams Carbohydrates 17 grams Dietary Fiber 3 grams Protein 25 grams Sugar 5 grams		
+0.0	0.0	Share This Recipe		
+0.0	0.0	Pinterest Facebook Twitter Email		
+0.0	0.0	Level Easy Total 40 min Prep 10 min Cook 30 min Yield about 6 servings Nutrition Info		
+0.0	0.0	Nutritional Analysis Per Serving Calories 276 Total Fat 12 grams Saturated Fat 2 grams Cholesterol 60 milligrams Sodium 543 milligrams Carbohydrates 17 grams Dietary Fiber 3 grams Protein 25 grams Sugar 5 grams		
+1.0	0.0	Ingredients	Ingredients	
+0.0	0.0	Deselect All		
+1.0	0.0	4 tablespoons olive oil	4 tablespoons olive oil	
+1.0	0.0	1 medium onion roughly chopped	1 medium onion roughly chopped	
+1.0	0.0	4 large cloves garlic roughly chopped	4 large cloves garlic roughly chopped	
+1.0	0.0	2 jalapenos seeded and sliced	2 jalapenos seeded and sliced	
+1.0	0.0	1 tablespoon dried oregano	1 tablespoon dried oregano	
+1.0	0.0	1 teaspoon dried cumin	1 teaspoon dried cumin	
+1.0	0.0	1 28 ounce can chopped tomatoes	1 28 ounce can chopped tomatoes	
+1.0	0.0	3 cups shredded cooked chicken	3 cups shredded cooked chicken	
+1.0	0.0	Few dashes Worcestershire sauce	Few dashes Worcestershire sauce	
+1.0	0.0	3 to 4 cups chicken stock	3 to 4 cups chicken stock	
+1.0	0.0	1 lime	1 lime	
+1.0	0.0	1 cup cooked white rice	1 cup cooked white rice	
+1.0	0.0	Kosher salt	Kosher salt	
+1.0	0.0	Sour cream for garnish	Sour cream for garnish	
+1.0	0.0	Fresh cilantro leaves for garnish	Fresh cilantro leaves for garnish	
+0.0	0.0	View Shopping List		
+1.0	0.0	Directions	Directions	
+0.0	0.0	WATCH		
+0.0	0.0	Watch how to make this recipe		
+1.0	0.0	Heat oil in a saucepan over medium heat Add onion and saute for 1 to 2 minutes Add garlic and jalapeno and sweat until soft and translucent Add spices and cook for 1 to 2 minutes until fragrant and aromatic Add tomatoes chicken Worcestershire and stock Bring to a simmer and cook 20 minutes Cut the lime in half squeeze juice into the pot and then add the juiced halves as well Add white rice and cook 5 minutes longer to warm rice through Season to taste with salt Ladle into bowls and garnish with sour cream and cilantro	Heat oil in a saucepan over medium heat Add onion and saute for 1 to 2 minutes Add garlic and jalapeno and sweat until soft and translucent Add spices and cook for 1 to 2 minutes until fragrant and aromatic Add tomatoes chicken Worcestershire and stock Bring to a simmer and cook 20 minutes Cut the lime in half squeeze juice into the pot and then add the juiced halves as well Add white rice and cook 5 minutes longer to warm rice through Season to taste with salt Ladle into bowls and garnish with sour cream and cilantro	
+0.0	0.0	My Private Notes		
+0.0	0.0	Add a Note		
+0.0	0.0	WATCH		
+0.0	0.0	Show Good Deal with Dave Lieberman		
+0.0	0.0	Episode Waste Not Want Not		
+0.0	0.0	Categories		
+0.0	0.0	Easy Chicken Chicken Recipes Poultry Easy Main Dish Main Dish Easy Lunch Recipes Lunch Mexican Chicken Mexican Rice Rice Recipes		
+0.0	0.0	More from		
+0.0	0.0	Healthy Weeknight Dinners		
+0.0	0.0	Looking for Something Else		
+0.0	0.0	Quick Easy More Chicken Recipes 5 Ingredients or Less Highly Rated		
+0.0	0.0	Mexican Chicken Soup		
+0.0	0.0	The Ultimate Paella		
+0.0	0.0	Curried Chicken Thighs		
+0.0	0.0	Mexican Tortilla Chicken Soup		
+0.0	0.0	Classes You May Also Like		
+0.0	0.0	Valerie Bertinelli		
+0.0	0.0	Ranch Chicken and Rice		
+0.0	0.0	13m Easy 100		
+0.0	0.0	CLASS		
+0.0	0.0	Don Angie		
+0.0	0.0	Chicken Parmesan		
+0.0	0.0	19m Intermediate 99		
+0.0	0.0	CLASS		
+0.0	0.0	Ina Garten		
+0.0	0.0	Skillet Roasted Lemon Chicken		
+0.0	0.0	10m Easy 99		
+0.0	0.0	CLASS		
+0.0	0.0	Catherine McCord		
+0.0	0.0	Slow Cooker Beef Stew		
+0.0	0.0	31m Easy 97		
+0.0	0.0	CLASS		
+0.0	0.0	Take a Class on Food Network Kitchen		
+0.0	0.0	Christy Vega		
+0.0	0.0	Mexican Chili		
+0.0	0.0	23m Easy 96		
+0.0	0.0	CLASS		
+0.0	0.0	Katie Lee Biegel		
+0.0	0.0	Chicken Cauliflower Fried Rice		
+0.0	0.0	19m Easy 99		
+0.0	0.0	CLASS		
+0.0	0.0	Danielle Alex		
+0.0	0.0	Mexican Hot Chocolate Cookies		
+0.0	0.0	25m Easy 100		
+0.0	0.0	CLASS		
+0.0	0.0	Coming in 2021 discovery		
+0.0	0.0	Stream your favorite Discovery shows all in one spot starting on January 4 Learn More		
+0.0	0.0	What s Cooking		
+0.0	0.0	100 Holiday Cookies		
+0.0	0.0	Our Very Best Recipes		
+0.0	0.0	Festive Apps Snacks Discover More Recipes		
+0.0	0.0	Our Newsletter		
+0.0	0.0	Sign up for the Recipe of the Day Newsletter Privacy Policy		
+0.0	0.0	Related Pages Apple Crumble Recipe Sweet Crepes Recipe Hearty Chicken Stew Recipe Dad s Eggnog Recipe Baked Bolognese Recipe Blueberry Clafouti Recipe		
+0.0	0.0	Site Map Visitor Agreement AdChoices Privacy Notice About Newsroom Advertise Help TV Ratings Online Closed Captioning California Privacy Notice CA Do Not Sell My Info Discovery Inc International Editions United States Asia Brazil Canada Europe Middle East Africa United Kingdom Latin America The Discovery Family of Networks Cooking Channel Food com HGTV DIY Network Travel Channel Great American Country 2020 Discovery or its subsidiaries and affiliates All rights reserved		
+0.0	0.0	Pinterest Facebook Twitter Email		

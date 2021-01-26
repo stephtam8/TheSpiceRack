@@ -1,0 +1,65 @@
+0.0	0.0	Skillet Pork Chops With Blistered Grapes Recipe NYT Cooking		
+0.0	0.0	X Search		
+1.0	0.0	Skillet Pork Chops With Blistered Grapes	Skillet Pork Chops With Blistered Grapes	
+0.0	0.0	By Samantha Seneviratne Yield 4 servings Time 25 minutes		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	David Malosh for The New York Times Food Stylist Simon Andrews		
+0.0	0.0	Pork chops make a great weeknight dinner and this dish is no exception It looks and feels special but comes together in about 20 minutes with very minimal prep Selecting bone in pork chops is beneficial beyond appearance The bones protect the meat to keep it moist However you could also use boneless chops or even chicken breasts if you d prefer just be sure to reduce the cooking time accordingly		
+0.0	0.0	More		
+0.0	0.0	Meat One Pot Grape Mustard Pork Chop Thyme White Wine Dinner Snack Weeknight Main Course		
+0.9866666666666667	0.0	Ingredients 2 tablespoons olive oil 4 bone in 1 inch thick pork chops about 3 4 pound each Kosher salt and black pepper 1 ½ cups small seedless red grapes 1 shallot minced 1 garlic clove minced 2 teaspoons all purpose flour 1 ½ teaspoons chopped fresh thyme leaves or 1 2 teaspoon dried thyme ¼ cup dry white wine ⅔ cup chicken stock 2 teaspoons grainy mustard 1 tablespoon heavy cream or unsalted butter	2 tablespoons olive oil 4 bone in 1 inch thick pork chops about 3 4 pound each Kosher salt and black pepper 1 ½ cups small seedless red grapes 1 shallot minced 1 garlic clove minced 2 teaspoons all purpose flour 1 ½ teaspoons chopped fresh thyme leaves or 1 2 teaspoon dried thyme ¼ cup dry white wine ⅔ cup chicken stock 2 teaspoons grainy mustard 1 tablespoon heavy cream or unsalted butter	
+0.9815950920245399	0.0	Preparation In a large skillet heat the olive oil over high Pat the chops dry with paper towels and season well with salt and pepper Cook the chops until just cooked through about 5 minutes per side Transfer to a plate and cover with foil to keep warm Add the grapes to the skillet and sauté until brown in spots about 2 minutes Use a slotted spoon to transfer to the plate Reduce the heat to medium high Add the shallot and garlic and cook until softened about 2 minutes Stir in the flour and thyme and cook for 1 minute Add the white wine and cook stirring until mostly evaporated about 1 minute Add the chicken stock and mustard and cook stirring frequently until slightly thickened about 3 minutes Stir in the heavy cream Season with salt and pepper Add the chops grapes and any accumulated juices back into the skillet and cook just until everything is warmed through about 3 minutes	In a large skillet heat the olive oil over high Pat the chops dry with paper towels and season well with salt and pepper Cook the chops until just cooked through about 5 minutes per side Transfer to a plate and cover with foil to keep warm Add the grapes to the skillet and sauté until brown in spots about 2 minutes Use a slotted spoon to transfer to the plate Reduce the heat to medium high Add the shallot and garlic and cook until softened about 2 minutes Stir in the flour and thyme and cook for 1 minute Add the white wine and cook stirring until mostly evaporated about 1 minute Add the chicken stock and mustard and cook stirring frequently until slightly thickened about 3 minutes Stir in the heavy cream Season with salt and pepper Add the chops grapes and any accumulated juices back into the skillet and cook just until everything is warmed through about	
+0.0	0.0	Like this recipe		
+0.0	0.0	Email Share on Pinterest Share on Facebook Share on Twitter		
+0.0	0.0	More from Sam Sifton s Suggestions		
+0.0	0.0	Broiled Fish Tacos Sarah Copeland 20 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Family Meal Fish Tacos Sam Sifton Chad Shaner 30 minutes		
+0.0	0.0	Red Beans and Rice Kim Severson Pableaux Johnson 2 1 2 hours plus at least 4 hours soaking		
+0.0	0.0	Baked Risotto With Greens and Peas Kay Chun 30 minutes		
+0.0	0.0	Spaghetti al Limone The New York Times 45 minutes		
+0.0	0.0	A Cheat s Bordelaise Sauce Sam Sifton 20 minutes		
+0.0	0.0	Cider Cured Pork Chops Sam Sifton 45 minutes plus up to 72 hours refrigeration		
+0.0	0.0	Lane Cake Yewande Komolafe 1 1 4 hours plus cooling		
+0.0	0.0	Chai Masala Julia Moskin Sephi Bergerson 10 minutes		
+0.0	0.0	Peanut Butter Miso Cookies Krysten Chambrot 30 minutes plus chilling		
+0.0	0.0	Peppermint Stripe Cookies Susan Spungen 1 hour plus at least 4 hours drying		
+0.0	0.0	Stamped Citrus Shortbread Susan Spungen 40 minutes plus chilling		
+0.0	0.0	Black Cake Julia Moskin Naparima Girls High School Cookbook 4 hours plus 2 days macerating		
+0.0	0.0	Superiority Burger s Crispy Fried Tofu Sandwich Alexa Weibel Brooks Headley 45 minutes plus marinating		
+0.0	0.0	Classic		
+0.0	0.0	Sesame Coated Sautéed Chicken Breasts Pierre Franey About 1 hour		
+0.0	0.0	Moo Shu Mushrooms J Kenji López Alt 45 minutes		
+0.0	0.0	More recipes from Samantha Seneviratne		
+0.0	0.0	Classic Chocolate Éclairs Samantha Seneviratne 2 1 2 hours plus cooling		
+0.0	0.0	Peach Focaccia With Thyme Samantha Seneviratne 45 minutes plus 2 to 3 hours rising		
+0.0	0.0	Raspberry Nutter Butter Bars Samantha Seneviratne About 50 minutes		
+0.0	0.0	Easy		
+0.0	0.0	Chocolate Peanut Butter Swirl Cookies Samantha Seneviratne 45 minutes		
+0.0	0.0	Apple Pear Galette With Apple Cider Caramel Samantha Seneviratne 1 hour 10 minutes plus chilling		
+0.0	0.0	Maple Tart With Oatmeal Cookie Crust Samantha Seneviratne 50 minutes plus chilling		
+0.0	0.0	Pumpkin Blondies With Chocolate and Pecans Samantha Seneviratne 50 minutes plus cooling		
+0.0	0.0	Lemon Shortcakes With Gingered Blueberries Samantha Seneviratne 50 minutes		
+0.0	0.0	Pumpkin Bread Samantha Seneviratne 1 1 2 hours		
+0.0	0.0	Pumpkin Maple Cornbread Samantha Seneviratne 40 minutes		
+0.0	0.0	Apple Butter Rugelach Samantha Seneviratne 3 hours plus cooling		
+0.0	0.0	Rhubarb Quick Bread Samantha Seneviratne 1 1 2 hours		
+0.1111111111111111	0.0	Millionaire s Shortbread Samantha Seneviratne 1 3 4 hours	3	
+0.0	0.0	Peppermint Bark Samantha Seneviratne 25 minutes plus 4 1 2 hours setting		
+0.0	0.0	Cinnamon Apple Quick Bread With Apple Cider Glaze Samantha Seneviratne 1 hour 10 minutes		
+0.0625	0.0	Creamy Lemon Pops With Basil Samantha Seneviratne 30 minutes plus at least 9 hours for freezing	minutes	
+0.0	0.0	Brush Up On The Basics With Our Cooking Guides		
+0.0	0.0	Cooking Guide How to Cook a Turkey By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make Steak By Melissa Clark		
+0.0	0.0	Cooking Guide How to Make Tagine By Melissa Clark		
+0.0	0.0	Cooking Guide How to Grill By Sam Sifton		
+0.0	0.0	Get Our Newsletter		
+0.0	0.0	Get recipes tips and NYT special offers delivered straight to your inbox Opt out or contact us anytime See our Privacy Policy		
+0.0	0.0	Please enter a valid email address		
+0.0	0.0	Follow Us		
+0.0	0.0	Get the App		
+0.0	0.0	About Us		
+0.0	0.0	NYT Cooking is a subscription service of The New York Times It is a digital cookbook and cooking guide alike available on all platforms that helps home cooks of every level discover save and organize the world s best recipes while also helping them become better more competent cooks Subscribe now for full access		
+0.0	0.0	Learn More Our Cooks See Our Features FAQ Tools for Saving NYTimes com food Send Us Feedback		
+0.0	0.0	Shop Gift Subscription Merchandise The New York Times Company Terms of Service Privacy Policy		
+0.0	0.0	Sorry your changes didn t save		
